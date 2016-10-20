@@ -1,4 +1,4 @@
-#### Week 1
+# Week 1
 
 ## Introduction
 
@@ -10,7 +10,7 @@
 - Front End UI: HTML, CSS, and Responsive Design
 
 
-## Week 1 Overview 
+## Overview 
         | Morning Exercise (_60 mins_)                            | Morning Session I  (_90 mins_)                                    | Morning Session II  (_90 mins_)                                   | Afternoon Session I  (_90 mins_)                                     | Afternoon Session II  (_90 mins_)
 -------------------- |--------------------------------   | ------------------------------------      | ------------------------------------     | ---------------------------------------        | -----------------------------------
 Day 1    |[Installfest][1-1A]                | [+Morning exercise: XML Review][1-2A]    | [Debugging fundamentals 1][1-3A]       | [Morning exercise: Data types and methods][1-4A]    |  [Reflection][1-5A]          
