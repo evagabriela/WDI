@@ -49,6 +49,7 @@ As it stands now, pre-work consists of _____________________________ that reinfo
 
 Another goal of this unit is also to get students comfortable creating and manipulating __________, ___________, and _______________ as well as ________________ and _______________________.
 
+---
 
 #### Week 1
 
@@ -96,6 +97,8 @@ Homework  |[HW: Intro to XML][1-1F]           | [HW: Command line][1-2F]        
 [1-5E]: # " "
 [1-5F]: # " "
 
+---
+
 #### Week 2
 
 Session Time  | Day 1                                 | Day 2                                             | Day 3                                    | Day 4                                          
@@ -134,9 +137,9 @@ Homework  |[HW: Finish views 103 lab][2-1F]            | [+HW: Project 1][2-2F] 
 [2-4D]: # " "
 [2-4E]: 00-orientation-reflection-and-presentation/project-1-show-and-tell
 
+---
 
 #### Week 3
-
 
 Session Time  | Day 1                                | Day 2                                      | Day 3                                   | Day 4                                               | Day 5
 --------- |--------------------------------           | ------------------------------------      | ------------------------------------    | ---------------------------------------              | -----------------------------------
