@@ -28,9 +28,7 @@ Included in this repository/folder:
 
 3. **Templates/** - General Assembly's campus templates with examples of lessons plans, projects, homeworks, and slide decks
 
-<!-- 4. [**Contributing Guidelines**](contributing-guidelines.md) - information about how to submit materials you create, adapt, or fix back to the global General Assembly team -->
-
-<!--  above is for tech courses only -->
+4. [**Contributing Guidelines**](contributing-guidelines.md) - information about how to submit materials you create, adapt, or fix back to the global General Assembly team.
 
 ## To Get Started
 
