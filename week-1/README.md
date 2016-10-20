@@ -6,9 +6,10 @@ Dev Tools and Workflow: Working with an OS
 "	
 
 ### Morning Session
-Icebreaker | Morning Excercise | *60 mins*
-Welcome to WDI: Learning Experience + Classroom Culture | Lesson | *90 mins*
-Internet Fundamentals | Lesson | *90 mins*
+| ----------------- | ----------------- | ----------------- |
+| Icebreaker | Morning Excercise | *60 mins* |
+| Welcome to WDI: Learning Experience + Classroom Culture | Lesson | *90 mins* |
+| Internet Fundamentals | Lesson | *90 mins* |
 
 ### ---------- Lunch! ---------- 
 	
