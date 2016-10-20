@@ -48,3 +48,9 @@ Homework  |[HW: Intro to XML][1-1F]           | [HW: Command line][1-2F]        
 [1-5D]: 03-activities-and-fragments/activities-and-intents-lab "Activities and intents lab"
 [1-5E]: # " "
 [1-5F]: # " "
+
+
+
+## Assessments
+
+## Instructor / Experience Notes

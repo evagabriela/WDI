@@ -1,10 +1,10 @@
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
-# Global Curriculum
+# Web Development Immersive Global Curriculum
 
 Our curriculum contains objectives, prerequisites, suggested materials, starter and solution code, and other instructional resources, tying into the overall standards for each unit. See below for a complete description of all the lesson planning material we provide. Use this folder to reference our baseline resources. Anyone is welcome to submit new lessons in the appropriate folders, or suggest changes to existing ones.
 
-> Instructors should review our [preparatory instructions](../resources/instructor-resources/instructor-prep.md) or read up on our [feedback guidelines](../projects/project-feedback.md) for debriefing student assignments.
+> Instructors should review our [onboarding instructions](../resources/onboarding/instructor-onboarding) and read up on our [feedback guidelines](../projects/project-feedback.md) for debriefing student assignments.
 
 General Assembly's ________________ course is made up of ________ lessons/weeks that are ___________________. This course is split into ______________ units.
 
@@ -49,8 +49,8 @@ As it stands now, pre-work consists of _____________________________ that reinfo
 
 Another goal of this unit is also to get students comfortable creating and manipulating __________, ___________, and _______________ as well as ________________ and _______________________.
 
-#### Week 1
 
+#### Week 1
 
 Session Time  | Day 1                             | Day 2                                     | Day 3                                    | Day 4                                      | Day 5
 --------- |--------------------------------   | ------------------------------------      | ------------------------------------     | ---------------------------------------        | -----------------------------------
@@ -202,7 +202,7 @@ For every lesson, we've supplied a folder full of materials, including the follo
 
 | Materials | Description | How to Use It |
 |----|---------|---------------|
-| __readme.md__| Topic overview & breakdown | Use this to get a high level view, including information on lesson content, in-class activities, objectives, prework, and projects.|
+| __readme.md__| Topic overview & breakdown | Use this to get a high level view, including information on lesson content, in-class activities, objectives, prework, projects, and student resources.|
 | __Starter Code Folder__| Code and tests for demos and questions for guided or independent practice | Use this to walk students through code snippets or give students workshops / lab assignments in-class|
 | __Solution Code Folder__| Solutions for guided & independent practice | Use this to assess or walk students through solutions when needed|
 | __Datasets__| Dataset used during lesson | Use this during demos/codealongs as well as guided and independent practice activities. |
