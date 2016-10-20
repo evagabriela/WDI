@@ -7,7 +7,7 @@ creator:
     city: London
 ---
 
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Callbacks
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Internet Fundamentals
 
 ### LEARNING OBJECTIVES
 *After this lesson, students will be able to:*
@@ -19,13 +19,9 @@ creator:
 
 
 ### STUDENT PRE-WORK
-*Before this lesson, students should already be able to:*
-
 `n/a`
 
 ### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
-
 `n/a`
 
 ---
