@@ -39,6 +39,7 @@ This baseline scope and sequence of the curriculum is based on the following:
     - 10am-1pm and 2-5pm are dedicated to lessons, labs, and outcomes sessions
     - Two holidays taken on *week 2, day 5* and *week 6, day 5*
 
+
 ---
 
 ## Unit 1
@@ -48,6 +49,7 @@ In this unit, students will be practicing the basics of _____________, how to __
 As it stands now, pre-work consists of _____________________________ that reinforce ___________________ fundamentals for ________________, so in this unit, we review _________________, _______________, and other foundational concepts in ________________.
 
 Another goal of this unit is also to get students comfortable creating and manipulating __________, ___________, and _______________ as well as ________________ and _______________________.
+
 
 ---
 
