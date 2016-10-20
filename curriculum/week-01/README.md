@@ -51,11 +51,11 @@ Day 5  |[Lab: XML][1-1E]                    | [Basic Terminal and navigating And
 
 
 ## Day 1 
-[Installfest][1-1A] | Lesson | _60 mins_ | 
-[Your learning experience][1-1A] | Lesson | _90 mins_ | 
-[Intro to Android][1-1A] | Lab | _90 mins_ | 
-[Intro to XML][1-1A] | Lesson | _90 mins_ | 
-[XML lab][1-1A] | Lesson | _90 mins_ | 
+[Installfest][1-1A] | Lesson | _60 mins_ 
+[Your learning experience][1-1A] | Lesson | _90 mins_ 
+[Intro to Android][1-1A] | Lab | _90 mins_ 
+[Intro to XML][1-1A] | Lesson | _90 mins_ 
+[XML lab][1-1A] | Lesson | _90 mins_ 
                       
 
 [1-1A]: 00-orientation-materials/installfest-lesson "Installfest"
