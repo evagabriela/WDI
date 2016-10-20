@@ -51,17 +51,7 @@ Day 5  |[Lab: XML][1-1E]                    | [Basic Terminal and navigating And
 
 
 ## Day 1 
-Session  | Day 1                             | Day 2                                     | Day 3                                    | Day 4                                      | Day 5
---------- |--------------------------------   | ------------------------------------      | ------------------------------------     | ---------------------------------------        | -----------------------------------
-Morning Exercise    |[Installfest][1-1A]                | [XML Review][1-2A]    | [Debugging fundamentals 1][1-3A]       | [Data types and methods][1-4A]    |  [Reflection][1-5A]          
-Morning Session I  |[Your learning experience][1-1B]  | [Views 101][1-2B]                          | [Data types and variables][1-3B]       | [Git/GitHub foundations][1-4B]                   | [Layouts][1-5B]
-Morning Session II |[Intro to Android][1-1C]           | [Views 102][1-2C]                           | [Functions and scope][1-3C]           | [Lab: Working with Git/GitHub][1-4C]             | [Activities and intents][1-5C]
-Afternoon Session I  |[Intro to XML][1-1D]               | [Lab: Experimenting with a simple app][1-2D]| [Lab: Functions and scope][1-3D]      | [Control flow][1-4D]                              | [Lab: Controls, activities, and intents][1-5D]
-Afternoon Session II  |[Lab: XML][1-1E]                    | [Basic Terminal and navigating Android][1-2E] | [+Flex session/Intro to outcomes][1-3E] | [Lab: Writing more advanced functions][1-4E]   | [+Review/Introduce project 1][1-5E]
-Homework  |[HW: Intro to XML][1-1F]           | [HW: Command line][1-2F]                     | [+HW: Functions practice][1-3F]      | [HW: More functions practice][1-4F]                |  [+HW: Start Project 1][1-5F]
-
-
-Title 	             | Type 				| Time 					
+<!-- # " " 	             | # " " 				| # " " 		 -->			
 -------------------- | -------------------- | -------------------- 
 [Installfest][1-1A] | Lesson | _60 mins_ 
 [Your learning experience][1-1A] | Lesson | _90 mins_ 
