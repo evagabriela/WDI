@@ -13,7 +13,7 @@
 ## Overview 
         | Morning Exercise (_60 mins_)                            | Morning Session I  (_90 mins_)                                    | Morning Session II  (_90 mins_)                                   | Afternoon Session I  (_90 mins_)                                     | Afternoon Session II  (_90 mins_)
 -------------------- |--------------------------------   | ------------------------------------      | ------------------------------------     | ---------------------------------------        | -----------------------------------
-Day 1    |[Installfest][1-1A]                | [+Morning exercise: XML Review][1-2A]    | [Debugging fundamentals 1][1-3A]       | [Morning exercise: Data types and methods][1-4A]    |  [Reflection][1-5A]          
+Day 1    |[Icebreaker][1-1A]                | [Welcome to WDI: Learning experience + classroom culture][1-2A]    | [Internet Fundamentals][1-3A]       | [OS Navigation Using the Terminal][1-4A]    |  [Submlime and Atom Review + Fundamentals Review][1-5A]          
 Day 2  |[Your learning experience][1-1B]  | [Views 101][1-2B]                          | [Data types and variables][1-3B]       | [Git/GitHub foundations][1-4B]                   | [Layouts][1-5B]
 Day 3  |[Intro to Android][1-1C]           | [Views 102][1-2C]                           | [Functions and scope][1-3C]           | [Lab: Working with Git/GitHub][1-4C]             | [Activities and intents][1-5C]
 Day 4  |[Intro to XML][1-1D]               | [Lab: Experimenting with a simple app][1-2D]| [Lab: Functions and scope][1-3D]      | [Control flow][1-4D]                              | [Lab: Controls, activities, and intents][1-5D]
