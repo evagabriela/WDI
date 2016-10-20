@@ -1,220 +1,85 @@
 ---
-title: Callbacks
-type: lesson
-duration: "1:30"
+title: Reflection
+duration: "1:00"
 creator:
-    name: Alex Chin, Gerry Mathe
-    city: London
+    name: Jay Nappy
+    city: NYC
 ---
 
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Callbacks
+
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Reflection
 
 ### LEARNING OBJECTIVES
-*After this lesson, students will be able to:*
-
-- Explain the concept of a 'callback' and how we can pass functions as arguments to other functions
-- Describe the difference between asynchronous and synchronous program execution, and why callbacks are important to asynchronous program flow
-- Pass a named function as a callback to another function
-- Pass an anonymous function as a callback to another function
-
+*After this lesson, you will be able to:*
+- Identify highlights from the past week
+- Acknowledge areas for improvement
+- Contribute constructive feedback for the instructional team
+- Acknowledge classmates that have been helpful
 
 ### STUDENT PRE-WORK
-*Before this lesson, students should already be able to:*
-
-- Write and call functions in javascript
-- Explain what an anonymous function is in javascript
+*Before this lesson, you should already be able to:*
+- Reflect thoughtfully on your course experience so far
 
 ### INSTRUCTOR PREP
+*Before this lesson, instructors will need to:*
 
-_Before this lesson, instructors will need to:_
+- Prepare a Google Form / Survey that asks the following questions:
+> Note: Check with your producer to coordinate reflection survey responses with your course tracker.
 
-- Get the starter and solution code running on their local environment
+ - Q: What has been a highlight of the past week for you?
+ - Q: What's one area of improvement you're focused on for yourself next week?
+ - Q: Is there anything we've been doing very well?
+ - Q: Is there anything you would like us to be doing differently next week?
+ - Q: Please leave a shout-out for a classmate or classmates.
 
----
+  ---
+<a name="opening"></a>
+## Opening (10 mins)
 
-## Opening (5 mins)
+> Instructor Note: You probably only do this "opening" section during the first week of the course.
 
-> Instructor Note: Review pre-work, projects, exit ticket, lesson objectives; describe real-world relevance or motivating example why this lesson is important
+Everyone take five minutes to read through [this](http://99u.com/workbook/25481/reflection-is-the-most-important-part-of-the-learning-process) summary of a study conducted by Harvard Business School.
 
-## Callbacks - Intro (5 mins)
+> Check: Let's take five minutes to discuss some reasons why reflection is important for learning.
 
-Callback functions are derived from a programming paradigm known as **functional programming**. Functional programming specifies the use of functions as arguments. Functional programming was — and still is, though to a much lesser extent, today — seen as an esoteric technique of specially trained master programmers.
+<a name="introduction"></a>
 
-#### What is a Callback/Higher-order Function?
+## Introduction: Reflection (5 mins)
 
-A callback function, also known as a higher-order function, is a function that is passed to another function (let’s call this other function “otherFunction”) as a parameter, and the callback function is called (or executed) inside the otherFunction. A callback function is essentially a pattern (an established solution to a common problem), and therefore, the use of a callback function is also known as a callback pattern.
+On Fridays, during your Data Science Immersive course, we'll pause for an hour to detach ourselves from the course content and reflect.  Our reflection will focus on the following questions:
 
-## Examples of Callbacks - Demo (15 mins)
+- Individually, what was a highlight of this past week?
+- Identify one area of improvement you'll be focused on for next week.
+- Is there anything we've been doing very well?
+- Is there anything you would like us to be doing differently next week?
+- Please leave a shout-out for a classmate or classmates.
 
-Let's walk through a couple of examples of code that utilize callbacks:
+You will have time to document your answers to each of these questions in an online survey as well as discuss each question in a group setting facilitated by a member of the instructional team.
 
-> Note: Be sure to walk through these code snippets slowly.
+## Guided Practice: Reflection Part 1 (25 mins)
 
-```javascript
-var element = document.getElementsByTagName("body")[0];
+> Instructor Note:  Split the class into two groups/squads and provide the following directions.
 
-element.addEventListener("click", function(){
-  console.log("Executed in the callback function.");
-})
-```
+This class is going to be split into two groups:
 
-Another example within a `forEach` loop:
+- Group one will be given a link to an online survey provided by the instructor; for the next 25 minutes, think about and write in your answers to the questions in the survey.
 
-```javascript
-var friends = ["Mike", "Stacy", "Andy", "Rick"];
-​
-friends.forEach(function(eachName, index){
-  console.log(index + 1 + ". " + eachName);
-});
-```
+- Group two will be further spit into two squads - each squad will have a discussion led by a member of the instructional team. The discussion will walk through each of the questions above.
 
-We have passed an anonymous function (a function without a name) to the forEach method as a parameter.  We could have re-written this using a named function.
+> Instructor Note: Use your best judgement on how long to focus on each discussion question.
 
-```javascript
-function loopyName(eachName, index){
-  console.log(index + 1 + ". " + eachName);
-};
+Groups will be switched in the next section.
 
-var friends = ["Mike", "Stacy", "Andy", "Rick"];
-friends.forEach(loopyName);
-```
+## Guided Practice: Reflection Part 2 (25 mins)
 
+> Instructor Note: Switch the groups - students who were filling out the survey will now be in discussion groups led by instructional team members; students who were in discussion groups will now have 25 minutes to record their thoughts and feelings in the online survey.
 
-## How Callback Functions Work? Discussion (10 mins)
-
-We can pass functions around like variables and return them in functions and use them in other functions.  When we pass a callback function as an argument to another function, we are only **passing the function definition**.
-
-We are **not executing the function** in the parameter. We aren’t passing the function with the trailing pair of executing parenthesis `()` like we do when we are executing a function.
-
-The callback function is not executed immediately. It is “called back” (hence the name) at some specified point inside the containing function’s body.
-
-#### Callback Functions Are Closures!
-
-When we pass a callback function as an argument to another function, the callback is executed at some point inside the containing function’s body just as if the callback were defined in the containing function.
-
-This means the callback is a closure.
-
-Closures have access to the containing function’s scope, so the callback function can access the containing functions’ variables, and even the variables from the global scope.
-
-
-## Named Functions as Callbacks - Codealong (15 mins)
-
-It is a common pattern to use an anonymous function as a callback. However, you can use a named function, too!
-
-Take this code, and past it into your text editor:
-
-```javascript
-// global variable​
-var allUserData = [];
-
-// generic logStuff function that prints to console​
-function logStuff(userData) {
-  if (typeof userData === "string") {
-    console.log(userData);
-  } else if (typeof userData === "object") {
-    for (var item in userData) {
-      console.log(item + ": " + userData[item]);
-    }
-  }
-}
-
-// A function that takes two parameters, the last one a callback function
-function getInput(options, callback) {
-  allUserData.push(options);
-  callback(options);
-}
-```
-
-
-When we call the `getInput` function, we pass `logStuff` as a parameter - `​logStuff` will called back (or executed) inside the getInput function​.
-
-```javascript
-getInput({name:"Alex", speciality:"JavaScript"}, logStuff);
-```
-
-
-Since the callback function is just a normal function when it is executed, we can pass parameters to it!
-
-We can pass any of the containing function’s properties (or global properties) as parameters to the callback function.
-
-You can always check a callback is a function before executing it:
-
-```javascript
-if (typeof callback === "function") {
-  callback(options);
-}
-```
-
-## `this` and Callbacks Problems - Codealong (20 mins)
-
-When the callback function is a method that uses the `this` object, we have to modify how we execute the callback function to preserve the `this` object context.
-
-Let's define an object with some properties and a method​. We will later pass the method as a callback function to another function​:
-
-```javascript
-var clientData = {
-  id: 094545,
-  fullName: "Not Set",
-  // setUserName is a method on the clientData object​
-  setUserName: function(firstName, lastName)  {
-    // this refers to the fullName property in this object​
-    this.fullName = firstName + " " + lastName;
-  }
-}
-
-function getUserInput(firstName, lastName, callback) {
-  callback(firstName, lastName);
-}
-
-getUserInput("Barack", "Obama", clientData.setUserName);
-
-console.log (clientData.fullName);
-//=> Not Set
-
-console.log (window.fullName);
-//=> Barack Obama
-```
-
-Since `getUserInput` is a global function, `this` points to the window object.
-
-#### Use the `Call` or `Apply` Function To Preserve `this`
-
-We can fix the preceding problem by using the `Call` or `Apply` function.
-
-Every function in JavaScript has two methods: `Call` and `Apply`. And these methods are used to set the this object inside the function and to pass arguments to the functions.
-
-- [`Call`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call) takes the value to be used as the `this` object inside the function as the **first parameter**, and the remaining arguments to be passed to the function are passed individually (separated by commas of course).
-- [`Apply`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) function’s first parameter is also the value to be used as the `this` object inside the function, while the last parameter is an array of values (or the arguments object) to pass to the function.
-
-Let's walk through an example by defining another object with properties and a method and pass the method as a callback later:
-
-```javascript
-var clientData = {
-  id: 094545,
-  fullName: "Not Set",
-  // setUserName is a method on the clientData object​
-  setUserName: function (firstName, lastName)  {
-    // this refers to the fullName property in this object​
-    this.fullName = firstName + " " + lastName;
-  }
-}
-
-function getUserInput(firstName, lastName, callback, callbackObj)  {
-  // The use of the Apply function below will set the this object to be callbackObj​
-  callback.apply(callbackObj, [firstName, lastName]);
-}
-getUserInput("Barack", "Obama", clientData.setUserName, clientData);
-
-console.log(clientData.fullName);
-//=> Barack Obama
-```
-
-## Independent Practice (15 mins)
-
-> ***Note:*** _This can be a pair programming activity or done independently._
-
-Open the [starter-code](starter-code) and try to work through both exercises with a partner.  Do your best!
-
+<a name="conclusion"></a>
 ## Conclusion (5 mins)
-- Describe callbacks, at a high level.
-- Explain why you don't pass callbacks as parameters with parenthesis.
+
+Your instructional team at General Assembly uses all the information at our disposal to create the best possible learning experience for you and your classmates. We'll look over the responses to your surveys and use them to make informed decisions about how to structure future sessions and, if necessary, make adjustments to aspects of the course.
+
+> Instructor Note: Feel free to identify common themes during your group reflection periods, as long as they are appropriate.
+
+### ADDITIONAL RESOURCES
+- [Reflection for Learning](https://sites.google.com/site/reflection4learning/why-reflect)
