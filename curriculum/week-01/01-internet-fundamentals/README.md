@@ -1,7 +1,7 @@
 ---
-title: Callbacks
+title: Welcome to WDI: Learning experience + classroom culture
 type: lesson
-duration: "1:30"
+duration: _90 mins_
 creator:
     name: Alex Chin, Gerry Mathe
     city: London
@@ -12,23 +12,21 @@ creator:
 ### LEARNING OBJECTIVES
 *After this lesson, students will be able to:*
 
-- Explain the concept of a 'callback' and how we can pass functions as arguments to other functions
-- Describe the difference between asynchronous and synchronous program execution, and why callbacks are important to asynchronous program flow
-- Pass a named function as a callback to another function
-- Pass an anonymous function as a callback to another function
+- Set expectations for the course
+- Align class on goals for the course
+- Get to know each other
+- Establish Class culture
 
 
 ### STUDENT PRE-WORK
 *Before this lesson, students should already be able to:*
 
-- Write and call functions in javascript
-- Explain what an anonymous function is in javascript
+`n/a`
 
 ### INSTRUCTOR PREP
+*Before this lesson, instructors will need to:*
 
-_Before this lesson, instructors will need to:_
-
-- Get the starter and solution code running on their local environment
+`n/a`
 
 ---
 

@@ -3,9 +3,15 @@
 ## Introduction
 
 ## High-Level Standards
+- Servers and Web Communication: Internet Fundamentals
+- Dev Tools and Workflow: Working with an OS
+- Dev Tools and Workflow: Git and Github
+- Dev Tools and Workflow: Agile Methodologies
+- Front End UI: HTML, CSS, and Responsive Design
+
 
 ## Week 1 Overview 
-        | Morning Exercise                             | Morning Session I                                     | Morning Session II                                    | Afternoon Session I                                      | Afternoon Session II
+        | Morning Exercise (_60 mins_)                            | Morning Session I  (_90 mins_)                                    | Morning Session II  (_90 mins_)                                   | Afternoon Session I  (_90 mins_)                                     | Afternoon Session II  (_90 mins_)
 -------------------- |--------------------------------   | ------------------------------------      | ------------------------------------     | ---------------------------------------        | -----------------------------------
 Day 1    |[Installfest][1-1A]                | [+Morning exercise: XML Review][1-2A]    | [Debugging fundamentals 1][1-3A]       | [Morning exercise: Data types and methods][1-4A]    |  [Reflection][1-5A]          
 Day 2  |[Your learning experience][1-1B]  | [Views 101][1-2B]                          | [Data types and variables][1-3B]       | [Git/GitHub foundations][1-4B]                   | [Layouts][1-5B]
@@ -42,10 +48,6 @@ Day 5  |[Lab: XML][1-1E]                    | [Basic Terminal and navigating And
 [1-5C]: 01-user-interface/activities-and-intents-lesson "Activities and intents lesson"
 [1-5D]: 03-activities-and-fragments/activities-and-intents-lab "Activities and intents lab"
 [1-5E]: # " "
-
-
-## Week 1 Overview 
-
 
 ## Assessments
 
