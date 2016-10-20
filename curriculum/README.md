@@ -55,7 +55,7 @@ Another goal of this unit is also to get students comfortable creating and manip
 
 #### Week 1
 
-Session  | Day 1                             | Day 2                                     | Day 3                                    | Day 4                                      | Day 5
+   | Day 1                             | Day 2                                     | Day 3                                    | Day 4                                      | Day 5
 --------- |--------------------------------   | ------------------------------------      | ------------------------------------     | ---------------------------------------        | -----------------------------------
 Morning Exercise    |[Installfest][1-1A]                | [XML Review][1-2A]    | [Debugging fundamentals 1][1-3A]       | [Data types and methods][1-4A]    |  [Reflection][1-5A]          
 Morning Session I  |[Your learning experience][1-1B]  | [Views 101][1-2B]                          | [Data types and variables][1-3B]       | [Git/GitHub foundations][1-4B]                   | [Layouts][1-5B]
@@ -103,14 +103,13 @@ Homework  |[HW: Intro to XML][1-1F]           | [HW: Command line][1-2F]        
 
 #### Week 2
 
-Session Time  | Day 1                                 | Day 2                                             | Day 3                                    | Day 4                                          
+ Morning Exercise | Morning Session I | Morning Session II | Afternoon Session I | Afternoon Session II | Homework                                          
 ---------  |--------------------------------           | ------------------------------------             | ------------------------------------     | ---------------------------------------      
-9 - 10    |[Debugging fundamentals 2][2-1A]           | [Morning exercise: ListViews, ListAdapters][2-2A] | [#Outcomes 1][2-3A]                      | [Reflection][2-4A]                     
-10 - 11:30|[Storing data in collections][2-1B]        | [OnItemClickListeners][2-2B]                      | [READMEs / Project 1 workshop][2-3B]     | [+Project 1 workshop][2-4B]                
-11:30 - 1 |[Lab: Storing data in collections][2-1C]  | [@Paper prototyping][2-2C]                        | [+Project 1 workshop][2-3C]               | [+Project 1 workshop][2-4C]         
-2 - 3:30  |[Views 103][2-1D]                          | [@Lab: Implementing from a prototype sketch][2-2D]| [+Project 1 workshop][2-3D]              | [+Project 1 workshop][2-4D]                          
-3:30 - 5  |[Lab: Views 103][2-1E]                    | [+Flex Session][2-2E]                             | [+Project 1 workshop][2-3E]               | [Project 1 show and tell][2-4E]   
-Homework  |[HW: Finish views 103 lab][2-1F]            | [+HW: Project 1][2-2F]                            | [+HW: Project 1][2-3F]                   |
+Day 1    |[Debugging fundamentals 2][2-1A] | [Morning exercise: ListViews, ListAdapters][2-2A] | [#Outcomes 1][2-3A] | [Reflection][2-4A] |[HW: Finish views 103 lab][2-1F]  
+Day 2 |[Storing data in collections][2-1B]        | [OnItemClickListeners][2-2B]                      | [READMEs / Project 1 workshop][2-3B]     | [+Project 1 workshop][2-4B] |[HW: Finish views 103 lab][2-1F]             
+Day 3 |[Lab: Storing data in collections][2-1C] | [@Paper prototyping][2-2C] | [+Project 1 workshop][2-3C]| [+Project 1 workshop][2-4C] | [+HW: Project 1][2-2F]      
+Day 4  |[Views 103][2-1D] | [@Lab: Implementing from a prototype sketch][2-2D]| [+Project 1 workshop][2-3D] | [+Project 1 workshop][2-4D] | [+HW: Project 1][2-3F]                      
+Day 5  |[Lab: Views 103][2-1E]                    | [+Flex Session][2-2E]                             | [+Project 1 workshop][2-3E]               | [Project 1 show and tell][2-4E]   
 
 [2-1A]: 04-workflow-and-dev-tools/debugging-fundamentals-2-lesson "Debugging fundamentals 2"
 [2-1B]: 02-programming-fundamentals-in-java/storing-data-in-collections-lesson "Storing data in collections"

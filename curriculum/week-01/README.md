@@ -51,7 +51,7 @@ Day 5  |[Lab: XML][1-1E]                    | [Basic Terminal and navigating And
 
 
 ## Day 1 
-Title 	             | Type 				| Time 					
+Activity 	             | Type 				| Time 					
 -------------------- | -------------------- | -------------------- 
 [Installfest][1-1A] | Lesson | _60 mins_ 
 [Your learning experience][1-1A] | Lesson | _90 mins_ 
