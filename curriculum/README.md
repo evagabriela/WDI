@@ -103,7 +103,7 @@ Homework  |[HW: Intro to XML][1-1F]           | [HW: Command line][1-2F]        
 
 #### Week 2
 
- Morning Exercise | Morning Session I | Morning Session II | Afternoon Session I | Afternoon Session II | Homework                                          
+  | Morning Exercise | Morning Session I | Morning Session II | Afternoon Session I | Afternoon Session II | Homework                                          
 ---------  |--------------------------------           | ------------------------------------             | ------------------------------------     | ---------------------------------------    | ---------------------------------------     
 Day 1    |[Debugging fundamentals 2][2-1A] | [Morning exercise: ListViews, ListAdapters][2-2A] | [#Outcomes 1][2-3A] | [Reflection][2-4A] |[HW: Finish views 103 lab][2-1F]  
 Day 2 |[Storing data in collections][2-1B]        | [OnItemClickListeners][2-2B]                      | [READMEs / Project 1 workshop][2-3B]     | [+Project 1 workshop][2-4B] |[HW: Finish views 103 lab][2-1F]             
