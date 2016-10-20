@@ -1,4 +1,4 @@
-# Week 1
+# WDI: Week 1
 
 ## Introduction
 
@@ -48,6 +48,22 @@ Day 5  |[Lab: XML][1-1E]                    | [Basic Terminal and navigating And
 [1-5C]: 01-user-interface/activities-and-intents-lesson "Activities and intents lesson"
 [1-5D]: 03-activities-and-fragments/activities-and-intents-lab "Activities and intents lab"
 [1-5E]: # " "
+
+
+## Day 1 
+[Installfest][1-1A] | Lesson | _60 mins_ | 
+[Your learning experience][1-1A] | Lesson | _90 mins_ | 
+[Intro to Android][1-1A] | Lab | _90 mins_ | 
+[Intro to XML][1-1A] | Lesson | _90 mins_ | 
+[XML lab][1-1A] | Lesson | _90 mins_ | 
+                      
+
+[1-1A]: 00-orientation-materials/installfest-lesson "Installfest"
+[1-1B]: 00-orientation-materials/your-learning-experience-lesson "Your learning experience"
+[1-1C]: 07-android-technologies-and-services/intro-to-android-lesson "Intro to Android"
+[1-1D]: 01-user-interface/intro-to-xml-lesson "Intro to XML"
+[1-1E]: 01-user-interface/xml-lab "XML lab"
+
 
 ## Assessments
 
