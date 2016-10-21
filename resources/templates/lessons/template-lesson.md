@@ -9,7 +9,7 @@ creator:
 > #### *Guiding Questions When Using This Template*
 >
 > - [ ] Are the learning objectives measurable?
->   - [ ] Are there at least two objectives? ( All learning objectives should be pulled from the [Front End Standards](https://docs.google.com/document/d/1vNhHrlLgoaClM2J3IIcNNgs74fss1Wg-iaWu-lQYfxo/edit) doc.  If you would like to add or remove any Learning Objectives, please contact amy.almeida@ga.co)
+>   - [ ] Are there at least two objectives? ( All learning objectives should be pulled from the [Front End Standards](https://docs.google.com/spreadsheets/d/11SzdbIIa9PLJ6kknGXXoBYOtL5ycwMK2N8lkI5THFak/edit#gid=1968474545) doc.  If you would like to add or remove any Learning Objectives, please contact amy.almeida@ga.co)
 >   - [ ] Does the lesson address all the learning objectives?
 >
 > - [ ] Are activities spaced out with enough time for each?
