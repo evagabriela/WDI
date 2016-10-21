@@ -1,31 +1,16 @@
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
-# Web Development Immersive Global Curriculum
+# WDI's Unit 1 Curriculum
 
-Our curriculum contains objectives, prerequisites, suggested materials, starter and solution code, and other instructional resources, tying into the overall standards for each unit. See below for a complete description of all the lesson planning material we provide. Use this folder to reference our baseline resources. Anyone is welcome to submit new lessons in the appropriate folders, or suggest changes to existing ones.
+Our curriculum contains objectives, prerequisites, suggested materials, starter and solution code, and other instructional resources, tying into the overall standards for each unit. See below for a complete description of all the lesson planning material we provide. Use this folder to reference our baseline resources for Unit 1. Anyone is welcome to submit new lessons in the appropriate folders, or suggest changes to existing ones.
 
 > Instructors should review our [onboarding instructions](../resources/onboarding/instructor-onboarding) and read up on our [feedback guidelines](../projects/project-feedback.md) for debriefing student assignments.
 
-General Assembly's ________________ course is made up of ________ lessons/weeks that are ___________________. This course is split into ______________ units.
-
-
-## Unit Breakdown
-
-| Unit   | Title                           | Lessons Provided / Number of Sessions | Number of Flex Session | Holidays |
-| ---    | ---                             |  ---                                  | --- |                  | --- |
-| Unit 1 | ______________________________  |  ____________                         | _______ |              | --- |
-| Unit 2 | ______________________________  |  ____________                         | _______ |              | --- |
-| Unit 3 | ______________________________  |  ____________                         | _______ |              | --- |
-| Unit 3 | ______________________________  |  ____________                         | _______ |              | --- |
-
-> Note: Flex sessions are provided as buffers for content review or additional topics that instructors may want to cover; holidays are immersive-specific and because each immersive course typically has two national holidays that fall within the course timeline, we point out where we accounted for those holidays - feel free to move those free days as needed for your particular cohort.
-
-Most of the materials in this folder are referenced in our baseline course plan on [Trello](insert-your-trello-link). Take a look.  Lessons, labs, and other resources are organized by Standard in the appropriate subfolders.
+## Navigating Unit 1 Course Materials
 
 Tips for browsing the links below:
 
 - The resources are linked to their location: clicking the link will take you to the lesson/lab readme, any starter/solution code, and tests.
-- **+** - Resource links with a "+" are suggested topics for that time block and do not have an existing baseline resource. We'd love for you to contribute a resource with a pull request.
 - **#** - Resource links with a "#" are time blocks dedicated for outcomes lessons. Coordinate with your local outcomes teams to fill these slots.
 - **@** - Resource links with a "@" are resources from other courses that need to be adapted for COURSE-ACRONYM or resources that only contain learning objectives. We'd love for you to contribute a resource with a pull request.
 - ***** - Resource links with a "*" are resources that are currently being worked on
@@ -37,23 +22,11 @@ This baseline scope and sequence of the curriculum is based on the following:
 
     - 9-10am represents a one hour session typically occupied by an exercise, introduction, reflection, and sometimes, a short lesson
     - 10am-1pm and 2-5pm are dedicated to lessons, labs, and outcomes sessions
-    - Two holidays taken on *week 2, day 5* and *week 6, day 5*
-
-
----
-
-## Unit 1
-
-In this unit, students will be practicing the basics of _____________, how to _____________, and foundational ______________ concepts in _____________________ that we'll use for the entire rest of the course.
-
-As it stands now, pre-work consists of _____________________________ that reinforce ___________________ fundamentals for ________________, so in this unit, we review _________________, _______________, and other foundational concepts in ________________.
-
-Another goal of this unit is also to get students comfortable creating and manipulating __________, ___________, and _______________ as well as ________________ and _______________________.
-
+    
 
 ---
 
-#### Week 1
+### Week 1
 
    | Day 1                             | Day 2                                     | Day 3                                    | Day 4                                      | Day 5
 --------- |--------------------------------   | ------------------------------------      | ------------------------------------     | ---------------------------------------        | -----------------------------------
@@ -101,7 +74,7 @@ Homework  |[HW: Intro to XML][1-1F]           | [HW: Command line][1-2F]        
 
 ---
 
-#### Week 2
+### Week 2
 
 Morning Exercise | Morning Session I | Morning Session II | Afternoon Session I | Afternoon Session II | Homework                                          
 ---------  |--------------------------------           | ------------------------------------             | ------------------------------------     | ---------------------------------------    | ---------------------------------------     
@@ -140,7 +113,7 @@ Day 5  |[Lab: Views 103][2-1E]                    | [+Flex Session][2-2E]       
 
 ---
 
-#### Week 3
+### Week 3
 
 Session Time  | Day 1                                | Day 2                                      | Day 3                                   | Day 4                                               | Day 5
 --------- |--------------------------------           | ------------------------------------      | ------------------------------------    | ---------------------------------------              | -----------------------------------

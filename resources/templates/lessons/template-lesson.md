@@ -9,23 +9,18 @@ creator:
 > #### *Guiding Questions When Using This Template*
 >
 > - [ ] Are the learning objectives measurable?
->   - [ ] Are there between 2-5 learning objectives?*
->   - [ ] Are the learning objectives specific enough?
->   - [ ] Do these learning objectives help students work toward the unit project?
->
->
-> - [ ] How will this lesson culminate? (final activity + conclusion; should be 15-25 mins)
->
+>   - [ ] Are there at least two objectives? ( All learning objectives should be pulled from the [Front End Standards](https://docs.google.com/document/d/1vNhHrlLgoaClM2J3IIcNNgs74fss1Wg-iaWu-lQYfxo/edit) doc.  If you would like to add or remove any Learning Objectives, please contact amy.almeida@ga.co)
+>   - [ ] Does the lesson address all the learning objectives?
 >
 > - [ ] Are activities spaced out with enough time for each?
 >   - [ ] Did you include knowledge "Checks" or activities at the end of every component to test comprehension?
->   - [ ] If reusing an existing resource, is there enough content for a given length of time?
+>   - [ ] Is there an even distribution of intructor-led and active learning portions?
 >
 >
 > - [ ] Did you provide guidance for both students & instructors?
 >   - [ ] What will instructors have to do to prepare for this lesson?
 >   - [ ] What will students have to do to prepare for this lesson?
->   - [ ] What should students do to review or prepare for the next lesson?
+>   - [ ] What additional resources do you provide for students who are "hungry for more," or need additional practice?
 >
 > #### *How to Use This Template*
 > * Static Components: Reserve roughly 5 min for Opening, 5 unscheduled "buffer" mins for overrun, & at least 5 min for Conclusion (end of lesson review).
@@ -41,7 +36,7 @@ creator:
 > - Guided Practice: interactive instructor by which the instructor engages with and probes students for answers to guide the discussion or activity
 > - Independent Practice: a block of time where students are able to practice what they've learned; the instructor provides directions and the students use the directions to complete an exercise
 > - Conclusion: a time to sum up the lesson, review the answers to a final independent practice, and/or pose discussion questions
-> - Check: a moment to check to understand students are following; it can be done with a question about content, a general "How comfortable are you with this?", or the instructor can check the output of students code to ensure they've completed the assignment properly
+> - Check: a moment to check to understand students are following; it can be done with a question about content, a general "How comfortable are you with this?", or the instructor can check the output of students code to ensure they've completed the assignment properly.
 
 > NOTE: the lesson you create does not have to follow a progression of Introduction > Demo > Guided Practice > Independent Practice - a combination of these is often ideal - but a lesson must always begin with an Opening and end wth a Conclusion.
 
@@ -181,9 +176,9 @@ end
 ## Independent Practice: Topic (# minutes)
 Use the lesson topic/skill to create a deliverable that meets certain criteria.
 
-> Instructor Note: This can be a pair programming activity or done indpendently.
+> Instructor Note: This can be a pair programming activity or done independently.
 
-Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis magnam voluptas, modi at harum minus voluptate qui consequatur porro amet deserunt quibusdam nihil rerum fugit, accusantium omnis totam! Vitae, corrupti.
+Briefly describe the Independent Practice exercise here.  What is the end deliverable?  What skills will it help students practice?  Include a link to the Github folder, which will include a more exhaustive description of the exercise, as well as any code, files or assets for students to download.
 
 > Check: Were students able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?
 
@@ -204,6 +199,10 @@ Here is a prompt for the deliverable. Lorem ipsum dolor sit amet, consectetur ad
 | **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
 
 ### ADDITIONAL RESOURCES
-- Add your own resources.
-- Go crazy.
-- So much room for bullets!
+- Exercises
+- Videos
+- Readings
+- Decks
+
+> Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
+
