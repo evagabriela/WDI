@@ -18,7 +18,7 @@ creator:
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Title of the Homework
 
-> ***Note:*** _This can be a pair programming activity or done independently._
+> ***Note:*** _Part of being a developer is having the ability to determine whether your code effectively solves a problem.  Use the attached  rubric to self-assess once you've completed the homework.  Determine a test to validate your code.  Based on your results, write down specific questions for your instructional team._
 
 ## Exercise
 
