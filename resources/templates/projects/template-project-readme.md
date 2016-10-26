@@ -1,9 +1,8 @@
 > #### *Guiding Questions When Using This Template*
 >
-> - [ ] Are the requirements actionable?
-> - [ ] What will students have to do to prepare for this lab?
+> - [ ] Do the technical requirements clearly outline each of the lab expectations?
+> - [ ] What will students have to do to prepare for this project?
 > - [ ] Is this intended to be a group activity? Codealong? Pair programming?
-> - [ ] Can students practice pseudo-coding before beginning?
 > - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
 > Delete this section ^
 
@@ -30,7 +29,7 @@ Your work must:
 - Have it do something else
 - This is what we expect of you
 
-**Bonus:**
+**Hungry for More?**
 
 - Some extra ideas for medium/advanced students
 - Another thing that would be good for you to practice
@@ -48,7 +47,7 @@ Your work must:
 
 #### Starter code
 
-Here's a few sentences explaining any started code that's included in the `starter-code` folder.
+Here's a few sentences explaining any starter code that's included in the `starter-code` folder.
 
 #### Suggested Ways to Get Started
 
