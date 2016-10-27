@@ -3,8 +3,8 @@ title: Internet Fundamentals
 type: lesson
 duration: _90 mins_
 creator:
-    name: Alex Chin, Gerry Mathe
-    city: London
+    name: John Doe
+    city: City Name
 ---
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Internet Fundamentals
@@ -398,7 +398,11 @@ So how does HTML relate to CSS and Javascript?
 
 ![](assets/web-technologies.png)
 
-You can think of HTML CSS and JS as the three major parts of speech in human language: nouns, adjectives, and verbs. HTML is the noun as it is in charge of organizing content (text, photos, videos, audio, links, etc) into a file. CSS is the adjective as it is entirely concerned with the visualization of the content. JavaScript is the verb as it can add behavior and dynamism to the content.
+You can think of HTML CSS and JS as the three major parts of speech in human language: nouns, adjectives, and verbs. HTML is the noun as it is in charge of organizing content (text, photos, videos, audio, links, etc) into a file. CSS is the adjective as it is entirely concerned with the visualization of the content. JavaScript is the verb as it can add behavior and dynamism to the content.
+
+
+
+
 
  ***
 
