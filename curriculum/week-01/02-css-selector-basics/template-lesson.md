@@ -1,53 +1,8 @@
----
-title: Title of the Lesson
-duration: "1:25"
-creator:
-    name: John Doe
-    city: NYC
----
-
-> #### *Guiding Questions When Using This Template*
->
-> - [ ] Are the learning objectives measurable?
->   - [ ] Are there at least two objectives? ( All learning objectives should be pulled from the [Front End Standards](https://docs.google.com/spreadsheets/d/11SzdbIIa9PLJ6kknGXXoBYOtL5ycwMK2N8lkI5THFak/edit#gid=1968474545) doc.  If you would like to add or remove any Learning Objectives, please contact amy.almeida@ga.co)
->   - [ ] Does the lesson address all the learning objectives?
->
-> - [ ] Are activities spaced out with enough time for each?
->   - [ ] Did you include knowledge "Checks" or activities at the end of every component to test comprehension?
->   - [ ] Is there an even distribution of intructor-led and active learning portions?
->
->
-> - [ ] Did you provide guidance for both students & instructors?
->   - [ ] What will instructors have to do to prepare for this lesson?
->   - [ ] What will students have to do to prepare for this lesson?
->   - [ ] What additional resources do you provide for students who are "hungry for more," or need additional practice?
->
-> #### *How to Use This Template*
-> * Static Components: Reserve roughly 5 min for Opening, 5 unscheduled "buffer" mins for overrun, & at least 5 min for Conclusion (end of lesson review).
->
->
-> * Modular Components: The units of instruction are: Intro, Demo, Guided-Practice, & Independent-Practice. These can be cycled or intermixed in various orders, depending on the topic / content.
-
-> #### *Components of the lesson plan*
-
-> - Opening: this only happens once; used to introduce the agenda, review material, and provide a motivating example / the problem we're trying to solve with this skill/content
-> - Introduction: this is a section dedicated to introducing and contextualizing new vocabulary, ideas, and code syntax that will be practiced in later sections
-> - Demo: an instructor-led session demonstrating proper techniques or syntax examples
-> - Guided Practice: interactive instructor by which the instructor engages with and probes students for answers to guide the discussion or activity
-> - Independent Practice: a block of time where students are able to practice what they've learned; the instructor provides directions and the students use the directions to complete an exercise
-> - Conclusion: a time to sum up the lesson, review the answers to a final independent practice, and/or pose discussion questions
-> - Check: a moment to check to understand students are following; it can be done with a question about content, a general "How comfortable are you with this?", or the instructor can check the output of students code to ensure they've completed the assignment properly.
-
-> NOTE: the lesson you create does not have to follow a progression of Introduction > Demo > Guided Practice > Independent Practice - a combination of these is often ideal - but a lesson must always begin with an Opening and end wth a Conclusion.
-
-
-
----
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Lesson Title (# mins)
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) CSS Selector Basics (90 mins)
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction) | Topic |
+| x min | [Introduction](#introduction) | What is CSS? |
 | x min | [Demo/Codealong](#demo) | Topic |
 | x min | [Guided Practice](#guided-practice) | Topic |
 | x min | [Independent Practice](#ind-practice) | Topic |
@@ -55,21 +10,29 @@ creator:
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
+- Style all elements of a particular HTML element on a web page 
+- Style copy elements using font-weight, font-size, color, line-height, letter-spacing, text-transform, text-decoration, text-align
+- Understand best practice for specificity and cascading
+- Understand why external CSS sheets are better than inline styles
+- Describe the syntactical and functional relationship between selectors, properties, and values 
+- Use special selectors (descendant, adjacent sibling, direct child, universal)
+- Apply a set of styles to elements based on pseudo-classes (:hover, :active, :visited, :even, :odd, :nth-child, :first-of-type, :last-of-type) 
+- Apply styles to specific elements using classes and IDs
+- Apply styles using the Desktop Down method
+
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
+- Write HTML that gets rendered as a document in the browser 
+- Use HTML tags to add content to a webpage: h1 - h6, p, a, img, ul/ol
+- Use HTML tags to define groups of content: header, main, section, article, aside, figure, figcaption, footer
+- Pass The Validator without errors
+
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
-- Gather materials needed for class
-- Complete Prep work required
-- Prepare any specific instructions
+- Be ready to assess students' levels of understanding of HTML
+
 
 ---
 <a name="opening"></a>
@@ -86,34 +49,226 @@ Check: Ask students to define, explain, or recall any **general** prior concepts
 ***
 
 <a name="introduction"></a>
-## Introduction: Topic (# mins)
+## Introduction: What is CSS? (# mins)
 
-> Instructor Note: Discuss topic and explain by dividing parts into sections. Ask students to define, explain, or recall any **specific** elements relating to the current topic, when applicable.
+#### Overview
+Cascading Style Sheets (CSS) transform the content on your page into a well-designed website. While HTML's purpose is to define what content *is*; CSS's purpose is to define how content should *look*.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
+
+### Initial Styles
+Keep in mind that even without CSS, your site has design. It’s not very *good* design, but design decisions have been made nonetheless. What styles can you identify?
+
+- White background
+- Black color
+- Times New Roman font
+- Left text alignment
+- Bold headers
+- Blue, underlined links
+- Round, solid black bullets for list items
+- Predetermined font sizes
+- Predetermined margin & padding
+- Predetermined display (inline vs block)
+
+These styles are called inherent or initial styles. Adding CSS is all about overwriting these initial styles to create a customized, beautiful web page. CSS is powerful! Consider the incredible diversity of design in ![these websites](http://www.mezzoblue.com/zengarden/alldesigns/) with the exact same HTML, but different CSS.
+
+You can accomplish ![a lot with very little](http://jgthms.com/web-design-in-4-minutes/) using CSS. If you want to go the extra mile, you can accomplish some ![seriously amazing things](http://codepen.io/). This lesson is a step towards building a working knowledge of CSS and solidifying what you learned in the pre-work. Your goal isn't to memorize the 500+ CSS properties– it’s to get an idea of what you can accomplish with CSS and know how to research what you don’t.
+
+Keep in mind you don’t have to be a designer to be good at CSS, but you do have to be detail-oriented and thoughtful about your code. When it comes time to show off your projects after this course, the first thing most prospective employers will see is your styling. And as we all know, first impressions are incredibly important.
+
+
+### Review: Structure of CSS
+A CSS file is composed of many rules. Each rule governs the appearance of certain elements. A style rule looks like this:
+
+```css
+selector {
+    property:value;
+    property:value;
+    property:value;
+}
+```
+
+Everything inside the curly braces is called the "declaration block." Individual property and value pairs are called “declarations.” 
+
+
+### Review: Classes and IDs
+Sometimes just targeting an element is not enough. We can target other attributes of elements in our selectors.
+
+*Classes*: used for repeatable styles used multiple times within one page or many
+```html
+<div class="col-2"></div>
+```
+```css
+.col-2 {}
+```
+
+*IDs*: used for elements on a page that occur only once– each id on a page must be unique
+```html
+<div id="hero"></div>
+```
+```css
+#hero {}
+```
+
+*Note*
+Because IDs can override classes, they can make a codebase more difficult to maintain when it scales. Using classes in your CSS is preferred; it will help with the scalability of your design, and help you write cleaner code. IDs will become more useful in JavaScript.
+
+
+### Specificity Within The Cascade 
+Some properties of elements are passed down to their children. In general:
+- Properties dealing with text are inherited by their children
+- Properties dealing with spacing are not inherited by their children
+
+View the full property table ![here](https://www.w3.org/TR/CSS2/propidx.html).
+
+When an element is being styled by more than one rule, the browser calculates which rule is more specific and applies that rule’s styles. In general:
+- Class rules will override element selector rules;
+- If two classes are applied, the second class will override the first; and
+- An ID will override both a class and element selector.
+
+Special Selectors *can* override both classes and IDs in certain situations– so choose your methods carefully and keep your code dry.
+
+Consider the following code: 
 
 ```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>
-      Example
-    </title>
-  </head>
-  <body>
-    <h1>
-      Example Page
-    </h1>
-    <p>
-      This is an example page.
-    </p>
-  </body>
-</html>
+<p class="intro hidden" id="highlight"></p>
 ```
-![DOM Tree](http://www.computerhope.com/jargon/d/dom1.jpg)
+```css
+p { font-size: 1em; }
+.intro { font-size: 2em; }
+.hidden { font-size: 0; }
+#highlight { font-size: 3em; }
+```
 
-#### Use non-section headings to divide content
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam pariatur ab cum temporibus, velit expedita? Pariatur illum, iusto animi iste consectetur quam voluptatem provident! Velit molestias doloremque error harum.
+This is not an example of efficient code, but it will help demonstrate the cascade. Here's how the code above will be calculated:
+- The ```font-size``` of ```1em``` in ```p {}``` will be overridden by the ```font-size``` of ```2em``` in ```.intro {}```;
+- The ```font-size``` of ```2em``` in ```.intro {}``` will be overridden by the ```font-size``` of ```0``` in ```.hidden {}```; and
+- The ```font-size``` of ```0``` in ```.hidden {}``` will be overridden by the ```font-size``` of ```0``` in ```#highlight {}```;
+- A ```font size``` of ```3em``` will render
+
+
+Keep in mind, specificity can work to your advantage because of inheritance! If you put all the shared styles for all paragraph tags in p {} and put more specific styles in classes, your code will be efficient and non-repetitive.
+
+Consider an updated version of the previous example: 
+```html
+<p class="intro visible" id="highlight"></p>
+```
+```css
+p { font-size: 1em; }
+.intro { color: #333; }
+.visible { visibility: visible; }
+#highlight { background-color: #ffff00; }
+```
+
+The result? All of these styles will be applied, because the same property is not being called with a different value.
+
+#### Special Selectors
+Selectors can be more complex than just an element, class, or ID. In fact, Special Selectors may be preferable over using classes in some cases.
+
+*Multiple Selector*: applies the same declaration block to more than one element
+```css
+h1, h2 {}
+```
+- Styles all <h1> and <h2> tags
+
+
+*Tag Qualified Selector*: specifying elements with an applied class
+_Example 1_
+```css
+a.visible {}
+```
+- Styles only anchor tags with the "visible" class: ```<a class="visible"></a>```. Will not style any other elements with the applied visible class like ```<p class="visible"></p>``` or ```<img class="visible">```.
+
+_Example 2_
+```css
+.profile.minimized {}
+```
+Styles all tags that have both the "profile" and "minimized" classes applied: ```<div class="profile minimized"></div>```
+
+
+*Best Practice Check*: What’s the best way to work– with tag qualifiers or without?
+In short, be consistent. Using a class *without* a tag qualifier is a more scalable way to work, because it’s less specific. Remember that classes are meant to style a number of elements– not just one.
+
+If you choose to use Qualified Tag Selectors, be sure it’s the simplest approach and you have a good reason for doing so. Here’s an example of a tag qualifier that’s not helpful:
+
+```css
+div#hero {}
+```
+Although this code will work, there's only ever going to be one tag with an ID of "hero" since IDs are unique. It’s simpler to write ```#hero {}```.
+
+
+Descendant Selectors: filter out tags based on their ancestors
+main p {}
+Styles all <p> tags that are descendants of <main> tags.
+<main>
+    <p></p>
+</main>
+
+and
+<main>
+    <section>
+        <p></p>
+    </section>
+</main>
+Be sure you don’t overuse Descendant Selectors, because they can slow down your page. Although we read them left to right (select <main> then <p>) the browser reads them right to left. First, the browser selects all <p> tags and then selects only those inside <main>. 
+
+Below is an example of how not use Descendant Selectors. You can imagine Descendant Selectors becoming overwhelming for the browser:
+main section ul li a{ }
+
+
+As a general rule, limit the number of selectors to 3, and consider making classes as an alternative.
+
+
+Direct Child Selectors: filters out first-generation child tags only
+
+main > p {}
+Styles all <p> tags that are direct, first-generation descendants of <main> tags.
+<main>
+     <p></p>
+  </main>
+
+  *Will not* style children that aren't direct descendents, like this ‘grandchild’ <p> :
+<main>
+     <section>
+         <p></p>
+     </section>
+  </main>
+
+
+
+Adjacent Sibling Selectors: filters sibling tags that appear in a stated order, and styles the second sibling
+
+h2 + p {}
+
+Styles any <p> that follows an <h2>.
+
+<section>
+    <h2></h2>
+    <p></p>
+</section>
+
+
+*Will not* style an element that isn’t adjacent :
+<section>
+        <h2></h2>
+    <h3></h3>
+      <p></p>
+  </section>
+
+  *Will not* style an element that isn’t a sibling :
+<section>
+        <h2></h2>
+    <div>
+      <p></p>
+    </div>
+  </section>
+
+
+Universal Selector: selects all tags on the page *without* using ancestry
+
+* { margin:0; }
+Styles *every single* tag on the page without using inheritance. So if any tags that appear on your page do not have a margin declaration of their own, their margin will be 0.  
+Note: This is a very powerful selector, and can slow down your page if not used properly. Read more about Universal Selectors here.  
+
 
 > Check: Insert 1-2 guiding questions to ensure students are comprehending the material.
 
