@@ -456,7 +456,9 @@ Bash isn't the only option. Check out zsh (http://code.joejag.com/2014/why-zsh.h
 ### Homework / Practice
 
 
-#### To Oz
+#### *** (Homework needs to be modified slightly): 
+
+[Favorite Things](https://github.com/ga-students/command-line-lab)
 
 #### A New Terminal
 
@@ -509,7 +511,12 @@ Bash isn't the only option. Check out zsh (http://code.joejag.com/2014/why-zsh.h
 	- https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-%28-basics-%29
 	- http://i.imgur.com/1c9y0.png
 	
-●	Additional Resources○	Review Command Line and how to get started with the command line (deck)○	https://guides.github.com/○	https://google.github.io/styleguide/htmlcssguide.xml○	https://developer.mozilla.org/en-US/docs/Web/HTML/Element○	https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+●	Additional Resources
+○	Review Command Line and how to get started with the command line (deck)
+○	https://guides.github.com/
+○	https://google.github.io/styleguide/htmlcssguide.xml
+○	https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+○	https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 	
 
 
