@@ -1,10 +1,12 @@
 ---
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Box Model and Positioning (90 mins)
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Box Model and Flexbox (90 mins)
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction) | Box Model |
-| x min | [Demo/Codealong](#demo) | Topic |
+| x min | [Introduction](#introduction-box-model) | Box Model |
+| x min | [Demo/Codealong](#demo-box-model) | Box Model Demo |
+| x min | [Introduction](#introduction-flexbox) | Flexbox |
+| x min | [Demo/Codealong](#demo-flexbox) | Flexbox Demo |
 | x min | [Guided Practice](#guided-practice) | Topic |
 | x min | [Independent Practice](#ind-practice) | Topic |
 | x min | [Conclusion](#conclusion) |Topic |
@@ -38,7 +40,7 @@ Check: Ask students to define, explain, or recall any **general** prior concepts
 
 ***
 
-<a name="introduction"></a>
+<a name="introduction-box-model"></a>
 ## Introduction: Box Model (5 mins)
 
 All HTML elements can be considered boxes. Even if you see a circle, it's living within a box.
@@ -51,8 +53,8 @@ Install the <a href="https://chrome.google.com/webstore/detail/pesticide-for-chr
 
 ***
 
-<a name="demo"></a>
-## Demo / Codealong: Box Model (# mins)
+<a name="demo-box-model"></a>
+## Demo / Codealong: Box Model Demo (# mins)
 Let's write some code to help us visualize the Box Model. Paste the following into Codepen.
 
 ```html
@@ -276,6 +278,20 @@ div{
 
 We would end up with something like this:
 <!-- insert image here -->
+
+
+***
+
+<a name="introduction-flexbox"></a>
+## Introduction: Flexbox (5 mins)
+
+
+
+
+***
+
+<a name="demo-flexbox"></a>
+## Demo / Codealong: Flexbox Demo (# mins)
 
 
 ***
