@@ -1,11 +1,3 @@
----
-title: Title of the Lesson
-duration: "1:25"
-creator:
-    name: John Doe
-    city: NYC
----
-
 > #### *Guiding Questions When Using This Template*
 >
 > - [ ] Are the learning objectives measurable?
