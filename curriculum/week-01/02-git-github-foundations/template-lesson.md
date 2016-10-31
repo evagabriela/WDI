@@ -1,11 +1,3 @@
----
-title: Title of the Lesson
-duration: "1:25"
-creator:
-    name: John Doe
-    city: NYC
----
-
 > #### *Guiding Questions When Using This Template*
 >
 > - [ ] Are the learning objectives measurable?
@@ -91,6 +83,8 @@ Check: Ask students to define, explain, or recall any **general** prior concepts
 > Instructor Note: Discuss topic and explain by dividing parts into sections. Ask students to define, explain, or recall any **specific** elements relating to the current topic, when applicable.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
+
+<!--Testing comments-->
 
 ```html
 <!DOCTYPE html>
