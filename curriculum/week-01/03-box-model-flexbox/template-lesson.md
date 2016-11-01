@@ -277,7 +277,7 @@ div{
 ```
 
 We would end up with something like this:
-<!-- insert image here -->
+![Box Model](box-model-alt-small.png)
 
 
 ***
