@@ -456,8 +456,7 @@ footer {
 }
 ```
 
-#### What's the main axis on here?
-#### What's the cross axis?
+#### What's the main axis on here? The cross axis?
 
 ![Flex Terms](assets/flex_terms.png)
 
@@ -477,7 +476,7 @@ In particular, let's look at...
 
 ### The Holy Grail Layout
 
-![Holy Grail(assets/HolyGrailLayout.png)
+![Holy Grail](assets/HolyGrailLayout.png)
 
 This is something you know well, even if you don't recognize the term. It describes a webpage with a header bar, a footer bar, and three columns along the middle: a wide "main" column, a navigation column on the left, and an advertisement, site map, or extra info column along the right.
 
