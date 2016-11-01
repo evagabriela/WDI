@@ -1,4 +1,3 @@
----
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Box Model and Flexbox (90 mins)
 
 | Timing | Type | Topic |
@@ -26,7 +25,8 @@
 - Apply styles to specific elements using classes and IDs
 - Pass The Validator without errors
 
----
+***
+
 <a name="opening"></a>
 ## Opening (10 mins)
 - Review pre-work, projects, or exit ticket, if applicable
