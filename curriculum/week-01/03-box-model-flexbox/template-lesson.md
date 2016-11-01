@@ -127,7 +127,7 @@ But what do these different layers mean, and how are they relating to one anothe
 
 Let's get go into some more detail and practice with each of these elements of The Box Model.
 
-*Margin*
+**Margin**
 The margin is the space around the element. The larger the margin, the more space between our element and the elements around it. We can adjust the margin to move our HTML elements closer to or farther from each other.
 
 Adjusting our margins not only moves our element relative to other elements on the page but also relative to the "walls" of the HTML document. For example, if we declare the width of our ```<div>``` and set its margin to auto, this tells the document to automatically put equal left and right margins on our element. The equal left and right margins calculate based on the width of the document, centering it on the page.
@@ -169,7 +169,7 @@ p {
 }
 ```
 
-*Border*
+**Border**
 The border is the edge of the element. It's what we've been making visible every time we set the border property. You can use shortand for setting ```border```, just like we did with ```margin```. Lets add a border to our ```<div>```:
 
 ```css
@@ -185,7 +185,7 @@ div{
 }
 ```
 
-*Padding and Content*
+**Padding and Content**
 The padding is the spacing between the content and the border. Padding comes in handy for creating space between the text and the border, or using the background color of the box. We can adjust padding to move the border (or boundaries of our box) closer to or farther from the content. Shorthand can be used with padding as well. Let's try out some changes to our ```div``` with the border.
 
 ```css
@@ -322,36 +322,22 @@ end
 
 ***
 
-<!-- <a name="ind-practice"></a>
-## Independent Practice: Topic (# minutes)
-Use the lesson topic/skill to create a deliverable that meets certain criteria.
-
-> Instructor Note: This can be a pair programming activity or done independently.
-
-Briefly describe the Independent Practice exercise here.  What is the end deliverable?  What skills will it help students practice?  Include a link to the Github folder, which will include a more exhaustive description of the exercise, as well as any code, files or assets for students to download.
-
-> Check: Were students able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?
-
-***
-
-<a name="conclusion"></a>
-## Conclusion (# mins)
-- Review independent practice deliverable(s)
-- Recap topic(s) covered in today's lesson
-- Cover homework and/or upcoming tasks
-
-***
-
-### BEFORE NEXT CLASS
-|   |   |
-|---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
 
 ### ADDITIONAL RESOURCES
-- Exercises
-- Videos
-- Readings
-- Decks -->
+####Exercises
+- [https://googlecreativelab.github.io/coder-projects/projects/mondrian/](Build a Mondrian)
+
+####Videos
+- [https://www.youtube.com/watch?v=HNgdhp1_kEE&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=6](CSS Box Model)
+- [https://www.youtube.com/watch?v=qjSe_K3agYc&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=7](CSS Display)
+- [https://www.youtube.com/watch?v=-4Yy3WNmvmg&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=11](CSS Floats)
+- [https://www.youtube.com/watch?v=tqdqEiTlqF0&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=33](CSS Flexbox Intro)
+- [https://www.youtube.com/watch?v=7d8aAw8mzjI&index=34&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J](CSS Flexbox: Wrap, Justify, Align)
+- [https://www.youtube.com/watch?v=zDYAbI78dzc&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=35](CSS Flexbox: Child Properties)
+- [https://www.youtube.com/watch?v=wBlBTO7mqoI&index=109&list=PLae1he6d1WImFXtLgPt7MDAx6k6iP59EW](Flexbox Problem Solving Part 1)
+- [https://www.youtube.com/watch?v=_I58MXDnBEs&index=110&list=PLae1he6d1WImFXtLgPt7MDAx6k6iP59EW](Flexbox Problem Solving Part 2)
+
+####Readings
+-[https://www.paulirish.com/2012/box-sizing-border-box-ftw/](* { Box-sizing: Border-box } FTW)
 
 
