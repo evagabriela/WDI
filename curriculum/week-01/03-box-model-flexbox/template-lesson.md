@@ -73,29 +73,29 @@ Let's write some code to help us visualize the Box Model. Paste the following in
 ```
 
 ```css
-body{
+body {
   font-family:Georgia, serif;
 }
 
-header{
+header {
   text-align:center;
 }
 
-nav a{
+nav a {
   margin:1em;
   text-transform:uppercase;
 }
 
-h1{
+h1 {
   font-size:3em;
 }
 
-p{
+p {
   font-size:1em;
   line-height:1.618em;
 }
 
-a{
+a {
   font-weight:bold;
   color:inherit;
   text-decoration:none;
@@ -116,8 +116,7 @@ The universal selector ```*{ }``` is a great way to apply a style to every eleme
 
 ### Box Model Components
 The image below illustrates the box model and what you should have seen in your dev tools:
-
-*INSERT IMAGE*
+![Box Model](box-model-alt-small.png)
 
 But what do these different layers mean, and how are they relating to one another?
 - Margin: clears an area around the border (or boundaries of the padding if no border); the margin does not have a background color, it is completely transparent
@@ -133,7 +132,7 @@ The margin is the space around the element. The larger the margin, the more spac
 Adjusting our margins not only moves our element relative to other elements on the page but also relative to the "walls" of the HTML document. For example, if we declare the width of our ```<div>``` and set its margin to auto, this tells the document to automatically put equal left and right margins on our element. The equal left and right margins calculate based on the width of the document, centering it on the page.
 
 ```css
-div{
+div {
   width:40em;
   margin:4em auto;
 }
@@ -173,7 +172,7 @@ p {
 The border is the edge of the element. It's what we've been making visible every time we set the border property. You can use shortand for setting ```border```, just like we did with ```margin```. Lets add a border to our ```<div>```:
 
 ```css
-div{
+div {
   width:40em;
   margin:4em auto;
   border: 1px solid #000;
@@ -185,11 +184,11 @@ div{
 }
 ```
 
-**Padding and Content**
+**Padding**
 The padding is the spacing between the content and the border. Padding comes in handy for creating space between the text and the border, or using the background color of the box. We can adjust padding to move the border (or boundaries of our box) closer to or farther from the content. Shorthand can be used with padding as well. Let's try out some changes to our ```div``` with the border.
 
 ```css
-div{
+div {
   width:40em;
   margin:4em auto;
   border: 1px solid #000;
@@ -200,7 +199,7 @@ div{
 Much better! The text is more readable and the page itself has more visual balance. What if our ```div``` has a background color and no border?
 
 ```css
-div{
+div {
   width:40em;
   margin:4em auto;
   /* border: 1px solid #000; */
@@ -210,6 +209,15 @@ div{
 ```
 
 Our container still looks great!
+
+**Important Note**
+Padding and Border will increase the width of your element, even if you've *declared* the width. In the CSS above, we see the width set to `40em`, and the padding set to `2em`. What is the actual width of this element? What would the width be if we kept the border declaration?
+
+- `44em'
+- '44em' + '2px' (We can't calculate without knowing the base size of `em`.)
+
+This width increase can cause frustration and confusion when we start to create column-based layouts. You may want to consider using `box-sizing:border-box;`, which ensures that the width you declare is the final width of the entire element, including content, padding and border. Declaring width using the initial `box-sizing` value of `content-box` (this will be applied if you don't call `box-sizing`) means that width determines the width of the content *only*. Read more about the `border-box` method [https://www.paulirish.com/2012/box-sizing-border-box-ftw/](here).
+
 
 ## Refresher: How Display Affects Spacing & Layout (15 mins)
 We just learned each HTML element gets its own box to live in. Cool, right? 
@@ -254,7 +262,7 @@ To illustrate all ```display``` values, consider this HTML:
 With this CSS:
 
 ```css
-div{
+div {
   border:1px solid red;
   text-align:center;
 }
@@ -271,13 +279,13 @@ div{
     display: inline-block;
 }
 
-.none{
+.none {
     display:none
 }
 ```
 
 We would end up with something like this:
-![Box Model](box-model-alt-small.png)
+![Display](display.png)
 
 
 ***
