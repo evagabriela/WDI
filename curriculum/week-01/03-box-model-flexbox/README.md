@@ -4,11 +4,10 @@
 | --- | --- | --- |
 | x min | [Introduction](#introduction-box-model) | Box Model |
 | x min | [Demo/Codealong](#demo-box-model) | Box Model Demo |
+| x min | [Refresher](#display) | Display |
+| x min | [Refresher](#floats) | Floats |
 | x min | [Introduction](#introduction-flexbox) | Flexbox |
 | x min | [Demo/Codealong](#demo-flexbox) | Flexbox Demo |
-| x min | [Guided Practice](#guided-practice) | Topic |
-| x min | [Independent Practice](#ind-practice) | Topic |
-| x min | [Conclusion](#conclusion) |Topic |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -116,7 +115,7 @@ The universal selector ```*{ }``` is a great way to apply a style to every eleme
 
 ### Box Model Components
 The image below illustrates the box model and what you should have seen in your dev tools:
-![Box Model](box-model-alt-small.png)
+![Box Model](assets/box-model-alt-small.png)
 
 But what do these different layers mean, and how are they relating to one another?
 - Margin: clears an area around the border (or boundaries of the padding if no border); the margin does not have a background color, it is completely transparent
@@ -219,6 +218,7 @@ Padding and Border will increase the width of your element, even if you've *decl
 This width increase can cause frustration and confusion when we start to create column-based layouts. You may want to consider using `box-sizing:border-box;`, which ensures that the width you declare is the final width of the entire element, including content, padding and border. Declaring width using the initial `box-sizing` value of `content-box` (this will be applied if you don't call `box-sizing`) means that width determines the width of the content *only*. Read more about the `border-box` method [https://www.paulirish.com/2012/box-sizing-border-box-ftw/](here).
 
 
+<a name="display"></a>
 ## Refresher: How Display Affects Spacing & Layout (15 mins)
 We just learned each HTML element gets its own box to live in. Cool, right? 
 
@@ -285,16 +285,222 @@ div {
 ```
 
 We would end up with something like this:
-![Display](display.png)
+![Display](assets/display.png)
 
 
 ***
 
+<a name="floats"></a>
+## Refresher: Floats (5 mins)
+You've likely used floats in the past to build column layouts, but Flexbox is now considered best practice for grid layouts. However, sometimes our layout goals are simpler; rather than pinpointing the position of an element, we may just want to move it to the left or right side of a page. We accomplish that using `float`.
+
+A basic example you'll encounter in most tutorials is the "text wrap", or surrounding an image with text:
+![Floats](assets/floats.png)
+
+<!-- SME NEEDED: example code for image above -->
+
+* Images are, by default, `inline` elements.
+* To remove them from that flow and re-position them, we set `float` to either `left` or `right`.
+* We can also do this with multiple images with similar or varying `float` values.
+
+### Clear
+Floating, without the use of `clear`, can cause some serious layout issues. Let's see what happens if we remove the text from the previous example.
+
+<!-- SME NEEDED: example code for description above -->
+
+* What happens to the container when we set our image to `float: left;`?
+* What about if we substitute our image with a block element (e.g., `<div>`)?
+* When all the elements inside a container are floated, it shrinks to the smallest size possible.
+  * Inline element dimensions are ignored.
+  * Block elements are condensed to the smallest size possible.
+
+We can fix these issues by adding an empty `<div>` with a property of `clear: both;`. This allows the container to resize to fit its children elements. This empty `<div>` is bad practice, though. There's a better way!
+
+### Enter: The Clearfix
+[Nicolas Gallagher](http://nicolasgallagher.com/micro-clearfix-hack/) created a technique that eliminates the bad practice issues `clear: both;` causes, simply by adding a class to the parent container. And because it's a class, it's reusable!
+
+
+***
+
+
 <a name="introduction-flexbox"></a>
 ## Introduction: Flexbox (5 mins)
+From [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes](MDN): "The CSS3 Flexible Box, or flexbox, is a layout mode providing for the arrangement of elements on a page such that the elements behave predictably when the page layout must accommodate different screen sizes and different display devices."
 
+We'll be using Flexbox to build our column-based, grid layouts. In addition to creating incredible structure on our page, Flexbox solves a lot of layout issues that `float` either causes or cannot solve (or both!). 
 
+### Problem 1: Vertical alignment
+I have a div. I would like to center it vertically and horizontally on my page. Seems simple enough, right?
 
+#### You tell me: What should I try?
+
+Here's some starter code:
+
+```html
+<body>
+  <div>This is my div!</div>
+</body>
+```
+
+```css
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background-color: #ccc;
+  margin: 0 auto;
+}
+div{
+  width: 100px;
+  height: 100px;
+  outline: 1px solid red;
+}
+```
+
+This problem has been the laughingstock of CSS for years: how can something so obvious be so difficult to accomplish?
+
+### Flexbox to the Rescue
+
+```css
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: #ccc;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  outline: 1px solid red;
+}
+```
+
+#### How it works
+
+When you declare `display:flex` on a container, it becomes a **flex container**.
+
+First, you use `flex-direction` to indicate whether you want the items in the container -- the **flex items** -- to "read" left-to-right (`row`), right-to-left (`row-reverse`), top-to-bottom (`column`), **or** bottom-to-top (`column-reverse`).
+
+When you specify a flex-direction, you can think of it as placing an axis in that direction across your flex container. So if you use `flex-direction:row` or `row-reverse`, this **main axis** will be the same as the X-axis (horizontal) on a graph. Otherwise, it'll be the Y-axis.
+
+Then, you determine how you want to align or **justify** the items along this main axis using the `justify-content` property. It'll do nice things for you like let you put even spacing between all the items (`spacing-between` and `spacing-around`).
+
+Finally, you control how you align the items along the axis that goes across the main axis -- the **cross axis**, if you will -- with the `align-items` property. If you have `flex-direction:row`, the main axis is the X-axis, and the cross-axis is the Y-axis.
+
+Lastly, you can also do nice things like control how you want things to line up across the cross-axis by using `align-content`, such as `space-between` and `space-around`.
+
+### Problem 2: Make the footer stick
+
+I want my footer to lie along the bottom of my page.
+
+#### You tell me: What should I try?
+
+Starter code:
+
+```html
+<body>
+  <header>This is my header.</header>
+  <main><p>Blah blah blah blah blah...</p></main>
+  <footer>This is my footer!</footer>
+</body>
+```
+
+```css
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: #ccc;
+  margin: 0 auto;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #888;
+}
+```
+
+Making the footer lie against the bottom of my *screen* is pretty easy: I can just use absolute or fixed positioning. However, using absolute or fixed positioning means everything else on the page ignores my footer. The text of my `main` could easily run under my footer. I want the text of my `main` to "push" my footer to the end of the page.
+
+### Flexbox to the rescue
+
+```css
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: #ccc;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #888;
+}
+```
+
+#### What's the main axis on here?
+#### What's the cross axis?
+
+![Flex Terms](assets/flex_terms.png)
+
+Four more terms: the **main start** (`flex-start`), where the start of the main axis is, the **main end** (`flex-end`), and the cross starts and ends.
+
+#### Recap
+
+- `justify-content`: Align along flex-direction (main axis)
+- `align-items`: Align along not-flex-direction (cross axis)
+- `align-content`: Space things along main axis
+- `flex-basis`: How big the flex items "want" to be
+- `flex-shrink`: If the flex container is too small to accommodate all the flex bases, the proportion a particular flex item will occupy
+- `flex-grow`: If the flex container is too big for all the flex bases, the proportion a particular flex item will occupy
+- `order`: The order in which you want flex items to appear along the main access. The default is 0. Negative numbers are allowed.
+
+In particular, let's look at...
+
+### The Holy Grail Layout
+
+![Holy Grail(assets/HolyGrailLayout.png)
+
+This is something you know well, even if you don't recognize the term. It describes a webpage with a header bar, a footer bar, and three columns along the middle: a wide "main" column, a navigation column on the left, and an advertisement, site map, or extra info column along the right.
+
+Obviously, this layout won't work on tiny screens, unless you really like super-skinny columns. It's common to stack things on top of each other for mobile views to make one single column.
+
+Before flexbox, this involved a lot of pushing and shoving with dimensions and positioning. You would essentially have to write two completely separate stylesheets: one for mobile, and one for desktop.
+
+With flex box, just change the `flex-direction` for smaller screen sizes, and you're pretty much done!
+
+```css
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+/* We'll talk more about media queries soon. For now, just understand that this rule for `body` applies to screens `480px` wide and below.*/
+
+@media screen and (max-width: 480px) {
+  body {
+    flex-direction: column;
+  }
+}
+```
 
 ***
 
@@ -302,40 +508,20 @@ We would end up with something like this:
 ## Demo / Codealong: Flexbox Demo (# mins)
 
 
-***
-
-<a name="guided-practice"></a>
-## Guided Practice: Topic (# mins)
-Solve a problem or apply this topic to a real world scenario. Solving or understanding this scenario should require the use of the current topic (in addition to any prior topics).
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
-
-```ruby
-def lorem
-  return 'some stuff'
-end
-```
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nemo eius quo, soluta maxime provident temporibus aperiam eveniet eum. Non, soluta error veritatis pariatur praesentium beatae reprehenderit, numquam quaerat. Lorem ipsum dolor sit amet.
-
-Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
-
-```ruby
-def another_lorem
-  this = some_method(0+2)
-  return this.to_json
-end
-```
-> Check: Were students able to successfully solve the problem or complete the task?
+<!-- SME NEEDED: updated version of code below -->
+https://github.com/ga-dc/hyrule_potion_shop
 
 ***
 
 
-### ADDITIONAL RESOURCES
-####Exercises
+## Hungry for more?
+###Exercises
 - [https://googlecreativelab.github.io/coder-projects/projects/mondrian/](Build a Mondrian)
+- [http://flexboxfroggy.com](Flexbox Froggy)
+- [http://www.flexboxdefense.com](Flexbox Defense)
+- [http://bennettfeely.com/flexplorer/](Flexplorer)
 
-####Videos
+###Videos
 - [https://www.youtube.com/watch?v=HNgdhp1_kEE&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=6](CSS Box Model)
 - [https://www.youtube.com/watch?v=qjSe_K3agYc&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=7](CSS Display)
 - [https://www.youtube.com/watch?v=-4Yy3WNmvmg&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=11](CSS Floats)
@@ -345,7 +531,8 @@ end
 - [https://www.youtube.com/watch?v=wBlBTO7mqoI&index=109&list=PLae1he6d1WImFXtLgPt7MDAx6k6iP59EW](Flexbox Problem Solving Part 1)
 - [https://www.youtube.com/watch?v=_I58MXDnBEs&index=110&list=PLae1he6d1WImFXtLgPt7MDAx6k6iP59EW](Flexbox Problem Solving Part 2)
 
-####Readings
--[https://www.paulirish.com/2012/box-sizing-border-box-ftw/](* { Box-sizing: Border-box } FTW)
-
-
+###Readings
+- [https://www.paulirish.com/2012/box-sizing-border-box-ftw/](* { Box-sizing: Border-box } FTW)
+- [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes](MDN Flexbox)
+- [https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties](A Visual Guide to CSS3 Flexbox Properties)
+- [http://philipwalton.github.io/solved-by-flexbox/](Solved By Flexbox)
