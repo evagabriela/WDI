@@ -531,7 +531,7 @@ https://github.com/ga-dc/hyrule_potion_shop
 - [Flexbox Problem Solving Part 2](https://www.youtube.com/watch?v=_I58MXDnBEs&index=110&list=PLae1he6d1WImFXtLgPt7MDAx6k6iP59EW)
 
 ###Readings
-- [https://www.paulirish.com/2012/box-sizing-border-box-ftw/](* { Box-sizing: Border-box } FTW)
-- [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes](MDN Flexbox)
-- [https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties](A Visual Guide to CSS3 Flexbox Properties)
-- [http://philipwalton.github.io/solved-by-flexbox/](Solved By Flexbox)
+- [* { Box-sizing: Border-box } FTW](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
+- [MDN Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
+- [A Visual Guide to CSS3 Flexbox Properties](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
+- [Solved By Flexbox](http://philipwalton.github.io/solved-by-flexbox/)
