@@ -2,11 +2,11 @@
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction) | What is CSS? |
-| x min | [Demo/Codealong](#demo) | Topic |
-| x min | [Guided Practice](#guided-practice) | Topic |
-| x min | [Independent Practice](#ind-practice) | Topic |
-| x min | [Conclusion](#conclusion) |Topic |
+| 05 min | [Opening](#opening) | CSS |
+| 20 min | [Intro to New Material](#introduction) | What is CSS? |
+| 15 min | [Demo](#guided-practice) | CSS Tools of the Trade |
+| 45 min | [Independent Practice](#ind-practice) | CSS Challenges |
+| 05 min | [Conclusion](#conclusion) |Review and Questions |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -36,20 +36,18 @@
 
 ---
 <a name="opening"></a>
-## Opening (# mins)
+## Opening: (5 mins)
 - Review pre-work, projects, or exit ticket, if applicable
 - Review current lesson objectives
 - Reference general course content or topics (e.g. code or concepts that have been used across multiple lessons)
 - Include Hook / Real-world Relevance (why the content from this lesson is useful or important)
 
-> Instructor Note: Use instructor notes to talk directly to instructors. Otherwise, write out lesson directions and materials in a student-facing voice.
-
-Check: Ask students to define, explain, or recall any **general** prior concepts or tools.
+<!--Each lesson should have an opening. For example, how does this connect to the previous lesson?  Why should students be interested in this topic? -->
 
 ***
 
 <a name="introduction"></a>
-## Introduction: What is CSS? (# mins)
+## Intro to New Material: What is CSS? (30 mins)
 
 #### Overview
 Cascading Style Sheets (CSS) transform the content on your page into a well-designed website. While HTML's purpose is to define what content *is*; CSS's purpose is to define how content should *look*.
@@ -161,6 +159,8 @@ p { font-size: 1em; }
 
 The result? All of these styles will be applied, because the same property is not being called with a different value.
 
+<!--Insert check for understanding or quick Independent Practice to make sure students understand the above content.-->
+
 #### Special Selectors
 Selectors can be more complex than just an element, class, or ID. In fact, Special Selectors may be preferable over using classes in some cases.
 
@@ -186,7 +186,7 @@ Styles all tags that have both the "profile" and "minimized" classes applied: ``
 
 
 *Best Practice Check*: What’s the best way to work– with tag qualifiers or without?
-In short, be consistent. Using a class *without* a tag qualifier is a more scalable way to work, because it’s less specific. Remember that classes are meant to style a number of elements– not just one.
+A: In short, be consistent. Using a class *without* a tag qualifier is a more scalable way to work, because it’s less specific. Remember that classes are meant to style a number of elements– not just one.
 
 If you choose to use Qualified Tag Selectors, be sure it’s the simplest approach and you have a good reason for doing so. Here’s an example of a tag qualifier that’s not helpful:
 
@@ -275,76 +275,78 @@ Note: This is a very powerful selector, and can slow down your page if not used 
 ***
 
 <a name="demo"></a>
-## Demo / Codealong: Topic (# mins)
-Walk through a codealong or demonstration of something.
+## Demo: CSS Tools of the Trade (15 mins)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
-
-```ruby
-def lorem
-  return 'some stuff'
-end
+###Tools of the Trade
+Oftentimes, dealing with CSS can be a pain. Getting a web page to look the way you want will take a lot of experimentation, iteration, and patience as you’re learning the most efficient ways to code. Here are some great resources to help you master CSS!
+The [CSS Validator](http://jigsaw.w3.org/css-validator/#validate_by_input) is a tool into which you can copy and paste your CSS, and it'll tell you precisely what's wrong with it. We expect you to validate your CSS during this course.
+[The Chrome Element Inspector](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/?hl=en) allows you to look at a specific element on a page, and see exactly which CSS rules are being applied to it. You can also turn rules on and off, modify rules, and create new rules– which makes experimenting within the Inspector a fast way to fine-tune your design. Note: these edits don’t change your file, and will reset when you refresh the page. 
 ```
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nemo eius quo, soluta maxime provident temporibus aperiam eveniet eum. Non, soluta error veritatis pariatur praesentium beatae reprehenderit, numquam quaerat. Lorem ipsum dolor sit amet.
+> Instructor Note: Briefly walk through each of the tools above.
 
-Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
-
-```ruby
-def another_lorem
-  this = some_method(0+2)
-  return this.to_json
-end
-```
-
-> Check: By this point, students should be able to write out or code their own methods / functions / arguments / etc.
-
-***
-
-<a name="guided-practice"></a>
-## Guided Practice: Topic (# mins)
-Solve a problem or apply this topic to a real world scenario. Solving or understanding this scenario should require the use of the current topic (in addition to any prior topics).
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
-
-```ruby
-def lorem
-  return 'some stuff'
-end
-```
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nemo eius quo, soluta maxime provident temporibus aperiam eveniet eum. Non, soluta error veritatis pariatur praesentium beatae reprehenderit, numquam quaerat. Lorem ipsum dolor sit amet.
-
-Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
-
-```ruby
-def another_lorem
-  this = some_method(0+2)
-  return this.to_json
-end
-```
-> Check: Were students able to successfully solve the problem or complete the task?
+###Research & Debugging
+The purpose of this class isn't for you to walk away being an expert in all things CSS. That takes months of tolerating many unexpected, sometimes counter-intuitive results. The goal is for you to be exposed to all the things that can be accomplished with CSS. If they're on your radar, you can continue to work with and expand your skillset.
+What should you do if something is unfamiliar?
+Read it like English. CSS is intended to be readable.
+Look it up! If you don't know what box-sizing means, Google ‘css box-sizing’.
+Even professional developers rely heavily on sites like Stack Overflow in their day-to-day workflow. Why? There’s simply too much to memorize, and too many unique situations to encounter. This is what’s great about being a programmer! Nothing is ever new, even if you’ve done it dozens of times.
+So don’t feel like an amatuer when you’re Googling for answers– feel like a pro!
 
 ***
 
 <a name="ind-practice"></a>
-## Independent Practice: Topic (# minutes)
-Use the lesson topic/skill to create a deliverable that meets certain criteria.
+## Independent Practice: CSS Challenges (# minutes)
 
-> Instructor Note: This can be a pair programming activity or done independently.
+> Instructor Note: This can be done independently or in groups.
 
-Briefly describe the Independent Practice exercise here.  What is the end deliverable?  What skills will it help students practice?  Include a link to the Github folder, which will include a more exhaustive description of the exercise, as well as any code, files or assets for students to download.
+Navigate to [codepen.io](http://codepen.io/) and complete the following tasks:
+Navigate to codepen try out the following Challenges:
+**List some common element properties that can be styled**
+  -Create an html page with a p tag and some placeholder text
+  -Change its text color to a hex value that you choose from http://color.adobe.com
+  -Give it a background color
+  -Make the size of the text larger
+  -Change its font family to a sans-serif font
+  -Make the text bold
+  -Center the text
+**Describe ids and classes. Explain when should we use which.**
+  -Add two more p tags.
+  -Give one p tag an id
+  -Give the other two p tags the same class
+  -Use just the ids and classes to style p tag with the id differently from the ones with a class
+**Describe "The Cascade"**
+  -Create a p tag within a section tag
+  -Put some text in the section tag, but outside the p tag
+  -Put some text in the p tag
+  -Style just the section tag to give its text some color
+  -Note that the p tag has also been affected
+**Describe how to combine various selectors**
+  -Create a rule for all p tags that also have a class of active
+  -For this rule, make the text bold
+  -Add an active class to a few of your p tags
+  -Create a rule for all div tags that also have a class of active
+  -For this rule, make the text very large
+  -Create a div tag with the class of active
+**Describe Specificity**
+  -Create a rule for the tag with an id of blue
+  -Set the text color for this rule to blue
+  -On the next line of your css file, create a rule for all tags with classes of red
+  -Set the text color for this rule to red
+  -In your HTML, create a span tag with both an id of blue and a class of red
+  -Note that the color of the span tag should be blue
 
-> Check: Were students able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?
+> Check: Were students able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?  Ask students to share their challenges with the class.
 
 ***
 
 <a name="conclusion"></a>
-## Conclusion (# mins)
+## Conclusion (5 mins)
 - Review independent practice deliverable(s)
 - Recap topic(s) covered in today's lesson
 - Cover homework and/or upcoming tasks
 
+<!-- Please fill in brief Conclusion-->
 ***
 
 ### BEFORE NEXT CLASS
@@ -353,11 +355,34 @@ Briefly describe the Independent Practice exercise here.  What is the end delive
 | **HOMEWORK** | Example Assignment [#](Instructions)  |
 | **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
 
-### ADDITIONAL RESOURCES
-- Exercises
-- Videos
-- Readings
-- Decks
+<!--Link to Week 1 Day 2 Homework Assignment-->
 
-> Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
+### ADDITIONAL RESOURCES
+-*Exercises:*
+  [CSS Color Box](https://github.com/ga-wdi-exercises/css_color_box)
+
+<!-- SME NEEDED: Update Color Box Exercise--> 
+
+-*Readings:*
+  -[Shay Howe's HTML/CSS Guide](http://learn.shayhowe.com/)
+  -[30 CSS Selectors You Must Memorize](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+  -[Specifics on CSS Specificity](https://css-tricks.com/specifics-on-css-specificity/)
+  -[CSS Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+  -[Typography/Web Fonts](http://practicaltypography.com/typography-in-ten-minutes.html )
+-*Tools and References:*
+  -[CSS Specificity Calculator](http://specificity.keegan.st/)
+  -[Web Design in 4 Minutes](http://jgthms.com/web-design-in-4-minutes/)
+  -[LearnLayout.com](http://learnlayout.com/):  An great interactive tutorial that details CSS' many properties and quirks.
+  -[Mozilla Developer Network CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+    -Like W3Schools, but in much more detail.
+    -[Universal Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors)
+  -[CanIUse.com](http://caniuse.com/): Search for a CSS property (or HTML, or JS), and it'll tell you on which web browsers it functions.
+  -[CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input): Copy and paste your CSS in here and it tells you what's wrong with it.
+  -[Codrops](http://tympanus.net/codrops/css_reference/)
+  -[Codepen](http://codepen.io/)
+  -[Mezzoblue](http://www.mezzoblue.com/zengarden/alldesigns/)
+
+  -*Videos*
+<!--Add Videos-->
+
 
