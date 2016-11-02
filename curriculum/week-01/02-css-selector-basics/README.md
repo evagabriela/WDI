@@ -301,9 +301,8 @@ So don’t feel like an amatuer when you’re Googling for answers– feel like 
 
 >Instructor Note: This can be done independently or in groups.
 
-Navigate to [codepen.io](http://codepen.io/) and complete the following tasks:
-Navigate to codepen try out the following Challenges:
-**List some common element properties that can be styled**  
+Navigate to [codepen](http://codepen.io/) and complete the following tasks:  
+**####List some common element properties that can be styled**  
     -Create an html page with a p tag and some placeholder text  
     -Change its text color to a hex value that you choose from http://color.adobe.com  
     -Give it a background color  
@@ -311,25 +310,25 @@ Navigate to codepen try out the following Challenges:
     -Change its font family to a sans-serif font  
     -Make the text bold  
     -Center the text  
-**Describe ids and classes. Explain when should we use which.**  
+**####Describe ids and classes. Explain when should we use which.**  
     -Add two more p tags.  
     -Give one p tag an id  
     -Give the other two p tags the same class  
     -Use just the ids and classes to style p tag with the id differently from the ones with a class  
-**Describe "The Cascade"**  
+**####Describe "The Cascade"**  
     -Create a p tag within a section tag    
     -Put some text in the section tag, but outside the p tag  
     -Put some text in the p tag  
     -Style just the section tag to give its text some color  
     -Note that the p tag has also been affected  
-**Describe how to combine various selectors**  
+**####Describe how to combine various selectors**  
     -Create a rule for all p tags that also have a class of active  
     -For this rule, make the text bold  
     -Add an active class to a few of your p tags  
     -Create a rule for all div tags that also have a class of active  
     -For this rule, make the text very large  
     -Create a div tag with the class of active  
-**Describe Specificity**  
+**####Describe Specificity**  
     -Create a rule for the tag with an id of blue  
     -Set the text color for this rule to blue  
     -On the next line of your css file, create a rule for all tags with classes of red  
