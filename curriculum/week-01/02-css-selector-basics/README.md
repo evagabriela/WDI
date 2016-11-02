@@ -283,7 +283,8 @@ The [CSS Validator](http://jigsaw.w3.org/css-validator/#validate_by_input) is a 
 [The Chrome Element Inspector](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/?hl=en) allows you to look at a specific element on a page, and see exactly which CSS rules are being applied to it. You can also turn rules on and off, modify rules, and create new rules– which makes experimenting within the Inspector a fast way to fine-tune your design. Note: these edits don’t change your file, and will reset when you refresh the page. 
 ```
 
-> Instructor Note: Briefly walk through each of the tools above.
+>Instructor Note: Briefly walk through each of the tools above.
+ ***
 
 ###Research & Debugging
 The purpose of this class isn't for you to walk away being an expert in all things CSS. That takes months of tolerating many unexpected, sometimes counter-intuitive results. The goal is for you to be exposed to all the things that can be accomplished with CSS. If they're on your radar, you can continue to work with and expand your skillset.
@@ -296,9 +297,9 @@ So don’t feel like an amatuer when you’re Googling for answers– feel like 
 ***
 
 <a name="ind-practice"></a>
-## Independent Practice: CSS Challenges (# minutes)
+##Independent Practice: CSS Challenges (45 minutes)
 
-> Instructor Note: This can be done independently or in groups.
+>Instructor Note: This can be done independently or in groups.
 
 Navigate to [codepen.io](http://codepen.io/) and complete the following tasks:
 Navigate to codepen try out the following Challenges:
