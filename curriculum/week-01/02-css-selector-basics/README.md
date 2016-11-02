@@ -281,7 +281,7 @@ Note: This is a very powerful selector, and can slow down your page if not used 
 Oftentimes, dealing with CSS can be a pain. Getting a web page to look the way you want will take a lot of experimentation, iteration, and patience as you’re learning the most efficient ways to code. Here are some great resources to help you master CSS!
 The [CSS Validator](http://jigsaw.w3.org/css-validator/#validate_by_input) is a tool into which you can copy and paste your CSS, and it'll tell you precisely what's wrong with it. We expect you to validate your CSS during this course.
 [The Chrome Element Inspector](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/?hl=en) allows you to look at a specific element on a page, and see exactly which CSS rules are being applied to it. You can also turn rules on and off, modify rules, and create new rules– which makes experimenting within the Inspector a fast way to fine-tune your design. Note: these edits don’t change your file, and will reset when you refresh the page. 
-```
+
 
 >Instructor Note: Briefly walk through each of the tools above.
  ***
