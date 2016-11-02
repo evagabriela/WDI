@@ -302,7 +302,7 @@ So don’t feel like an amatuer when you’re Googling for answers– feel like 
 >Instructor Note: This can be done independently or in groups.
 
 Navigate to [codepen](http://codepen.io/) and complete the following tasks:  
-**####List some common element properties that can be styled**  
+####List some common element properties that can be styled  
     -Create an html page with a p tag and some placeholder text  
     -Change its text color to a hex value that you choose from http://color.adobe.com  
     -Give it a background color  
@@ -310,31 +310,31 @@ Navigate to [codepen](http://codepen.io/) and complete the following tasks:
     -Change its font family to a sans-serif font  
     -Make the text bold  
     -Center the text  
-**####Describe ids and classes. Explain when should we use which.**  
-    -Add two more p tags.  
-    -Give one p tag an id  
-    -Give the other two p tags the same class  
-    -Use just the ids and classes to style p tag with the id differently from the ones with a class  
-**####Describe "The Cascade"**  
-    -Create a p tag within a section tag    
-    -Put some text in the section tag, but outside the p tag  
-    -Put some text in the p tag  
-    -Style just the section tag to give its text some color  
-    -Note that the p tag has also been affected  
-**####Describe how to combine various selectors**  
-    -Create a rule for all p tags that also have a class of active  
-    -For this rule, make the text bold  
-    -Add an active class to a few of your p tags  
-    -Create a rule for all div tags that also have a class of active  
-    -For this rule, make the text very large  
-    -Create a div tag with the class of active  
-**####Describe Specificity**  
-    -Create a rule for the tag with an id of blue  
-    -Set the text color for this rule to blue  
-    -On the next line of your css file, create a rule for all tags with classes of red  
-    -Set the text color for this rule to red  
-    -In your HTML, create a span tag with both an id of blue and a class of red  
-    -Note that the color of the span tag should be blue  
+####Describe ids and classes. Explain when should we use which.  
+        -Add two more p tags.  
+        -Give one p tag an id  
+        -Give the other two p tags the same class  
+        -Use just the ids and classes to style p tag with the id differently from the ones with a class  
+####Describe "The Cascade" 
+        -Create a p tag within a section tag    
+        -Put some text in the section tag, but outside the p tag  
+        -Put some text in the p tag  
+        -Style just the section tag to give its text some color  
+        -Note that the p tag has also been affected  
+####Describe how to combine various selectors 
+        -Create a rule for all p tags that also have a class of active  
+        -For this rule, make the text bold  
+        -Add an active class to a few of your p tags  
+        -Create a rule for all div tags that also have a class of active  
+        -For this rule, make the text very large  
+        -Create a div tag with the class of active  
+####Describe Specificity
+        -Create a rule for the tag with an id of blue  
+        -Set the text color for this rule to blue  
+        -On the next line of your css file, create a rule for all tags with classes of red  
+        -Set the text color for this rule to red  
+        -In your HTML, create a span tag with both an id of blue and a class of red  
+        -Note that the color of the span tag should be blue  
 
 > Check: Were students able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?  Ask students to share their challenges with the class.
 
@@ -359,28 +359,31 @@ Navigate to [codepen](http://codepen.io/) and complete the following tasks:
 
 ### ADDITIONAL RESOURCES
 -**Exercises:**
-    [CSS Color Box](https://github.com/ga-wdi-exercises/css_color_box)
-    [CSS Diner](http://flukeout.github.io/)
+        -[CSS Color Box](https://github.com/ga-wdi-exercises/css_color_box)
+        -[CSS Diner](http://flukeout.github.io/)
 <!-- SME NEEDED: Update Color Box Exercise--> 
 
--**Readings:**  
-    -[Shay Howe's HTML/CSS Guide](http://learn.shayhowe.com/)  
-    -[30 CSS Selectors You Must Memorize](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)  
-    -[Specifics on CSS Specificity](https://css-tricks.com/specifics-on-css-specificity/)  
-    -[CSS Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)  
-    -[Typography/Web Fonts](http://practicaltypography.com/typography-in-ten-minutes.html )  
+-**Readings:**   
+        -[Shay Howe's HTML/CSS Guide](http://learn.shayhowe.com/)  
+        -[30 CSS Selectors You Must Memorize](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)  
+        -[Specifics on CSS Specificity](https://css-tricks.com/specifics-on-css-specificity/)  
+        -[CSS Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)  
+        -[Typography/Web Fonts](http://practicaltypography.com/typography-in-ten-minutes.html )  
+
+
 -**Tools and References:**  
-    -[CSS Specificity Calculator](http://specificity.keegan.st/)  
-    -[Web Design in 4 Minutes](http://jgthms.com/web-design-in-4-minutes/)  
-    -[LearnLayout.com](http://learnlayout.com/):  An great interactive tutorial that details CSS' many properties and quirks.  
-    -[Mozilla Developer Network CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)  
-        -Like W3Schools, but in much more detail.  
-        -[Universal Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors)  
-    -[CanIUse.com](http://caniuse.com/): Search for a CSS property (or HTML, or JS), and it'll tell you on which web browsers it functions.  
-    -[CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input): Copy and paste your CSS in here and it tells you what's wrong with it.  
-    -[Codrops](http://tympanus.net/codrops/css_reference/)  
-    -[Codepen](http://codepen.io/)  
-    -[Mezzoblue](http://www.mezzoblue.com/zengarden/alldesigns/)  
+        -[CSS Specificity Calculator](http://specificity.keegan.st/)  
+        -[Web Design in 4 Minutes](http://jgthms.com/web-design-in-4-minutes/)  
+        -[LearnLayout.com](http://learnlayout.com/):  An great interactive tutorial that details CSS' many properties and quirks.  
+        -[Mozilla Developer Network CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)  
+            -Like W3Schools, but in much more detail.  
+            -[Universal Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors)  
+        -[CanIUse.com](http://caniuse.com/): Search for a CSS property (or HTML, or JS), and it'll tell you on which web browsers it functions.  
+        -[CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input): Copy and paste your CSS in here and it tells you what's wrong with it.  
+        -[Codrops](http://tympanus.net/codrops/css_reference/)  
+        -[Codepen](http://codepen.io/)  
+        -[Mezzoblue](http://www.mezzoblue.com/zengarden/alldesigns/)  
+
 
 -**Videos**
 <!--Add Videos-->
