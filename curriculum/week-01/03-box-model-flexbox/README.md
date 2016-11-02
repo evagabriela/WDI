@@ -215,7 +215,7 @@ Padding and Border will increase the width of your element, even if you've *decl
 - `44em'
 - '44em' + '2px' (We can't calculate without knowing the base size of `em`.)
 
-This width increase can cause frustration and confusion when we start to create column-based layouts. You may want to consider using `box-sizing:border-box;`, which ensures that the width you declare is the final width of the entire element, including content, padding and border. Declaring width using the initial `box-sizing` value of `content-box` (this will be applied if you don't call `box-sizing`) means that width determines the width of the content *only*. Read more about the `border-box` method [https://www.paulirish.com/2012/box-sizing-border-box-ftw/](here).
+This width increase can cause frustration and confusion when we start to create column-based layouts. You may want to consider using `box-sizing:border-box;`, which ensures that the width you declare is the final width of the entire element, including content, padding and border. Declaring width using the initial `box-sizing` value of `content-box` (this will be applied if you don't call `box-sizing`) means that width determines the width of the content *only*. Read more about the `border-box` method [here](https://www.paulirish.com/2012/box-sizing-border-box-ftw/).
 
 
 <a name="display"></a>
@@ -325,7 +325,7 @@ We can fix these issues by adding an empty `<div>` with a property of `clear: bo
 
 <a name="introduction-flexbox"></a>
 ## Introduction: Flexbox (5 mins)
-From [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes](MDN): "The CSS3 Flexible Box, or flexbox, is a layout mode providing for the arrangement of elements on a page such that the elements behave predictably when the page layout must accommodate different screen sizes and different display devices."
+From [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes): "The CSS3 Flexible Box, or flexbox, is a layout mode providing for the arrangement of elements on a page such that the elements behave predictably when the page layout must accommodate different screen sizes and different display devices."
 
 We'll be using Flexbox to build our column-based, grid layouts. In addition to creating incredible structure on our page, Flexbox solves a lot of layout issues that `float` either causes or cannot solve (or both!). 
 
@@ -515,20 +515,20 @@ https://github.com/ga-dc/hyrule_potion_shop
 
 ## Hungry for more?
 ###Exercises
-- [https://googlecreativelab.github.io/coder-projects/projects/mondrian/](Build a Mondrian)
-- [http://flexboxfroggy.com](Flexbox Froggy)
-- [http://www.flexboxdefense.com](Flexbox Defense)
-- [http://bennettfeely.com/flexplorer/](Flexplorer)
+- [Build a Mondrian](https://googlecreativelab.github.io/coder-projects/projects/mondrian/)
+- [Flexbox Froggy](http://flexboxfroggy.com)
+- [Flexbox Defense](http://www.flexboxdefense.com)
+- [Flexplorer](http://bennettfeely.com/flexplorer/)
 
 ###Videos
-- [https://www.youtube.com/watch?v=HNgdhp1_kEE&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=6](CSS Box Model)
-- [https://www.youtube.com/watch?v=qjSe_K3agYc&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=7](CSS Display)
-- [https://www.youtube.com/watch?v=-4Yy3WNmvmg&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=11](CSS Floats)
-- [https://www.youtube.com/watch?v=tqdqEiTlqF0&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=33](CSS Flexbox Intro)
-- [https://www.youtube.com/watch?v=7d8aAw8mzjI&index=34&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J](CSS Flexbox: Wrap, Justify, Align)
-- [https://www.youtube.com/watch?v=zDYAbI78dzc&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=35](CSS Flexbox: Child Properties)
-- [https://www.youtube.com/watch?v=wBlBTO7mqoI&index=109&list=PLae1he6d1WImFXtLgPt7MDAx6k6iP59EW](Flexbox Problem Solving Part 1)
-- [https://www.youtube.com/watch?v=_I58MXDnBEs&index=110&list=PLae1he6d1WImFXtLgPt7MDAx6k6iP59EW](Flexbox Problem Solving Part 2)
+- [CSS Box Model](https://www.youtube.com/watch?v=HNgdhp1_kEE&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=6)
+- [CSS Display](https://www.youtube.com/watch?v=qjSe_K3agYc&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=7)
+- [CSS Floats](https://www.youtube.com/watch?v=-4Yy3WNmvmg&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=11)
+- [CSS Flexbox Intro](https://www.youtube.com/watch?v=tqdqEiTlqF0&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=33)
+- [CSS Flexbox: Wrap, Justify, Align](https://www.youtube.com/watch?v=7d8aAw8mzjI&index=34&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
+- [CSS Flexbox: Child Properties](https://www.youtube.com/watch?v=zDYAbI78dzc&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=35)
+- [Flexbox Problem Solving Part 1](https://www.youtube.com/watch?v=wBlBTO7mqoI&index=109&list=PLae1he6d1WImFXtLgPt7MDAx6k6iP59EW)
+- [Flexbox Problem Solving Part 2](https://www.youtube.com/watch?v=_I58MXDnBEs&index=110&list=PLae1he6d1WImFXtLgPt7MDAx6k6iP59EW)
 
 ###Readings
 - [https://www.paulirish.com/2012/box-sizing-border-box-ftw/](* { Box-sizing: Border-box } FTW)
