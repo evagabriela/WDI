@@ -50,23 +50,20 @@ Follow activity with a brief recap of student discussions.
 
 ###What is Version Control Good For?
 
-*Manage Changes Over Time  
-    -Save various points in the development of your work  
-    -See the history of your work  
-    -Go "Back In Time" to see previous versions of your work  
-    -Manage multiple versions of a software project  
-*Sharing & Collaboration  
-    -Share your work with others  
-    -Work effectively as a team on a single project  
-    -Allow others to modify your work in a controlled way  
-    -Make multiple changes to a project in parallel  
-    -Merge parallel changes in a controlled way  
-*Experimentation  
-    -Experiment with various ideas and either keep or discard your experiments  
-    -Keep multiple changes isolated until they are ready to be integrated  
-
-<!--Testing comments-->
-
+* Manage Changes Over Time  
+    - Save various points in the development of your work  
+    - See the history of your work  
+    - Go "Back In Time" to see previous versions of your work  
+    - Manage multiple versions of a software project  
+* Sharing & Collaboration  
+    - Share your work with others  
+    - Work effectively as a team on a single project  
+    - Allow others to modify your work in a controlled way  
+    - Make multiple changes to a project in parallel  
+    - Merge parallel changes in a controlled way  
+* Experimentation  
+    - Experiment with various ideas and either keep or discard your experiments  
+    - Keep multiple changes isolated until they are ready to be integrated  
 
 ***
 
@@ -77,43 +74,43 @@ As a class, we are going to walk through key Git skills that you will need to be
 
 *Check our GIT configuration 
 
-*Develop our GIT Skills  
-    -Create a Local GIT repo  
-    -Add files  
-    -Make commits  
-    -Check the repo status  
-    -View history  
-    -Time travel  
+* Develop our GIT Skills  
+    - Create a Local GIT repo  
+    - Add files  
+    - Make commits  
+    - Check the repo status  
+    - View history  
+    - Time travel  
 
 ###Part 1 - Setup 
 
 Check the GIT Version:  
-```$ which git```
-    ```$ git --version```
+```$ which git  
+    $ git --version```
 
 If you don't have git installed via brew, you should do so now:
-```brew install git            # use brew to install latest version of git```
-    ```which git                   # should return "/usr/local/bin/git"```
+```brew install git            # use brew to install latest version of git    
+    which git                   # should return "/usr/local/bin/git"```
 
 Check your GIT Config:
 
-```$ git config --list```
-    ```$ git config user.name```
+```$ git config --list 
+    $ git config user.name```
 
 Set your identity:
 
-```$ git config --global user.name "John Doe"```
-    ```$ git config --global user.email johndoe@example.com```
+``` $ git config --global user.name "John Doe"    
+    $ git config --global user.email johndoe@example.com```
 
 Set your default editor:
-
-```$ git config --global core.editor "subl -n -w"```
+ 
+``` $ git config --global core.editor "subl -n -w"```
 
 ###Part 2 - Creating a repo
 
 Create a new local GIT repository:
 
-```$ cd ~/ga/wdi/exercises/learning-git
+``` $ cd ~/ga/wdi/exercises/learning-git
 $ mkdir sample1  
 $ cd sample1  
 $ git init```
@@ -125,7 +122,7 @@ $ git init```
 
 Add some files:
 
-```$ touch README.md hello.txt  
+``` $ touch README.md hello.txt  
     $ git status  
     # What is an untracked file?
 
@@ -135,7 +132,7 @@ Add some files:
 
 Commit the changes:
 
-```$ git commit -m "Added 2 files."
+``` $ git commit -m "Added 2 files."
     $ git status
     $ git log```
 
@@ -145,6 +142,7 @@ Commit the changes:
 -git repository (.git)  
 
 <!-- Insert File Status Lifecycle Image -->
+![Github lifecycle](assets/picture.jpg)
 
 <!-- Insert Basic Git Workflow Image -->
 
@@ -152,7 +150,7 @@ Commit the changes:
 
 Edit hello.txt and commit changes:
 
-```# Modify a file
+``` # Modify a file
     $ echo "Hello, World" >> hello.txt
     $ git status
     # We now see a "modified" file, but nothing is staged.
@@ -191,14 +189,14 @@ Edit hello.txt and commit changes:
 ###Part 5: Cherry Picking:
 
 Demo the editing of multiple files but only adding one of them to the stage  
-```git add file1   
+``` git add file1   
     git commit  
     git status  
     git log```
 
 ###Part 6: Checking out a Previous Version:
 
-```git log  
+``` git log  
     git checkout <hash_of_previous_commit>
     cat hello.txt  
     # We see the old version  
@@ -219,7 +217,7 @@ Demo the editing of multiple files but only adding one of them to the stage
 
 ###Part 7: Diffing
 
-```# View unstaged differences  
+``` # View unstaged differences  
     git diff  
     # or  
     git diff filename  
@@ -231,7 +229,7 @@ Demo the editing of multiple files but only adding one of them to the stage
 
 ###Part 8: Rolling Back Changes
 
-```# unstage changes to a file  
+``` # unstage changes to a file  
     git reset filename  
     git status  
 
