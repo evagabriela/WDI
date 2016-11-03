@@ -395,24 +395,13 @@ Another approach instead of removing all of the default properties is to try to 
 
 ***
 
-<a name="conclusion"></a>
-## Conclusion (# mins)
-- Review independent practice deliverable(s)
-- Recap topic(s) covered in today's lesson
-- Cover homework and/or upcoming tasks
+### Hungry for More?
+#### Resources
+- [Flexbox Grid](http://flexboxgrid.com/)
+- [Flexbox in Bootstrap](http://v4-alpha.getbootstrap.com/getting-started/flexbox/)
 
-***
+#### Videos
+- [Wireframes in the Design Process](https://generalassembly.wistia.com/medias/lapfitgxmk)
 
-### BEFORE NEXT CLASS
-|   |   |
-|---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
-
-### ADDITIONAL RESOURCES
-- Exercises
-- Videos
-- Readings
-- Decks
-
-> Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
+#### Readings
+- [All About Grid Systems](https://webdesign.tutsplus.com/articles/all-about-grid-systems--webdesign-14471)
