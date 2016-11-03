@@ -5,9 +5,12 @@
 | --- | --- | --- |
 | 10 min | [Opening](#opening) | Why Version Control? |
 | 10 min | [Intro to New Material](#introduction) | Version Control |
-| 40 min | [Demo](#demo) | Git Configuration and Skills |
-| x min | [Independent Practice](#ind-practice) | Topic |
-| x min | [Conclusion](#conclusion) |Topic |
+| 20 min | [Demo](#demo) | Git Configuration and Skills |
+| 10 min | [Independent Practice](#ind-practice) | Topic |
+| 20 min | [Demo](#demo) |Git Configuration and Skills |
+| 10 min | [Conclusion](#conclusion) |Review of Key Terms |
+
+<!-- SME:  Do you think that this is enough content to cover 90 minutes? -->
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -25,12 +28,12 @@
 
 Students should split into pairs or small groups and spend a few minutes discussing the following questions: Assuming that version control systems did not exist, how would you:
 
-*Share your source code with other developers?
-*Collaborate with other developers
-*Manage multiple versions of a software product?
-    -Free vs. Paid
-    -Basic vs. Premium
-    -2.x vs. 3.x
+* Share your source code with other developers?
+* Collaborate with other developers
+* Manage multiple versions of a software product?
+    - Free vs. Paid
+    - Basic vs. Premium
+    - 2.x vs. 3.x
 
 Follow activity with a brief recap of student discussions.
 
@@ -68,7 +71,7 @@ Follow activity with a brief recap of student discussions.
 ***
 
 <a name="demo"></a>
-## Demo: Git Configuration and Skills (40 mins)
+## Demo: Git Configuration and Skills (20 mins)
 
 As a class, we are going to walk through key Git skills that you will need to be successful in this course. Some of the goals of this session include:  
 
@@ -184,7 +187,7 @@ Edit hello.txt and commit changes:
 
 
 <a name="demo"></a>
-## Demo: Github Skills Continued (30 minutes)
+## Demo: Github Skills Continued (20 minutes)
 
 ###Part 5: Cherry Picking:
 
@@ -240,17 +243,21 @@ Demo the editing of multiple files but only adding one of them to the stage
 
 <a name="conclusion"></a>
 ## Conclusion (10 mins)
-*Review Git Terminology:
-    -repository - a collection of related commits that form a directed acyclic graph
-    -commit - a snapshot of the working tree at a giving time (along with a message of what changed)
-    -the index (stage) - a staging area where we list changes we want to commit
-    -branch - a set of commits that form a linear progression of changes
-    -master - the default name for the "main" development branch
-    -tag - an optional label on a commit
-    -HEAD - what is currently checked out
-    -working area - the directory and subdirectories containing the files we are currently working on
+* Review Git Terminology:
+    - repository - a collection of related commits that form a directed acyclic graph
+    - commit - a snapshot of the working tree at a giving time (along with a message of what changed)
+    - the index (stage) - a staging area where we list changes we want to commit
+    - branch - a set of commits that form a linear progression of changes
+    - master - the default name for the "main" development branch
+    - tag - an optional label on a commit
+    - HEAD - what is currently checked out
+    - working area - the directory and subdirectories containing the files we are currently working on
+* Review Questions:
+    -Can someone tell me what a GIT Repository is?
+    -What are some key components of a GIT repo?
+    -Can someone describe an important GIT command (get several responses from students)
 
-
+<!-- Please update review questions with more open-ended questions.-->
 
 ***
 
