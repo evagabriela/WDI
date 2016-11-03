@@ -10,20 +10,20 @@
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Style all elements of a particular HTML element on a web page 
+- Style all elements of a particular HTML element on a web page
 - Style copy elements using font-weight, font-size, color, line-height, letter-spacing, text-transform, text-decoration, text-align
 - Understand best practice for specificity and cascading
 - Understand why external CSS sheets are better than inline styles
-- Describe the syntactical and functional relationship between selectors, properties, and values 
+- Describe the syntactical and functional relationship between selectors, properties, and values
 - Use special selectors (descendant, adjacent sibling, direct child, universal)
-- Apply a set of styles to elements based on pseudo-classes (:hover, :active, :visited, :even, :odd, :nth-child, :first-of-type, :last-of-type) 
+- Apply a set of styles to elements based on pseudo-classes (:hover, :active, :visited, :even, :odd, :nth-child, :first-of-type, :last-of-type)
 - Apply styles to specific elements using classes and IDs
 - Apply styles using the Desktop Down method
 
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
-- Write HTML that gets rendered as a document in the browser 
+- Write HTML that gets rendered as a document in the browser
 - Use HTML tags to add content to a webpage: h1 - h6, p, a, img, ul/ol
 - Use HTML tags to define groups of content: header, main, section, article, aside, figure, figcaption, footer
 - Pass The Validator without errors
@@ -67,7 +67,7 @@ Keep in mind that even without CSS, your site has design. It’s not very *good*
 - Predetermined margin & padding
 - Predetermined display (inline vs block)
 
-These styles are called inherent or initial styles. Adding CSS is all about overwriting these initial styles to create a customized, beautiful web page. CSS is powerful! Consider the incredible diversity of design in ![these websites](http://www.mezzoblue.com/zengarden/alldesigns/) with the exact same HTML, but different CSS.
+These styles are called inherent or initial styles. Adding CSS is all about overriding these initial styles to create a customized, beautiful web page. CSS is powerful! Consider the incredible diversity of design in ![these websites](http://www.mezzoblue.com/zengarden/alldesigns/) with the exact same HTML, but different CSS.
 
 You can accomplish ![a lot with very little](http://jgthms.com/web-design-in-4-minutes/) using CSS. If you want to go the extra mile, you can accomplish some ![seriously amazing things](http://codepen.io/). This lesson is a step towards building a working knowledge of CSS and solidifying what you learned in the pre-work. Your goal isn't to memorize the 500+ CSS properties– it’s to get an idea of what you can accomplish with CSS and know how to research what you don’t.
 
@@ -85,7 +85,7 @@ selector {
 }
 ```
 
-Everything inside the curly braces is called the "declaration block." Individual property and value pairs are called “declarations.” 
+Everything inside the curly braces is called the "declaration block." Individual property and value pairs are called “declarations.”
 
 
 ### Review: Classes and IDs
@@ -111,7 +111,7 @@ Sometimes just targeting an element is not enough. We can target other attribute
 Because IDs can override classes, they can make a codebase more difficult to maintain when it scales. Using classes in your CSS is preferred; it will help with the scalability of your design, and help you write cleaner code. IDs will become more useful in JavaScript.
 
 
-### Specificity Within The Cascade 
+### Specificity Within The Cascade
 Some properties of elements are passed down to their children. In general:
 - Properties dealing with text are inherited by their children
 - Properties dealing with spacing are not inherited by their children
@@ -125,7 +125,7 @@ When an element is being styled by more than one rule, the browser calculates wh
 
 Special Selectors *can* override both classes and IDs in certain situations– so choose your methods carefully and keep your code dry.
 
-Consider the following code: 
+Consider the following code:
 
 ```html
 <p class="intro hidden" id="highlight"></p>
@@ -146,7 +146,7 @@ This is not an example of efficient code, but it will help demonstrate the casca
 
 Keep in mind, specificity can work to your advantage because of inheritance! If you put all the shared styles for all paragraph tags in p {} and put more specific styles in classes, your code will be efficient and non-repetitive.
 
-Consider an updated version of the previous example: 
+Consider an updated version of the previous example:
 ```html
 <p class="intro visible" id="highlight"></p>
 ```
@@ -209,7 +209,7 @@ and
         <p></p>
     </section>
 </main>
-Be sure you don’t overuse Descendant Selectors, because they can slow down your page. Although we read them left to right (select <main> then <p>) the browser reads them right to left. First, the browser selects all <p> tags and then selects only those inside <main>. 
+Be sure you don’t overuse Descendant Selectors, because they can slow down your page. Although we read them left to right (select <main> then <p>) the browser reads them right to left. First, the browser selects all <p> tags and then selects only those inside <main>.
 
 Below is an example of how not use Descendant Selectors. You can imagine Descendant Selectors becoming overwhelming for the browser:
 main section ul li a{ }
@@ -280,7 +280,7 @@ Note: This is a very powerful selector, and can slow down your page if not used 
 ###Tools of the Trade
 Oftentimes, dealing with CSS can be a pain. Getting a web page to look the way you want will take a lot of experimentation, iteration, and patience as you’re learning the most efficient ways to code. Here are some great resources to help you master CSS!
 The [CSS Validator](http://jigsaw.w3.org/css-validator/#validate_by_input) is a tool into which you can copy and paste your CSS, and it'll tell you precisely what's wrong with it. We expect you to validate your CSS during this course.
-[The Chrome Element Inspector](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/?hl=en) allows you to look at a specific element on a page, and see exactly which CSS rules are being applied to it. You can also turn rules on and off, modify rules, and create new rules– which makes experimenting within the Inspector a fast way to fine-tune your design. Note: these edits don’t change your file, and will reset when you refresh the page. 
+[The Chrome Element Inspector](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/?hl=en) allows you to look at a specific element on a page, and see exactly which CSS rules are being applied to it. You can also turn rules on and off, modify rules, and create new rules– which makes experimenting within the Inspector a fast way to fine-tune your design. Note: these edits don’t change your file, and will reset when you refresh the page.
 
 
 >Instructor Note: Briefly walk through each of the tools above.
@@ -315,13 +315,13 @@ Navigate to [codepen](http://codepen.io/) and complete the following tasks:
         -Give one p tag an id  
         -Give the other two p tags the same class  
         -Use just the ids and classes to style p tag with the id differently from the ones with a class  
-####Describe "The Cascade" 
+####Describe "The Cascade"
         -Create a p tag within a section tag    
         -Put some text in the section tag, but outside the p tag  
         -Put some text in the p tag  
         -Style just the section tag to give its text some color  
         -Note that the p tag has also been affected  
-####Describe how to combine various selectors 
+####Describe how to combine various selectors
         -Create a rule for all p tags that also have a class of active  
         -For this rule, make the text bold  
         -Add an active class to a few of your p tags  
@@ -361,7 +361,7 @@ Navigate to [codepen](http://codepen.io/) and complete the following tasks:
 #### Exercises:
 * [CSS Color Box](https://github.com/ga-wdi-exercises/css_color_box)
 * [CSS Diner](http://flukeout.github.io/)
-<!-- SME NEEDED: Update Color Box Exercise--> 
+<!-- SME NEEDED: Update Color Box Exercise-->
 
 #### Readings:   
 * [Shay Howe's HTML/CSS Guide](http://learn.shayhowe.com/)  
@@ -386,5 +386,3 @@ Navigate to [codepen](http://codepen.io/) and complete the following tasks:
 
 ####Videos
 <!--Add Videos-->
-
-

@@ -13,13 +13,13 @@
 *After this lesson, you will be able to:*
 - Use the Box Model to style element borders and structure your page
 - Understand the value of box-sizing: border-box; and apply it to the page layout as needed
-- Adjust element spacing using padding and margin 
+- Adjust element spacing using padding and margin
 - Describe the difference between block, inline, and inline-block elements
 - Explain the difference between and use cases of static, relative, fixed, & absolute positioning
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
-- Style all elements of a particular HTML element on a web page 
+- Style all elements of a particular HTML element on a web page
 - Understand best practice for specificity and cascading
 - Apply styles to specific elements using classes and IDs
 - Pass The Validator without errors
@@ -111,7 +111,7 @@ What happens when we drop this code into the CSS file?
 }
 ```
 
-The universal selector ```*{ }``` is a great way to apply a style to every element on the page *without* using inhertiance. We'll teach you more about this selector in a later lesson. For now, it helps us see the boundaries of different elements. Pay special attention to how much space elements take up on the page, and how that space differs for block and inline elements. 
+The universal selector ```*{ }``` is a great way to apply a style to every element on the page *without* using inhertiance. We'll teach you more about this selector in a later lesson. For now, it helps us see the boundaries of different elements. Pay special attention to how much space elements take up on the page, and how that space differs for block and inline elements.
 
 ### Box Model Components
 The image below illustrates the box model and what you should have seen in your dev tools:
@@ -178,7 +178,7 @@ div {
   /*
   border-width:1px;
   border-style:solid;
-  border-color:#000; 
+  border-color:#000;
   */
 }
 ```
@@ -220,7 +220,7 @@ This width increase can cause frustration and confusion when we start to create 
 
 <a name="display"></a>
 ## Refresher: How Display Affects Spacing & Layout (15 mins)
-We just learned each HTML element gets its own box to live in. Cool, right? 
+We just learned each HTML element gets its own box to live in. Cool, right?
 
 As you saw, the outermost box of each element went all the way across the page. This is why, until now, your HTML elements have been sitting on top of one another: by default, they take up the full width of the page. We can change all this with the first positioning property we'll learn, the display property and the four values we can use: inline, block, inline-block, and none.
 
@@ -230,7 +230,7 @@ A block element has some whitespace above and below it and does not tolerate any
 
 An inline-block element is _placed_ as an inline element (on the same line as adjacent content), but it _behaves_ as a block element. This makes the element a block box but will allow other elements to sit next to it on the same line.
 
-If you assign ```none``` as the value of the ```display```, this will make the element and its content disappear from the page entirely! However, some browsers 
+If you assign ```none``` as the value of the ```display```, this will make the element and its content disappear from the page entirely! However, some browsers
 
 To illustrate all ```display``` values, consider this HTML:
 ```html
@@ -327,7 +327,7 @@ We can fix these issues by adding an empty `<div>` with a property of `clear: bo
 ## Introduction: Flexbox (5 mins)
 From [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes): "The CSS3 Flexible Box, or flexbox, is a layout mode providing for the arrangement of elements on a page such that the elements behave predictably when the page layout must accommodate different screen sizes and different display devices."
 
-We'll be using Flexbox to build our column-based, grid layouts. In addition to creating incredible structure on our page, Flexbox solves a lot of layout issues that `float` either causes or cannot solve (or both!). 
+We'll be using Flexbox to build our column-based, grid layouts. In addition to creating incredible structure on our page, Flexbox solves a lot of layout issues that `float` either causes or cannot solve (or both!).
 
 ### Problem 1: Vertical alignment
 I have a div. I would like to center it vertically and horizontally on my page. Seems simple enough, right?
