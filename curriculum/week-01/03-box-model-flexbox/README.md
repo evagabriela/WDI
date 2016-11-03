@@ -2,12 +2,12 @@
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction-box-model) | Box Model |
-| x min | [Demo/Codealong](#demo-box-model) | Box Model Demo |
-| x min | [Refresher](#display) | Display |
-| x min | [Refresher](#floats) | Floats |
-| x min | [Introduction](#introduction-flexbox) | Flexbox |
-| x min | [Demo/Codealong](#demo-flexbox) | Flexbox Demo |
+| 10 mins | [Introduction](#introduction-box-model) | Box Model |
+| 20 mins | [Demo/Codealong](#demo-box-model) | Box Model Demo |
+| 5 mins | [Refresher](#display) | Display |
+| 5 mins | [Refresher](#floats) | Floats |
+| 20 mins | [Demo/Codealong](#demo-flexbox) | Flexbox Demo |
+| 30 mins | [Independent Practice](#ind-practice) | Hyrule Potion Shop |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -16,26 +16,6 @@
 - Adjust element spacing using padding and margin
 - Describe the difference between block, inline, and inline-block elements
 - Explain the difference between and use cases of static, relative, fixed, & absolute positioning
-
-### STUDENT PRE-WORK
-*Before this lesson, you should already be able to:*
-- Style all elements of a particular HTML element on a web page
-- Understand best practice for specificity and cascading
-- Apply styles to specific elements using classes and IDs
-- Pass The Validator without errors
-
-***
-
-<a name="opening"></a>
-## Opening (10 mins)
-- Review pre-work, projects, or exit ticket, if applicable
-- Review current lesson objectives
-- Reference general course content or topics (e.g. code or concepts that have been used across multiple lessons)
-- Include Hook / Real-world Relevance (why the content from this lesson is useful or important)
-
-> Instructor Note: Use instructor notes to talk directly to instructors. Otherwise, write out lesson directions and materials in a student-facing voice.
-
-Check: Ask students to define, explain, or recall any **general** prior concepts or tools.
 
 ***
 
@@ -48,7 +28,6 @@ The CSS box model describes this principle - a box wraps around all HTML element
 
 #### Layout: Turn & Talk (5 mins)
 Install the <a href="https://chrome.google.com/webstore/detail/pesticide-for-chrome/bblbgcheenepgnnajgfpiicnbbdmmooh">Pesiticide Chrome Extension</a>, which visualizes all DOM elements as boxes. Work with a parter to investigate a few different sites using the extension, and discuss how the Box Model might help you to control layout.
-
 
 ***
 
@@ -212,19 +191,19 @@ Our container still looks great!
 **Important Note**
 Padding and Border will increase the width of your element, even if you've *declared* the width. In the CSS above, we see the width set to `40em`, and the padding set to `2em`. What is the actual width of this element? What would the width be if we kept the border declaration?
 
-- `44em'
-- '44em' + '2px' (We can't calculate without knowing the base size of `em`.)
+- `44em`
+- `44em` + '2px' (We can't calculate without knowing the base size of `em`.)
 
 This width increase can cause frustration and confusion when we start to create column-based layouts. You may want to consider using `box-sizing:border-box;`, which ensures that the width you declare is the final width of the entire element, including content, padding and border. Declaring width using the initial `box-sizing` value of `content-box` (this will be applied if you don't call `box-sizing`) means that width determines the width of the content *only*. Read more about the `border-box` method [here](https://www.paulirish.com/2012/box-sizing-border-box-ftw/).
 
 
 <a name="display"></a>
-## Refresher: How Display Affects Spacing & Layout (15 mins)
+## Refresher: How Display Affects Spacing & Layout (5 mins)
 We just learned each HTML element gets its own box to live in. Cool, right?
 
 As you saw, the outermost box of each element went all the way across the page. This is why, until now, your HTML elements have been sitting on top of one another: by default, they take up the full width of the page. We can change all this with the first positioning property we'll learn, the display property and the four values we can use: inline, block, inline-block, and none.
 
-An inline element has no line break before or after it. This makes the element sit on the same line as another element, but without formatting it like a block. It only takes up as much width as it needs (not the whole line). Inline places all your elements on a single line. The bad news is that it doesn't maintain their "box"ness, so exciting techniques like centering with ```margin:auto;``` are not possible with inline elements.
+An inline element has no line break before or after it. This makes the element sit on the same line as another element, but without formatting it like a block. It only takes up as much width as it needs (not the whole line). Inline places all your elements on a single line. The bad news is that it doesn't maintain their "box"ness, so exciting techniques like centering with `margin:auto;` are not possible with inline elements.
 
 A block element has some whitespace above and below it and does not tolerate any HTML elements next to it without further styling. This makes the element a block box. It won't let anything sit next to it on the page and takes up the full width.
 
@@ -323,8 +302,8 @@ We can fix these issues by adding an empty `<div>` with a property of `clear: bo
 ***
 
 
-<a name="introduction-flexbox"></a>
-## Introduction: Flexbox (5 mins)
+<a name="demo-flexbox"></a>
+## Demo / Codealong: Flexbox Demo (20 mins)
 From [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes): "The CSS3 Flexible Box, or flexbox, is a layout mode providing for the arrangement of elements on a page such that the elements behave predictably when the page layout must accommodate different screen sizes and different display devices."
 
 We'll be using Flexbox to build our column-based, grid layouts. In addition to creating incredible structure on our page, Flexbox solves a lot of layout issues that `float` either causes or cannot solve (or both!).
@@ -503,15 +482,14 @@ body {
 
 ***
 
-<a name="demo-flexbox"></a>
-## Demo / Codealong: Flexbox Demo (# mins)
+<a name="ind-practice"></a>
+## Independent Practice: Hyrule Potion Shop (30 minutes)
 
 
 <!-- SME NEEDED: updated version of code below -->
 https://github.com/ga-dc/hyrule_potion_shop
 
 ***
-
 
 ## Hungry for more?
 ###Exercises

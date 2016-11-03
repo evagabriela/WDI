@@ -226,7 +226,7 @@ Styles all <p> tags that are direct, first-generation descendants of <main> tags
      <p></p>
   </main>
 
-  *Will not* style children that aren't direct descendents, like this ‘grandchild’ <p> :
+  *Will not* style children that aren't direct descendants, like this ‘grandchild’ <p> :
 <main>
      <section>
          <p></p>
