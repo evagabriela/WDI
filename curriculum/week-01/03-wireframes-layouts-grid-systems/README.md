@@ -2,11 +2,10 @@
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction-wf) | Wireframes |
-| x min | [Introduction](#introduction-grids) | Grid Systems |
-| x min | [Demo/Codealong](#demo) | Buidling a Grid |
-| x min | [Guided Practice](#guided-practice) | Match That Grid |
-| x min | [Conclusion](#conclusion) |Topic |
+| 10 mins | [Introduction](#introduction-wf) | Wireframes |
+| 10 mins | [Introduction](#introduction-grids) | Grid Systems |
+| 30 mins | [Demo/Codealong](#demo) | Building a Grid |
+| 40 mins | [Guided Practice](#guided-practice) | Match That Grid |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -18,7 +17,7 @@
 ---
 
 <a name="introduction-wf"></a>
-## Introduction: Topic (# mins)
+## Introduction: Topic (10 mins)
 
 Wireframes illustrate how the user navigates to and interfaces with information presented to them. A wireframe answers questions as general as "How does a user access the About page?" and as specific as "What will change on the screen if the user clicks 'submit'?" Most wireframes are free of any color or visual design elements, and simply show boxes and lines with notations to outline user interactions.
 
@@ -56,7 +55,7 @@ UX Designers use a number of tools to create wireframes– but basic wireframes 
 ***
 
 <a name="introduction-grids"></a>
-## Introduction: Grids (# mins)
+## Introduction: Grids (10 mins)
 ### Why use a CSS grid?
 
 #### Structure
@@ -92,7 +91,7 @@ Whiteboard a wireframe for [Craigslist](http://washingtondc.craigslist.org/).
 
 
 <a name="demo"></a>
-## Demo / Codealong: Building a Grid (# mins)
+## Demo / Codealong: Building a Grid (30 mins)
 ### Create HTML document
 
 In your in-class folder, create a blank HTML file called `index.html`
@@ -346,7 +345,7 @@ Now we have some space between our columns' content.
 ***
 
 <a name="guided-practice"></a>
-## Guided Practice: Match That Grid (# mins)
+## Guided Practice: Match That Grid (40 mins)
 
 Use what we have learned in class to recreate the grid structure for [Craigslist](http://newyork.craigslist.org/).
 <!-- SME NEEDED: starter code using flexbox -->
