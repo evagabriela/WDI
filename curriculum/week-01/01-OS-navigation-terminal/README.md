@@ -58,6 +58,8 @@ creator:
 ## Opening (5 mins)
 - Review current lesson objectives
 
+
+
 **Turn & Talk:** Given your exposure to the Command Line in the pre-work and Installfest, spend **2 minutes** discussing and writing down some answers for the following questions with a partner...
 
 * How is the CLI different from the GUI?
@@ -95,6 +97,9 @@ well. Complex tasks can be achieved by chaining tools together.
 > All these benefits aren't necessarily exclusive to the CLI (compared to a traditional GUI), but they tend to be more consistent.
 
 
+
+
+
 #### DEMO: Hello.txt using GUI vs CLI
 
 > Note: There's nothing wrong with combining the powers of both the CLI and a GUI! We generally won't be writing files in the terminal. We'll be using the Atom GUI. This just highlights that there are efficiencies that can be garnered from knowledge of CLI.
@@ -102,7 +107,7 @@ well. Complex tasks can be achieved by chaining tools together.
 We might be thinking to ourselves, "These differences are negligible! Which in this contrived example, it's a difference of MAYBE 5 seconds. But in the span of our careers as developers, becoming proficient with the command line is extremely important. It will end up saving us lots of time.
 
 
-
+> Check: Describe the benefits of using the CLI as a developer vs. using a GUI. Explain how using the command line can increase efficiency.
 
 ***
 <a name="cli-basics"></a>
@@ -172,14 +177,16 @@ $ brew install git
   3. `$ cp index.html index2.html`
   4. `$ brew install git`
 
+> Lesson objective: Describe the anatomy of a command: statements, flags and arguments.
+
 > Remember, not all of these have flags and/or arguments.
 
-> Instructor Note: Spend 2 - 3 minutes reviewing answers with class
+> Check: Spend 2 - 3 minutes reviewing answers with class
 
 ***
 
 <a name="paths"></a>
-## Paths (30 mins)
+## Paths (20 mins)
 #### What is a 'path'?
 
 A path is the description that tells us (or a computer) where a file or directory is on our computer.
@@ -227,6 +234,7 @@ Some absolute paths instead start with a `~`. This is a shortcut to the absolute
 
 > On Macs, `~` corresponds to your user directory - `/users/your-mac-username`.
 
+
 #### Relative Paths
 
 Relative paths are interpreted as starting from the current working directory. They start with anything but a `/` or `~`.
@@ -256,28 +264,11 @@ This time, if we're in `~/wdi/lessons/cli-intro`, entering `cd ../../projects` w
   2. `$ ls ..`
   3. `$ mv ../index.html .`
 
-#### Compare Images in HTML
 
-Turns out paths are really important in HTML too. If we look at the image tags in the `index.html` file in this repo we'll see this...
+> Check: Explain what a path is and why the 'current path' is important in the CLI.
+> Check: Explain the difference between absolute and relative paths.
 
-```html
-<img src="../heeler.jpg">
-<img src="firehydrant.jpg">
-<img src="images/troll.png">
-<img src="/Users/andrewkim/wdi/lessons/cli-intro/demo_html/images/troll.png">
-```
-
-Of these four paths, which are relative vs. absolute?
-
-> We can see here that the `troll.png` photo is linked in two different ways. Which way is better? Does it matter?
-
-#### Independent Practice
-
-https://github.com/ga-wdi-exercises/dc_directory_tree
-
-
-
-## Common Commands (25 mins)
+## Common Commands (35 mins)
 
 #### Getting Help (5 mins)
 
@@ -316,7 +307,6 @@ The first two options will display text using a program called `less`. Use the a
 	- open a file
 
 
-
 #### Unsafe Commands (10 mins)
 
 ### `sudo`
@@ -333,10 +323,20 @@ from.  So use `rm` with caution.
 You should especially use `rm -rf` with caution.
 
 > Based on your knowledge of flags, what does `rm -rf` do?
+> Lesson Objective: List unsafe commands
 
-
+#### Independent Practice - Star Wars! (10 mins)
+> Lesson Objective:
+  List common commands to
+    -  View the path of the current directory
+    -  View the contents of a directory
+    -  Navigate to different directories
+    -  Manage files and directories
 ***
 
+[Star Wars Lab Instructions](labs/star_wars/README.md)
+
+> Check: Review to make sure students have correct answers for the exercise.
 
 ## WDI Environment (10 mins)
 
@@ -352,12 +352,71 @@ Here's the suggested structure for your WDI folder. Please create the following 
 
 
 
-> Instructor Note: Tailor this to fit the needs of your specific instance of WDI. Based on your knowledge of flags, what does `rm -rf` do?
+> Instructor Note: Tailor this to fit the needs of your specific instance of WDI.
 
+***
 
+## Ultimate Time Savers (If Time Allows)
 
-#### Own your terminal
+The next three points are reasons not to hold down the arrow or delete keys.
 
+### `ctrl-c`
+
+Cancel whatever you were typing before. Abort!
+
+### `ctrl-e`
+
+Move cursor to the **e**nd of the line.
+
+### `ctrl-a`
+
+Move cursor to the beginning of the line
+
+> a is the beginning of the English alphabet
+
+### The up and down arrows
+
+Cycle through previous commands
+
+### Tab completion
+
+When typing a command that has a file as an argument, like `cd`,
+type only the first few letters and hit the TAB key.
+
+### Clear the screen
+
+- ctrl-l
+- command-k
+- `clear`
+
+## You do: Speed Rounds
+
+Copy and paste each of the following commands into the terminal without
+pressing enter.
+
+### 1. Cancel the really long line of text
+
+```
+$ kjahlkjhsadlkjfhlaksjdhf asdjkfhlsadjhflkjashdf lasjkhdfjhasd sdjhfjhsgajhgf
+```
+
+### 2. Fix the typo at the beginning of the command
+
+```
+$ cdd ~/Documents && pwd && ls && ccd -
+```
+
+### 3. Fix the typo at the end of the command
+
+```
+Same as the previous command
+```
+
+***
+
+## Own your terminal (If Time Allows)
+
+#### Styling the default Terminal application
 1. [Color your prompt](http://www.cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/)
   - It will be WAY easier to read
 2. [Choose a theme](http://apple.stackexchange.com/a/92769)
@@ -397,11 +456,11 @@ alias gs='git status'
 
 > At this point you may be wondering what exactly "bash" is. Bash is a language we can use to interact with our computer via the shell (via Terminal or some other text-based interface).
 
-### You Do: Make An Alias
+#### You Do: Make An Alias
 
 Take the next five minutes to create your own alias and test it. If possible, alias something you think you'll find yourself doing frequently!
 
-
+***
 
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
@@ -452,38 +511,6 @@ home
 
 Bash isn't the only option. Check out zsh (http://code.joejag.com/2014/why-zsh.html) or fish (http://fishshell.com/)
 
-
-### Homework / Practice
-
-
-#### *** (Homework needs to be modified slightly): 
-
-[Favorite Things](https://github.com/ga-students/command-line-lab)
-
-#### A New Terminal
-
-[A New Terminal](https://github.com/ATL-WDI-Exercises/intro-to-command-line/blob/master/star_wars_command_line.md)
-
-#### CLI Gardening
-
-[CLI Gardening](https://github.com/ga-dc/cli_gardening)
-
-#### Kitchen Organizer
-
-[Kitchen Organizer](https://github.com/ga-dc/kitchen_organizer)
-
-#### Command Line Fu (Optional)
-
-[Command Line Fu](https://github.com/ga-dc/command_line_fu)
-
-***
-
-### BEFORE NEXT CLASS
-|   |   |
-|---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
-
 ***
 
 ### Glossary
@@ -492,7 +519,7 @@ Bash isn't the only option. Check out zsh (http://code.joejag.com/2014/why-zsh.h
 
 *  **Arguments(Parameters)** — are items of information provided to a program or command when it is started. A program can have many command-line arguments that identify sources or destinations of information, or that alter the operation of the program.
 
-*  **Flags(Options)** — modify the operation of a command; the effect is determined by the command's program. Options follow the command name on the command line, separated by spaces. 
+*  **Flags(Options)** — modify the operation of a command; the effect is determined by the command's program. Options follow the command name on the command line, separated by spaces.
 
 *  **Path** - is the description that tells us (or a computer) where a file or folder is on our computer.
 ***
@@ -501,23 +528,16 @@ Bash isn't the only option. Check out zsh (http://code.joejag.com/2014/why-zsh.h
 ### ADDITIONAL RESOURCES
 
 - Exercises
-	- [Command Line Fu](https://github.com/ga-wdi-exercises/command_line_fu)
-	- [Kitchen Organizer](https://github.com/ga-wdi-exercises/kitchen_organizer)
-
+	- [Kitchen Organizer](labs/kitchen/README.md)
+  - [CLI Gardening](https://github.com/ga-dc/cli_gardening)
+	- [Command Line Fu - Challenge](https://github.com/ga-wdi-exercises/command_line_fu)
 - Readings
 	- [Unix Intro Course](http://www.doc.ic.ac.uk/~wjk/UnixIntro/)
 	- [Bash Beginner's Guide](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/)
 - Cheat Sheets:
 	- https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-%28-basics-%29
 	- http://i.imgur.com/1c9y0.png
-	
-●	Additional Resources
-○	Review Command Line and how to get started with the command line (deck)
-○	https://guides.github.com/
-○	https://google.github.io/styleguide/htmlcssguide.xml
-○	https://developer.mozilla.org/en-US/docs/Web/HTML/Element
-○	https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
-	
+
 
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
