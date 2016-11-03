@@ -33,6 +33,8 @@ creator:
 - Use keyboard shortcuts to save time
 
 
+<!-- can you expand on this? -->
+
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
 
