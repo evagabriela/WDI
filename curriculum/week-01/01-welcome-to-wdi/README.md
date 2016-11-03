@@ -14,9 +14,10 @@ creator:
 | 10 min | [What to Expect](#expectations) | Topic |
 | 10 min | [GA Culture](#ga-culture) | Topic |
 | 15 min | [Student Expectations](#student-expectations) | Topic |
-| 10 min | [Plagiarism](#plagiarism) |Topic |
+| 5 min | [Plagiarism](#plagiarism) |Topic |
 | 10 min | [Student Work](#student-work) |Topic |
 | 25 min | [Icebreakers](#icebreakers) |Topic |
+| 5 min | [Icebreakers](#icebreakers) |Topic |
 
 
 
@@ -33,6 +34,7 @@ creator:
 *Before this lesson, instructors will need to:*
 
 - Fill in relevant details for your specific course
+- Optional: Create deck for intro session. For an example, see: [Orientation Deck](https://drive.google.com/file/d/0B-kyGN2IJQspMGlxTUVmcGY1OVE/view)
 
 ---
 
@@ -40,10 +42,9 @@ creator:
 ## Your Instructional Team (10 mins)
 
 #### Instructor Introduction
-- Matt Huntington
-- Colin Hart
-- Kristyn Bryan
-- Thom Page
+- Instructor Names
+
+  > Instructor Note: Fill in with relevant details about your course
 
 #### Roles
 1. Instructor Lead
@@ -60,10 +61,10 @@ creator:
   - Grading homework
 1. Evening TA
   - one-on-one help
-  
-  
+
+
   > Instructor Note: Fill in with relevant details about your course
-  
+
 <a name="expectations"></a>
 ## What to Expect (10 mins)
 
@@ -124,7 +125,7 @@ creator:
 	- this is not paint by numbers
 1. Be present and mindful - not distracted
 
-   
+
  > Instructor Note: Fill in with relevant details about your course
 
 <a name="plagiarism"></a>
@@ -213,16 +214,4 @@ In egregious offenses (presenting another student’s project, an external produ
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
 - Recap topic(s) covered in today's lesson
-
-***
-
-### ADDITIONAL RESOURCES
-- Exercises
-- Videos
-- Readings
-- Decks
-  - [Orientation Deck](https://drive.google.com/file/d/0B-kyGN2IJQspMGlxTUVmcGY1OVE/view)
-
-
-
-https://drive.google.com/file/d/0B-kyGN2IJQspMGlxTUVmcGY1OVE/view
+- Review objectives for lesson
