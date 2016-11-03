@@ -417,7 +417,6 @@ There's tons of technical acronyms and jargon in the world. Understanding the ba
 ***
 
 ### ADDITIONAL RESOURCES
-- Exercises
 - Videos
 	- [GA’s Video on How the Internet works](https://generalassembly.wistia.com/medias/zg9altep4r)
 	- [A Packet's Tale](https://www.youtube.com/watch?v=Gfoc3Cxgnpk)
@@ -430,7 +429,6 @@ There's tons of technical acronyms and jargon in the world. Understanding the ba
 	- [TCP/IP Protocol Explained](http://www.thegeekstuff.com/2011/11/tcp-ip-fundamentals/)
 	- [Internet Protocol Suite Wikipedia Page](https://en.wikipedia.org/wiki/Internet_protocol_suite)
 	- [How the Internet Works — Stanford](http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
-- Decks
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.
 
