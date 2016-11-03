@@ -7,29 +7,27 @@ creator:
     city: LA
 ---
 
-> #### *Guiding Questions When Using This Template*
+> #### *Guidance When Using This Template*
 >
-> - [ ]  Do the technical requirements clearly outline each of the expectations?
-> - [ ] Is this intended to be a group activity? Codealong? Pair programming?
-> - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
+> - [ ]  The Morning Challenge is an opportunity to get students' brains working and encourage them to think through problems in different ways.  These challenges do not necessarily need to be as structured or detailed as labs and exercises.  They may not have set requirements or end deliverables, but rather encourage students to explore and practice problem solving.  Instructors may also choose to use this time for review.
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Title of the morning exercise
 
 > ***Note:*** _This can be a pair programming activity or done independently._
 
-## Exercise
+## Overview
+- What skills are being encouraged this morning?  Why is this activity important?  
 
-#### Requirements
+#### Directions
 
-- Make a thing that does something
-- Have it do something else
+- Here is a prompt, or a thing to explore.
 - This is what we expect of you
 
 #### Starter code (if needed)
 
-Here's a few sentences explaining any started code that's included in the `starter-code` folder.
+Here's a few sentences explaining any starter code that's included in the `starter-code` folder.
 
-#### Deliverable
+#### Deliverable (if needed)
 
 Here's a few sentences & a screenshot of what we expect you to make or do.
 
