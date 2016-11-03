@@ -1,5 +1,6 @@
+
 ---
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Lesson Title (# mins)
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Git and Github Foundations (90 mins)
 
 | Timing | Type | Topic |
 | --- | --- | --- |
@@ -11,9 +12,14 @@
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
+- Understand basic git commands like init, add, commit, push, pull and clone
+-Distinguish between local and remote repositories 
+-Create, copy, merge, and delete local and remote repositories & branches using git commands
+-Describe how branching and merging allows for collaboration during development 
+-Fetch changes from a remote without merging them into your own
+-Fork and clone remote repositories
+-Differentiate between navigating the file system using the command line vs. the GUI
+
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
@@ -47,6 +53,8 @@ Check: Ask students to define, explain, or recall any **general** prior concepts
 > Instructor Note: Discuss topic and explain by dividing parts into sections. Ask students to define, explain, or recall any **specific** elements relating to the current topic, when applicable.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
+
+<!--Testing comments-->
 
 ```html
 <!DOCTYPE html>

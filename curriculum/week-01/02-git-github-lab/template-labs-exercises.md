@@ -1,11 +1,4 @@
----
-title: Title of the Lab/Exercise
-type: lab
-duration: "1:25"
-creator:
-    name: Micah Rich
-    city: LA
----
+
 
 > #### *Guiding Questions When Using This Template*
 >
@@ -15,14 +8,17 @@ creator:
 > - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
 > - [ ] What additional tasks or challenges can you provide for students who are "hungry for more" or "need review"?
 
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Title of the Lab/Exercise
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Git and Github Lab
 
 ##Learning Objectives
-> ***Note:*** _All learning objectives should be pulled from the [Front End Standards](https://docs.google.com/spreadsheets/d/11SzdbIIa9PLJ6kknGXXoBYOtL5ycwMK2N8lkI5THFak/edit#gid=1968474545) doc.  If you would like to add or remove any Learning Objectives, please contact amy.almeida@ga.co)._
 
--Learning Objective 1
--Learning Objective 2
--Learning Objective 3
+- Fork and clone remote repositories
+- Add, remove, and replace files within repositories on Github.com
+- Create, copy, merge, and delete local and remote repositories & branches using git commands
+- Deploy using a Github Pages branch
+- Deploy using a github.io repository without branches
+- Efficiently and correctly resolve merge conflicts
+
 
 ## Introduction
 
@@ -57,5 +53,3 @@ Here's a few sentences & a screenshot of what we expect you to make or do.
 - Some extra ideas for struggling students
 - Tasks that would be good practice
 - How can students independently practice key concepts?
-
-

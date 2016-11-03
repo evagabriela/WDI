@@ -13,7 +13,8 @@
 <!-- SME:  Do you think that this is enough content to cover 90 minutes? -->
 
 ### LEARNING OBJECTIVES
-*After this lesson, you will be able to:*
+**After this lesson, you will be able to:**  
+
 -Understand basic git commands like init, add, commit, push, pull and clone  
 -Distinguish between local and remote repositories   
 -Create, copy, merge, and delete local and remote repositories & branches using git commands  
@@ -29,7 +30,7 @@
 Students should split into pairs or small groups and spend a few minutes discussing the following questions: Assuming that version control systems did not exist, how would you:
 
 * Share your source code with other developers?
-* Collaborate with other developers
+* Collaborate with other developers?
 * Manage multiple versions of a software product?
     - Free vs. Paid
     - Basic vs. Premium
@@ -43,15 +44,14 @@ Follow activity with a brief recap of student discussions.
 <a name="introduction"></a>
 ## Intro to New Material: Version Control (10 mins)
 
+### What is Version Control?
 
-###What is Version Control?
+* Version Control is the management of changes to documents, computer programs, web sites, and other collections of information.
+* Version Control provides:
+    - a database containing a history of changes to a set of files
+    - a set of commands for managing that database
 
-*Version Control is the management of changes to documents, computer programs, web sites, and other collections of information.
-*Version Control provides:
-    -a database containing a history of changes to a set of files
-    -a set of commands for managing that database
-
-###What is Version Control Good For?
+### What is Version Control Good For?
 
 * Manage Changes Over Time  
     - Save various points in the development of your work  
@@ -75,7 +75,7 @@ Follow activity with a brief recap of student discussions.
 
 As a class, we are going to walk through key Git skills that you will need to be successful in this course. Some of the goals of this session include:  
 
-*Check our GIT configuration 
+* Check our GIT configuration
 
 * Develop our GIT Skills  
     - Create a Local GIT repo  
@@ -85,11 +85,11 @@ As a class, we are going to walk through key Git skills that you will need to be
     - View history  
     - Time travel  
 
-###Part 1 - Setup 
+### Part 1 - Setup
 
 Check the GIT Version:  
-```$ which git  
-    $ git --version```
+```$ which git```  
+    ```$ git --version```
 
 If you don't have git installed via brew, you should do so now:
 ```brew install git            # use brew to install latest version of git    
@@ -97,7 +97,7 @@ If you don't have git installed via brew, you should do so now:
 
 Check your GIT Config:
 
-```$ git config --list 
+```$ git config --list
     $ git config user.name```
 
 Set your identity:
@@ -106,10 +106,10 @@ Set your identity:
     $ git config --global user.email johndoe@example.com```
 
 Set your default editor:
- 
+
 ``` $ git config --global core.editor "subl -n -w"```
 
-###Part 2 - Creating a repo
+### Part 2 - Creating a repo
 
 Create a new local GIT repository:
 
@@ -121,17 +121,17 @@ $ git init```
 *What just happened?
 *Did your Shell Prompt change?
 
-###Part 3 - Our first commit
+### Part 3 - Our first commit
 
 Add some files:
 
 ``` $ touch README.md hello.txt  
     $ git status  
-    # What is an untracked file?
+    # What is an untracked file?```
 
-    $ git add -A
+  ```  $ git add -A
     $ git status
-    # Now the files are in the stage
+    # Now the files are in the stage```
 
 Commit the changes:
 
@@ -140,16 +140,16 @@ Commit the changes:
     $ git log```
 
 > Instructor Note:  On the whiteboard, draw a diagram of the following:
--working area  
--stage  
--git repository (.git)  
+- working area  
+- stage  
+-g it repository (.git)  
 
 <!-- Insert File Status Lifecycle Image -->
 ![Github lifecycle](assets/picture.jpg)
 
 <!-- Insert Basic Git Workflow Image -->
 
-###Part 4: More Commits, and Viewing the History
+### Part 4: More Commits, and Viewing the History
 
 Edit hello.txt and commit changes:
 
@@ -177,19 +177,20 @@ Edit hello.txt and commit changes:
 <a name="ind-practice"></a>
 ## Independent Practice: Changes and Commits (10 mins)
 
-*Check your status and history as you go
-*Suggested changes:
-    -Hello General Assembly
-    -Hello WDI
-    -Hello GIT
+* Check your status and history as you go
+* Suggested changes:
+    - Hello General Assembly
+    - Hello WDI
+    - Hello GIT
 
 >Instructor Note: Leave a couple minutes to demo the solution.
 
+<!--Please build out more detailed Instructions for this Independent Practice-->
 
 <a name="demo"></a>
 ## Demo: Github Skills Continued (20 minutes)
 
-###Part 5: Cherry Picking:
+### Part 5: Cherry Picking:
 
 Demo the editing of multiple files but only adding one of them to the stage  
 ``` git add file1   
@@ -197,7 +198,7 @@ Demo the editing of multiple files but only adding one of them to the stage
     git status  
     git log```
 
-###Part 6: Checking out a Previous Version:
+### Part 6: Checking out a Previous Version:
 
 ``` git log  
     git checkout <hash_of_previous_commit>
@@ -218,7 +219,7 @@ Demo the editing of multiple files but only adding one of them to the stage
     # or  
     git checkout <hash_of_most_recent_commit>  ```
 
-###Part 7: Diffing
+### Part 7: Diffing
 
 ``` # View unstaged differences  
     git diff  
@@ -230,7 +231,7 @@ Demo the editing of multiple files but only adding one of them to the stage
     # or  
     git diff --staged filename```
 
-###Part 8: Rolling Back Changes
+### Part 8: Rolling Back Changes
 
 ``` # unstage changes to a file  
     git reset filename  
@@ -252,10 +253,10 @@ Demo the editing of multiple files but only adding one of them to the stage
     - tag - an optional label on a commit
     - HEAD - what is currently checked out
     - working area - the directory and subdirectories containing the files we are currently working on
-* Review Questions:
-    -Can someone tell me what a GIT Repository is?
-    -What are some key components of a GIT repo?
-    -Can someone describe an important GIT command (get several responses from students)
+* Review Questions:  
+    - Can someone tell me what a GIT Repository is?
+    - What are some key components of a GIT repo?
+    - Can someone describe an important GIT command (get several responses from students)
 
 <!-- Please update review questions with more open-ended questions.-->
 
@@ -264,14 +265,17 @@ Demo the editing of multiple files but only adding one of them to the stage
 ### BEFORE NEXT CLASS
 |   |   |
 |---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
+| **HOMEWORK** | Day 2 Homework [#](Instructions)  |
 | **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
 
 ### ADDITIONAL RESOURCES
-- Exercises
-- Videos
+- [Git Cheat Sheet](https://raw.githubusercontent.com/ATL-WDI-Curriculum/local-and-remote-git/master/images/Git-Cheat-Sheet.png)
 - Readings
-- Decks
+    - [Git Documentation](https://git-scm.com/documentation)
+    - [Forking on Github](https://help.github.com/articles/fork-a-repo/)
+    - [Syncing a fork](https://help.github.com/articles/syncing-a-fork/)
 
-> Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
+- Videos
+    - [Lynus Travalds on Git](https://www.youtube.com/watch?v=4XpnKHJAok8)
 
+<!--Wistia videos exist but we need to decide on hosting solution  -->
