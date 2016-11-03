@@ -1,6 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Mockup to HTML/CSS Lab
 
-##Learning Objectives
+## Learning Objectives
 
 - Use HTML5 content tags to add content to a webpage: h1-h6, p, a, img, ul/ol
 - Use generic tags (div and span) to style content
@@ -8,6 +8,16 @@
 - Use CSS to add color and style to an unstyled page
 - Use CSS to style a page according to a mockup
 
+<!--SME NEEDED:  Reference potential labs:
+
+https://github.com/ga-wdi-exercises/fashion-blog (easy)
+https://github.com/den-wdi-1/build-a-website (easy)
+https://github.com/ga-wdi-exercises/hippy-portfolio (med)
+https://github.com/ga-wdi-exercises/dew_about_me_css (med)
+https://github.com/ga-wdi-exercises/moonrise_kingdom (hard)
+
+**Check/update code for all labs.  Choose recommended lab for the session and label the others "beg" "int" or "adv".
+  -->
 
 ## Introduction
 

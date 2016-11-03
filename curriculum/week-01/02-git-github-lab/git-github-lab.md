@@ -10,7 +10,9 @@
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Git and Github Lab
 
-##Learning Objectives
+ <!--SME NEEDED: [Github Intro Lab](https://github.com/den-wdi-1/gh-lab/blob/master/readme.md) Can use as reference, but this lab needs to be revised.  -->
+
+## Learning Objectives
 
 - Fork and clone remote repositories
 - Add, remove, and replace files within repositories on Github.com
