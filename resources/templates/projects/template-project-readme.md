@@ -29,12 +29,6 @@ Your work must:
 - Have it do something else
 - This is what we expect of you
 
-**Hungry for More?**
-
-- Some extra ideas for medium/advanced students
-- Another thing that would be good for you to practice
-- Brownie points for doing X, Y, Z
-
 ---
 
 #### Necessary Deliverables
@@ -76,29 +70,57 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 
 ---
 
-### Useful Resources
-
-- A link to [something useful](http://www.w3schools.com/jsref/dom_obj_all.asp)
-- Extra relevant [resource for students](https://developer.mozilla.org/en-US/docs/Web/Events)
-
----
-
 #### Example Deliverable
 
 Here's a few sentences & a screenshot of what we expect you to make or do.
 
 ![Example Image](https://cloud.githubusercontent.com/assets/25366/8370438/dd651c2c-1b7c-11e5-8638-c99e2f6c7c61.png)
 
-#### Project Feedback + Evaluation
+---
+#### Submitting Your Project
 
+In addition to your project submission, please submit:
+
+* 3-5 questions you still have after completing this project.  
+* A brief self-assessment of your performance on each section of the rubric.  
+
+---
+#### Hungry For More?
+
+If you're looking for an extra challenge, try tackling some of the tasks below:
+
+* Challenge 1 Desription/ Link
+* Challenge 2 Description/ Link
+---
+#### Need More Review?
+
+> In this section, point students to relevant resources from the lessons that help them practice key skills needed to succeed in the project.
+
+
+---
+#### Project Feedback + Evaluation
 
 Based on the requirements you can earn a maximum of _____ points on this project. Your instructors will score each of your technical requirements using the scale below:
 
-    Score | Expectations
-    ----- | ------------
-    **0** | _Incomplete._
-    **1** | _Does not meet expectations._
-    **2** | _Meets expectations, good job!_
-    **3** | _Exceeds expectations, you wonderful creature, you!_
 
- This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
+|      | Incomplete | Does not Meet Expectations |  Meets Expecatations | Exceeds Expectations |
+|--- |---| --- | ---| --- |
+| Requirement 1 |     |    |     |     |
+| Requirement 2 |     |    |     |     |  
+| Requirement 3 |     |    |     |     |
+
+
+This will serve as a helpful overall gauge of whether you met the project goals.  It can help you identify where to focus your efforts for the next project!
+
+
+#### Project Grade
+
+Based on the requirements you can earn a maximum of [insert total] points on this project. Your instructors will score each of your technical requirements using the scale below:
+
+
+  |  Score | Expectations |
+    ----- | ------------
+    **0** | _Incomplete._  |
+    **1** | _Does not meet expectations._  |
+    **2** | _Meets expectations_  |
+    **3** | _Exceeds expectations_ |

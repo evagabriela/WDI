@@ -9,7 +9,7 @@ creator:
 
 > #### *Guidance When Using This Template*
 >
-> - [ ]  The Morning Challenge is an opportunity to get students' brains working and encourage them to think through problems in different ways.  These challenges do not necessarily need to be as structured or detailed as labs and exercises.  They may not have set requirements or end deliverables, but rather encourage students to explore and practice problem solving.  Instructors may also choose to use this time for review.
+> - [ ]  The Morning Exercise is an opportunity to get students' brains working and encourage them to think through problems in different ways.  These challenges do not necessarily need to be as structured or detailed as labs and exercises.  They may not have set requirements or end deliverables, but rather encourage students to explore and practice problem solving.  Whiteboarding and homework review are also popular activities during Morning Exercises.
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Title of the morning exercise
 
