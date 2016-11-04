@@ -483,7 +483,7 @@ body {
 ***
 
 <a name="ind-practice"></a>
-## Independent Practice: Hyrule Potion Shop (30 minutes)
+## Independent Practice: Hyrule Potion Shop (30 mins)
 
 
 <!-- SME NEEDED: updated version of code below -->
