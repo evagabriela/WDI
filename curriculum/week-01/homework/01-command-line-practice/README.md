@@ -1,113 +1,120 @@
-> #### *Guiding Questions When Using This Template*
->
-> - [ ] Are the requirements actionable?
-> - [ ] What will students have to do to prepare for this lab?
-> - [ ] Is this intended to be a group activity? Codealong? Pair programming?
-> - [ ] Can students practice pseudo-coding before beginning?
-> - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
-> Delete this section ^
-
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #: Project Title
-
-#### Overview
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat distinctio nemo vitae natus quisquam atque nihil quis consequuntur harum officia, dolorem iusto soluta quae voluptas incidunt, similique, saepe sequi?
-
-Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
-
-Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
-
 ---
+title: Command Line Practice
+type: Homework
+duration: "2:00"
+creator:
+    name: Kermit the Frog
+    city: LA
+---
+
+
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Command Line Practice
+
+> ***Note:*** Developing any type of application requires a degree of comfort navigating and interacting with your operating system through the command line. We'll be practicing creating, modifying, and moving files and folders in your terminal to get you familiar with Unix commands.
+
+> For your first homework assignment, you're going to create files and folders to organize your favorite books, movies, and music - then, you're going to reorganize them.
+
+> Be sure to use the cheatsheets in the "Resources" section if you get stuck.
+
+## Exercise
 
 #### Requirements
+- All files/folder should be created/copied/moved/etc. following the instructions below and using the following Terminal commands:
+  - Navigate from folder to folder using `cd`.
+  - List files using `ls`.
+  - Create new directories using `mkdir`.
+  - Create new files using `touch`.
+  - Move files using `mv`.
+  - Copy files using `cp`.
+  - Remove directories using `rmdir`.
+  - Remove files/directories that contain items using `rm -rf`.
+- Text should be added to files using Sublime or Atom
+- Progress should be tracked by comparing your file/folder structure in your code editor to the images supplied under "Deliverable."
+- Submit 2-5 questions that you would like addressed regarding this homework.
 
-Your work must:
 
-- Make a thing that does something
-- Have it do something else
-- This is what we expect of you
-- Make a thing that does something
-- Have it do something else
-- This is what we expect of you
+#### Instructions
 
-**Bonus:**
+- From your root directory, create a folder called "my-favorite-things"; you'll use that folder to do the exercises below
 
-- Some extra ideas for medium/advanced students
-- Another thing that would be good for you to practice
-- Brownie points for doing X, Y, Z
+- Organize your favorite books
+  - In the "my-favorite-things" folder, create a folder called "books" and navigate to that folder.
+  - In the "books" folder, create a folder named after your favorite author (e.g. "mark-twain", or "haruki-murakami". Use dashes between words instead of spaces!)
+  - Create files named after some of the author's books in the author's folder (e.g. "the-wind-up-bird-chronicle.txt")
+  - Navigate back to the my-favorite-things folder and list the contents in terminal (using `ls`)
+  - Open the my-favorite-things folder in atom/sublime (Pro tip: you can use the `subl .` command in terminal to open the current directory in Sublime.)
+  - In Sublime, edit each file to put a brief description of the book
 
----
 
-#### Code of Conduct
+- Organize your favorite movies
 
-As always, your app must adhere to General Assembly's [student code of conduct guidelines](~/resources/guidelines/student-code-of-conduct.md).
+  - In the "my-favorite-things" folder, create a folder called "movies" and navigate to that folder.
+  - In the "movies" folder, create a folder named after your favorite actor
+  - Create a folder in the actor folder named after the actor's breakthrough movie (e.g. 'a-woman-is-a-woman.txt')
+  - Look back at Sublime/Atom and edit that text file with a description of the movie
+  - Navigate back to the "movies" directory. Create a text file named after the actor's character in the "movies" directory.
+  - Move the text file to the breakthrough movie's folder
 
-If you have questions about whether or not your work adheres to these guidelines, please speak with a member of your instructional team.
+- Organize your favorite music
 
----
+  - In the my-favorite-things folder, create a folder called "music"
+  - Navigate to the "music folder"
+  - Create a folder called "disco"
+  - Create a text file in "disco" called "ymca"
+  - Delete the "disco" folder
+  - Create folders called "beatles", "beach-boys", and "jackson-5" (pro tip: Look up how to create three folders at once!)
+  - Create a text file in "beatles" called "yesterday.txt"
+  - Make two copies "yesterday.txt" - one into "beach-boys" and one into "jackson-5" and rename those files with songs by those artists
 
-#### Necessary Deliverables
 
-- Something about the format of thing one
-- Description of the format of thing two
-- Details about the style of thing three
+- Reorganize _everything_
 
----
+  - In the my-favorite-things folder, create a folder called "media"
+  - Move "books", "movies", and "music" into the "media" folder
+
+#### Bonus
+
+- Look through the additional resources and do the following
+
+  - Look at the top/bottom 10 lines of each file
+  - Figure out how search through a file from the command line - without opening the file - for a string of text
+  - See if you can figure out how to open a file and add text content in the command line instead of using Sublime or Atom to add the text.
+
 
 #### Starter code
 
-Here's a few sentences explaining any started code that's included in the `starter-code` folder.
+No starter code needed! Just open up your Terminal application to get started.
 
-#### Suggested Ways to Get Started
+#### Deliverable
 
-- Don’t hesitate to write throwaway code to solve short term problems
-- Read the docs for whatever technologies you use.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a developer
-- Write pseudocode before you write actual code.** Thinking through the logic of something helps.   
+Be sure you open up your "my-favorite-things" directory in Sublime/Atom, so you can track your progress. Here's a look at what your files/folders should look like after each big step in the exercise:
 
----
+- After "Organize your favorite books":
 
-> The section below is optional
+![](screenshots/books.png)
 
-#### Potential Project Ideas
+- After "Organize your favorite movies":
 
-##### Fake Project Idea One
+![](screenshots/movie.png)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat distinctio nemo vitae natus quisquam atque nihil quis consequuntur harum officia, dolorem iusto soluta quae voluptas incidunt, similique, saepe sequi?
+- After "Organize your favorite music":
 
-##### Fake Project Idea Two
+![](screenshots/music.png)
 
-Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+- After "Reorganize _everything_"
 
+![](screenshots/media.png)
 
-##### Fake Project Idea Two
-
-Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
-
----
-
-### Useful Resources
-
-- A link to [something useful](http://www.w3schools.com/jsref/dom_obj_all.asp)
-- Extra relevant [resource for students](https://developer.mozilla.org/en-US/docs/Web/Events)
-
----
-
-#### Example Deliverable
-
-Here's a few sentences & a screenshot of what we expect you to make or do.
-
-![Example Image](https://cloud.githubusercontent.com/assets/25366/8370438/dd651c2c-1b7c-11e5-8638-c99e2f6c7c61.png)
-
-#### Project Feedback + Evaluation
+## Resources
+- A list of [CLI Shortcuts](https://gist.github.com/alexpchin/01caa027b825d5f98871)
+- An awesome Unix command [cheatsheet](https://github.com/veltman/clmystery/blob/master/cheatsheet.md)
 
 
-Base on the requirements you can earn a maximum of _____ points on this project. Your instructors will score each of your technical requirements using the scale below:
+## Additional practice
+- [CLI Gardening](https://github.com/ga-dc/cli_gardening)
 
-    Score | Expectations
-    ----- | ------------
-    **0** | _Incomplete._
-    **1** | _Does not meet expectations._
-    **2** | _Meets expectations, good job!_
-    **3** | _Exceeds expectations, you wonderful creature, you!_
-
- This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
+## Hungry For More?:
+- Try to complete the [Kitchen Organizer](labs/kitchen/README.md) lab in as few steps as possible. Look up shortcuts along the way!
+- Practice using other popular commands that were not covered in class by completing the [Command Line Fu - Challenge](https://github.com/ga-wdi-exercises/command_line_fu) lab.
+- Brownie points for configuring your terminal using [https://www.iterm2.com/](iTerm). Find some helpful instructions [here](http://yoderbacon.com/blog/2014/10/22/how-to-customize-iterm/).
+- Practice using these [CLI Shortcuts](https://gist.github.com/alexpchin/01caa027b825d5f98871)
