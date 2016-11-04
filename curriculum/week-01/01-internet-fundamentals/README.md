@@ -1,23 +1,17 @@
----
-title: Internet Fundamentals
-type: lesson
-duration: _90 mins_
-creator:
-    name: John Doe
-    city: City Name
----
-
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Internet Fundamentals
 
 
 | Timing | Type | Topic |
 | --- | --- | --- |
 | 5 min | [Opening](#opening) | Opening |
-| 25 min | [How Does the Internet Work](#how-does-the-internet-work) | Topic |
-| 25 min | [The Internet Protocol Suite](#the-ip-suite) | Topic |
-| 15 min | [RESTful Approach](#restful-approach) | Topic |
-| 15 min | [The World Wide Web](#the-world-wide-web) | Topic |
-| 5 min | [Conclusion](#conclusion) |Topic |
+| 25 min | Intro to New Material | [How Does the Internet Work](#how-does-the-internet-work) |
+| 25 min | Intro to New Material | [The Internet Protocol Suite](#the-ip-suite)  |
+| 25 min | Guided Practice | [Play the IP and TCP Game](#play-the-ip) |
+| 15 min | | [RESTful Approach](#restful-approach)  |
+| 15 min |  | [The World Wide Web](#the-world-wide-web) |
+| 5 min | [Conclusion](#conclusion) |Q & A |
+
+<!--See above for correct structure for the lesson outline table.  "Type" should list what type of activity (Intro to New Material, Demo, Independent Practice, etc) and "Topic" should be the cencept that is covered. -->
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -27,17 +21,9 @@ creator:
 - Differentiate between the internet and the world wide web
 - Identify and describe the most common HTTP request/response headers and the information associated with each
 - Illustrate how data travels through the internet through the response/request cycle
+- Describe the basics of how computers communicate (IP, TCP, HTTP)
 
-* Describe the basics of how computers communicate (IP, TCP, HTTP)
-
-### STUDENT PRE-WORK
-*Before this lesson, you should already be able to:*
-
-- Use the internet
-
-### INSTRUCTOR PREP
-`n/a`
-
+<!--Feel free to remove Student and Instructor pre-work sections if there is nothing applicable to be included.  -->
 ---
 
 <a name="opening"></a>
@@ -48,10 +34,10 @@ creator:
 
 *This workshop is relevant to developers because:*
 
-Just how a race-car driver should understand how their car runs, it is imperative for web developers to have clear mental models of the Internet functions when building web applications. Knowledge of Internet fundamentals will allow for new concepts to be understood in a more complete context.
+Just how a race-car driver should understand how their car runs, it is imperative for web developers to have clear mental models of how the Internet functions when building web applications. Knowledge of Internet fundamentals will allow for new concepts to be understood in a more complete context.
 
 <a name="how-does-the-internet-work"></a>
-## How does the Internet work? (# mins)
+## How does the Internet work? (25 mins)
 
 #### What is the Internet?
 
@@ -59,7 +45,7 @@ Just how a race-car driver should understand how their car runs, it is imperativ
 
 
 #### How did the internet begin?
-The First Internet Communication
+**The First Internet Communication**
 
 ![First Comm](assets/first-comm.jpg)
 
@@ -73,14 +59,14 @@ The First Internet Communication
 3. Remote Procedure Calls (RPC) - synch
 4. Messages - asynch
 
-#### How do computers do (3) or (4)
+#### How Do Computers do (3) or (4) ?
 
 * Addresses
 * Protocols
 
 
 <a name="ip-addresses"></a>
-## Internet Protocol and Addresses (# mins)
+## Internet Protocol and Addresses (25 mins)
 
 #### Addresses:
 
@@ -157,12 +143,12 @@ PING google.com (74.125.196.101): 56 data bytes
 
 Browser URL - http://74.125.196.101/
 
-        
+
 		http://www.kittengifs.com:80/popular-gifs#results?term=cute&page=2
 		|-----|-----------------|---|-----------|--------|----------------|
 		   |           |          |       |          |           |
 		 protocol    host       port    path     fragment  query-string
-    
+
 
 #### Ports - like a telephone extension
 
@@ -204,8 +190,8 @@ localhost:3000      port 3000 on the internal loopback address
   - sends messages back and forth (packet switching)
 
 
-<a name="guided-practice"></a>
-## The Internet Protocol suite - Play the IP and TCP Game (Meet Ivan Pakkitz) (# mins)
+<a name="play-the-ip"></a>
+## The Internet Protocol Suite - Play the IP and TCP Game (Meet Ivan Pakkitz) (25 mins)
 
 So how does data travel through the internet?
 
@@ -215,7 +201,7 @@ Let's take a look at an example.
 
 Ivan is a postal worker who can travel at the speed of light. He's happy to relay thousands of messages per second between you and a friend. However, he can only transport one message at a time and each message has to fit on a single index card.
 
-Unfortunately Ivan is incredibly inattentive, so there are a few minor limitations in his service:
+Unfortunately, Ivan is incredibly inattentive, so there are a few minor limitations in his service:
 
 * Reliability: He cannot guarantee that every message will be delivered successfully.
 * Order:       He cannot guarantee delivered messages will arrive in the same order that they were sent.
@@ -224,16 +210,15 @@ Unfortunately Ivan is incredibly inattentive, so there are a few minor limitatio
 
 For our lab, we will assume that Ivan:
 
-* shuffles the cards before deliverying them
-* sometimes drops a card on the floor (maybe 1 out of 10 cards)
-* may rip the card in half before delivering it (maybe 1 out of 20 cards)
-* may deliver the card to the wrong person (maybe 1 out of 20)
+* Shuffles the cards before delivering them
+* Sometimes drops a card on the floor (maybe 1 out of 10 cards)
+* May rip the card in half before delivering it (maybe 1 out of 20 cards)
+* May deliver the card to the wrong person (maybe 1 out of 20)
 
 #### Debbie N. Smith
 
 * Meet our next character: Debbie N. Smith.
 * She knows the numeric address of everyone
-
 
 Let's look at an example:
 
@@ -241,9 +226,9 @@ I know your name but need to lookup your phone number
 
     becomes
 
-I know your DNS name (google.com) but need to lookup your IP address
+I know your DNS name (google.com) but need to lookup your IP address.
 
-Domain Name Service is in charge of mapping domains to IPs
+Domain Name Service is in charge of mapping domains to IPs.
 
 Example: `mail.google.com`
 
@@ -252,6 +237,8 @@ mail = subdomain
 google = 2nd level domain
 com = top level domain
 ```
+
+
 ![DNS Diagram](assets/dns.gif)
 
 
@@ -264,7 +251,7 @@ com = top level domain
 * Packet Switching
   - think sending packages via FedEx
 
-Question: If I send 5 packages to Gerry, will all 5 packages
+**_Question: If I send 5 packages to Gerry, will all 5 packages_**
 
 ```
 (a) arrive in the order I sent them?
@@ -276,6 +263,8 @@ Question: If I send 5 packages to Gerry, will all 5 packages
 * Which is Faster?
 * Which is More Fault Tolerant?
 
+<!--Can these questions be more specific?  Should they say "Is circuit-switching or packet-switching faster?" and "Is circuit-switching or packet-switching more fault tolerant"?  -->
+
 #### Messages and Packets
 * Packet: a discrete chunk of data transferred over an IP-based protocol.
 * Header: meta data to address and define the packet content.
@@ -283,6 +272,8 @@ Question: If I send 5 packages to Gerry, will all 5 packages
 
 
 ![Anatomy of a URL](https://raw.github.com/ATL-WDI-Curriculum/how-the-internet-works/master/images/tcp-packet-structure.gif)
+
+<!--Please add graphic to the custom graphics spreadsheet-- we should replace this with a better-quality GA graphic.  -->
 
 
 * Packets have a fixed maximum size (no 18 wheelers please)
@@ -340,9 +331,11 @@ Created by Roy Fielding for his Ph.D. thesis.
 |   /todos/3  |              | item*      |             | item*      |
 |             |              | i.e. save  |             |            |
 
-* The cells above with an asterick are the most common cases
+<!-- please double-check formatting of table.  Is this final? -->
+
+* The cells above with an asterisk are the most common cases
 * GET is immutable
-* PUT and DELETE are idempotent
+* PUT and DELETE are important
 * PATCH is the new kid on the block and allows for partial updates
   (i.e. the client can send only the parts of the item that need to be updated and the server merges these with the current item state)
 
@@ -377,11 +370,12 @@ HTTP is a protocol on the application layer that the World Wide Web uses to comm
 ![Tim](assets/tim.jpg)
 Tim devised a system for sharing HyperText documents while at CERN. During the late 80s and early 90s he specified the first versions of HTML and HTTP that ended up birthing the World Wide Web and changing the usability of the Internet forever.
 
+<!-- add Tim's last name! -->
 
 #### What is HyperText?
 ![](assets/engelbart.jpg)
 
-In the '60s Douglas Engelbart demonstrated a machine that was capable of rich media, collaborative text editing, and teleconferencing. Now HTML, aka HyperText Markup Language, enables anyone to design rich media documents that are literally "beyond" (hyper) text.
+In the 1960s Douglas Engelbart demonstrated a machine that was capable of rich media, collaborative text editing, and teleconferencing. Now HTML, aka HyperText Markup Language, enables anyone to design rich media documents that are literally "beyond" (hyper) text.
 
 
 #### The W3C
@@ -398,7 +392,12 @@ So how does HTML relate to CSS and Javascript?
 
 ![](assets/web-technologies.png)
 
-You can think of HTML CSS and JS as the three major parts of speech in human language: nouns, adjectives, and verbs. HTML is the noun as it is in charge of organizing content (text, photos, videos, audio, links, etc) into a file. CSS is the adjective as it is entirely concerned with the visualization of the content. JavaScript is the verb as it can add behavior and dynamism to the content.
+<!-- We can probably replace this image with a more high-quality graphic. -->
+
+You can think of HTML CSS and JS as the three major parts of speech in human language: nouns, adjectives, and verbs.
+- HTML is the noun as it is in charge of organizing content (text, photos, videos, audio, links, etc) into a file.
+- CSS is the adjective as it is entirely concerned with the visualization of the content.
+- JavaScript is the verb as it can add behavior and dynamism to the content.
 
 
 
@@ -421,18 +420,13 @@ There's tons of technical acronyms and jargon in the world. Understanding the ba
 	- [GA’s Video on How the Internet works](https://generalassembly.wistia.com/medias/zg9altep4r)
 	- [A Packet's Tale](https://www.youtube.com/watch?v=Gfoc3Cxgnpk)
 
-	
-	
+
+
 - Readings
-	- [The Anternet](http://priceonomics.com/the-independent-discovery-of-tcpip-by-ants/) 
+	- [The Anternet](http://priceonomics.com/the-independent-discovery-of-tcpip-by-ants/)
 	- [HTTP Intro](https://dev.opera.com/articles/http-basic-introduction/)
 	- [TCP/IP Protocol Explained](http://www.thegeekstuff.com/2011/11/tcp-ip-fundamentals/)
 	- [Internet Protocol Suite Wikipedia Page](https://en.wikipedia.org/wiki/Internet_protocol_suite)
 	- [How the Internet Works — Stanford](http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.
-
-
-
-
-
