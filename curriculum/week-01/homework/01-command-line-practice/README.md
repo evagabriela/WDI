@@ -1,11 +1,3 @@
----
-title: Command Line Practice
-type: Homework
-duration: "2:00"
-creator:
-    name: Kermit the Frog
-    city: LA
----
 
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Command Line Practice
@@ -19,7 +11,7 @@ creator:
 ## Exercise
 
 #### Requirements
-- All files/folder should be created/copied/moved/etc. following the instructions below and using the following Terminal commands:
+- All files/folder should be created/copied/moved/etc following the instructions below and using the these Terminal commands:
   - Navigate from folder to folder using `cd`.
   - List files using `ls`.
   - Create new directories using `mkdir`.
