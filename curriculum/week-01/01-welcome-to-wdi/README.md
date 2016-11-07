@@ -1,10 +1,3 @@
----
-title:  Welcome to WDI: Learning experience + classroom culture
-duration: "1:30"
-creator:
-    name: John Doe
-    city: NYC
----
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)  Welcome to WDI: Learning experience + classroom culture (60 mins)
 
@@ -24,10 +17,11 @@ creator:
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
 
-- Be aware of expectations for the course
-- Understand course goals
+- Set expectations for the course
+- Align class on goals for the course
 - Get to know each other
 - Establish Class culture
+
 
 
 ### INSTRUCTOR PREP
@@ -70,7 +64,7 @@ creator:
 
 #### Emotional Framing
 - Programming is not about learning a sequence of steps, it's about developing a mindset to solve problems and think programmatically.
-- Language not important
+- Progamming language not as important as
     - critical/analytical/programatic thinking.
     - don't memorize, conceptualize ideas.
         - the internet is your notebook/memory
@@ -190,7 +184,9 @@ In egregious offenses (presenting another student’s project, an external produ
 #### Advice
 1. Constant feedback
 1. Stand up and walk around
-1. Get out of home for a little bit each day
+1. Get out of home for a little bit each day 
+
+<!-- Hi Sarah, what do you mean by "get out of home"? -->
 
 
 <a name="icebreakers"></a>
