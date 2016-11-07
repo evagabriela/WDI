@@ -263,6 +263,7 @@ This time, if we're in `~/wdi/lessons/cli-intro`, entering `cd ../../projects` w
 > Check: Explain what a path is and why the 'current path' is important in the CLI.
 > Check: Explain the difference between absolute and relative paths.
 
+<a name="common-commands"></a>
 ## Common Commands (35 mins)
 
 #### Getting Help (5 mins)
@@ -333,6 +334,7 @@ You should especially use `rm -rf` with caution.
 
 > Check: Review to make sure students have correct answers for the exercise.
 
+<a name="wdi-environment"></a>
 ## WDI Environment (10 mins)
 
 #### Directory Structure
