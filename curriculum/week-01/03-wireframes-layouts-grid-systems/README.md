@@ -9,9 +9,11 @@
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Describe what a wireframe is and its role in a the development process.
-- Describe the differences between low/medium/high fidelity markups.
-- Create a wireframe to define the layout and user flow for your app.
+- Describe what a wireframe is and its role in a the development process
+- Describe the differences between low/medium/high fidelity markups
+- Create a wireframe to define the layout and user flow for your app
+- Adjust layout based on hierarchy of content
+- Describe how style guides, grid systems, and media queries relate
 - Describe the grid system
 
 ---
