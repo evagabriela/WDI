@@ -20,9 +20,8 @@ In this homework assignment, you will continue to build out the Monument Magazin
 - Add a background image to the header
 - Use [FontAwesome](http://fontawesome.io/) icons for Facebook, Twitter and Instagram in the footer.
 - Use indentation in your HTML and CSS files to make your code readable.
-- Use HTML and CSS validators to check for errors before submitting.
-- Include [browser prefixes](http://pleeease.io/play/) to make sure that newer CSS properties render consistently in different browsers.
 - Use [HTML](https://html5.validator.nu/) and [CSS](https://jigsaw.w3.org/css-validator/#validate_by_input) validators to check for errors before submitting.
+- Include [browser prefixes](http://pleeease.io/play/) to make sure that newer CSS properties render consistently in different browsers.
 
 #### Bonus Tasks
 - Google and implement Google Fonts (Fonts are specified in bonus mockup below).

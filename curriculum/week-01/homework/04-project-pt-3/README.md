@@ -1,4 +1,4 @@
----
+Â---
 title: Title of the homework
 type: Homework
 duration: "2:00"
@@ -11,20 +11,19 @@ creator:
 
 ## Exercise
 
-Congratulations! You're almost done with the blog page for Monument Magazine. Today you will be continuing to build up the site by adding in a simple contact form and making the site responsive. Are you ready?
+Congratulations! You're almost done with the blog page for Monument Magazine. Today you will be continuing to build up the site by adding in a comment form and making the site responsive. Are you ready?
 
 #### Requirements
 
 - Add the HTML/CSS to create the contact form that is shown in the design mockup.
 - Add a media query to update the layout and styles for screens size 560px and below.
-- Be sure content remains in appropriate divs
--Fonts change size appropriately
-- Margins and padding should change size appropriately
-- Content should not overlap
+- Convert padding, margin, and font-sizes from px to rem/em and make sure fonts, padding and margins scale accordingly.
 - For the articles, the two-column layout changes to a single-column layout when appropriate.
-- Form inputs should include the appropriate `type` attribute along with a `name` attribute
+- Form inputs should include the appropriate `type` attribute along with a `name` attribute.
 - All input/textarea elements should be wrapped in a `form` element.
 - Use the appropriate Google Fonts to style the text on the page.
+- Use [HTML](https://html5.validator.nu/) and [CSS](https://jigsaw.w3.org/css-validator/#validate_by_input) validators to check for errors before submitting.
+- Include [browser prefixes](http://pleeease.io/play/) to make sure that newer CSS properties render consistently in different browsers.
 
 #### Bonus
 - Evaluate the page in your browser and consider what layout/style updates could be made for medium (tablet) sized screens (around 775px and below).
