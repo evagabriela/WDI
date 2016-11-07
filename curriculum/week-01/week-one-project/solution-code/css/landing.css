@@ -37,18 +37,23 @@ Gallery
 	flex-wrap: wrap;
 	height: 840px;
 	width: 100%;
-	font-size: 0; 
-	margin: 64px 0 0; 
+	font-size: 0;
+	margin: 64px 0 0;
 	margin: 4rem 0 0;
 	padding-bottom: 0;
 }
 
 .masonry img {
 	width: 31%;
-	-webkit-transition: .8s opacity;
-	transition: .8s opacity;
+	cursor: pointer;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 	margin-bottom: 16px;
 	margin-bottom: 1rem;
+}
+
+.masonry img:hover {
+	opacity: .6;
 }
 
 #gallery {

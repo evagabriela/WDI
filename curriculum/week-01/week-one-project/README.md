@@ -1,113 +1,57 @@
-> #### *Guiding Questions When Using This Template*
->
-> - [ ] Are the requirements actionable?
-> - [ ] What will students have to do to prepare for this lab?
-> - [ ] Is this intended to be a group activity? Codealong? Pair programming?
-> - [ ] Can students practice pseudo-coding before beginning?
-> - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
-> Delete this section ^
-
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #: Project Title
-
-#### Overview
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat distinctio nemo vitae natus quisquam atque nihil quis consequuntur harum officia, dolorem iusto soluta quae voluptas incidunt, similique, saepe sequi?
-
-Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
-
-Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
-
 ---
+title: Title of the homework
+type: Homework
+duration: "2:00"
+creator:
+    name: Kermit the Frog
+    city: LA
+---
+
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Monument Landing Page
+
+## Exercise
+The designer you've been working with has completed the mockups for the landing page of Monument Magazine. Use HTML and CSS to replicate this mockup as closely as possible.
 
 #### Requirements
 
-Your work must:
+#### Requirements
 
-- Make a thing that does something
-- Have it do something else
-- This is what we expect of you
-- Make a thing that does something
-- Have it do something else
-- This is what we expect of you
+- Add media queries to make the site responsive, updating padding, margins, fonts, and the layout as needed.
+- Use rems or ems for padding, margin, and font-sizes.
+- Links and buttons should include hover effects with a CSS transition to make the hover effects smooth.
+- Use anchor tags to link together the landing page and the blog page you created for the first portion of this site.
+- Use the appropriate Google Fonts to style the text on the page. Site uses [Lato](https://fonts.google.com/specimen/Lato) for paragraph text and [Raleway](https://fonts.google.com/specimen/Raleway) for all other text.
+- Code should follow best practices including proper indentation and valid syntax.
+- Use [HTML](https://html5.validator.nu/) and [CSS](https://jigsaw.w3.org/css-validator/#validate_by_input) validators to check for errors before submitting.
+- Include [browser prefixes](http://pleeease.io/play/) to make sure that newer CSS properties render consistently in different browsers.
 
-**Bonus:**
-
-- Some extra ideas for medium/advanced students
-- Another thing that would be good for you to practice
-- Brownie points for doing X, Y, Z
-
----
-
-#### Code of Conduct
-
-As always, your app must adhere to General Assembly's [student code of conduct guidelines](~/resources/guidelines/student-code-of-conduct.md).
-
-If you have questions about whether or not your work adheres to these guidelines, please speak with a member of your instructional team.
-
----
-
-#### Necessary Deliverables
-
-- Something about the format of thing one
-- Description of the format of thing two
-- Details about the style of thing three
-
----
+#### Bonus
+- Google and implement "jump links" to scroll to the appropriate page and section of that page when the user clicks on one of the links in the main navigation.
+- Add a hover effect for images in the gallery.
+- Google and implement a "fixed" effect for the background-image on the header (see .gif under Deliverable for an example)
+- Create wireframes for a Store page for the site and implement your design.
 
 #### Starter code
 
-Here's a few sentences explaining any started code that's included in the `starter-code` folder.
+You will continue working from the project you have been working on this week. All images needed for the landing page should be included in the images folder.
 
-#### Suggested Ways to Get Started
+#### Deliverable
 
-- Don’t hesitate to write throwaway code to solve short term problems
-- Read the docs for whatever technologies you use.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a developer
-- Write pseudocode before you write actual code.** Thinking through the logic of something helps.   
+Refer to these design mockups when building out the landing page. Pay close attention to detail!
 
----
+![Landing Page](screenshots/landing_page.png)
 
-> The section below is optional
+![Landing Page - Medium](screenshots/landing_page_medium.png)
 
-#### Potential Project Ideas
+![Landing Page - Small](screenshots/landing_page_small.png)
 
-##### Fake Project Idea One
+##### Mockups for bonus tasks:
+![Fixed header](screenshots/landing-header.gif)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat distinctio nemo vitae natus quisquam atque nihil quis consequuntur harum officia, dolorem iusto soluta quae voluptas incidunt, similique, saepe sequi?
-
-##### Fake Project Idea Two
-
-Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+![Gallery Hover](screenshots/gallery_hover.gif)
 
 
-##### Fake Project Idea Two
-
-Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
-
----
-
-### Useful Resources
-
-- A link to [something useful](http://www.w3schools.com/jsref/dom_obj_all.asp)
-- Extra relevant [resource for students](https://developer.mozilla.org/en-US/docs/Web/Events)
-
----
-
-#### Example Deliverable
-
-Here's a few sentences & a screenshot of what we expect you to make or do.
-
-![Example Image](https://cloud.githubusercontent.com/assets/25366/8370438/dd651c2c-1b7c-11e5-8638-c99e2f6c7c61.png)
-
-#### Project Feedback + Evaluation
-
-
-Base on the requirements you can earn a maximum of _____ points on this project. Your instructors will score each of your technical requirements using the scale below:
-
-    Score | Expectations
-    ----- | ------------
-    **0** | _Incomplete._
-    **1** | _Does not meet expectations._
-    **2** | _Meets expectations, good job!_
-    **3** | _Exceeds expectations, you wonderful creature, you!_
-
- This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
+## Hungry For More?:
+- Some extra ideas for medium/advanced students
+- Another thing that would be good for you to practice
+- Brownie points for doing X, Y, Z
