@@ -64,11 +64,12 @@ Be sure to pay attention to detail and consider the following:
 
 ### Useful Resources
 
-- [FontAwesome Icons](http://fontawesome.io/)
-
----
-
-## Hungry For More?:
-- Some extra ideas for medium/advanced students
-- Another thing that would be good for you to practice
-- Brownie points for doing X, Y, Z
+- [Getting Started with FontAwesome Icons](http://fontawesome.io/get-started/)
+- [HTML5 Validator](https://html5.validator.nu/)
+- [CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+- [HTML5 Tag Reference](http://www.htmldog.com/references/html/tags/)
+- [HTML5 Element Flowchart](http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf)
+- [CSS Property Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+- [Video - CSS Colors, Fonts and Background Basics](https://www.youtube.com/watch?v=UMMHsQPmfug&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=4)
+- [Video - CSS Selectors](https://www.youtube.com/watch?v=g0Aq2kP5-CY&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=5)
+- [Video - CSS Family Selectors](https://www.youtube.com/watch?v=Zudl-fCDSdM&index=14&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)

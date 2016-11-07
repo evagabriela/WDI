@@ -46,7 +46,16 @@ You will continue working from the project you started last night.
 ##### Bonus Task - Hover effect
 ![](screenshots/hover-effect.gif)
 
-## Hungry For More?:
-- Some extra ideas for medium/advanced students
-- Another thing that would be good for you to practice
-- Brownie points for doing X, Y, Z
+### Useful Resources
+
+- [Getting Started with FontAwesome Icons](http://fontawesome.io/get-started/)
+- [HTML5 Validator](https://html5.validator.nu/)
+- [CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+- [HTML5 Tag Reference](http://www.htmldog.com/references/html/tags/)
+- [HTML5 Element Flowchart](http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf)
+- [CSS Property Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+- [Video - Box Model](https://www.youtube.com/watch?v=HNgdhp1_kEE&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=6)
+- [Video - Display](https://www.youtube.com/watch?v=qjSe_K3agYc&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=7)
+- [Video - Flexbox Intro](https://www.youtube.com/watch?v=tqdqEiTlqF0&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=33)
+- [Video - Flexbox Pt. 2](https://www.youtube.com/watch?v=7d8aAw8mzjI&index=34&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
+- [Video - Flexbox Child Properties](https://www.youtube.com/watch?v=zDYAbI78dzc&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=35)

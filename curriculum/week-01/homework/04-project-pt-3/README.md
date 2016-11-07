@@ -44,7 +44,14 @@ Mobile screens:
 ![Small Blog Mockup](screenshots/blog_pt_3.png)
 
 
-## Hungry For More?:
-- Some extra ideas for medium/advanced students
-- Another thing that would be good for you to practice
-- Brownie points for doing X, Y, Z
+### Useful Resources
+
+- [Getting Started with FontAwesome Icons](http://fontawesome.io/get-started/)
+- [HTML5 Validator](https://html5.validator.nu/)
+- [CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+- [HTML5 Tag Reference](http://www.htmldog.com/references/html/tags/)
+- [HTML5 Element Flowchart](http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf)
+- [CSS Property Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+- [Video - Responsive Design](https://www.youtube.com/watch?v=BsuCBmzLf_U&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=21)
+- [Video - Media Queries](https://www.youtube.com/watch?v=GYygtVolViM&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=23)
+- [Video - Forms](https://www.youtube.com/watch?v=-5tH2qnTnH0&index=16&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
