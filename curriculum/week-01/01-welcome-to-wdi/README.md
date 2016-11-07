@@ -204,7 +204,7 @@ In egregious offenses (presenting another student’s project, an external produ
 #### Your programming experience
 - What did you enjoy about the programming you did in Fundamentals?
 
-
+- Note to instructor: there are lots of fun ice breakers you can experiment with either today or over the course of the next several days to build the community and culture in the course.
 ***
 
 <a name="conclusion"></a>
