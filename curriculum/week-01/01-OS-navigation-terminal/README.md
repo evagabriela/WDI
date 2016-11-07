@@ -1,9 +1,4 @@
----
-title: OS Navigation Using the Terminal
-duration: "2:00"
-creator:
-    name: John Doe
-    city: NYC
+
 ---
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) OS Navigation Using the Terminal (120 mins)
@@ -538,6 +533,3 @@ Bash isn't the only option. Check out zsh (http://code.joejag.com/2014/why-zsh.h
 	- https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-%28-basics-%29
 	- http://i.imgur.com/1c9y0.png
 
-
-
-> Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
