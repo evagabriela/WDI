@@ -1,21 +1,11 @@
-> #### *Guiding Questions When Using This Template*
->
-> - [ ] Are the requirements actionable?
-> - [ ] What will students have to do to prepare for this lab?
-> - [ ] Is this intended to be a group activity? Codealong? Pair programming?
-> - [ ] Can students practice pseudo-coding before beginning?
-> - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
-> Delete this section ^
-
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #: Project Title
+ # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) HW 1: Monument Magazine
 
 #### Overview
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat distinctio nemo vitae natus quisquam atque nihil quis consequuntur harum officia, dolorem iusto soluta quae voluptas incidunt, similique, saepe sequi?
+Congratulations! You have been hired as the developer for Monument Lifestyle Magazine. You are working closely with a designer and have been provided design mockups for the website. Your goal is to replicate these mockups as closely as possible.
 
-Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
+You will be adding components to the blog page for homework each night this week and will be working on building the landing page for the site over the weekend.
 
-Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
 
 ---
 
@@ -23,91 +13,51 @@ Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit ame
 
 Your work must:
 
-- Make a thing that does something
-- Have it do something else
-- This is what we expect of you
-- Make a thing that does something
-- Have it do something else
-- This is what we expect of you
+
+- Use a unique title and a single unique h1 tag
+- Show images using img tags including unique alt attributes
+- Use an external CSS stylesheet to style your pages
+- Your HTML file should be properly structured, including a head and body.
+- Your HTML file should handle the structure for your page and your CSS file should handle all the styles.
+- Follow naming conventions, maintain consistency across your .html and .css files
+- Indent nested elements to increase your code's readability
+
 
 **Bonus:**
 
-- Some extra ideas for medium/advanced students
-- Another thing that would be good for you to practice
-- Brownie points for doing X, Y, Z
-
----
-
-#### Code of Conduct
-
-As always, your app must adhere to General Assembly's [student code of conduct guidelines](~/resources/guidelines/student-code-of-conduct.md).
-
-If you have questions about whether or not your work adheres to these guidelines, please speak with a member of your instructional team.
-
----
-
-#### Necessary Deliverables
-
-- Something about the format of thing one
-- Description of the format of thing two
-- Details about the style of thing three
-
----
+- Google and implement a background-image for the header section. You will want to look up properties such as background-image, background-size, and background-position.
+- Google and implement FontAwesome Icons for the footer links to Facebook, Twitter and Instagram.
+- Look up Emmet shortcuts for how to quickly scale up your HTML.
+- Experiment with HTML tags and CSS properties that have not yet been covered in class.
 
 #### Starter code
 
-Here's a few sentences explaining any started code that's included in the `starter-code` folder.
+Images that you'll need to recreate the blog have been provided in the Starter Code folder. This folder contains images that you will use today as well as images that you will use when you build the landing page.
 
 #### Suggested Ways to Get Started
 
-- Don’t hesitate to write throwaway code to solve short term problems
-- Read the docs for whatever technologies you use.** Most of the time, there is a tutorial that you can follow, but not always, and learning to read documentation is crucial to your success as a developer
-- Write pseudocode before you write actual code.** Thinking through the logic of something helps.   
+- First you'll want to create a blog.html file for the blog (you'll be using index.html for the landing page you'll build over the weekend)
+- Then you'll want to create a css file for the project.
+- Add a link to the CSS file in the head of your HTML file.
+- Start by writing the HTML for the assignment and focusing on the _structure_ of the page (~ 20 minutes)
+- Look at the design and start with the most general styles. For example, what color is most of the text? Does most of the text appear to use the same font-family? (~10 minutes)
+- Then begin adding more specific styles for elements (~ 15 min)
 
----
+#### Deliverable
 
-> The section below is optional
+##### Mockup:
+![](screenshots/blog_pt_1.png)
 
-#### Potential Project Ideas
-
-##### Fake Project Idea One
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat distinctio nemo vitae natus quisquam atque nihil quis consequuntur harum officia, dolorem iusto soluta quae voluptas incidunt, similique, saepe sequi?
-
-##### Fake Project Idea Two
-
-Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.
-
-
-##### Fake Project Idea Two
-
-Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
-
----
+##### Mockup with Bonus Tasks:
+![](screenshots/blog_pt_1_challenge.png)
 
 ### Useful Resources
 
-- A link to [something useful](http://www.w3schools.com/jsref/dom_obj_all.asp)
-- Extra relevant [resource for students](https://developer.mozilla.org/en-US/docs/Web/Events)
+- [FontAwesome Icons](http://fontawesome.io/)
 
 ---
 
-#### Example Deliverable
-
-Here's a few sentences & a screenshot of what we expect you to make or do.
-
-![Example Image](https://cloud.githubusercontent.com/assets/25366/8370438/dd651c2c-1b7c-11e5-8638-c99e2f6c7c61.png)
-
-#### Project Feedback + Evaluation
-
-
-Base on the requirements you can earn a maximum of _____ points on this project. Your instructors will score each of your technical requirements using the scale below:
-
-    Score | Expectations
-    ----- | ------------
-    **0** | _Incomplete._
-    **1** | _Does not meet expectations._
-    **2** | _Meets expectations, good job!_
-    **3** | _Exceeds expectations, you wonderful creature, you!_
-
- This will serve as a helpful overall gauge of whether you met the project goals, but __the more important scores are the individual ones__ above, which can help you identify where to focus your efforts for the next project!
+## Hungry For More?:
+- Some extra ideas for medium/advanced students
+- Another thing that would be good for you to practice
+- Brownie points for doing X, Y, Z
