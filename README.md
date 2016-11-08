@@ -22,10 +22,10 @@ Included in this repository/folder:
 
 2. **Resources/** - various supplementary instructor-facing resources, including templates (for lesson plans, labs, homework, etc.), onboarding materials, and style guide.
 
-4. [**Contributing Guidelines**](contributing-guidelines.md) - information about how to submit materials you create, adapt, or fix back to the global General Assembly team.
+4. [**Contributing Guidelines**](resources/guidelines/contributing.md) - information about how to submit materials you create, adapt, or fix back to the global General Assembly team.
 
 ## Contributing and Reporting Issues
 
 We encourage local instructional teams to fork this repository directly.  Each week, we hope you'll have curricular improvements or suggestions to submit, via pull request or issue, to make our curriculum better.
 
-Please check out our [contributing guidelines](contributing.md) for more details.
+Please check out our [contributing guidelines](resources/guidelines/contributing.md) for more details.
