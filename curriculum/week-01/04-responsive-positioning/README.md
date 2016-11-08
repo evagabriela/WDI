@@ -1,11 +1,11 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Positioning and Media Queries (90 mins)
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Positioning and Responsive Design (90 mins)
 
 | Timing | Type | Topic |
 | --- | --- | --- |
 | 5 mins | [Introduction](#introduction-positioning) | Positioning |
 | 15 mins | [Demo/Codealong](#demo-positioning) | Positioning |
-| 10 mins | [Introduction](#introduction-mq) | Media Queries |
-| 20 mins | [Demo/Codealong](#demo-mq) | Media Queries |
+| 10 mins | [Introduction](#introduction-rd) | Responsive Design |
+| 20 mins | [Demo/Codealong](#demo-rd) | Responsive Design |
 | 40 mins | [Independent Practice](#ind-practice) | Topic |
 
 ### LEARNING OBJECTIVES
@@ -187,8 +187,8 @@ Great! Now we have a sticky `nav` that will stay at the top of the page while th
 
 ***
 
-<a name="introduction-mq"></a>
-## Introduction: Topic (10 mins)
+<a name="introduction-rd"></a>
+## Introduction: Responsive Design (10 mins)
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
 
@@ -219,7 +219,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam paria
 
 ***
 
-<a name="demo-mq"></a>
+<a name="demo-rd"></a>
 ## Demo / Codealong: Topic (20 mins)
 Walk through a codealong or demonstration of something.
 
@@ -259,7 +259,14 @@ Briefly describe the Independent Practice exercise here.  What is the end delive
 ***
 
 ## Hungry for more?
-- Exercises
-- Videos
-- Readings
-- Decks
+### Exercises
+- [Build a Web  Comic](https://googlecreativelab.github.io/coder-projects/projects/comic_creator/)
+
+### Videos
+- [CSS Position](https://www.youtube.com/watch?v=zH8kjJdvmOs&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=8)
+- [CSS Responsive Design](https://www.youtube.com/watch?v=BsuCBmzLf_U&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=21)
+- [CSS Responsive Design - Media Queries](https://www.youtube.com/watch?v=GYygtVolViM&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=23)
+- [CSS Mobile First - min/max-width/height](https://www.youtube.com/watch?v=iQIj7Lu64M4&index=22&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
+
+### Readings
+- [The Lowdown On Absolute vs. Relative Positioning](https://codemyviews.com/blog/the-lowdown-on-absolute-vs-relative-positioning)
