@@ -24,7 +24,7 @@ Included in this repository/folder:
 
 4. [**Contributing Guidelines**](contributing-guidelines.md) - information about how to submit materials you create, adapt, or fix back to the global General Assembly team.
 
-## Contributing
+## Contributing and Reporting Issues
 
 We encourage local instructional teams to fork this repository directly.  Each week, we hope you'll have curricular improvements or suggestions to submit, via pull request or issue, to make our curriculum better.
 
