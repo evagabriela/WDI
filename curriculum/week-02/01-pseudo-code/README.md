@@ -7,7 +7,7 @@ creator:
 
 ---
 
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Lesson Title (# mins)
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Intro to Pseudocode (60 mins)
 
 | Timing | Type | Topic |
 | --- | --- | --- |
