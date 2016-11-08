@@ -1,6 +1,6 @@
 # GA Contribution Guide
 
-Our instructor community has grown tremendously, and local markets do so much to adapt, correct bugs, and enhance this curriculum as they prepare for the classroom.  For this reason, if you have the time, we ask that you contribute your work back to the master repository and use the documentation below as guidance.
+Our instructor community has grown tremendously, and local markets do so much to adapt, correct bugs, and enhance this curriculum as they prepare for the classroom.  It is vital to General Assembly's work to create best-in-class curriculum and resource sharing. We ask that you contribute your work back to the master repository and use the documentation below as guidance.
 
 Included in this file is information about:
 
@@ -9,14 +9,16 @@ Included in this file is information about:
 - [Using Labels Appropriately](#labels)
 - [Contributor Expectations](#contributors-expectations)
 
-_Note: A lot of the language in this readme has been taken and adapted from GitHub's guidelines about contributing to open-source projects_.
+_Note: GA has worked with instructors and instructor support staff to determine why and how to leverage licensure, so we can protect the IP of our course materials while also maintaining high standards for instructor and student experience._ 
+
+_Effective 8/8/16, all GA staff must create and incorporate the appropriate licenses on all new and pre-existing publicly available course materials - lesson plans, exercises, lab activities, HWs, projects, etc. To do this, follow the Github Content Licensing Guide, found  <a href="https://generalassembly.atlassian.net/wiki/display/LEGAL/Github+Content+Licensing+Guide" target="blank">here</a> on Confluence._
 
 
 ## The Community
 
 We've broken down the WDI community as follows:
 
-- **Owner:** Mehan Jayasuriya, Product Manager
+- **Owner:** Jay Tong, Product Manager
 
 - **Maintainers** (write access to the repository): Lead and Senior Instructors; Instructional Designers
 
