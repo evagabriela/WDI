@@ -1,4 +1,4 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Box Model and Flexbox (90 mins)
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Box Model and Flexbox
 
 | Timing | Type | Topic |
 | --- | --- | --- |
@@ -27,7 +27,8 @@ All HTML elements can be considered boxes. Even if you see a circle, it's living
 The CSS box model describes this principle - a box wraps around all HTML elements, and it consists of: margins, borders, padding, and the actual content. This model allows us to place a border around elements and space elements in relation to other elements. With CSS properties and values, it is possible to apply specific styles to each of these elements, and change the way they behave and/or display on the page.
 
 #### Layout: Turn & Talk (5 mins)
-Install the <a href="https://chrome.google.com/webstore/detail/pesticide-for-chrome/bblbgcheenepgnnajgfpiicnbbdmmooh">Pesiticide Chrome Extension</a>, which visualizes all DOM elements as boxes. Work with a parter to investigate a few different sites using the extension, and discuss how the Box Model might help you to control layout.
+- Install the <a href="https://chrome.google.com/webstore/detail/pesticide-for-chrome/bblbgcheenepgnnajgfpiicnbbdmmooh">Pesiticide Chrome Extension</a>, which visualizes all DOM elements as boxes.
+- Work with a parter to investigate a few different sites using the extension, and discuss how the Box Model might help you to control layout.
 
 ***
 
@@ -90,13 +91,16 @@ What happens when we drop this code into the CSS file?
 }
 ```
 
-The universal selector ```*{ }``` is a great way to apply a style to every element on the page *without* using inhertiance. We'll teach you more about this selector in a later lesson. For now, it helps us see the boundaries of different elements. Pay special attention to how much space elements take up on the page, and how that space differs for block and inline elements.
+The universal selector ```*{ }``` is a great way to apply a style to every element on the page *without* using inheritance. We'll teach you more about this selector in a later lesson. For now, it helps us see the boundaries of different elements. Pay special attention to how much space elements take up on the page, and how that space differs for block and inline elements.
 
 ### Box Model Components
 The image below illustrates the box model and what you should have seen in your dev tools:
+
+
+
 ![Box Model](assets/box-model-alt-small.png)
 
-But what do these different layers mean, and how are they relating to one another?
+But what do these different layers mean, and how are they related to one another?
 - Margin: clears an area around the border (or boundaries of the padding if no border); the margin does not have a background color, it is completely transparent
 - Border: a border that goes around the padding and content; the border is affected by the background color of the box unless a color is declared
 - Padding: clears an area around the content; the space between the content and the border; the padding is affected by the background color of the box
@@ -104,7 +108,7 @@ But what do these different layers mean, and how are they relating to one anothe
 
 Let's get go into some more detail and practice with each of these elements of The Box Model.
 
-**Margin**
+#### Margin
 The margin is the space around the element. The larger the margin, the more space between our element and the elements around it. We can adjust the margin to move our HTML elements closer to or farther from each other.
 
 Adjusting our margins not only moves our element relative to other elements on the page but also relative to the "walls" of the HTML document. For example, if we declare the width of our ```<div>``` and set its margin to auto, this tells the document to automatically put equal left and right margins on our element. The equal left and right margins calculate based on the width of the document, centering it on the page.
@@ -146,7 +150,7 @@ p {
 }
 ```
 
-**Border**
+#### Border
 The border is the edge of the element. It's what we've been making visible every time we set the border property. You can use shortand for setting ```border```, just like we did with ```margin```. Lets add a border to our ```<div>```:
 
 ```css
@@ -162,7 +166,7 @@ div {
 }
 ```
 
-**Padding**
+#### Padding
 The padding is the spacing between the content and the border. Padding comes in handy for creating space between the text and the border, or using the background color of the box. We can adjust padding to move the border (or boundaries of our box) closer to or farther from the content. Shorthand can be used with padding as well. Let's try out some changes to our ```div``` with the border.
 
 ```css
@@ -188,7 +192,8 @@ div {
 
 Our container still looks great!
 
-**Important Note**
+**Important Note**:
+
 Padding and Border will increase the width of your element, even if you've *declared* the width. In the CSS above, we see the width set to `40em`, and the padding set to `2em`. What is the actual width of this element? What would the width be if we kept the border declaration?
 
 - `44em`
@@ -201,15 +206,20 @@ This width increase can cause frustration and confusion when we start to create 
 ## Refresher: How Display Affects Spacing & Layout (5 mins)
 We just learned each HTML element gets its own box to live in. Cool, right?
 
-As you saw, the outermost box of each element went all the way across the page. This is why, until now, your HTML elements have been sitting on top of one another: by default, they take up the full width of the page. We can change all this with the first positioning property we'll learn, the display property and the four values we can use: inline, block, inline-block, and none.
+As you saw, the outermost box of each element went all the way across the page. This is why, until now, your HTML elements have been sitting on top of one another: by default, they take up the full width of the page. We can change all this with the first positioning property we'll learn, the display property and the four values we can use:
+- inline
+- block
+- inline-block
+- none.
 
-An inline element has no line break before or after it. This makes the element sit on the same line as another element, but without formatting it like a block. It only takes up as much width as it needs (not the whole line). Inline places all your elements on a single line. The bad news is that it doesn't maintain their "box"ness, so exciting techniques like centering with `margin:auto;` are not possible with inline elements.
+An **inline element** has no line break before or after it. This makes the element sit on the same line as another element, but without formatting it like a block. It only takes up as much width as it needs (not the whole line). Inline places all your elements on a single line. The bad news is that it doesn't maintain their "box"ness, so exciting techniques like centering with `margin:auto;` are not possible with inline elements.
 
-A block element has some whitespace above and below it and does not tolerate any HTML elements next to it without further styling. This makes the element a block box. It won't let anything sit next to it on the page and takes up the full width.
+A **block element** has some whitespace above and below it and does not tolerate any HTML elements next to it without further styling. This makes the element a block box. It won't let anything sit next to it on the page and takes up the full width.
 
-An inline-block element is _placed_ as an inline element (on the same line as adjacent content), but it _behaves_ as a block element. This makes the element a block box but will allow other elements to sit next to it on the same line.
+An **inline-block element** is _placed_ as an inline element (on the same line as adjacent content), but it _behaves_ as a block element. This makes the element a block box but will allow other elements to sit next to it on the same line.
 
 If you assign ```none``` as the value of the ```display```, this will make the element and its content disappear from the page entirely! However, some browsers
+<!--Please complete or delete the incomplete sentence above.  -->
 
 To illustrate all ```display``` values, consider this HTML:
 ```html
@@ -298,6 +308,7 @@ We can fix these issues by adding an empty `<div>` with a property of `clear: bo
 ### Enter: The Clearfix
 [Nicolas Gallagher](http://nicolasgallagher.com/micro-clearfix-hack/) created a technique that eliminates the bad practice issues `clear: both;` causes, simply by adding a class to the parent container. And because it's a class, it's reusable!
 
+<!-- Is this complete?  This doesn't seem like a complete explanation of the Cleafix. -->
 
 ***
 
@@ -492,13 +503,13 @@ https://github.com/ga-dc/hyrule_potion_shop
 ***
 
 ## Hungry for more?
-###Exercises
+### Exercises
 - [Build a Mondrian](https://googlecreativelab.github.io/coder-projects/projects/mondrian/)
 - [Flexbox Froggy](http://flexboxfroggy.com)
 - [Flexbox Defense](http://www.flexboxdefense.com)
 - [Flexplorer](http://bennettfeely.com/flexplorer/)
 
-###Videos
+### Videos
 - [CSS Box Model](https://www.youtube.com/watch?v=HNgdhp1_kEE&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=6)
 - [CSS Display](https://www.youtube.com/watch?v=qjSe_K3agYc&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=7)
 - [CSS Floats](https://www.youtube.com/watch?v=-4Yy3WNmvmg&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=11)
@@ -508,7 +519,7 @@ https://github.com/ga-dc/hyrule_potion_shop
 - [Flexbox Problem Solving Part 1](https://www.youtube.com/watch?v=wBlBTO7mqoI&index=109&list=PLae1he6d1WImFXtLgPt7MDAx6k6iP59EW)
 - [Flexbox Problem Solving Part 2](https://www.youtube.com/watch?v=_I58MXDnBEs&index=110&list=PLae1he6d1WImFXtLgPt7MDAx6k6iP59EW)
 
-###Readings
+### Readings
 - [* { Box-sizing: Border-box } FTW](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
 - [MDN Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
 - [A Visual Guide to CSS3 Flexbox Properties](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
