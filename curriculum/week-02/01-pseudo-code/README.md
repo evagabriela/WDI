@@ -11,11 +11,12 @@ creator:
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction) | Topic |
-| x min | [Demo/Codealong](#demo) | Topic |
-| x min | [Guided Practice](#guided-practice) | Topic |
-| x min | [Independent Practice](#ind-practice) | Topic |
-| x min | [Conclusion](#conclusion) |Topic |
+| 5 min | [Opening](#opening) | What is pseudocode? |
+| 15 min | [Guided Practice: What does it look like?](#guided-practice) | Reading Pseudocode |
+| 10 min | [Independent Practice: Solve the Waiter Problem](#ind-practice) | Practice |
+| 10 min | [Approaching a coding problem](#approaching-problem) | Approach |
+| 15 min | [Independent Practice: Pseudocode a real-world problem](#real-world-practice) | Practice |
+| 5 min | [Conclusion](#conclusion) |Topic |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -37,7 +38,7 @@ creator:
 
 ---
 <a name="opening"></a>
-## Opening (10 mins)
+## Opening (5 mins)
 
 According to wikipedia, [pseudocode is](https://en.wikipedia.org/wiki/Pseudocode):
 > Pseudocode is an informal high-level description of the operating principle of a computer program or other algorithm.
@@ -65,7 +66,7 @@ Is writing out pseudocode a step that real-world developers take? Watch this vid
 
 ***
 
-### Guided Practice: What does that look like? (15 min)
+## Guided Practice: What does that look like? (15 min)
 
 Pseudocode should describe the entire logic of the algorithm so that programming becomes a task of translating line by line of pseudocode into real code.
 
@@ -164,6 +165,7 @@ Computers are not smart. We need to give them step by step instructions to accou
 
 Computers can not adapt, but we can.  Your first pass at pseudocode will probably not cover everything.  Once you know more, you may come back to update and refactor your pseudocode.
 
+***
 
 ## Independent Practice: Solve the Waiter Problem (5 min)
 
@@ -185,7 +187,9 @@ Using your new found skills, you have 5 minutes to solve this:
 
 We realize you didn't have enough time to solve it.  We hope that, through this exercise, you learned the importance of clearly identifying the problem.
 
-## Approaching a coding problem (15 min)
+***
+
+## Approaching a coding problem (10 min)
 
 Pseudocode isn't just about writing down the steps that you already know.  It's a tool to help you work through the problem.  Before we can write pseudocode to solve the problem, we need to know the problem.  
 
@@ -237,7 +241,7 @@ When we first approach a problem, we see the big picture.  "Break it down" gives
 Pseudocoding proves that we have *identified* the problem, understand it *conceptually*, and have *broken it down* into *small steps* that we can follow.
 
 
-## Syntax for Pseudocode:
+#### Syntax for Pseudocode:
 
 There is no one, fixed syntax for pseudocode.  It just needs to be clear, simple, and concise.  
 
@@ -268,9 +272,9 @@ If you feel stuck, feel free to use this syntax:
 
   ENDWHILE;
   ```
+***
 
-
-## Individual Practice: Pseudocode a real-world problem (20 min)
+## Individual Practice: Pseudocode a real-world problem (15 min)
 
 Break into small groups and pick one of the following programs to pseudocode:
 
@@ -310,6 +314,8 @@ reviewing each other's code, leaving feedback.
 
 If time permits, switch teams and tackle an option that neither partner has done
 before for another 10 minutes. Repeat the the review process.
+
+<!-- ID NEEDED -  Should these bonus exercises be split out into a separate file? -->
 
 
 ## Bonus Exercise: Pseudocode FizzBuzz (15 min - If time permits)
@@ -385,7 +391,7 @@ The programmer says, "There were eggs!"
 > Instructor Note: See possible solution in the solutions folder [here](solutions/eggs.MD)
 
 <a name="conclusion"></a>
-## Conclusion (# mins)
+## Conclusion (5 mins)
 - Review independent practice deliverable(s)
 - Recap topic(s) covered in today's lesson
 - Preview topics that will be covered in today's lessons.
