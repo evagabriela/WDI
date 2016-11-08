@@ -3,15 +3,15 @@
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| 5 min | [Opening](#opening) | Opening |
-| 25 min | Intro to New Material | [How Does the Internet Work](#how-does-the-internet-work) |
-| 25 min | Intro to New Material | [The Internet Protocol Suite](#the-ip-suite)  |
-| 25 min | Guided Practice | [Play the IP and TCP Game](#play-the-ip) |
-| 15 min | | [RESTful Approach](#restful-approach)  |
-| 15 min |  | [The World Wide Web](#the-world-wide-web) |
-| 5 min | [Conclusion](#conclusion) |Q & A |
+| 5 min | Opening | [Opening](#opening) |
+| 15 min | Intro to New Material | [How Does the Internet Work](#how-does-the-internet-work) |
+| 15 min | Intro to New Material | [The Internet Protocol Suite](#the-ip-suite)  |
+| 20 min | Guided Practice | [Play the IP and TCP Game](#play-the-ip) |
+| 15 min | Intro to New Material | [RESTful Approach](#restful-approach)  |
+| 15 min | Intro to New Material | [The World Wide Web](#the-world-wide-web) |
+| 5 min | Conclusion |[Q & A](#conclusion)|
 
-<!--See above for correct structure for the lesson outline table.  "Type" should list what type of activity (Intro to New Material, Demo, Independent Practice, etc) and "Topic" should be the cencept that is covered. -->
+<!--See above for correct structure for the lesson outline table.  "Type" should list what type of activity (Intro to New Material, Demo, Independent Practice, etc) and "Topic" should be the concept that is covered. -->
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -37,8 +37,8 @@
 Just how a race-car driver should understand how their car runs, it is imperative for web developers to have clear mental models of how the Internet functions when building web applications. Knowledge of Internet fundamentals will allow for new concepts to be understood in a more complete context.
 
 <a name="how-does-the-internet-work"></a>
-## How does the Internet work? (25 mins)
-
+## How does the Internet work? (15 mins)
+<!-- Will this section really take 15 minutes? -->
 #### What is the Internet?
 
 * A network of interconnected computers that communicate over a given set of protocols.
@@ -65,8 +65,8 @@ Just how a race-car driver should understand how their car runs, it is imperativ
 * Protocols
 
 
-<a name="ip-addresses"></a>
-## Internet Protocol and Addresses (25 mins)
+<a name="the-ip-suite"></a>
+## Internet Protocol and Addresses (15 mins)
 
 #### Addresses:
 
@@ -191,13 +191,15 @@ localhost:3000      port 3000 on the internal loopback address
 
 
 <a name="play-the-ip"></a>
-## The Internet Protocol Suite - Play the IP and TCP Game (Meet Ivan Pakkitz) (25 mins)
+## The Internet Protocol Suite - Play the IP and TCP Game (Meet Ivan Pakkitz) (20 mins)
 
 So how does data travel through the internet?
 
 Any data you send over the Internet is split up into data packets. Each packet is routed to the destination eventually, but may all take different paths to get there.
 
 Let's take a look at an example.
+
+#### Ivan Pakkitz
 
 Ivan is a postal worker who can travel at the speed of light. He's happy to relay thousands of messages per second between you and a friend. However, he can only transport one message at a time and each message has to fit on a single index card.
 
@@ -209,6 +211,8 @@ Unfortunately, Ivan is incredibly inattentive, so there are a few minor limitati
 * Recipient:   He cannot guarantee that messages will always be delivered to the correct recipient.
 
 For our lab, we will assume that Ivan:
+
+<!--Can we be more specific in this section about what the Guided Practie is?  How do Ivan and Debbie fall into this exploration?  -->
 
 * Shuffles the cards before delivering them
 * Sometimes drops a card on the floor (maybe 1 out of 10 cards)
@@ -303,7 +307,7 @@ TCP is great for plain text messages like web content, e-mails, and IMs.
 
 
 <a name="restful-approach"></a>
-## RESTful approach (Representational State Transfer) (# mins)
+## RESTful approach (Representational State Transfer) (15 mins)
 
 #### What is REST?
 
@@ -347,7 +351,7 @@ Created by Roy Fielding for his Ph.D. thesis.
 * http://mytodos.com/mikeh
 
 
-## The World Wide Web (# mins)
+## The World Wide Web (15 mins)
 
 #### World Wide Web vs. The Internet
 
@@ -392,7 +396,7 @@ So how does HTML relate to CSS and Javascript?
 
 ![](assets/web-technologies.png)
 
-<!-- We can probably replace this image with a more high-quality graphic. -->
+<!-- We can probably replace this image with a more high-quality graphic.  Please add to the graphics spreadsheet! -->
 
 You can think of HTML CSS and JS as the three major parts of speech in human language: nouns, adjectives, and verbs.
 - HTML is the noun as it is in charge of organizing content (text, photos, videos, audio, links, etc) into a file.
@@ -400,13 +404,13 @@ You can think of HTML CSS and JS as the three major parts of speech in human lan
 - JavaScript is the verb as it can add behavior and dynamism to the content.
 
 
-
+<!--Can you please suggest a couple of checks-for-understanding throughout the lesson?  -->
 
 
  ***
 
 <a name="conclusion"></a>
-## Conclusion (# mins)
+## Conclusion (5 mins)
 - Recap topics covered in today's lesson
 - Review objectives
 
@@ -428,5 +432,3 @@ There's tons of technical acronyms and jargon in the world. Understanding the ba
 	- [TCP/IP Protocol Explained](http://www.thegeekstuff.com/2011/11/tcp-ip-fundamentals/)
 	- [Internet Protocol Suite Wikipedia Page](https://en.wikipedia.org/wiki/Internet_protocol_suite)
 	- [How the Internet Works — Stanford](http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
-
-> Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.
