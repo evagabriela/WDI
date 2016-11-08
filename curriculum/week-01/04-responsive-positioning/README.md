@@ -190,72 +190,85 @@ Great! Now we have a sticky `nav` that will stay at the top of the page while th
 <a name="introduction-rd"></a>
 ## Introduction: Responsive Design (10 mins)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
+Responsive Design is the strategy of making a site that "responds" to the browser and device on which it's being displayed. This means a website is usable, readable, and looks great on any and all screen-sizes.
+
+Or, the dryer Wikipedia definition:
+
+Responsive web design (RWD) is a web design approach aimed at crafting sites to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from mobile phones to desktop computer monitors).
+
+### Responsive Design is **not** Device-Specific
+
+A responsive site doesn't just look good on the newest phone, watch, tablet, or mega-screen– it looks good on *any* sized screen. This might seem impossible, but it's relatively straightforward. All that's required is writing a series of rules, called Media Queries, which check the size of the browser/device on which the site is being viewed, and adjust the CSS as needed.
+
+### Media Queries
+
+Media Queries are conditional style rules for the size of the browser/device rendering the site. Let's look at an example.
+
+We already know that if we do something like this:
+
+```css
+p {
+  color: red;
+}
+
+p.blue_text {
+  color: blue;
+}
+```
+
+By default, all p tags will have red text– unless they have the class blue_text, in which case, the text will be blue. We can do a similar thing with media queries.
+
+```css
+p {
+  color: blue;
+}
+
+@media screen and (min-width: 600px) {
+  p {
+    color: red;
+  }
+}
+```
+
+Now, all p tags will be red, until the screen size reaches 600px, when they'll turn blue. How do we determine the pixel width to use in the media query?
+
+### Breakpoints
+
+The best approach to identifying the size of a media query is to test your site for breakpoints. A breakpoint is simply a specific browser width where the layout either breaks or no longer follows the intended design. Another way to think about it? The design looks 'off' or just plan bad!
+
+You can use Chrome Dev Tools to measure the width of a page open in the browser. Adjust the width of the browser and identify breakpoints. If you see an unintended or unsavory change in design/layout, your media query should be set to the width of browser when the change occurs. These numbers will not typically be 'nice' or even like `1050px` but more likely seem random like `527px`.
+
+What else do we need to get started?
+
+### The Viewport Meta Tag!
+We've seen some problems that can happen if we don't override some of the initial properties of a website. One of the properties we need to override is the viewport:
 
 ```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>
-      Example
-    </title>
-  </head>
-  <body>
-    <h1>
-      Example Page
-    </h1>
-    <p>
-      This is an example page.
-    </p>
-  </body>
-</html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 ```
-![DOM Tree](http://www.computerhope.com/jargon/d/dom1.jpg)
 
-#### Use non-section headings to divide content
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam pariatur ab cum temporibus, velit expedita? Pariatur illum, iusto animi iste consectetur quam voluptatem provident! Velit molestias doloremque error harum.
+This ensures that the viewport the same as the screen, and display at a natural zoom of 100%.
 
-> Check: Insert 1-2 guiding questions to ensure students are comprehending the material.
+If you don't include this tag, the browser gets to choose the default viewport width and will not adhere to the correct media query style rules. In other words, a mobile browser might set its viewport width to `1080px` and display the layout meant for a screen that size.
+
+Here's an example of a site that hasn't overridden the viewport: [http://www.tcgplayer.com](http://www.tcgplayer.com)
+
 
 ***
 
 <a name="demo-rd"></a>
-## Demo / Codealong: Topic (20 mins)
-Walk through a codealong or demonstration of something.
+## Demo / Codealong: Responsive Design (20 mins)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
+So how can we make more impactful changes in our site using media queries? Let's look at a multi-column layout using `flexbox`.
 
-```ruby
-def lorem
-  return 'some stuff'
-end
-```
+<!-- SME NEEDED: demo with flexbox layout going from 3 columns to 2 to 1  -->
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nemo eius quo, soluta maxime provident temporibus aperiam eveniet eum. Non, soluta error veritatis pariatur praesentium beatae reprehenderit, numquam quaerat. Lorem ipsum dolor sit amet.
-
-Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
-
-```ruby
-def another_lorem
-  this = some_method(0+2)
-  return this.to_json
-end
-```
-
-> Check: By this point, students should be able to write out or code their own methods / functions / arguments / etc.
 
 ***
 
 <a name="ind-practice"></a>
 ## Independent Practice: Topic (60 minutes)
-Use the lesson topic/skill to create a deliverable that meets certain criteria.
-
-> Instructor Note: This can be a pair programming activity or done independently.
-
-Briefly describe the Independent Practice exercise here.  What is the end deliverable?  What skills will it help students practice?  Include a link to the Github folder, which will include a more exhaustive description of the exercise, as well as any code, files or assets for students to download.
-
-> Check: Were students able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?
-
+<!-- SME NEEDED: repurpose this code for an independent practice exercise https://github.com/ga-wdi-exercises/learning-responsive-web-design  -->
 ***
 
 ## Hungry for more?
@@ -270,3 +283,12 @@ Briefly describe the Independent Practice exercise here.  What is the end delive
 
 ### Readings
 - [The Lowdown On Absolute vs. Relative Positioning](https://codemyviews.com/blog/the-lowdown-on-absolute-vs-relative-positioning)
+- [Responsive Web Design - An Original Introduction](http://alistapart.com/article/responsive-web-design)
+- [Why You Don't Need Device Specific Breakpoints](https://responsivedesign.is/articles/why-you-dont-need-device-specific-breakpoints)
+- [7 Habits of Highly Effective Media Queries](http://bradfrost.com/blog/post/7-habits-of-highly-effective-media-queries/)
+- [Media Queries for Standard Devices](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
+- [Logical Operators in Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Logical_operators)
+- [A Tale of Two Viewports](http://www.quirksmode.org/mobile/viewports.html)
+- [Responsive Design Pattern Examples](https://bradfrost.github.io/this-is-responsive/patterns.html)
+- [Complex Navigation Patterns for Responsive Design](http://bradfrost.com/blog/web/complex-navigation-patterns-for-responsive-design/)
+- [mediaqueri.es - a collection of responsive site examples](http://mediaqueri.es/)
