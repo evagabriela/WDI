@@ -9,7 +9,7 @@
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Describe what a wireframe is and its role in a the development process
+- Describe what a wireframe is and its role in the development process
 - Describe the differences between low/medium/high fidelity markups
 - Create a wireframe to define the layout and user flow for your app
 - Adjust layout based on hierarchy of content
@@ -19,22 +19,25 @@
 ---
 
 <a name="introduction-wf"></a>
-## Introduction: Topic (10 mins)
+## Introduction: Wireframes (10 mins)
 
-Wireframes illustrate how the user navigates to and interfaces with information presented to them. A wireframe answers questions as general as "How does a user access the About page?" and as specific as "What will change on the screen if the user clicks 'submit'?" Most wireframes are free of any color or visual design elements, and simply show boxes and lines with notations to outline user interactions.
+Wireframes illustrate how the user navigates to and interfaces with information presented to them. A wireframe answers questions as general as _"How does a user access the About page?"_ and as specific as _"What will change on the screen if the user clicks 'submit'?"_ Most wireframes are free of any color or visual design elements, and simply show boxes and lines with notations to outline user interactions.
 
 ![Wireframe](assets/wireframe.png)
 
 ### Wireframes in the Wild
-As a developer, you'll often build pages and sites from wireframes created by User Experience (UX) Designers. Wireframes should detail out any and all functionality on the page. If building a website was like building a house, wireframes might be considered the blueprints of the site. They're an important element of communication between the design and engineer teams.
+As a developer, you'll often build pages and sites from wireframes created by User Experience (UX) Designers. Wireframes should detail any and all functionality on the page. If building a website was like building a house, wireframes might be considered the blueprints of the site. They're an important element of communication between the design and engineering teams.
 
 ### Want to Create Your Own?
-Wireframing before you build a page or site can be a helpful exercise to plan the functionality and basic layout– especially if your team doesn't have UX Designers. Low-fi wireframes, often called thumbnail sketches, are an easy and quick way to begin. Thumbnail sketches are meant to be drawn quickly, as a way to fast-prototype different layouts for your content. They consist of very simple boxes and lines to represent different elements on the page.
+
+#### Wireframes
+Wireframing before you build a page or site can be a helpful exercise to plan the functionality and basic layout– especially if your team doesn't have UX Designers. Low-fi wireframes, often called thumbnail sketches, are an easy and quick way to begin. Thumbnail sketches are meant to be drawn quickly, as a way to prototype different layouts for your content. They consist of very simple boxes and lines to represent different elements on the page.
 
 ![Thumbnail Sketches](assets/thumbnail-sketches.jpg)
 [via sopachu.wordpress.com](https://soapchu.wordpress.com/category/traditional-illustrations/)
 
-You might also start by creating User Stories. Imagine 3-4 different types of users that will come to your site. Is is a first-time user? A user hesitant to sign up? A user who's been a member of the site for years? How will these personas change the function of your site?
+#### User Stories
+You might also start by creating User Stories. Imagine 3-4 different types of users that will come to your site. Is this a first-time user? A user hesitant to sign up? A user who's been a member of the site for years? How will these personas change the function of your site?
 
 Assuming the identity of these users, ask yourself these questions as you sketch out your site:
 - Will the users understand what this product or service does?
@@ -65,7 +68,7 @@ UX Designers use a number of tools to create wireframes– but basic wireframes 
 * Grids help avoid stressful CSS debugging by starting out on the right foot.
 
 #### Reusability
-* Grids make the layout process easier because of resusable, semantically-named "utility classes" (i.e., a library of CSS class selectors).
+* Grids make the layout process easier because of reusable, semantically-named "utility classes" (i.e., a library of CSS class selectors).
 * Grids aren't limited to a particular project. We can apply them to pretty much everything we do.
 * Grids are highly customizable. You can really make them your own.
 
@@ -83,7 +86,7 @@ _Even if you don't use a grid system, these concepts will translate across other
 #### Gutters
 * Provides spacing between our columns. Optional, but useful.
 
-### Opening Exercise (10 / 10)
+### Opening Exercise (10 minutes)
 
 Whiteboard a wireframe for [Craigslist](http://washingtondc.craigslist.org/).
 * Focus on the main components of the page, sections that would be defined by the rows and columns in our grid.
@@ -91,6 +94,7 @@ Whiteboard a wireframe for [Craigslist](http://washingtondc.craigslist.org/).
 * Keep an eye out for width, height, proportion, number of components.
 * [Sample wireframe.](http://www.comentum.com/images/wireframes-sample/ecommerce/home.png)
 
+<!--The transition between the "whiteboard a wireframe" exercise and the demo seems a little disjointed.  Can you provide a little explanation about why we are moving from one to the other? -->
 
 <a name="demo"></a>
 ## Demo / Codealong: Building a Grid (30 mins)
@@ -196,6 +200,7 @@ How are we going to define the widths for each of these classes?
 
 
 <!-- SME NEEDED: convert to flexbox -->
+<!--Can you please indicate where the SME should start adjusting the lesson and then indicate where to end? I'm not sure where to re-format and edit, since some of this will be changed I assume. -->
 
 ```css
 /*.column-1 { width: 8.33%; }
@@ -352,20 +357,20 @@ Now we have some space between our columns' content.
 Use what we have learned in class to recreate the grid structure for [Craigslist](http://newyork.craigslist.org/).
 <!-- SME NEEDED: starter code using flexbox -->
 
-Notes
+**Notes:**
 * Don't worry about content. Just outline the main portions of the site.
 * Start simple. Begin with the larger, outermost containers and work your way inside.
 * Hold off on gutters until you've built a basic grid.
 * Not every `<div>` you create has to be a row or column.
 * Use your wireframe from the opening exercise as guidance.
 
-### Bonus
+**Bonus:**
 * After reading the Initial Styles Review below, apply a CSS reset to your page before you begin.
 * Add some content to your columns. Keep it simple - we don't expect you to recreate the site.
 
 ### Review: Initial Styles
 
-We've learned that browsers have default styles for different elements. For example `<body>` tags often have a default margin of ~8px. A `div` element in Chrome will has a height of 18px, in Firefox it's 19.2px. While this difference may be small, it does vary. This can cause inconsistencies in our design, which can result in a negative user experience or even broken features. To ensure cross-browser compatibility, it's imperative that we override these initial styles.
+We've learned that browsers have default styles for different elements. For example `<body>` tags often have a default margin of ~8px. A `div` element in Chrome will have a height of 18px, in Firefox it's 19.2px. While this difference may be small, it does vary. This can cause inconsistencies in our design, which can result in a negative user experience or even broken features. To ensure cross-browser compatibility, it's imperative that we override these initial styles.
 
 One approach is to reset some of these default properties bit by bit:
 
