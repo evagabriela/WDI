@@ -21,9 +21,18 @@ This baseline scope and sequence of the curriculum is based on the following:
 
 ---
 
-### Unit 1
+### Week 1
 
- 
+#### Day 1 
+| Time | Session | Topic |
+|----|---------|---------------|
+| 60| Morning Excercise | Icebreaker|
+| 90| AM Session 1 | Welcome to WDI: Learning experience + classroom culture|
+| 90| AM Session II | Classroom Culture|
+| 90| PM Session I | OS Navigation Using the Terminal (Optional: Internet Fundamentals) |
+| 90| PM Session II | OS Navigation Using the Terminal (Optional: Sublime/ Atom Review) |
+
+#### Day 2
 
 ---
 
