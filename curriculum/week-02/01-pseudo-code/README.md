@@ -55,7 +55,7 @@ Is writing out pseudocode a step that real-world developers take? Watch this vid
 
 
 ***
-
+<a="guided-practice"></a>
 ## Guided Practice: What does that look like? (15 min)
 
 Pseudocode should describe the entire logic of the algorithm so that programming becomes a task of translating line by line of pseudocode into real code.
@@ -156,8 +156,8 @@ Computers are not smart. We need to give them step by step instructions to accou
 Computers can not adapt, but we can.  Your first pass at pseudocode will probably not cover everything.  Once you know more, you may come back to update and refactor your pseudocode.
 
 ***
-
-## Independent Practice: Solve the Waiter Problem (5 min)
+<a="ind-practice"></a>
+## Independent Practice: Solve the Waiter Problem (10 min)
 <!--I think between giving students time to solve this, and then discuss the answer, it will take closer to 10-15 minutes. What do you think?-->
 
 Using your new found skills, you have 5 minutes to solve this:
@@ -181,7 +181,7 @@ Using your new found skills, you have 5 minutes to solve this:
 We realize you didn't have enough time to solve it.  We hope that, through this exercise, you learned the importance of clearly identifying the problem.
 
 ***
-
+<a="approaching-problem"></a>
 ## Approaching a coding problem (10 min)
 <!--Consider making this a guided practice and walking through a real example for each step.  It might help students understand how to apply these questions to a pseudocode exercise.  -->
 
@@ -267,7 +267,7 @@ If you feel stuck, feel free to use this syntax:
   ENDWHILE;
   ```
 ***
-
+<a="real-world-practice"></a>
 ## Independent Practice: Pseudocode a real-world problem (15 min)
 
 Break into small groups and pick one of the following programs to pseudocode:
