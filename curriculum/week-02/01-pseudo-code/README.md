@@ -12,29 +12,17 @@ creator:
 | Timing | Type | Topic |
 | --- | --- | --- |
 | 5 min | [Opening](#opening) | What is pseudocode? |
-| 15 min | [Guided Practice: What does it look like?](#guided-practice) | Reading Pseudocode |
-| 10 min | [Independent Practice: Solve the Waiter Problem](#ind-practice) | Practice |
-| 10 min | [Approaching a coding problem](#approaching-problem) | Approach |
-| 15 min | [Independent Practice: Pseudocode a real-world problem](#real-world-practice) | Practice |
-| 5 min | [Conclusion](#conclusion) |Topic |
+| 15 min | [Guided Practice](#guided-practice) | Reading Pseudocode |
+| 10 min | [Independent Practice](#ind-practice) | Solve the Waiter Problem |
+| 10 min | [Intro to New Material](#approaching-problem) | Approaching a Problem |
+| 15 min | [Independent Practice](#real-world-practice) | Pseudocode |
+| 5 min | [Conclusion](#conclusion) |Recap/ Q&A |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
 - Describe the role of pseudocode in development
 - List steps for problem solving
 - Create pseudocode to describe a basic problem
-
-### STUDENT PRE-WORK
-*Before this lesson, you should already be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
-
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
-- Gather materials needed for class
-- Complete Prep work required
-- Prepare any specific instructions
 
 ---
 <a name="opening"></a>
@@ -45,7 +33,7 @@ According to wikipedia, [pseudocode is](https://en.wikipedia.org/wiki/Pseudocode
 
 > It uses the structural conventions of a programming language, but is intended for human reading rather than machine reading.
 
-This is a great opportunity to turn tech speak in, well, human speak.
+This is a great opportunity to turn tech speak into, well, human speak.
 
 Let's break that down and translate it.
 
@@ -53,13 +41,15 @@ Let's break that down and translate it.
 
 > A. Pseudocode attempts to be a way to describe the solution to a problem, that is easier and more concise than code.  It is a stepping stone toward writing the code.  It forces you to think critically about the problem and allows us to attempt multiple solutions.
 
-I've heard Washington, DC described as where Northern hospitality meets Southern efficiency.
+I've heard Washington D.C. described as where Northern hospitality meets Southern efficiency.
+
+<!--I feel like the quote above is backwards.  Shouldn't it be Northern efficiency and Southern hospitality? :)  We can also make this an example that is more applicable to all markets globally.  -->
 
 Pseudocode lives in that "in between" place too.  It has more logic than English, without all the structure of code.
 
 #### What Role Does it Play in Development?
 
-Is writing out pseudocode a step that real-world developers take? Watch this video to hear developers talk about the importance pseudocode playsin their workflow:
+Is writing out pseudocode a step that real-world developers take? Watch this video to hear developers talk about the importance pseudocode plays in their workflow:
 
 -  [Pseudocode - Interviews with Developers](https://generalassembly.wistia.com/medias/8axbgun2i4)
 
@@ -72,7 +62,7 @@ Pseudocode should describe the entire logic of the algorithm so that programming
 
 For each of following, let's discuss why each one could be considered "Good" or "Poor" examples of pseudocode:
 
-#### 1. Problem - Determining If a Number is Even or Odd
+#### Problem 1 - Determining If a Number is Even or Odd
 
 ***Example 1.1:***
 ```
@@ -104,7 +94,7 @@ END.
 
 > A. This is better.  It's closer to english.  It clearly states what we are trying to achieve and how, without getting bogged down in the minutia of code.  Even someone that doesn't code can help us check our logic.  Is any number that can be divided by two, cleanly -- without leaving a remainder -- even? Is anything else odd?
 
-#### 2. Problem - How to Make a PB&J Sandwich
+#### Problem 2 - How to Make a PB&J Sandwich
 
 *From [Get Creative Today](http://getcreativetoday.com/lessons/pseudo-code-flowcharts/)*
 
@@ -161,13 +151,14 @@ END.
 
 > A. This example's sequence is very thorough! However, we are still assuming certain conditions that our utensils or ingredients already exist. What if we are out of plates? Will we grab a napkin instead to place our sandwich on? What if we are out of jelly? Will you throw the sandwich away or eat it with just peanut butter?
 
-Computers are not smart. We need to give them step by step instructions to account for conditions. They can not adapt to make changes without being explicitly told. Programing is a series of tasks, which can be completed only if a certain number of conditions are met.
+Computers are not smart. We need to give them step by step instructions to account for conditions. They can not adapt to make changes without being explicitly told. Programming is a series of tasks, which can be completed only if a certain number of conditions are met.
 
 Computers can not adapt, but we can.  Your first pass at pseudocode will probably not cover everything.  Once you know more, you may come back to update and refactor your pseudocode.
 
 ***
 
 ## Independent Practice: Solve the Waiter Problem (5 min)
+<!--I think between giving students time to solve this, and then discuss the answer, it will take closer to 10-15 minutes. What do you think?-->
 
 Using your new found skills, you have 5 minutes to solve this:
 
@@ -175,8 +166,10 @@ Using your new found skills, you have 5 minutes to solve this:
 - The waiter makes rounds between each of their tables, the bar, and the kitchen.
 - The waiter takes drink orders for a new table, then submits them to the bar.
 - Drinks are delivered when all table orders are ready.
+<!--Does this mean when the orders for all N tables, or all the orders for guests at one table?  -->
 - The waiter takes food orders for a new table, then submits them to the kitchen.
 - Food is delivered when all table orders are ready.
+<!--Does this mean when the orders for all N tables, or all the orders for guests at one table?  -->
 - The waiter checks idle tables for additional requests, then submits them appropriately.
 - Additional requested items are delivered when all table orders are ready.
 
@@ -190,6 +183,7 @@ We realize you didn't have enough time to solve it.  We hope that, through this 
 ***
 
 ## Approaching a coding problem (10 min)
+<!--Consider making this a guided practice and walking through a real example for each step.  It might help students understand how to apply these questions to a pseudocode exercise.  -->
 
 Pseudocode isn't just about writing down the steps that you already know.  It's a tool to help you work through the problem.  Before we can write pseudocode to solve the problem, we need to know the problem.  
 
@@ -274,7 +268,7 @@ If you feel stuck, feel free to use this syntax:
   ```
 ***
 
-## Individual Practice: Pseudocode a real-world problem (15 min)
+## Independent Practice: Pseudocode a real-world problem (15 min)
 
 Break into small groups and pick one of the following programs to pseudocode:
 
@@ -303,19 +297,19 @@ of the flash card, in which case it's temporarily removed from the deck.
 
 #### Option 4: War (Card Game)
 
-Users can play the [game of 'war'](https://en.wikipedia.org/wiki/War_(card_game))
-against a computer. The game continues until 1 player runs out of cards.
+Users can play the [game of 'war'](https://en.wikipedia.org/wiki/War_(card_game)
+against a computer. The game continues until one player runs out of cards.
 
 #### Timing & Review
 
-Students should take 15 minutes to pseudo-code the first problem in pairs. After
-time is up, they should 'swap' code with another team and spend 5 minutes
-reviewing each other's code, leaving feedback.
-
-If time permits, switch teams and tackle an option that neither partner has done
-before for another 10 minutes. Repeat the the review process.
+- Students should work in pairs to pseudo-code the first problem of their choosing (15 minutes).
+- After
+time is up, they should 'swap' code with another team and review each other's code, leaving feedback (5 minutes).
+- If time permits, switch teams and tackle an option that neither partner has yet attempted (10 minutes).
+- Repeat the the review process (5 minutes).
 
 <!-- ID NEEDED -  Should these bonus exercises be split out into a separate file? -->
+<!--Sarah, yes I would split them in to separate files in the attempt to make things as modular as possible.  That way, they can more easily be linked to in different ways depending on how an instructor chooses to use them.  -->
 
 
 ## Bonus Exercise: Pseudocode FizzBuzz (15 min - If time permits)
@@ -386,7 +380,7 @@ The programmer says, "There were eggs!"
 
 #### You Do: Milk and eggs (15 min)
 
-1. Write pseudocode that gets me (errr...  um...  THAT programmer) to buy milk and eggs.
+1. Write pseudocode that gets the programmer to buy milk and eggs.
 
 > Instructor Note: See possible solution in the solutions folder [here](solutions/eggs.MD)
 
@@ -413,7 +407,3 @@ The programmer says, "There were eggs!"
   - Videos
     - [Matt, WDI-DC-8 Screencast](https://www.youtube.com/playlist?list=PL-6bwUTtCRVTMUUSjqIYVXYyfZBzs8saD)
     - [GA JS Circuit - Pseudocode](https://generalassembly.wistia.com/medias/ym3vdun7n3)
-
-
-
-  > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
