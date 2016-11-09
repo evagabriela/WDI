@@ -1,19 +1,13 @@
----
-title: Title of the Lesson
-duration: "1:25"
-creator:
-    name: John Doe
-    city: NYC
----
+
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Whiteboarding 101 (60 mins)
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| 5 min | [Opening](#opening)  | Discuss lesson objectives |
+|  < 5 min | [Opening](#opening)  | Discuss lesson objectives |
 | 10 min | [Introduction](#introduction)  | Whiteboarding Techniques |
 | 15 min | [Guided Practice](#guided-practice)  | Whiteboarding Examples |
-| 45 min | [Independent Practice](#independent-practice)  | Whiteboarding Problems |
-| 5 min | [Conclusion](#conclusion) |Review / Recap |
+| 40 min | [Independent Practice](#independent-practice)  | Whiteboarding Problems |
+| < 5 min | [Conclusion](#conclusion) |Review / Recap |
 
 ***
 <a name="opening"></a>
@@ -34,7 +28,7 @@ While one of the main goals in whiteboarding is to solve the problem you are giv
 
 Here are some extremely important skills to practice while at the whiteboard:
 
-- **Keep talking:** One of the worst things you can do is walk up to the board and start writing your code to solve the problem without communicating your plan of attack or explaining what you are writing to your interviewer. As soon as you have gathered your thoughts, start brainstorming out loud about how you are thinking of solving the problem. As you are writing code, explain what the goal of the code is. **Part of the goal of whiteboarding is to get a feel for how you will communicate with other team members.**
+- **Keep talking:** One of the worst things you can do is walk up to the board and start writing your code to solve the problem without communicating your plan of attack or explaining what you are writing to your interviewer. As soon as you have gathered your thoughts, start brainstorming out loud about how you are thinking of solving the problem. As you are writing code, explain what the goal of the code is. _**Part of the goal of whiteboarding is to get a feel for how you will communicate with other team members.**_
 
 - **Ask questions:** If you are unclear about part of the problem, ask questions. Interviews are your time to shine, and you don't want to waste it by going down the wrong path because of a misunderstanding.
 
@@ -94,13 +88,14 @@ You can see that each step we wrote out corresponds to a certain section of the 
 ***
 
 <a name="independent-practice"></a>
-## Independent Practice: Whiteboarding Problems (45 mins)
+## Independent Practice: Whiteboarding Problems (40 mins)
 
 Now it's your turn! Get into groups of 3 people, and each person will take, at most, 10 minutes to pick a problem from the list below to solve. The remaining people will act as the interviewers. Remember to follow the techniques we discussed.
+<!--Can we clarify these directions a bit?  Each person gets 10 minutes to choose and solve the problem? -->
 
 > Instructor Note:  Circulate around the room listening to how students are doing and offer advice when needed.
 
-1. Find the character that appears the most time in a given string (i.e. "tomorrow" should return 'o'). Return the character later in the alphabet if there is a tie.
+1. Find the character that appears the most times in a given string (i.e. "tomorrow" should return 'o'). Return the character later in the alphabet if there is a tie.
 2. An array is supposed to contain the numbers 1-10, but one number is missing. Find and return that number.
 3. Write a method that finds the second highest number in an array of integers.
 4. Given a non-empty string and an int N, return the string made starting with char 0, and then every Nth char of the string. So if N is 3, use char 0, 3, 6, ... and so on. N is 1 or more.
