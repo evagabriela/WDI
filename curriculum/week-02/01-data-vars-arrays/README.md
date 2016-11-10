@@ -1,49 +1,12 @@
 ---
 title: Title of the Lesson
 duration: "1:25"
-creator:
-    name: John Doe
+contributor:
+    name: Matt H
     city: NYC
 ---
 
-> #### *Guiding Questions When Using This Template*
->
-> - [ ] Are the learning objectives measurable?
->   - [ ] Are there at least two objectives? ( All learning objectives should be pulled from the [Front End Standards](https://docs.google.com/spreadsheets/d/11SzdbIIa9PLJ6kknGXXoBYOtL5ycwMK2N8lkI5THFak/edit#gid=1968474545) doc.  If you would like to add or remove any Learning Objectives, please contact amy.almeida@ga.co)
->   - [ ] Does the lesson address all the learning objectives?
->
-> - [ ] Are activities spaced out with enough time for each?
->   - [ ] Did you include knowledge "Checks" or activities at the end of every component to test comprehension?
->   - [ ] Is there an even distribution of intructor-led and active learning portions?
->
->
-> - [ ] Did you provide guidance for both students & instructors?
->   - [ ] What will instructors have to do to prepare for this lesson?
->   - [ ] What will students have to do to prepare for this lesson?
->   - [ ] What additional resources do you provide for students who are "hungry for more," or need additional practice?
->
-> #### *How to Use This Template*
-> * Static Components: Reserve roughly 5 min for Opening, 5 unscheduled "buffer" mins for overrun, & at least 5 min for Conclusion (end of lesson review).
->
->
-> * Modular Components: The units of instruction are: Intro, Demo, Guided-Practice, & Independent-Practice. These can be cycled or intermixed in various orders, depending on the topic / content.
-
-> #### *Components of the lesson plan*
-
-> - Opening: this only happens once; used to introduce the agenda, review material, and provide a motivating example / the problem we're trying to solve with this skill/content
-> - Introduction: this is a section dedicated to introducing and contextualizing new vocabulary, ideas, and code syntax that will be practiced in later sections
-> - Demo: an instructor-led session demonstrating proper techniques or syntax examples
-> - Guided Practice: interactive instructor by which the instructor engages with and probes students for answers to guide the discussion or activity
-> - Independent Practice: a block of time where students are able to practice what they've learned; the instructor provides directions and the students use the directions to complete an exercise
-> - Conclusion: a time to sum up the lesson, review the answers to a final independent practice, and/or pose discussion questions
-> - Check: a moment to check to understand students are following; it can be done with a question about content, a general "How comfortable are you with this?", or the instructor can check the output of students code to ensure they've completed the assignment properly.
-
-> NOTE: the lesson you create does not have to follow a progression of Introduction > Demo > Guided Practice > Independent Practice - a combination of these is often ideal - but a lesson must always begin with an Opening and end wth a Conclusion.
-
-
-
----
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Lesson Title (# mins)
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Types, Variables, Arrays (120 mins)
 
 | Timing | Type | Topic |
 | --- | --- | --- |
@@ -55,15 +18,18 @@ creator:
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
+- Describe the concept of a 'data type' and how it relates to variables
+- Describe use cases of different 'data types'
+- Declare, assign to, and manipulate data stored in a variable
+- Describe how arrays are used to store data
+- Manipulate values in an array
+- Practice proper JS syntax and semantic variable naming.
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
+- Break down simple coding problems using pseudocode
+- Have basic understanding of Javascript
+- Be comfortable with a text editor
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
@@ -79,109 +45,929 @@ creator:
 - Reference general course content or topics (e.g. code or concepts that have been used across multiple lessons)
 - Include Hook / Real-world Relevance (why the content from this lesson is useful or important)
 
-> Instructor Note: Use instructor notes to talk directly to instructors. Otherwise, write out lesson directions and materials in a student-facing voice.
+From the [Wikipedia](https://en.wikipedia.org/wiki/Data_type):
 
-Check: Ask students to define, explain, or recall any **general** prior concepts or tools.
+
+## Variables and Keywords
+
+Variables are used to store data types into the memory of the computer so that they can be referenced later.
+
+Think of them as special containers that can hold information for you.
+
+<img src="assets/variable_container.svg" width="150">
+
+#### Always use var!
+
+In order to use a variable in JS, you must announce that you want to use it.
+
+You make this announcement by using the keyword `var` and declaring a variable name next to it.
+
+![](assets/var.svg)
+
+Note: There must be a space after the keyword var.
+
+Now that we've declared our variable names, we need to give them values.
+
+If you declare a variable without assigning any value to it, its type is `undefined`.
+
+```javascript
+var name;
+=> undefined
+```
+
+So lets try assigning a value to variable:
+
+```javascript
+var name = 'Santa';
+=> undefined
+
+name
+=> 'Santa'
+```
+Notice that the value is a word (not a number), so we put quotation marks around it.
+
+We always put quotation marks around strings (values that consists of letters and/or other characters). We'll be talking about strings later in this lesson.
+
+#### Variable Syntax
+
+Notice the space before and after the = sign and the semicolon after the string.
+
+Making sure these are in place is a good habit to develop and will be important for when your code gets more complicated later on.
+
+![](assets/Slide-16-Space-Semicolon.svg)
+
+JS is a programming language, and like any language it has its own grammar and rules of operation. Let’s look at four rules of thumb:
+
+1. When creating/declaring a variable for the first time, use the var keyword.
+2. Variable names should be written in camelCase
+2. Add a space before and after the equal sign =.
+3. Statements need to end with a semicolon ;
+
+
+Note that in JavaScript, the equal sign doesn't evaluate things the way it does in math; rather, it assigns values to things, like variables. We call this an _assignment operator_.
+
+
+#### Reassigning Variables
+JavaScript runs synchronously and top-down, meaning it updates itself to the latest information given (on the bottom).
+
+So the values we give our variables furthest down will become our new values at the end.
+
+Let's take a look at a brief example. Say that we want to create variables for a character's name, age and location.
+
+![](assets/Slide-34-Santa.svg)
+
+We can later replace, or reassign, the values of these variables like so:
+
+![](assets/Slide-36-Batman.svg)
+
+Here's a brief [video](https://generalassembly.wistia.com/medias/66kaqbwoc1) summarizing how to assign and reassign variables.
+
+
 
 ***
+## Data Types
 
-<a name="introduction"></a>
-## Introduction: Topic (# mins)
+We briefly mentioned earlier that you can add different types of values to JS variables. JS knows when you are using letters and when you are using numbers.
 
-> Instructor Note: Discuss topic and explain by dividing parts into sections. Ask students to define, explain, or recall any **specific** elements relating to the current topic, when applicable.
+This will be handy later on when you start combining words or adding numbers together in your code. For now, it’s important to know that these distinctions are called data types.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>
-      Example
-    </title>
-  </head>
-  <body>
-    <h1>
-      Example Page
-    </h1>
-    <p>
-      This is an example page.
-    </p>
-  </body>
-</html>
+_In computer science and computer programming, a data type or simply 'type' is a classification identifying one of various types of data that determines the possible values for that type, the operations that can be done on values of that type, the meaning of the data, and the way values of that type can be stored._  
+
+Data types are really similar across different languages.
+
+What this means is that being confident in working with these concepts critically will enable you to walk into any programming language with some base knowledge that is translatable.
+
+![Data Types Chart](assets/data-types-chart.svg)
+
+We'll elaborate on all of these - except Booleans, for now. We'll talk about how they behave in JavaScript, show you some helper methods to work with each type, and then practice these helper methods to manipulate data using JavaScript.
+
+
+#### Chrome's Developer Console
+
+For the exercises in this lesson, we suggest you use the Google Chrome Developer Tool Console by following these steps:
+
+Open up Google Chrome in a separate window (and place it next to the window with this slideshow).
+Right click anywhere on the browser and click on "Inspect."
+In the new "Elements" window that appeared, click on "Console" on the top menu.
+
+<!-- @sarahholden update example
+Declare a variable called legs with the value 4.
+Note: the console returns undefined when declaring a variable using var because the var statement returns no value. This will be the case for every var declaration.
+Declare variables for the traits color and sound (using quotations for string values).
+Update values for each variable. No need to use var this time!
+To check the value of our variable legs, simply type legs; and press enter. Repeat for the other two variables. -->
+
+
+#### Loosely Typed Language
+
+Notice that in JavaScript, you do not need to declare what type of data you are using.
+
+For example, when you code:
+
 ```
-![DOM Tree](http://www.computerhope.com/jargon/d/dom1.jpg)
-
-#### Use non-section headings to divide content
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam pariatur ab cum temporibus, velit expedita? Pariatur illum, iusto animi iste consectetur quam voluptatem provident! Velit molestias doloremque error harum.
-
-> Check: Insert 1-2 guiding questions to ensure students are comprehending the material.
-
-***
-
-<a name="demo"></a>
-## Demo / Codealong: Topic (# mins)
-Walk through a codealong or demonstration of something.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
-
-```ruby
-def lorem
-  return 'some stuff'
-end
+var a = 13;
+var b = "thirteen";
 ```
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nemo eius quo, soluta maxime provident temporibus aperiam eveniet eum. Non, soluta error veritatis pariatur praesentium beatae reprehenderit, numquam quaerat. Lorem ipsum dolor sit amet.
+JS will know that var a is a number and that var b is a string because strings always have quotation marks. Using quotation marks is a way of communicating with the processor what type of data to expect.
 
-Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
+In Java, a different programming language, you do have to declare the type of values when you code in the following way:
 
-```ruby
-def another_lorem
-  this = some_method(0+2)
-  return this.to_json
-end
+```
+int a = 13;
+string b = "thirteen"
 ```
 
-> Check: By this point, students should be able to write out or code their own methods / functions / arguments / etc.
 
-***
+JavaScript is a loosely typed language. As we mentioned before, this means that there is no need to specify the data type (string, number, etc.) you are using.
 
-<a name="guided-practice"></a>
-## Guided Practice: Topic (# mins)
-Solve a problem or apply this topic to a real world scenario. Solving or understanding this scenario should require the use of the current topic (in addition to any prior topics).
+A strongly typed language is one that you must explicitly say the type of variable you're declaring (like Java).
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
+While a loosely typed language reduces the amount of code you must write, it increases the possibility of type errors, when a value is not of the expected data type.
 
-```ruby
-def lorem
-  return 'some stuff'
-end
+For example, if you put quotations marks around a number, like so `"9"`, the processor will read it as a string. You should always be mindful of the type of data you use moving forward.
+
+#### typeof()
+
+When we start writing more complex code, there may be times when we forget which type of data we’re manipulating.
+
+Luckily, the computer already knows which type of data we're working with, so we can use the typeof() command in the console to find out.
+
+typeof() returns a string that tells us which type of data we’re seeing.
+
+Take a look at some examples:
+
+![typeof](assets/typeof.png)
+
+Notice how we can choose whether or not to use the parenthesis.
+
+For consistency’s sake, it’s a good idea to pick one way and stick with it.
+
+Make sure to remember the typeof() command in case you ever need to find out the type of data with which you are working.
+
+<!-- @sarahholden Instructions for how students can test these out
+
+typeof 'hello';
+The console returns 'string'.
+typeof 24;
+The console returns 'number'.
+typeof (3.45);
+The console returns 'number'.
+typeof true;
+The console returns 'boolean'.
+typeof ("JS is fun!");
+The console returns 'string'.
+
+
+-->
+
+#### Strings
+
+Strings are collections of letters and symbols known as *characters*, and we use them to deal with words and text in JavaScript. Strings are just another type of **value** in Javascript.
+
+```
+'John'
+'Jane'
+'123'
 ```
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nemo eius quo, soluta maxime provident temporibus aperiam eveniet eum. Non, soluta error veritatis pariatur praesentium beatae reprehenderit, numquam quaerat. Lorem ipsum dolor sit amet.
+SIDENOTE: double quotes vs single quotes?
 
-Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
+#### Numbers
 
-```ruby
-def another_lorem
-  this = some_method(0+2)
-  return this.to_json
-end
+In JavaScript, numbers can always be divided into two groups:
+
+Integers (whole numbers)
+
 ```
-> Check: Were students able to successfully solve the problem or complete the task?
+   ..., -1,0, 2, 3, 4, 5, ...
+```
 
-***
+Floats (decimals)
+```
+2.718, 3.14, .5, .25, etc
+```
 
-<a name="ind-practice"></a>
-## Independent Practice: Topic (# minutes)
-Use the lesson topic/skill to create a deliverable that meets certain criteria.
+This means that JS numbers can be positive, negative, or have a decimal point.
 
-> Instructor Note: This can be a pair programming activity or done independently.
+<!-- @sarahholden Exercise: Ask node for the typeof() a whole number and then a decimal -->
 
-Briefly describe the Independent Practice exercise here.  What is the end deliverable?  What skills will it help students practice?  Include a link to the Github folder, which will include a more exhaustive description of the exercise, as well as any code, files or assets for students to download.
 
-> Check: Were students able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?
 
+
+#### Arithmetic Operators
+
+In this section we'll be talking about expressions. What are expressions? Watch this video to find out: [Expressions](https://generalassembly.wistia.com/medias/e1c21pib0n)
+
+How do we combine numbers and operators to come up with more complex expressions in JS?
+
+It’s simple — we use arithmetic operators.
+
+![Arithmetic Operators](assets/arithmetic_operators.svg)
+
+All of the standard arithmetic operators learned in grade school (addition, subtraction, division, and multiplication) are supported in JS. These should look familiar.
+
+But if you don’t have a background in programming, that last operator — the modulus operator — might be new.
+
+![Arithmetic Operators](assets/arithmetic_operators_modulus.svg)
+
+The modulus operator shows the remainder of a division problem.
+
+For example, 9 divided by 4 equals 2 with a remainder of 1. The modulus operator takes two numbers as inputs and returns what's leftover from the division.
+
+![Modulus](assets/modulus_operator.svg)
+
+The modulus operator % is particularly useful in programming if we want to find out if a number is even or odd.
+
+If we divide by 2 and have a remainder of 1, we know the number is odd. If we have a remainder of 0, then we know that the number is even.
+
+Let’s look at some examples:
+
+Odd numbers:
+```
+5 % 2 = 1
+7 % 2 = 1
+```
+
+Even numbers:
+```
+4 % 2 = 0
+2 % 2 = 0
+```
+
+This may seem tedious now, but it’ll come in handy later on.
+
+
+<!--
+@sarahholden build out exercise
+Exercise:
+1 + 2
+The console returns 3
+2 - 5
+The console returns -3
+5/2
+The console returns 2.5
+6*2
+The console returns 12
+10%4
+The console returns 2 -->
+
+
+# String Concatentation and Coercion
+
+Now, let’s see how you can use string values (textual information) in JS.
+
+When given string values, the + operator actually behaves differently — it concatenates, or combines, two strings together to make one big string.
+
+Take a look in this brief [video](https://generalassembly.wistia.com/medias/rysrb53amn).
+
+As you can see, putting single or double quotation marks around a value turns it into a string. (Again, don't worry about the console.log() command for now).
+
+So, even though both “4” and “3” look like numbers to us humans, JS sees that they’re in quotation marks and therefore treats them as strings.
+
+![](assets/quotes_around_numbers.svg)
+
+
+Using the + operator to put the two strings together literally puts them next to each other, instead of evaluating their total.
+
+This is called concatenation (when strings are glued together).
+
+Here's another example of concatenation.
+
+JS glued the two strings together, but do you notice anything wrong?
+
+![](assets/missing_space.svg)
+
+There is no space between the two words!
+
+This is because we didn’t add the spaces in ourselves. It's just one of many reasons why we have to carefully watch our spacing and grammar.
+
+To fix this, we’ll have to add in the space ourselves.
+We can either insert it after the string "Almost"or before the string "Done".
+
+Here, we added a space after "Almost ".
+
+![](assets/added_space.svg)
+
+Developing good habits like adding spaces before and after the equal sign and putting quotation marks around strings will help you minimize mistakes.
+
+It also helps you easily find errors as your code becomes more complicated in the future.
+
+Another good habit to help you avoid coding headaches: mind your syntax.
+
+Here are some syntax rules that are crucial to keep in mind:
+
+1. JS is case sensitive
+
+  For example: numberofstudents is not the same as numberOfStudents, which is not the same as NuMbErOfStUdEnTs.
+
+  When you want to use a variable name consisting of several words, you will get an error if you have spaces between the words. Instead, you can combine all the words together into one long variable name. The first letter in this variable name should be lowercase, and then the first letter in each word that follows should be uppercase. This is called camelcase (see how it resembles a camel with humps)?
+
+  Here's another example:
+  var camelsAreAwesome = true;
+
+2. End statements with a semicolon ;
+
+  x = x + 1;
+
+  After each line of instruction, be sure to use a semicolon. Although you may be able to get away without using semicolons in some browsers, JavaScript often does nasty things when it guesses where to put semicolons itself. It’s better to be explicit and tell the interpreter exactly where a statement should end.
+
+3. Use // for comments
+
+  Developers often use comments to make notes for themselves and other developers. You can use a comment to add in content that will be ignored by the interpreter but can be read by anyone looking through the code.
+
+  To add a comment, begin a line with two forward slashes //. This is an example of a great use case for pseudocode.
+
+  Example:
+  ```
+  var x = 10; //decare variable x first
+  var y = 5; //then declare y
+  x + y //add the two variables
+  ```
+
+4. Surround strings with quotations " "
+
+  Any time you have textual information, surround strings with single or double quotation marks ( 'JS is fun', "O’Doyle rules!" ). Also, use single or double quotation marks when you want numbers to function as strings (as we did in the "4" + "3" = "43" example).
+
+
+***ES6 Syntax***
+The newest version of ES6 gives us a more elegant pattern called string interpolation using a new datatype called `string templates`
+
+Rather than single quotes we use back ticks \`\`
+
+```javascript
+var firstWord = 'hello'
+var secondWord = 'world'
+
+`${firstWord} ${secondWord}`
+=> 'hello world'
+```
+
+<!--  @sarahholden
+EXERCISE: Take 5 minutes to concatenate strings using both the `+` method and using string templates \`\` and string interpolation `${}` -->
+
+
+
+#### Assignment Operators
+
+Now, let’s get back to some math and look at assignment operators.
+
+You're already familiar with the = assignment operator, but there are also ones we can use to add or subtract value from a variable. Take a look:
+
+![](assets/assignment_operators.svg)
+
+The += operator adds value to an existing variable.
+
+The -= operator subtracts value from an existing variable.
+
+![](assets/assignment_operators_ann.svg)
+
+There are also a couple arithmetic operators we can use to add or subtract one from the value of a variable:
+
+![](assets/increment.svg)
+
+<!-- @sarahholden
+Type var num = 10;
+Note: the console returns undefined when declaring a variable using var because the var statement returns no value
+Now, type num += 4;. What do you think the value of num will become?
+Note: the console returns 14 because our value was 10 and we added 4 to it.
+Type num -= 8; the console. Before you press enter, take a moment to think about what value the console will return.
+Note: the console returns 6 since the new value was 14 and we subtracted 8 from it.
+
+
+-->
+
+#### Special Arithmetic Methods
+
+
+Apart from simply adding and subtracting numbers from variables, JavaScript also allows you to use special code to perform other arithmetic operations on numbers, such as finding the square root.
+
+Some of this code will contain a dot `.`. We will cover the dot notation in more depth in a later lesson, but, for now, let’s practice with some of the simpler arithmetic methods.
+
+<!-- @sarahholden
+
+Exercise: Take 5 minutes to look at the Math documentation (link is below) and pick a function to quickly explain to the class. We'll popcorn around the room each person will get 30 seconds to explain what their function is/does. Don't worry if you chose the same one as someone else. Repetition leads to retention! -->
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+
+Type the following code into the Chrome Developer Tools Console:
+
+*  Need to take a number to a specific power? Then just use Math.pow().
+
+```
+// 3^2 becomes
+Math.pow(3,2)
+=> 9
+
+// 2^4 becomes
+Math.pow(2,4)
+=> 16
+```
+
+
+
+* Taking a square root of a number? Then use Math.sqrt().
+
+```
+// √(4) becomes
+Math.sqrt(4)
+=> 2
+```
+
+* Need a random number? Use Math.random().
+
+```
+// The following only returns a random decimal
+Math.random()
+=> .229375290430
+/*
+The following will return a
+random number between 0 and 10
+*/
+Math.random()*10
+
+```
+
+* Since Numbers can be **Floats** or **Integers** we often want to get rid of remaining decimal places, which can be done using `Math.floor`.
+
+```
+// Remove the decimal
+Math.floor(3.14)
+=> 3
+Math.floor(3.9999)
+=> 3
+
+```
+
+While it may seem like we’ve covered a lot of math in this section, don't worry — you're not going to be doing any calculus in this course.
+
+When it comes down to it, computers operate on a pretty simple and straightforward logic, and there will be many times that you'll solve a problem by using one of these basic mathematic principles.
+
+
+## Helper methods
+
+
+#### String helper methods
+
+To find the length of a string, access its [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) property:
+
+```
+'hello'.length;
+=> 5
+```
+
+Strings have other [methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Methods) as well that allow you to manipulate the string and access information about the string:
+
+```
+'hello'.charAt(0);
+=> 'h'
+
+'hello, world'.replace('hello', 'goodbye');
+=> 'goodbye, world'
+
+'hello'.toUpperCase();
+=> 'HELLO'
+```
+
+#### Converting Strings to Integers with parseInt() and parseFloat()
+
+You can convert a string to an integer using the built-in [`parseInt()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) function. This takes the base for the conversion as an optional second argument, which you should always provide:
+
+```javascript
+parseInt('123');
+=> 123
+
+parseInt('010', 10);
+=> 10
+```
+
+This will be important later when we're taking user input from the web or from the command line and using it on our server or in our browser to do some type of numeric calculation.
+
+Similarly, you can parse floating point numbers using the built-in [`parseFloat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) function which uses base 10 always unlike its `parseInt()` cousin.
+
+```javascript
+parseFloat('11.2');
+=> 11.2
+```
+
+You can also use the unary `+` operator to convert values to numbers:
+
+```javascript
++'42';
+=> 42
+```
+
+<!-- @sarahholdenEXERCISE: Let's take five minutes to use parseInt() and parseFloat() in node -->
+
+#### NaN
+
+The `parseInt()` and `parseFloat()` functions parse a string until they reach a character that isn't valid for the specified number format, then return the number parsed up to that point. However the '+' operator simply converts the string to `NaN` if there is any invalid character in it.
+
+A special value called [`NaN`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN) (short for 'Not a Number') is returned if the string is non-numeric:
+
+Username example:
+```javascript
+parseInt('colin1990');
+=> NaN
+
+parseInt('1990colin');
+=> 1990
+```
+
+You can test for `NaN` using the built-in [`isNaN()`](ttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN) function:
+
+```javascript
+isNaN(NaN);
+=> true
+```
+JavaScript's numeric operators are `+`, `-`, `*`, `/` and `%` and all work as you expect and should have practiced during your pre-work.
+
+#### Null and Undefined
+
+JavaScript distinguishes between:
+
+- `null` a value that indicates a deliberate non-value
+- `undefined` that indicates an uninitialized value — that is, a value hasn't even been assigned yet
+
+
+
+#### Converting Numbers to Strings
+
+* If you want to turn a number into a string you can use a helpful method called `toString`.
+
+```javascript
+(1).toString()
+=> '11'
+/**
+be careful though,
+since numbers can be floats
+javascript might
+misunderstand you.
+*/
+1.toString()
+=> Float Error
+// but the following works
+1..toString()
+```
+
+
+## Arrays - Demo (5 mins)
+
+Arrays — what are they, and what are they good for?
+
+Watch this [intro video](https://generalassembly.wistia.com/medias/upd8qxyabg) to find out!
+
+As you learned in the intro video, variables cannot hold multiple values, so we use arrays when we want to use more than one value at once.
+
+Unfortunately, strings and numbers are not enough for most programming purposes.
+What is needed are collections of data that we can use efficiently -- Arrays.
+
+Take a look at this [video](https://generalassembly.wistia.com/medias/uey023vfx6) that provides an overview of how we can work with arrays.
+
+Said another way, an array is an ordered list of items — also known as elements — separated by commas and situated between brackets [ ].
+
+![](assets/array_syntax.svg)
+
+Arrays are data structures, similar in concept to lists. For example:
+
+``` js
+var animals = ["cat", "dog", "cow", "chicken"];
+var age = [24, 11, 55];
+```
+
+They usually contain the same kind of data, and, in JavaScript, they can dynamically grow and shrink in size.
+
+Arrays can also contain different types of data, such as:
+
+``` js
+var stuff = ["red", 42, "gorilla", false];
+```
+
+However, we generally use arrays to deal with elements of the same data type.
+
+
+Arrays help us make the most out of our elements, allowing us to:
+
+- Reorder elements.
+- Identify the value of one element in the list by specifying its position.
+- Go through the list item-by-item and manipulate each element.
+
+## Working with Arrays
+
+Before we dive deeper into arrays, let’s learn a little about indexes.
+
+Items in an array are stored in sequential order. Each element has an index, a number that tells us the position in the array where the element can be found.
+
+Indexes allow you to access and update array values.
+
+Take a look at this grocery list. Do you notice anything interesting about how these items are numbered?
+
+![](assets/grocery_list.svg)
+
+You may have noted that the numbers start at 0 instead of 1.
+
+JavaScript, like many programming languages, is zero-based, meaning that its numbering starts at 0 instead of 1.
+
+So, when we start assigning index values to an array, the first position in the array will be [0], the second will be [1], and so on.
+
+![](assets/students.png)
+
+
+#### Recap
+Let’s review everything we know about arrays so far:
+
+We typically create an array using a list with the same type of values. Here, we are using strings only.
+
+![](assets/heroes.png)
+
+We declare arrays the same way we declare variables.
+
+![](assets/declare.png)
+
+Each item is called an element. They are separated by commas and situated between square brackets.
+
+![](assets/elements.png)
+
+The index is the number that tells us the position of an element in an array. It always starts with the number 0.
+
+Our friend Batman from Lesson 2 can be found at index 1
+
+![](assets/indexes.png)
+
+#### Exercise
+
+Declare a variable called villains and assign it an array with the following strings: Cruella, Ursula, Jafar, Captain Hook.
+Don't forget single or double quotation marks around your strings and a semicolon at the end of your array.
+Now type villains and press enter.
+Does your array look like this?
+
+![](assets/answer1.png)
+
+Now, which villain is in index 3?
+
+![](assets/q2.png)
+
+Because the index starts at 0, index 3 is Captain
+
+
+<!-- Using the JavaScript Keyword `new`, is one way of creating arrays:
+
+```javascript
+var a = new Array();
+=> undefined
+
+a[0] = 'dog';
+=> 'dog'
+
+a[1] = 'cat';
+=> 'cat'
+
+a[2] = 'hen';
+=> 'hen'
+
+a
+=> ['dog', 'cat', 'hen']
+
+a.length;
+=> 3
+```
+
+A more convenient notation is to use an array literal:
+
+```javascript
+var a = ['dog', 'cat', 'hen'];
+
+a.length;
+=> 3
+``` -->
+
+#### Length method
+
+Now, let’s look at length property. All arrays have a property called length, which tells you how many elements the array contains.
+
+To access this value, simply tack on .length to the end of an array (or, alternatively, a variable containing that array). Here are some examples of .length in action:
+
+``` js
+['a', 'b', 'c'].length;  // Evaluates to 3
+
+var x = [10, 20, 30, 40];
+x.length; // Evaluates to 4
+```
+
+
+One helpful part of knowing the length of an array is that it allows us to easily find the last (or second-to-last, or third-to-last, etc.) element.
+
+Because the first element in an array always has an index of 0, the index of the last element will be equal to the length of the array minus one.
+
+``` js
+var team = ['ted', 'lem', 'phil', 'linda', 'veronica'];
+team[team.length - 1];   // Evaluates to 'veronica'.
+team[team.length - 2];   // Evaluates to 'linda'.
+```
+
+<!--
+
+Declare a variable called `villains` again and assign it an array with the same list of strings as before (Cruella, Ursula, Jafar, Captain Hook)
+Now use the length property to find out how many items are in your `villains` array.
+Note: We use `villains.length`;
+Did your console return the value 4? (We listed four villains in total, therefore our array length is 4).
+-->
+
+
+#### Getting data from an array
+
+To access, or retrieve, a value from an array, we will use the array name, followed by an index number, wrapped in square brackets.
+
+Let’s take a look at some examples.
+
+![](assets/villains.png)
+
+The first code is accessing index 0, so it should return “Cruella.”
+
+The second code is accessing index 3, so it should return “Captain Hook.”
+
+
+Bonus: Can you come up with a way of asking for a random index (whole number) between zero and the length of your array? HINT: Math.random and Math.floor
+
+#### Adding a new value to an array
+
+To add a new value to the array, specify the index number of the position where the new value should be added.
+
+![](assets/JSC_U1L4_villian_array3.png)
+
+We should now have a new list (Cruella is replaced with Scar):
+
+![](assets/JSC_U1L4_villian_array4.png)
+
+
+
+<!-- Create an array of villains again, with the same list of villains (Cruella, Ursula, Jafar, Captain Hook).
+Now replace Cruella with Scar, using the correct index number (remember indexes start at 0 in JS).
+Note: the console returns 'Scar' because that is the newest value that was added to the array.
+Add an additional villain 'Maleficent' at the end of the array using the correct index number.
+Note: the console returns the newest value that was added.
+
+Now, type villains and press enter. Does your console look like this?
+
+![](assets/a3.png)
+
+-->
+
+#### Concatenation with Arrays
+You have now conquered creating arrays (and are up to date on your Disney villains).
+
+Remember what we learned about concatenation in Lesson 3? Let’s see how you can use concatenation while working with arrays.
+
+
+```js
+
+   var food = ["Pizza", "Mac 'n' Cheese"];
+   var quantity = [8, 2];
+   console.log('Today, I ate ' + quantity[0] + ' slices of ' + food[0]+''+
+   'I will have ' + quantity[1] + ' cups of ' + food[1])
+
+```
+
+Instead of typing out “Today, I ate 8 slices of pizza” and “I will have 2 cups of Mac ‘n’ Cheese,” you can use concatenation to combine numbers and sentences.
+
+This becomes super handy when the sentences you are trying to create become more complicated or repetitive.
+
+#### Array helper methods
+
+
+In addition to containing multiple elements, arrays also have a number of other built-in properties and functions that give them useful abilities. These are called array helper methods.
+
+Let’s take a look at some of them:
+
+- .push()
+- .pop()
+- .reverse()
+- .join()
+
+
+***.push()***
+The .push() method allows you to add one or more items to the end of an array.
+
+Note that this means the length of that array will also change.
+
+
+Remember, though, you'll never remember _every_ method.  Explore the the [full documentation for array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and other helper methods given to you for particular objects.
+
+
+<!--
+Create an empty array of foods: var favoriteFoods = [];.
+Use the .push() method to add the item "cheese": favoriteFoods.push('cheese');.
+Note: the console returns 1 because that's the number of items you added to the array.
+Now add multiple new items at once: favoriteFoods.push('pizza', 'rice', 'taco');.
+Type favoriteFoods and enter to see your final array. Does your array look like this?
+
+```js
+
+[ 'cheese', 'pizza', 'rice', 'taco’ ]
+```
+
+-->
+
+***.pop()***
+
+The .pop() method is useful when you want to remove the last item in an array.
+favoriteFoods.pop();
+
+Using this method the array will now contain this:
+
+```js
+[ 'cheese', 'pizza', 'rice' ]
+```
+
+What do you think will happen when you call .pop() on an empty array?
+
+***.reverse()***
+
+You can reverse the order of elements in an array with the .reverse() method.
+
+```js
+favoriteFoods.reverse()
+=> [ 'rice', 'pizza', 'cheese']
+```
+
+***.join()***
+
+The .join() method joins all elements of an array into a single string.
+The .join() method accepts an optional argument (the separator), which becomes a string that separates the array values.
+
+Here is how we would add .join() in order to turn commas into spaces instead:
+
+```js
+favoriteFoods.join(' ')
+=> 'rice pizza cheese'
+```
+
+If no argument is supplied to .join(), the separator defaults to a comma.
+
+```js
+
+favoriteFoods.join()
+=> 'rice,pizza,cheese'
+```
+
+
+## Conclusion (5 mins)
+
+- Describe use cases of different 'data types'.
+- Why is iterating important when working with stored data?
+
+Feel free to read more from [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) about JavaScript fundamentals.
+
+
+# Syntax & Semantic Naming
+
+## Syntax (5/65)
+
+Variable syntax
+- Should be named using camelCase lettering.
+  - First letter of first word lowercase. First letter of remaining words uppercase.
+  - No spaces or punctuation between words.
+
+  ```javascript
+  // camelCase
+  var pizzaTopping = "pepperoni";
+  ```
+Semicolons
+- General practice is to end every line with a semi-colon.
+- Usage depends on the developer.
+
+Comments
+- Q: Why would you use comments?
+  - Talked about this in the HTML class. Same reasoning applies.
+- Types of comments
+  ```javascript
+  // Single line
+
+  /*
+    Multiple
+    line
+    comments
+  */
+  ```
+
+- Use to explain the purpose or reasoning behind a piece of code.
+- Help out other developers and future you.
+  - If anything, it will help us out when grading your projects!
+
+
+### Homework
+- [Choose your own adventure](https://github.com/ga-wdi-exercises/choose_your_own_adventure_js)
+
+# Review Questions
+1. When would you use an array over an object? And vice-versa?
+- What is the difference between `undefined` and `null`?
+- Provide an example of a semantically-named variable. Explain your choice.
+- What role does Javascript play on a website?
+- What are the five primitive data types?
+- What are the two composite data types? When would you use each?
+- What is an example of type coercion?
+- What is an example of a semantically-named variable?
 ***
 
 <a name="conclusion"></a>
@@ -201,8 +987,37 @@ Briefly describe the Independent Practice exercise here.  What is the end delive
 ### ADDITIONAL RESOURCES
 - Exercises
 - Videos
+  - GA JS Circuit - [Assigning and Reassigning Variables](https://generalassembly.wistia.com/medias/66kaqbwoc1)
+  - GA JS Circuit - [Expressions](https://generalassembly.wistia.com/medias/e1c21pib0n)
+  - GA JS Circuit - [Concatenation vs. Addition](https://generalassembly.wistia.com/medias/rysrb53amn)
+  - GA JS Circuit - [Intro to Arrays](https://generalassembly.wistia.com/medias/upd8qxyabg)
+  - GA JS Circuit - [Arrays Deep Dive](https://generalassembly.wistia.com/medias/uey023vfx6)
 - Readings
 - Decks
 
-> Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
 
+
+## You do: [Data Types & Data Collections](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(20 mins)
+
+Reference [Data Types And Collections](./data-types-and-collections.md) to complete the above exercise.
+
+## You do: [Booleans and Conditionals](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(15 mins)
+
+Reference [Booleans and Conditionals](./booleans-and-conditionals.md) to complete the above exercise.
+
+## You do: [Loops and Fizzbuzz](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(15 mins)
+
+Reference [Loops](./loops.md) to complete the above exercise.
+
+
+## We Do: Pseudocode Temp Converter Part I
+
+Temperature conversion (Part I): [Temp Converter](https://github.com/ga-wdi-exercises/temperature_converter)
+
+Review
+
+## We Do: Pseudocode Temp Converter Part II
+
+Temperature conversion (Part II): [Temp Converter](https://github.com/ga-wdi-exercises/temperature_converter)
+
+> Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  

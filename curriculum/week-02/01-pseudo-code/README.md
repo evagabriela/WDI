@@ -401,6 +401,7 @@ The programmer says, "There were eggs!"
     - [Additional Examples/Exercises from GA JS Circuit](labs/circuit.MD) (Easy)
     - [Pseudocode Exercises by Thom Page](labs/pseudo-code.MD) (Medium/Advanced)
   - Readings
+
     - [Pseudocode is](https://en.wikipedia.org/wiki/Pseudocode) (Wikipedia)
     - [Introduction to Pseudocode](http://www.slideshare.net/DamianGordon1/pseudocode-10373156)
     - [Get Creative Today](http://getcreativetoday.com/lessons/pseudo-code-flowcharts/)
