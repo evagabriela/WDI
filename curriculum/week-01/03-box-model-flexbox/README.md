@@ -285,7 +285,7 @@ You've likely used floats in the past to build column layouts, but Flexbox is no
 A basic example you'll encounter in most tutorials is the "text wrap", or surrounding an image with text:
 ![Floats](assets/floats.png)
 
-<!-- Instructor needed: example code for image above -->
+> Instructor needed: example code for image above
 
 * Images are, by default, `inline` elements.
 * To remove them from that flow and re-position them, we set `float` to either `left` or `right`.
@@ -294,7 +294,7 @@ A basic example you'll encounter in most tutorials is the "text wrap", or surrou
 ### Clear
 Floating, without the use of `clear`, can cause some serious layout issues. Let's see what happens if we remove the text from the previous example.
 
-<!-- Instructor needed: example code for description above -->
+> Instructor needed: example code for description above
 
 * What happens to the container when we set our image to `float: left;`?
 * What about if we substitute our image with a block element (e.g., `<div>`)?
@@ -307,7 +307,7 @@ We can fix these issues by adding an empty `<div>` with a property of `clear: bo
 ### Enter: The Clearfix
 [Nicolas Gallagher](http://nicolasgallagher.com/micro-clearfix-hack/) created a technique that eliminates the bad practice issues `clear: both;` causes, simply by adding a class to the parent container. And because it's a class, it's reusable!
 
-<!-- Instructor needed: example code for clearfix class, along with explanations for the purpose of each declaration in the class. -->
+> Instructor needed: example code for clearfix class, along with explanations for the purpose of each declaration in the class. 
 
 
 ***
@@ -497,7 +497,7 @@ body {
 ## Independent Practice: Potion Shop (30 mins)
 Imagine you've been hired to update a layout from floats to flexbox. Review and edit the CSS in order to keep the design intact and the code up-to-date. Be sure to remove any unused code! The content on the site will stay the same, but you may need to edit the HTML.
 
-<!-- Instructor needed: Please update the source code below so the students are working with well-designed and coded starter site. The goal for this practice is listed above. If the 'potion' idea is too silly, feel free to replace.-->
+> Instructor needed: Please update the source code below so the students are working with well-designed and coded starter site. The goal for this practice is listed above. If the 'potion' idea is too silly, feel free to replace.
 https://github.com/ga-dc/hyrule_potion_shop
 
 ***
