@@ -8,6 +8,8 @@ contributor:
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Types, Variables, Arrays (120 mins)
 
+
+<!-- ID NEEDED: Can you add these in based on topics below? -->
 | Timing | Type | Topic |
 | --- | --- | --- |
 | x min | [Introduction](#introduction) | Topic |
@@ -31,24 +33,15 @@ contributor:
 - Have basic understanding of Javascript
 - Be comfortable with a text editor
 
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
-- Gather materials needed for class
-- Complete Prep work required
-- Prepare any specific instructions
+
+<!-- NOTE FROM SARAH - Having trouble fitting all this content into 120 minutes. Going to see what I can move around. -->
+
 
 ---
 <a name="opening"></a>
-## Opening (# mins)
+## Opening (10 mins)
 - Review pre-work, projects, or exit ticket, if applicable
 - Review current lesson objectives
-- Reference general course content or topics (e.g. code or concepts that have been used across multiple lessons)
-- Include Hook / Real-world Relevance (why the content from this lesson is useful or important)
-
-From the [Wikipedia](https://en.wikipedia.org/wiki/Data_type):
-
-
-## Variables and Keywords
 
 Variables are used to store data types into the memory of the computer so that they can be referenced later.
 
@@ -125,7 +118,8 @@ Here's a brief [video](https://generalassembly.wistia.com/medias/66kaqbwoc1) sum
 
 
 ***
-## Data Types
+
+## Data Types Intro (5 mins)
 
 We briefly mentioned earlier that you can add different types of values to JS variables. JS knows when you are using letters and when you are using numbers.
 
@@ -142,6 +136,8 @@ What this means is that being confident in working with these concepts criticall
 
 We'll elaborate on all of these - except Booleans, for now. We'll talk about how they behave in JavaScript, show you some helper methods to work with each type, and then practice these helper methods to manipulate data using JavaScript.
 
+***
+## Guided Practice: Data Types (15 mins)
 
 #### Chrome's Developer Console
 
@@ -151,13 +147,15 @@ Open up Google Chrome in a separate window (and place it next to the window with
 Right click anywhere on the browser and click on "Inspect."
 In the new "Elements" window that appeared, click on "Console" on the top menu.
 
-<!-- @sarahholden update example
-Declare a variable called legs with the value 4.
-Note: the console returns undefined when declaring a variable using var because the var statement returns no value. This will be the case for every var declaration.
-Declare variables for the traits color and sound (using quotations for string values).
-Update values for each variable. No need to use var this time!
-To check the value of our variable legs, simply type legs; and press enter. Repeat for the other two variables. -->
+>Perform the following steps in the console:
+1. Declare a variable called legs with the value 4.
+  Note: the console returns undefined when declaring a variable using var because the var statement returns no value. This will be the case for every var declaration.
+2. Declare variables for the traits color and sound (using quotations for string values).
+3. Update values for each variable. No need to use var this time!
+  To check the value of our variable legs, simply type legs; and press enter. Repeat for the other two variables.
 
+
+> Check: Make sure students have typed in the correct statements
 
 #### Loosely Typed Language
 
@@ -192,9 +190,9 @@ For example, if you put quotations marks around a number, like so `"9"`, the pro
 
 When we start writing more complex code, there may be times when we forget which type of data we’re manipulating.
 
-Luckily, the computer already knows which type of data we're working with, so we can use the typeof() command in the console to find out.
+Luckily, the computer already knows which type of data we're working with, so we can use the `typeof()` command in the console to find out.
 
-typeof() returns a string that tells us which type of data we’re seeing.
+`typeof()` returns a string that tells us which type of data we’re seeing.
 
 Take a look at some examples:
 
@@ -206,23 +204,23 @@ For consistency’s sake, it’s a good idea to pick one way and stick with it.
 
 Make sure to remember the typeof() command in case you ever need to find out the type of data with which you are working.
 
-<!-- @sarahholden Instructions for how students can test these out
 
-typeof 'hello';
-The console returns 'string'.
-typeof 24;
-The console returns 'number'.
-typeof (3.45);
-The console returns 'number'.
-typeof true;
-The console returns 'boolean'.
-typeof ("JS is fun!");
-The console returns 'string'.
+>Exercise: Perform the following steps in the console:
+1. typeof 'hello';
+  The console returns 'string'.
+2. typeof 24;
+  The console returns 'number'.
+3. typeof (3.45);
+  The console returns 'number'.
+4. typeof true;
+  The console returns 'boolean'.
+5. typeof ("JS is fun!");
+  The console returns 'string'.
 
+> Check: Make sure students have filled in the correct input
 
--->
-
-#### Strings
+***
+## Strings and Numbers (5 mins)
 
 Strings are collections of letters and symbols known as *characters*, and we use them to deal with words and text in JavaScript. Strings are just another type of **value** in Javascript.
 
@@ -232,7 +230,7 @@ Strings are collections of letters and symbols known as *characters*, and we use
 '123'
 ```
 
-SIDENOTE: double quotes vs single quotes?
+> Instructor note: Demo for students in your console the difference between double quotes vs single quotes and when to use each.
 
 #### Numbers
 
@@ -255,10 +253,10 @@ This means that JS numbers can be positive, negative, or have a decimal point.
 
 
 
+***
+## Guided Practice: Arithmetic Operators (15 mins)
 
-#### Arithmetic Operators
-
-In this section we'll be talking about expressions. What are expressions? Watch this video to find out: [Expressions](https://generalassembly.wistia.com/medias/e1c21pib0n)
+In this section we'll be talking about expressions. What are expressions? Watch this [video](https://generalassembly.wistia.com/medias/e1c21pib0n) to find out:
 
 How do we combine numbers and operators to come up with more complex expressions in JS?
 
@@ -300,7 +298,8 @@ This may seem tedious now, but it’ll come in handy later on.
 
 
 <!--
-@sarahholden build out exercise
+ID NEEDED: Would you be able to format the following exercise? Thanks!
+
 Exercise:
 1 + 2
 The console returns 3
@@ -313,8 +312,8 @@ The console returns 12
 10%4
 The console returns 2 -->
 
-
-# String Concatentation and Coercion
+***
+## Guided Practice: String Concatentation and Coercion (15 mins)
 
 Now, let’s see how you can use string values (textual information) in JS.
 
@@ -404,12 +403,11 @@ var secondWord = 'world'
 => 'hello world'
 ```
 
-<!--  @sarahholden
-EXERCISE: Take 5 minutes to concatenate strings using both the `+` method and using string templates \`\` and string interpolation `${}` -->
+> Exercise: Take a few minutes to concatenate strings in your console using both the `+` method and using string templates \`\` and string interpolation `${}`
 
 
-
-#### Assignment Operators
+***
+## Guided Practice: Assignment Operators (10 mins)
 
 Now, let’s get back to some math and look at assignment operators.
 
@@ -427,28 +425,25 @@ There are also a couple arithmetic operators we can use to add or subtract one f
 
 ![](assets/increment.svg)
 
-<!-- @sarahholden
+<!-- ID NEEDED: Can you format this exercise?
 Type var num = 10;
 Note: the console returns undefined when declaring a variable using var because the var statement returns no value
 Now, type num += 4;. What do you think the value of num will become?
 Note: the console returns 14 because our value was 10 and we added 4 to it.
 Type num -= 8; the console. Before you press enter, take a moment to think about what value the console will return.
 Note: the console returns 6 since the new value was 14 and we subtracted 8 from it.
-
-
 -->
 
-#### Special Arithmetic Methods
 
+***
+## Guided Practice: Special arithmetic methods (10 mins)
 
 Apart from simply adding and subtracting numbers from variables, JavaScript also allows you to use special code to perform other arithmetic operations on numbers, such as finding the square root.
 
 Some of this code will contain a dot `.`. We will cover the dot notation in more depth in a later lesson, but, for now, let’s practice with some of the simpler arithmetic methods.
 
-<!-- @sarahholden
 
-Exercise: Take 5 minutes to look at the Math documentation (link is below) and pick a function to quickly explain to the class. We'll popcorn around the room each person will get 30 seconds to explain what their function is/does. Don't worry if you chose the same one as someone else. Repetition leads to retention! -->
-
+> Check: Take 5 minutes to look at the Math documentation (link is below) and pick a function to quickly explain to the class. We'll popcorn around the room each person will get 30 seconds to explain what their function is/does. Don't worry if you chose the same one as someone else. Repetition leads to retention!
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 
 Type the following code into the Chrome Developer Tools Console:
@@ -505,8 +500,8 @@ While it may seem like we’ve covered a lot of math in this section, don't worr
 When it comes down to it, computers operate on a pretty simple and straightforward logic, and there will be many times that you'll solve a problem by using one of these basic mathematic principles.
 
 
-## Helper methods
-
+***
+## Guided Practice: Helper Methods (15 mins)
 
 #### String helper methods
 
@@ -558,7 +553,7 @@ You can also use the unary `+` operator to convert values to numbers:
 => 42
 ```
 
-<!-- @sarahholdenEXERCISE: Let's take five minutes to use parseInt() and parseFloat() in node -->
+>EXERCISE: Let's take five minutes to use parseInt() and parseFloat() in the console.
 
 #### NaN
 
@@ -581,7 +576,7 @@ You can test for `NaN` using the built-in [`isNaN()`](ttps://developer.mozilla.o
 isNaN(NaN);
 => true
 ```
-JavaScript's numeric operators are `+`, `-`, `*`, `/` and `%` and all work as you expect and should have practiced during your pre-work.
+
 
 #### Null and Undefined
 
@@ -612,7 +607,8 @@ misunderstand you.
 ```
 
 
-## Arrays - Demo (5 mins)
+***
+## Intro to Arrays (15 mins)
 
 Arrays — what are they, and what are they good for?
 
@@ -653,7 +649,7 @@ Arrays help us make the most out of our elements, allowing us to:
 - Identify the value of one element in the list by specifying its position.
 - Go through the list item-by-item and manipulate each element.
 
-## Working with Arrays
+#### Working with Arrays
 
 Before we dive deeper into arrays, let’s learn a little about indexes.
 
@@ -663,7 +659,8 @@ Indexes allow you to access and update array values.
 
 Take a look at this grocery list. Do you notice anything interesting about how these items are numbered?
 
-![](assets/grocery_list.svg)
+
+<img src="assets/grocery_list.svg" width="200">
 
 You may have noted that the numbers start at 0 instead of 1.
 
@@ -695,11 +692,11 @@ Our friend Batman from Lesson 2 can be found at index 1
 
 ![](assets/indexes.png)
 
-#### Exercise
+> Exercise: Open the console in Chrome and do the following:
+1. Declare a variable called villains and assign it an array with the following strings: Cruella, Ursula, Jafar, Captain Hook.
+2. Don't forget single or double quotation marks around your strings and a semicolon at the end of your array.
+3. Now type villains and press enter.
 
-Declare a variable called villains and assign it an array with the following strings: Cruella, Ursula, Jafar, Captain Hook.
-Don't forget single or double quotation marks around your strings and a semicolon at the end of your array.
-Now type villains and press enter.
 Does your array look like this?
 
 ![](assets/answer1.png)
@@ -711,70 +708,15 @@ Now, which villain is in index 3?
 Because the index starts at 0, index 3 is Captain
 
 
-<!-- Using the JavaScript Keyword `new`, is one way of creating arrays:
-
+> Note: an alternate way to declare arrays is by using the JS keyword `new`
 ```javascript
 var a = new Array();
 => undefined
-
-a[0] = 'dog';
-=> 'dog'
-
-a[1] = 'cat';
-=> 'cat'
-
-a[2] = 'hen';
-=> 'hen'
-
-a
-=> ['dog', 'cat', 'hen']
-
-a.length;
-=> 3
-```
-
-A more convenient notation is to use an array literal:
-
-```javascript
-var a = ['dog', 'cat', 'hen'];
-
-a.length;
-=> 3
-``` -->
-
-#### Length method
-
-Now, let’s look at length property. All arrays have a property called length, which tells you how many elements the array contains.
-
-To access this value, simply tack on .length to the end of an array (or, alternatively, a variable containing that array). Here are some examples of .length in action:
-
-``` js
-['a', 'b', 'c'].length;  // Evaluates to 3
-
-var x = [10, 20, 30, 40];
-x.length; // Evaluates to 4
 ```
 
 
-One helpful part of knowing the length of an array is that it allows us to easily find the last (or second-to-last, or third-to-last, etc.) element.
-
-Because the first element in an array always has an index of 0, the index of the last element will be equal to the length of the array minus one.
-
-``` js
-var team = ['ted', 'lem', 'phil', 'linda', 'veronica'];
-team[team.length - 1];   // Evaluates to 'veronica'.
-team[team.length - 2];   // Evaluates to 'linda'.
-```
-
-<!--
-
-Declare a variable called `villains` again and assign it an array with the same list of strings as before (Cruella, Ursula, Jafar, Captain Hook)
-Now use the length property to find out how many items are in your `villains` array.
-Note: We use `villains.length`;
-Did your console return the value 4? (We listed four villains in total, therefore our array length is 4).
--->
-
-
+***
+## Accessing and updating elements in an array (15 mins)
 #### Getting data from an array
 
 To access, or retrieve, a value from an array, we will use the array name, followed by an index number, wrapped in square brackets.
@@ -802,7 +744,9 @@ We should now have a new list (Cruella is replaced with Scar):
 
 
 
-<!-- Create an array of villains again, with the same list of villains (Cruella, Ursula, Jafar, Captain Hook).
+<!--
+ID NEEDED: Can you format the following exercise?
+Create an array of villains again, with the same list of villains (Cruella, Ursula, Jafar, Captain Hook).
 Now replace Cruella with Scar, using the correct index number (remember indexes start at 0 in JS).
 Note: the console returns 'Scar' because that is the newest value that was added to the array.
 Add an additional villain 'Maleficent' at the end of the array using the correct index number.
@@ -814,24 +758,41 @@ Now, type villains and press enter. Does your console look like this?
 
 -->
 
-#### Concatenation with Arrays
-You have now conquered creating arrays (and are up to date on your Disney villains).
+***
+## Array Deep Dive (20 mins)
 
-Remember what we learned about concatenation in Lesson 3? Let’s see how you can use concatenation while working with arrays.
+#### Length method
 
+Now, let’s look at length property. All arrays have a property called length, which tells you how many elements the array contains.
 
-```js
+To access this value, simply tack on .length to the end of an array (or, alternatively, a variable containing that array). Here are some examples of .length in action:
 
-   var food = ["Pizza", "Mac 'n' Cheese"];
-   var quantity = [8, 2];
-   console.log('Today, I ate ' + quantity[0] + ' slices of ' + food[0]+''+
-   'I will have ' + quantity[1] + ' cups of ' + food[1])
+``` js
+['a', 'b', 'c'].length;  // Evaluates to 3
 
+var x = [10, 20, 30, 40];
+x.length; // Evaluates to 4
 ```
 
-Instead of typing out “Today, I ate 8 slices of pizza” and “I will have 2 cups of Mac ‘n’ Cheese,” you can use concatenation to combine numbers and sentences.
 
-This becomes super handy when the sentences you are trying to create become more complicated or repetitive.
+One helpful part of knowing the length of an array is that it allows us to easily find the last (or second-to-last, or third-to-last, etc.) element.
+
+Because the first element in an array always has an index of 0, the index of the last element will be equal to the length of the array minus one.
+
+``` js
+var team = ['ted', 'lem', 'phil', 'linda', 'veronica'];
+team[team.length - 1];   // Evaluates to 'veronica'.
+team[team.length - 2];   // Evaluates to 'linda'.
+```
+
+<!--
+ID NEEDED: Can you format the following exercise?
+
+Declare a variable called `villains` again and assign it an array with the same list of strings as before (Cruella, Ursula, Jafar, Captain Hook)
+Now use the length property to find out how many items are in your `villains` array.
+Note: We use `villains.length`;
+Did your console return the value 4? (We listed four villains in total, therefore our array length is 4).
+-->
 
 #### Array helper methods
 
@@ -852,10 +813,10 @@ The .push() method allows you to add one or more items to the end of an array.
 Note that this means the length of that array will also change.
 
 
-Remember, though, you'll never remember _every_ method.  Explore the the [full documentation for array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and other helper methods given to you for particular objects.
-
-
 <!--
+
+ID NEEDED: Can you format the following exercise?
+
 Create an empty array of foods: var favoriteFoods = [];.
 Use the .push() method to add the item "cheese": favoriteFoods.push('cheese');.
 Note: the console returns 1 because that's the number of items you added to the array.
@@ -912,77 +873,21 @@ favoriteFoods.join()
 ```
 
 
+Remember, though, you'll never remember _every_ method.  Explore the the [full documentation for array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and other helper methods given to you for particular objects.
+
+
+***
+
+<a name="conclusion"></a>
 ## Conclusion (5 mins)
 
 - Describe use cases of different 'data types'.
 - Why is iterating important when working with stored data?
+- What is the difference between `undefined` and `null`?
+- What is an example of a semantically-named variable?
 
 Feel free to read more from [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) about JavaScript fundamentals.
 
-
-# Syntax & Semantic Naming
-
-## Syntax (5/65)
-
-Variable syntax
-- Should be named using camelCase lettering.
-  - First letter of first word lowercase. First letter of remaining words uppercase.
-  - No spaces or punctuation between words.
-
-  ```javascript
-  // camelCase
-  var pizzaTopping = "pepperoni";
-  ```
-Semicolons
-- General practice is to end every line with a semi-colon.
-- Usage depends on the developer.
-
-Comments
-- Q: Why would you use comments?
-  - Talked about this in the HTML class. Same reasoning applies.
-- Types of comments
-  ```javascript
-  // Single line
-
-  /*
-    Multiple
-    line
-    comments
-  */
-  ```
-
-- Use to explain the purpose or reasoning behind a piece of code.
-- Help out other developers and future you.
-  - If anything, it will help us out when grading your projects!
-
-
-### Homework
-- [Choose your own adventure](https://github.com/ga-wdi-exercises/choose_your_own_adventure_js)
-
-# Review Questions
-1. When would you use an array over an object? And vice-versa?
-- What is the difference between `undefined` and `null`?
-- Provide an example of a semantically-named variable. Explain your choice.
-- What role does Javascript play on a website?
-- What are the five primitive data types?
-- What are the two composite data types? When would you use each?
-- What is an example of type coercion?
-- What is an example of a semantically-named variable?
-***
-
-<a name="conclusion"></a>
-## Conclusion (# mins)
-- Review independent practice deliverable(s)
-- Recap topic(s) covered in today's lesson
-- Cover homework and/or upcoming tasks
-
-***
-
-### BEFORE NEXT CLASS
-|   |   |
-|---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
 
 ### ADDITIONAL RESOURCES
 - Exercises
@@ -993,31 +898,6 @@ Comments
   - GA JS Circuit - [Intro to Arrays](https://generalassembly.wistia.com/medias/upd8qxyabg)
   - GA JS Circuit - [Arrays Deep Dive](https://generalassembly.wistia.com/medias/uey023vfx6)
 - Readings
-- Decks
-
-
-
-## You do: [Data Types & Data Collections](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(20 mins)
-
-Reference [Data Types And Collections](./data-types-and-collections.md) to complete the above exercise.
-
-## You do: [Booleans and Conditionals](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(15 mins)
-
-Reference [Booleans and Conditionals](./booleans-and-conditionals.md) to complete the above exercise.
-
-## You do: [Loops and Fizzbuzz](https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md)(15 mins)
-
-Reference [Loops](./loops.md) to complete the above exercise.
-
-
-## We Do: Pseudocode Temp Converter Part I
-
-Temperature conversion (Part I): [Temp Converter](https://github.com/ga-wdi-exercises/temperature_converter)
-
-Review
-
-## We Do: Pseudocode Temp Converter Part II
-
-Temperature conversion (Part II): [Temp Converter](https://github.com/ga-wdi-exercises/temperature_converter)
-
-> Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
+  - [JavaScript - A misunderstood Language](http://javascript.crockford.com/javascript.html)
+  - [Eloquent JavaScript - Data Types](http://eloquentjavascript.net/01_values.html)
+  - [Eloquent JavaScript - Variables](http://eloquentjavascript.net/02_program_structure.html)
