@@ -2,11 +2,11 @@
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| 05 min | [Opening](#opening) | CSS |
-| 20 min | [Intro to New Material](#introduction) | What is CSS? |
-| 15 min | [Demo](#guided-practice) | CSS Tools of the Trade |
-| 45 min | [Independent Practice](#ind-practice) | CSS Challenges |
-| 05 min | [Conclusion](#conclusion) |Review and Questions |
+| 5 mins | [Opening](#opening) | CSS |
+| 20 mins | [Intro to New Material](#introduction) | What is CSS? |
+| 15 mins | [Demo](#guided-practice) | CSS Tools of the Trade |
+| 45 mins | [Independent Practice](#ind-practice) | CSS Challenges |
+| 5 mins | [Conclusion](#conclusion) |Review and Questions |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -37,8 +37,8 @@
 ---
 <a name="opening"></a>
 ## Opening: (5 mins)
-- Review pre-work, projects, or exit ticket, if applicable
-- Review current lesson objectives
+- Review the purpose of HTML
+- Remind students CSS references HTML
 - Reference general course content or topics (e.g. code or concepts that have been used across multiple lessons)
 - Include Hook / Real-world Relevance (why the content from this lesson is useful or important)
 

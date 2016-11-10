@@ -218,8 +218,7 @@ A **block element** has some whitespace above and below it and does not tolerate
 
 An **inline-block element** is _placed_ as an inline element (on the same line as adjacent content), but it _behaves_ as a block element. This makes the element a block box but will allow other elements to sit next to it on the same line.
 
-If you assign ```none``` as the value of the ```display```, this will make the element and its content disappear from the page entirely! However, some browsers
-<!--Please complete or delete the incomplete sentence above.  -->
+If you assign `none` as the value of the `display`, this will make the element and its content disappear from the page entirely!
 
 To illustrate all ```display``` values, consider this HTML:
 ```html
@@ -286,7 +285,7 @@ You've likely used floats in the past to build column layouts, but Flexbox is no
 A basic example you'll encounter in most tutorials is the "text wrap", or surrounding an image with text:
 ![Floats](assets/floats.png)
 
-<!-- SME NEEDED: example code for image above -->
+<!-- Instructor needed: example code for image above -->
 
 * Images are, by default, `inline` elements.
 * To remove them from that flow and re-position them, we set `float` to either `left` or `right`.
@@ -295,7 +294,7 @@ A basic example you'll encounter in most tutorials is the "text wrap", or surrou
 ### Clear
 Floating, without the use of `clear`, can cause some serious layout issues. Let's see what happens if we remove the text from the previous example.
 
-<!-- SME NEEDED: example code for description above -->
+<!-- Instructor needed: example code for description above -->
 
 * What happens to the container when we set our image to `float: left;`?
 * What about if we substitute our image with a block element (e.g., `<div>`)?
@@ -308,7 +307,8 @@ We can fix these issues by adding an empty `<div>` with a property of `clear: bo
 ### Enter: The Clearfix
 [Nicolas Gallagher](http://nicolasgallagher.com/micro-clearfix-hack/) created a technique that eliminates the bad practice issues `clear: both;` causes, simply by adding a class to the parent container. And because it's a class, it's reusable!
 
-<!-- Is this complete?  This doesn't seem like a complete explanation of the Cleafix. -->
+<!-- Instructor needed: example code for clearfix class, along with explanations for the purpose of each declaration in the class. -->
+
 
 ***
 
@@ -474,7 +474,7 @@ Obviously, this layout won't work on tiny screens, unless you really like super-
 
 Before flexbox, this involved a lot of pushing and shoving with dimensions and positioning. You would essentially have to write two completely separate stylesheets: one for mobile, and one for desktop.
 
-With flex box, just change the `flex-direction` for smaller screen sizes, and you're pretty much done!
+With flexbox, just change the `flex-direction` for smaller screen sizes, and you're pretty much done!
 
 ```css
 body {
@@ -494,10 +494,10 @@ body {
 ***
 
 <a name="ind-practice"></a>
-## Independent Practice: Hyrule Potion Shop (30 mins)
+## Independent Practice: Potion Shop (30 mins)
+Imagine you've been hired to update a layout from floats to flexbox. Review and edit the CSS in order to keep the design intact and the code up-to-date. Be sure to remove any unused code! The content on the site will stay the same, but you may need to edit the HTML.
 
-
-<!-- SME NEEDED: updated version of code below -->
+<!-- Instructor needed: Please update the source code below so the students are working with well-designed and coded starter site. The goal for this practice is listed above. If the 'potion' idea is too silly, feel free to replace.-->
 https://github.com/ga-dc/hyrule_potion_shop
 
 ***

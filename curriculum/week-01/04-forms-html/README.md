@@ -1,49 +1,4 @@
----
-title: Title of the Lesson
-duration: "1:25"
-creator:
-    name: John Doe
-    city: NYC
----
-
-> #### *Guiding Questions When Using This Template*
->
-> - [ ] Are the learning objectives measurable?
->   - [ ] Are there at least two objectives? ( All learning objectives should be pulled from the [Front End Standards](https://docs.google.com/spreadsheets/d/11SzdbIIa9PLJ6kknGXXoBYOtL5ycwMK2N8lkI5THFak/edit#gid=1968474545) doc.  If you would like to add or remove any Learning Objectives, please contact amy.almeida@ga.co)
->   - [ ] Does the lesson address all the learning objectives?
->
-> - [ ] Are activities spaced out with enough time for each?
->   - [ ] Did you include knowledge "Checks" or activities at the end of every component to test comprehension?
->   - [ ] Is there an even distribution of intructor-led and active learning portions?
->
->
-> - [ ] Did you provide guidance for both students & instructors?
->   - [ ] What will instructors have to do to prepare for this lesson?
->   - [ ] What will students have to do to prepare for this lesson?
->   - [ ] What additional resources do you provide for students who are "hungry for more," or need additional practice?
->
-> #### *How to Use This Template*
-> * Static Components: Reserve roughly 5 min for Opening, 5 unscheduled "buffer" mins for overrun, & at least 5 min for Conclusion (end of lesson review).
->
->
-> * Modular Components: The units of instruction are: Intro, Demo, Guided-Practice, & Independent-Practice. These can be cycled or intermixed in various orders, depending on the topic / content.
-
-> #### *Components of the lesson plan*
-
-> - Opening: this only happens once; used to introduce the agenda, review material, and provide a motivating example / the problem we're trying to solve with this skill/content
-> - Introduction: this is a section dedicated to introducing and contextualizing new vocabulary, ideas, and code syntax that will be practiced in later sections
-> - Demo: an instructor-led session demonstrating proper techniques or syntax examples
-> - Guided Practice: interactive instructor by which the instructor engages with and probes students for answers to guide the discussion or activity
-> - Independent Practice: a block of time where students are able to practice what they've learned; the instructor provides directions and the students use the directions to complete an exercise
-> - Conclusion: a time to sum up the lesson, review the answers to a final independent practice, and/or pose discussion questions
-> - Check: a moment to check to understand students are following; it can be done with a question about content, a general "How comfortable are you with this?", or the instructor can check the output of students code to ensure they've completed the assignment properly.
-
-> NOTE: the lesson you create does not have to follow a progression of Introduction > Demo > Guided Practice > Independent Practice - a combination of these is often ideal - but a lesson must always begin with an Opening and end wth a Conclusion.
-
-
-
----
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Lesson Title (# mins)
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) HTML Forms (90 mins)
 
 | Timing | Type | Topic |
 | --- | --- | --- |
@@ -205,4 +160,3 @@ Briefly describe the Independent Practice exercise here.  What is the end delive
 - Decks
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
-

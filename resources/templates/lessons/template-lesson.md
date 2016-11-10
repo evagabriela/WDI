@@ -14,7 +14,7 @@ creator:
 >
 > - [ ] Are activities spaced out with enough time for each?
 >   - [ ] Did you include knowledge "Checks" or activities at the end of every component to test comprehension?
->   - [ ] Is there an even distribution of intructor-led and active learning portions?
+>   - [ ] Is there an even distribution of instructor-led and active learning portions?
 >
 >
 > - [ ] Did you provide guidance for both students & instructors?
@@ -205,4 +205,3 @@ Briefly describe the Independent Practice exercise here.  What is the end delive
 - Decks
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
-
