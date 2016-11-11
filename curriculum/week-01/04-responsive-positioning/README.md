@@ -19,6 +19,7 @@
 - Understand how media queries work in the cascade
 - Understand that Responsive Design is dictated by visual break points and not device sizes
 - Explain the difference between and use cases of static, relative, fixed and absolute positioning
+<!--Can we double check that all these learning objectives are met in this lesson?  I didn't see anything about special selectors or mobile-up/ desktop-down in this lesson.  -->
 
 <a name="introduction-positioning"></a>
 ## Introduction: Positioning (5 mins)
@@ -196,7 +197,7 @@ Or, the dryer Wikipedia definition:
 
 Responsive web design (RWD) is a web design approach aimed at crafting sites to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from mobile phones to desktop computer monitors).
 
-### Responsive Design is **not** Device-Specific
+### Responsive Design is _**not**_ Device-Specific
 
 A responsive site doesn't just look good on the newest phone, watch, tablet, or mega-screen– it looks good on *any* sized screen. This might seem impossible, but it's relatively straightforward. All that's required is writing a series of rules, called Media Queries, which check the size of the browser/device on which the site is being viewed, and adjust the CSS as needed.
 
