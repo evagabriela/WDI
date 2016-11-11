@@ -4,7 +4,6 @@
 Your project will be assessed using the following standards, as defined by the course syllabus and the [Course] workflow:
 
 - **Course Standard**
-- **Professional Development**
 
 Acceptable performance for these standards is based on how well you've applied specific learning goals within your deliverable. To review the full list of standards, see our course syllabus.
 
