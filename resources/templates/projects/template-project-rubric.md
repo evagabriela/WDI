@@ -22,12 +22,9 @@ Acceptable performance for these standards is based on how well you've applied s
 | Specific requirement that meets expectations 3 | | | | |
 | Specific requirement that meets expectations 4 | | | | |
 
-- Section Subscore:  / 12
+
 - Notes:
 
-
-
-> For help providing feedback, see our [Project Feedback Guidelines](#).
 
 
 ## Score:
