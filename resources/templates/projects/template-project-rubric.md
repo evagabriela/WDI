@@ -1,7 +1,7 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) PROJECT RUBRIC
 **Project | Course** 	 						
 
-Your project will be assessed using the following standards, as defined by the course syllabus and the [Course] workflow:
+Your project will be assessed using the following standards, as defined by the course syllabus and WDI's workflow:
 
 - **Course Standard**
 
