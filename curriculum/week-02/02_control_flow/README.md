@@ -4,42 +4,6 @@ duration: "1:25"
 creator:
     name: John Doe
     city: NYC
----
-
-> #### *Guiding Questions When Using This Template*
->
-> - [ ] Are the learning objectives measurable?
->   - [ ] Are there at least two objectives? ( All learning objectives should be pulled from the [Front End Standards](https://docs.google.com/spreadsheets/d/11SzdbIIa9PLJ6kknGXXoBYOtL5ycwMK2N8lkI5THFak/edit#gid=1968474545) doc.  If you would like to add or remove any Learning Objectives, please contact amy.almeida@ga.co)
->   - [ ] Does the lesson address all the learning objectives?
->
-> - [ ] Are activities spaced out with enough time for each?
->   - [ ] Did you include knowledge "Checks" or activities at the end of every component to test comprehension?
->   - [ ] Is there an even distribution of intructor-led and active learning portions?
->
->
-> - [ ] Did you provide guidance for both students & instructors?
->   - [ ] What will instructors have to do to prepare for this lesson?
->   - [ ] What will students have to do to prepare for this lesson?
->   - [ ] What additional resources do you provide for students who are "hungry for more," or need additional practice?
->
-> #### *How to Use This Template*
-> * Static Components: Reserve roughly 5 min for Opening, 5 unscheduled "buffer" mins for overrun, & at least 5 min for Conclusion (end of lesson review).
->
->
-> * Modular Components: The units of instruction are: Intro, Demo, Guided-Practice, & Independent-Practice. These can be cycled or intermixed in various orders, depending on the topic / content.
-
-> #### *Components of the lesson plan*
-
-> - Opening: this only happens once; used to introduce the agenda, review material, and provide a motivating example / the problem we're trying to solve with this skill/content
-> - Introduction: this is a section dedicated to introducing and contextualizing new vocabulary, ideas, and code syntax that will be practiced in later sections
-> - Demo: an instructor-led session demonstrating proper techniques or syntax examples
-> - Guided Practice: interactive instructor by which the instructor engages with and probes students for answers to guide the discussion or activity
-> - Independent Practice: a block of time where students are able to practice what they've learned; the instructor provides directions and the students use the directions to complete an exercise
-> - Conclusion: a time to sum up the lesson, review the answers to a final independent practice, and/or pose discussion questions
-> - Check: a moment to check to understand students are following; it can be done with a question about content, a general "How comfortable are you with this?", or the instructor can check the output of students code to ensure they've completed the assignment properly.
-
-> NOTE: the lesson you create does not have to follow a progression of Introduction > Demo > Guided Practice > Independent Practice - a combination of these is often ideal - but a lesson must always begin with an Opening and end wth a Conclusion.
-
 
 
 ---
@@ -63,15 +27,10 @@ creator:
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
-
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
 - Create variables in JavaScript
 - Differentiate between data types (strings, numbers, booleans)
 - Use a text editor
+
 ---
 <a name="opening"></a>
 ## Opening (5 mins)
@@ -479,7 +438,7 @@ We can add as many `else if` statements as we want. You just keep tacking them o
 
 These statements allow us to add complex logic to our program, which can check for multiple conditions and specify an action for each result, making our program seem more intuitive and user friendly.
 
-<img src="assets/else_if.png" width="400px">
+<img src="assets/else_if.png" width="250px">
 
 #### Else Statements
 
@@ -519,6 +478,28 @@ if (age <= 8) {
   console.log('Why not enjoy a float down the Lazy River?');
 }
 ```
+
+## Switch Statement (5 mins)
+
+The switch statement can be used for multiple branches based on a number or string:
+
+```javascript
+var food = "apple";
+
+switch(food) {
+  case 'pear':
+    console.log("I like pears");
+    break;
+  case 'apple':
+    console.log("I like apples");
+    break;
+  default:
+    console.log("No favorite");
+}
+//=> I like apples
+```
+
+
 #### Note: Assignment vs. Comparison Operator
 Within our conditions, we will often need to check to see whether or not two values are equal to one another, and perform an action based on the results.
 
@@ -585,20 +566,9 @@ if (x > 5) {
 - Under what circumstances will y be assigned a value of 100?
   <!-- Answer: x=5 -->
 
+<!-- SME Needed: Would be helpful to have someone build out a 15 minute exercise that uses only conditionals and variables, the current exercise also uses loops (FizzBuzz) -->
+## Exercise
 
-## Fizz Buzz (15 minutes)
-
-Fizz buzz is a game about division. Create a program that will iterate through numbers from 1 to 101 and log each number in the console.
-
-- In the loop every time a number is divisible by **3**, instead of logging the number itself, the word "fizz" should appear.
-- If the number is divisible by  **5**, the word "buzz" should be logged.
-- If the number is divisible by both **3** and  **5**, then the word "fizzbuzz" should be logged.
-
-Hint: Go read about the [Remainder Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators) on MDN and figure out how to use it to simplify this problem.
-
-A typical output in the chrome dev tools would look like this:
-
-<img src="https://i.imgur.com/avioQC8.png">
 
 #### Solution
 
@@ -609,16 +579,12 @@ You'll probably need to refresh yourself on the exact syntax a few times before 
 
 ***
 
-### BEFORE NEXT CLASS
-|   |   |
-|---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
 
 ### ADDITIONAL RESOURCES
 - Exercises
 - Videos
 - Readings
+  [Control Flow MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
 - Decks
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
