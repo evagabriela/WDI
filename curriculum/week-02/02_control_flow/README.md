@@ -513,6 +513,8 @@ if (x === 3) {
 ```
 
 #### Switch Statement
+Video: https://generalassembly.wistia.com/medias/sew8suaz5l
+
 
 The switch statement can be used for multiple branches based on a number or string:
 

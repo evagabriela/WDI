@@ -23,8 +23,6 @@ contributor:
 - Describe the concept of a 'data type' and how it relates to variables
 - Describe use cases of different 'data types'
 - Declare, assign to, and manipulate data stored in a variable
-- Describe how arrays are used to store data
-- Manipulate values in an array
 - Practice proper JS syntax and semantic variable naming.
 
 ### STUDENT PRE-WORK
