@@ -746,12 +746,8 @@ Depending on whether or not our condition is truthy, he or she would either ente
 
 <img src="assets/flow_chart_1.png" width="300px">
 
-#### Else Statements
-`If` can actually be modified in several ways to change its behavior.
-
-One of these ways is through the use of an *else statement*.
-
-For instance, adding an `else` to our `if` statement allows us to specify a second condition to test.
+#### Else If Statements
+Adding an `else` to our `if` statement allows us to specify a second condition to test.
 
 However, this second condition will *only* be tested if the first condition fails.
 
@@ -767,16 +763,17 @@ if (age < 18) {
 
 Notice how we are now able to check to see if multiple conditions are true.
 
-
 We can add as many `else if` statements as we want. You just keep tacking them on.
 
 These statements allow us to add complex logic to our program, which can check for multiple conditions and specify an action for each result, making our program seem more intuitive and user friendly.
 
 <img src="assets/else_if.png" width="400px">
 
+#### Else If Statements
+
 At this point, if none of the conditions we check for are true, then nothing will happen.
 
-We need a way to check several conditions and have the ability to move forward if none of these conditions are true— a default, or fallback, course of action.
+We need a way to check several conditions and have the ability to move forward if none of these conditions are true — a default, or fallback, course of action.
 
 To specify behavior for this outcome, we must add an `else` to the end of our statement.
 
@@ -784,11 +781,6 @@ Let's look at an example of an else statement:
 
 <img src="assets/Slide-25-If-Else.png" width="600px">
 
-Here’s an example of an else statement as a flow chart:
-
-<img src="assets/Slide-27-Code.png" width="300px">
-
-<img src="assets/Slide-26b-Example.png" width="400px">
 
 #### Exercise
 
