@@ -406,13 +406,13 @@ You also can't say that you were born on December 45th, because that day doesn't
 
 When you try entering information like this, JS will identify that it is wrong by comparing the information you entered against information it knows to be accurate.
 
-<img src="assets/Slide-5-Form-X.svg" width="300px">
+<img src="assets/Slide-5-Form-X.png" width="300px">
 
 Making comparisons is almost like asking questions about the information the user has entered.
 
 Is the year less than or equal to 2016 and more than or equal to 1900? If the answer to this question is "true," then we know the user has entered a valid year, and that he or she was born somewhere between 1900 and 2016.
 
-<img src="assets/Slide-6-Form-Check.svg" width="300px">
+<img src="assets/Slide-6-Form-Check.png" width="300px">
 
 Did you notice how we used the term "less than or equal to" to check, or compare, two things? This is how our comparison operators help us make decisions.
 
@@ -424,7 +424,7 @@ Comparison operators are binary in that they compare two values against one anot
 
 Comparisons in JavaScript can be made using <, >, <=, and >=, and work for both strings and numbers.
 
-<img src="assets/comparison_operators.svg" width="350">
+<img src="assets/comparison_operators.png" width="350">
 
 <!--
 ID NEEDED: Help formatting the following exercise
@@ -453,7 +453,7 @@ There are two ways to verify equality in JavaScript:
 
 The `==` operator or the `===` operator. In this course, we will always use the `===` operator, because it is more accurate.
 
-<img src="assets/equality_operators.svg" width="350px">
+<img src="assets/equality_operators.png" width="350px">
 
 #### `==` Equals Operator
 
@@ -501,7 +501,7 @@ The === operator checks to make sure the type and the value on both sides of the
 
 Now, let's take a closer look at the answers:
 
-<img src="assets/strict_equals.svg" width="500px">
+<img src="assets/strict_equals.png" width="500px">
 
 The double equals signs (==) can be useful when both the type and value are the same, but, because their type coercion could potentially derail your program, they're best avoided when you're just getting started out.
 
@@ -548,13 +548,13 @@ For instance, if it is raining **AND** I have an umbrella, then I will go outsid
 
 BOTH conditions have to evaluate to true for the entire expression to be true.
 
-<img src="assets/umbrella.svg" width="250px">
+<img src="assets/umbrella.png" width="250px">
 
 Logical operators let us check to see if two conditions are both true or if _at least one_ of the conditions is true.
 
 We can also use logical operators to reverse a value or check to see whether or not something is false.
 
-<img src="assets/logical_operators.svg" width="200px">
+<img src="assets/logical_operators.png" width="200px">
 
 <br>
 NOT (`!`) will reverse the value of any Boolean (i.e, `!true` `// false`).
@@ -603,7 +603,7 @@ Something is Falsey when it evaluates to False. The "falsey" category of values 
 #### Summary
 Below are the exact rules Boolean operators follow when dealing with non-Boolean input values.
 
-<img src="assets/falsey_truthy.svg" width="500px">
+<img src="assets/falsey_truthy.png" width="500px">
 
 The best way to determine if something is truthy is to determine that it’s not falsey.
 
@@ -719,14 +719,14 @@ The conditional below is an `if` statement.
 
 An `if` statement will take in a condition and, if that condition is truthy, run whatever code you specify.
 
-<img src="assets/condition_zoom.svg" width="400px">
+<img src="assets/condition_zoom.png" width="400px">
 
 #### Flow Charts
 You're probably already familiar with a common real-world application of the `if` statement: the *flow chart*.
 
 A *flow chart* is a visual diagram that tells us how to behave depending on a certain set of conditions.
 
-<img src="assets/flow_chart.svg" width="500px">
+<img src="assets/flow_chart.png" width="500px">
 
 If we were to draw a flowchart to describe the following if statement:
 
@@ -744,7 +744,7 @@ As you can see, a person making their way through this diagram would need to mak
 
 Depending on whether or not our condition is truthy, he or she would either enter the block of code or skip over it entirely.
 
-<img src="assets/flow_chart_1.svg" width="300px">
+<img src="assets/flow_chart_1.png" width="300px">
 
 #### Else Statements
 `If` can actually be modified in several ways to change its behavior.
@@ -772,7 +772,7 @@ We can add as many `else if` statements as we want. You just keep tacking them o
 
 These statements allow us to add complex logic to our program, which can check for multiple conditions and specify an action for each result, making our program seem more intuitive and user friendly.
 
-<img src="assets/else_if.svg" width="400px">
+<img src="assets/else_if.png" width="400px">
 
 At this point, if none of the conditions we check for are true, then nothing will happen.
 
@@ -782,13 +782,13 @@ To specify behavior for this outcome, we must add an `else` to the end of our st
 
 Let's look at an example of an else statement:
 
-<img src="assets/Slide-25-If-Else.svg" width="600px">
+<img src="assets/Slide-25-If-Else.png" width="600px">
 
 Here’s an example of an else statement as a flow chart:
 
-<img src="assets/Slide-27-Code.svg" width="300px">
+<img src="assets/Slide-27-Code.png" width="300px">
 
-<img src="assets/Slide-26b-Example.svg" width="400px">
+<img src="assets/Slide-26b-Example.png" width="400px">
 
 #### Exercise
 
@@ -830,7 +830,7 @@ Notice that we used a triple equals instead of a single equals in the condition.
 
 This is important to note, as confusing the assignment operator with the comparison operator is a common mistake for beginners.
 
-<img src="assets/Slide-30-Assignement-Comparison.svg" width="400px">
+<img src="assets/Slide-30-Assignement-Comparison.png" width="400px">
 
 Remember: An *assignment* is when we give a variable a value.
 
