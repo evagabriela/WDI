@@ -477,27 +477,6 @@ if (age <= 8) {
 }
 ```
 
-## Switch Statement (5 mins)
-
-The switch statement can be used for multiple branches based on a number or string:
-
-```javascript
-var food = "apple";
-
-switch(food) {
-  case 'pear':
-    console.log("I like pears");
-    break;
-  case 'apple':
-    console.log("I like apples");
-    break;
-  default:
-    console.log("No favorite");
-}
-//=> I like apples
-```
-
-
 #### Note: Assignment vs. Comparison Operator
 Within our conditions, we will often need to check to see whether or not two values are equal to one another, and perform an action based on the results.
 
@@ -533,8 +512,29 @@ if (x === 3) {
 }
 ```
 
+#### Switch Statement
 
-#### Conditionals Summary
+The switch statement can be used for multiple branches based on a number or string:
+
+```javascript
+var food = "apple";
+
+switch(food) {
+  case 'pear':
+    console.log("I like pears");
+    break;
+  case 'apple':
+    console.log("I like apples");
+    break;
+  default:
+    console.log("No favorite");
+}
+//=> I like apples
+```
+
+
+
+## Conditionals Summary (5 min)
 Let’s turn to a summary of conditionals and test ourselves with a short quiz.
 
 Using `if...else` statements allows us to write code that can behave very differently in different circumstances.
