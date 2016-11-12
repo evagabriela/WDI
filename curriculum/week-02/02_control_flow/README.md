@@ -558,8 +558,11 @@ if (x > 5) {
 - Under what circumstances will y be assigned a value of 100?
   <!-- Answer: x=5 -->
 
-<!-- SME Needed: Would be helpful to have someone build out a 15 minute exercise that uses only conditionals and variables, the current exercise also uses loops (FizzBuzz) -->
-## Exercise
+<!-- SME Needed: Would be helpful to have someone build out a 15 minute exercise that uses only conditionals and variables, the current exercise also uses loops (FizzBuzz)
+
+Another option: pull from circuits
+-->
+## Independent Practice
 
 
 #### Solution
