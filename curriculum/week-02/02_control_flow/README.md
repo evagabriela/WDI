@@ -84,294 +84,6 @@ What is control flow? Watch this [video](https://generalassembly.wistia.com/medi
 
 JavaScript supports a compact set of statements, specifically control flow statements, that you can use to incorporate a great deal of interactivity in your application.
 
-
-## Conditional statements (10 mins)
-
-Conditional statements are a way of essentially skipping over a block of code if it does not pass a boolean expression. JavaScript supports two conditional statements: `if`...`else` and `switch`.
-
-#### if...else statement
-
-```javascript
-// pseudo code
-if (expr) {
-//   code
-}
-```
-
-... means run the `code` block if `expr` is `true`
-
-```javascript
-if (1 > 0) {
-  console.log("hi")
- }
-//=> hi
-```
-
-When you need to test more than one case, you may use `else if`:
-
-```javascript
-var name = "kittens";
-
-if (name == "puppies") {
-  console.log(`${name}!`)
-} else if (name == "kittens") {
-  console.log(`${name}!!`);
-} else {
-  console.log('not kittens or puppies T_T')
-}
-
-```
-
-Exercise: Write a function in notes.js that wraps around the if else if statement we just wrote together. Instead of having a variable name it'll be an argument name.
-
-
-## Switch Statement (5 mins)
-
-The switch statement can be used for multiple branches based on a number or string:
-
-```javascript
-var food = "apple";
-
-switch(food) {
-  case 'pear':
-    console.log("I like pears");
-    break;
-  case 'apple':
-    console.log("I like apples");
-    break;
-  default:
-    console.log("No favorite");
-}
-//=> I like apples
-```
-
-Exercise: Same exercise as before, Write a function in notes.js that wraps around this switch statement we just wrote together. Instead of having a variable food it'll be an argument food.
-
-
-## Truthy & Falsey (10 mins)
-
-#### All of the following become false when converted to a Boolean
-
-- `false`
-- `0`
-- `""` (empty string)
-- `NaN`
-- `null`
-- `undefined`
-
-#### All other values become true when converted to a Boolean
-
-There is a simple way of verifying the truthiness or falsey-ness of a value. When you add `!` in front of a value, the returned value will be the inverse of the value in a boolean. So if you add two `!` then you'll get the boolean value of the original one:
-
-```javascript
-!true
-//=> false
-
-!false
-//=> true
-
-!!false
-//=> false
-
-!!true
-//=> true
-```
-
-
-EXERCISE: Write a function that takes one argument called name. If the function is called with the argument passed in console.log(`hey ${name}!`) if the function is called without a name console.log('But, like, who are you tho?') remember an if statement will evaluate whatever expression is passed ... if true ...
-
-
-## Boolean/Logical Operators (5 mins)
-
-[Logical operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators)
-
-Logical operators will always return a boolean value `true` or `false`.
-
-There are two "binary" operators that require two values:
-
-- **AND**, denoted `&&`
-- **OR**, denoted `||`
-- **NOT**, denoted `!`
-
-#### && (AND)
-
-The `&&` operator requires both left and right values evaluate to `true` in order to return `true`:
-
-```javascript
-true && true
-//=> true
-
-var hello = 'hello'
-var world = 'world'
-
-hello && world
-//=> true
-```
-
-Any other combination is false.
-
-```javascript
-true && false
-//=> false
-
-false && false
-//=> false
-```
-
-#### || (OR)
-
-The `||` operator requires just one of the left or right values to be `true` in order to return true.
-
-```javascript
-true || false
-//=> true
-
-false || true
-//=> true
-
-false || false
-//=> false
-```
-
-Only `false || false` will return `false`
-
-The `!` takes a value and returns the opposite boolean value, i.e.
-
-```javascript
-!(true)
-//=> false
-```
-
-The `&&` and `||` operators use short-circuit logic, which means whether they will execute their second operand is dependent on the first. This is useful for checking for null objects before accessing their attributes:
-
-```javascript
-var name = o && o.getName();
-```
-
-In this case, if the first operand `o` is false, then the second operand `o.getName()` will not be evaluated. The expression is basically saying "we already know the whole `&&` expression is false, because `o` is falsey. Why bother dealing with the second operand?"
-
-Or for setting default values:
-
-```javascript
-var name = otherName || o.getName();
-```
-
-In this case, if the first operand `otherName` is false, then we'll see that `"my name"` will be returned. If `otherName` is truthy (e.g. it contains a value), it will get returned, and the second expression won't even be evaluated. The expression is basically saying "we already know the whole `||` expression is true, because `o` is truthy. Why bother dealing with the second operand?"
-
-## Comparison Operators (10 mins)
-
-[Comparisons](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators) in JavaScript can be made using `<`, `>`, `<=` and `>=`. These work for both strings and numbers. This is both useful, and can be the source of frustration for some developers, since most languages do not implicitly convert strings to numbers the way that JavaScript does.
-
-```javascript
-"A" > "a"
-//=> false
-
-"b" > "a"
-//=> true
-
-12 > "12"
-//=> false
-
-12 >= "12"
-//=> true
-```
-
-#### Equality Operator `==`
-
-Equality is a bit more complex. There are 2 ways in JavaScript to verify equality.
-
-When verifying equality using double equal `==`, JavaScript does a lot of the "type coercion" in the background. Like we mentioned above, if the operands have a different type (i.e.: the number `1` and the string `"1"`), JavaScript will try to change the type of both operands to check whether they are equal. This means that a lot of times, expressions will return equal more easily than if we were stricter about what things were equivalent. Some examples:
-
-```javascript
-"dog" == "dog";
-//=> true
-
-1 == true;
-//=> true
-```
-
-#### Equality Operator `===`
-
-To avoid type coercion and measure equality more strictly, **use the triple-equals operator**. Because `===` more truly measures actual equality, we'll use this far more often when checking whether too things are, in fact, the same thing.
-
-> **Note:** "Sameness" and "equality" have various definitions and can be somewhat "fuzzy". They can also differ by programming language. Because you'll often be measuring whether two things are equal, you should investigate the way this works carefully.
-
-Some examples:
-
-```javascript
-1 === true;
-//=> false
-
-true === true;
-//=> true
-
-"hello" === "hello"
-//=> true
-```
-
-However, there are some incidents when it does not do what we expect, for example when working with empty objects or arrays:
-
-```javascript
-{} === {}
-//=> Uncaught SyntaxError: Unexpected token ===
-
-[] === []
-//=> false
-
-[1,7] === [1,7]
-//=> false
-```
-
-**Explanation**
-
-The examples in the second set fail equality tests because both **object literals** and **arrays** are objects, and not just "primitive" values like strings, numbers, and booleans. Objects and arrays are complex collections of values, and when we refer to them, we're actually referencing where they live in memory. That's why we call them "reference types," while things like strings and numbers are "value types."
-
-What this means is that when we go to compare two objects or arrays with `===`, JavaScript doesn't care if they look like similar collections. It only compares whether or not they are the exact same object in memory. In each of the cases above, when checking for equality, we're actually comparing two objects that are in two different places in memory. They're not exactly "the same."
-
-#### != and !==
-
-There are also `!=` and `!==` operators, which are the negative versions of `==` and `===`.
-
-
-In this case the `switch` statement compares `food` to each of the cases (`pear` and `apple`), and evaluates the expressions beneath them if there is a match. It uses `===` to evaluate equality.
-
-The default clause is optional.
-
-## Fizz Buzz (15 minutes)
-
-Fizz buzz is a game about division. Create a program that will iterate through numbers from 1 to 101 and log each number in the console.
-
-- In the loop every time a number is divisible by **3**, instead of logging the number itself, the word "fizz" should appear.
-- If the number is divisible by  **5**, the word "buzz" should be logged.
-- If the number is divisible by both **3** and  **5**, then the word "fizzbuzz" should be logged.
-
-Hint: Go read about the [Remainder Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators) on MDN and figure out how to use it to simplify this problem.
-
-A typical output in the chrome dev tools would look like this:
-
-<img src="assets/https://i.imgur.com/avioQC8.png" width="400px">
-
-#### Solution
-
-## Conclusion (5 mins)
-These are some of the foundational tools you'll use in many of your applications. You'll probably need to refresh yourself on the exact syntax a few times before you memorize it, but it's important to be able to remember, these core "control flow" concepts, in general, because they'll come up in pretty much every programming language you'll ever encounter.
-
-- [Control Flow](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
-- [While](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <a name="comparison-logical"></a>
 ## Introduction: Comparison and Logical Operators (10 mins)
 
@@ -769,7 +481,7 @@ These statements allow us to add complex logic to our program, which can check f
 
 <img src="assets/else_if.png" width="400px">
 
-#### Else If Statements
+#### Else Statements
 
 At this point, if none of the conditions we check for are true, then nothing will happen.
 
@@ -807,7 +519,7 @@ if (age <= 8) {
   console.log('Why not enjoy a float down the Lazy River?');
 }
 ```
-#### Assignment vs. Comparison Operator
+#### Note: Assignment vs. Comparison Operator
 Within our conditions, we will often need to check to see whether or not two values are equal to one another, and perform an action based on the results.
 
 Example:
@@ -873,17 +585,27 @@ if (x > 5) {
 - Under what circumstances will y be assigned a value of 100?
   <!-- Answer: x=5 -->
 
+
+## Fizz Buzz (15 minutes)
+
+Fizz buzz is a game about division. Create a program that will iterate through numbers from 1 to 101 and log each number in the console.
+
+- In the loop every time a number is divisible by **3**, instead of logging the number itself, the word "fizz" should appear.
+- If the number is divisible by  **5**, the word "buzz" should be logged.
+- If the number is divisible by both **3** and  **5**, then the word "fizzbuzz" should be logged.
+
+Hint: Go read about the [Remainder Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators) on MDN and figure out how to use it to simplify this problem.
+
+A typical output in the chrome dev tools would look like this:
+
+<img src="https://i.imgur.com/avioQC8.png">
+
+#### Solution
+
+## Conclusion (5 mins)
 These are just some of the foundational tools you'll use while building your applications with JavaScript.
 
 You'll probably need to refresh yourself on the exact syntax a few times before you memorize it, but it's important to be able to remember these core "control flow" concepts in general, as they'll come up in pretty much every programming language you'll ever encounter.
-
-
-
-<a name="conclusion"></a>
-## Conclusion (# mins)
-- Review independent practice deliverable(s)
-- Recap topic(s) covered in today's lesson
-- Cover homework and/or upcoming tasks
 
 ***
 
