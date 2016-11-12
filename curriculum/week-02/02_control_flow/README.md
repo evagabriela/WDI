@@ -292,11 +292,9 @@ When operators accept input values, they categorize these inputs as being either
 
 The boolean operators `!`, `||`, and `&&` follow a set of rules that determine how they behave.
 
-NOT(`!`): If the input is truthy, return `false`; if the input is falsey, return `true`.
-
-OR (`||`): Return the first truthy value; if both values are Falsey, return the last falsey value.
-
-AND `(&&):` Return the first falsey value; if both values are truthy, return the last truthy value.
+- NOT(`!`): If the input is truthy, return `false`; if the input is falsey, return `true`.
+- OR (`||`): Return the first truthy value; if both values are Falsey, return the last falsey value.
+- AND `(&&):` Return the first falsey value; if both values are truthy, return the last truthy value.
 
 Let’s take a closer look:
 
@@ -517,15 +515,9 @@ This is important to note, as confusing the assignment operator with the compari
 
 <img src="assets/Slide-30-Assignement-Comparison.png" width="400px">
 
-Remember: An *assignment* is when we give a variable a value.
-
-A *comparison* checks the relationship between two values.
-
-A single equals sign is reserved for assigning a value to a variable, whereas a triple equals sign can be used to compare two values.
-
 Take a look at the following example:
 
-Here, we are not comparing x with the number 3. We're assigning the variable x the value of 3 by using = instead of ===.
+Here, we are not comparing x with the number 3. We're _assigning_ the variable x the value of 3 by using `=` instead of `===`.
 
 ```js
 if (x = 3) {
@@ -533,7 +525,7 @@ if (x = 3) {
 }
 ```
 
-If we wanted to see if x is equal to 3, we would use a comparison operator (the triple equals sign):
+If we wanted to see if x is equal to 3, we would use a *comparison* operator (the triple equals sign):
 
 ```js
 if (x === 3) {
@@ -545,7 +537,7 @@ if (x === 3) {
 #### Conditionals Summary
 Let’s turn to a summary of conditionals and test ourselves with a short quiz.
 
-Using if...else statements allows us to write code that can behave very differently in different circumstances.
+Using `if...else` statements allows us to write code that can behave very differently in different circumstances.
 
 Consider the following conditional statement:
 
