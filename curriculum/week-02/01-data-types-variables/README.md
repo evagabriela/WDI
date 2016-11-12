@@ -31,6 +31,12 @@ contributor:
 - Have basic understanding of Javascript
 - Be comfortable with a text editor
 
+<!--
+@sarahholden add extra exercises:
+
+  Data Type Exercises: https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md
+
+-->
 
 ---
 <a name="opening"></a>

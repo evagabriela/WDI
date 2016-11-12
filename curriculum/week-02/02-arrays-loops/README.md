@@ -27,6 +27,20 @@
 - Use a text editor
 
 ---
+<!-- @sarahholden Add checks for understanding throughout -->
+<!-- @sarahholden Add opening framing-->
+<!-- @sarahholden Add additional resources -->
+
+<!-- @sarahholden Add additional labs/exercises:
+
+  Three labs here: https://github.com/ATL-WDI-Curriculum/js-arrays-and-loops
+  Google Shopping Conditionals/Loops exercise: https://github.com/WDI-SEA/google-shopping-conditionals-loops
+  Booking system lab: https://github.com/jeremiahalex/wdi-sg-3/tree/master/day-6-variablesLoopsConditionals-lab
+  Arrays and Loops Exercises: https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md
+  Arrays Exercise: https://github.com/ATL-WDI-Exercises/js-control-flows
+
+
+-->
 <a name="opening"></a>
 ## Opening (# mins)
 - Review pre-work, projects, or exit ticket, if applicable

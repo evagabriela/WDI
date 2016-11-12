@@ -31,6 +31,20 @@ creator:
 - Differentiate between data types (strings, numbers, booleans)
 - Use a text editor
 
+<!--
+@sarahholden add extra exercises:
+
+  Boolean Exercises: https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md
+  Temperature Converter Lab: https://github.com/ga-wdi-exercises/temperature_converter
+  (Bonus exercises are more advanced including loops and arrays)
+
+  Night Club Bouncer: https://github.com/ATL-WDI-Exercises/js-control-flows
+
+  Choose your own adventure: https://github.com/ga-wdi-exercises/choose_your_own_adventure_js
+
+-->
+
+
 ---
 <a name="opening"></a>
 ## Opening (5 mins)
