@@ -4,8 +4,8 @@
 | --- | --- | --- |
 | 10 mins | [Introduction](#introduction) | CSS Animations |
 | 30 mins | [Independent Practice](#ind-practice-research) | Research Transforms, Transitions, and Animations |
-| 45 min | [Independent Practice](#ind-practice) | Topic |
-| 5 min | [Conclusion](#conclusion) |Topic |
+| 45 min | [Independent Practice](#ind-practice) | Research Transforms, Transitions, and Animations |
+| 5 min | [Conclusion](#conclusion) | Animate it! |
 
 ### LEARNING OBJECTIVES
 - Utilize browser compatibility techniques like vendor prefixes, the SHIV, and meta tags
@@ -52,7 +52,7 @@ Breakout into groups of four. Each group will have 20 minutes to prepare a short
 | 5 | CSS Animations (iterations / repeats / direction ) |
 
 ***
-
+<!--Do you think there is a need to have an instructor demo any of these skills before sending the students to do independent practice?  -->
 <a name="ind-practice"></a>
 ## Independent Practice: Animate it! (45 minutes)
 Implement as many of the following exercises as you can in the time allotted. Feel free to work with a partner!
