@@ -5,8 +5,9 @@
 | 5 mins | [Review](#review) | Git |
 | 5 mins | [Introduction](#introduction) | Why Branch? |
 | 10 mins | [Demo](#demo-branch) | How Git Branching Works |
-| 40 mins | [Guided Practice](#guided-practice) | Merging |
-| 30 min | [Independent Practice](#ind-practice) | Merge Conflicts |
+| 20 mins | [Independent Practice](#ind-practice) | Merging |
+| 20 mins | [Intro to New Material](#intro-new-material) | Github Team Workflow |
+| 30 min | [Independent Practice](#ind-practice2) | Merge Conflicts |
 
 
 ### LEARNING OBJECTIVES
@@ -70,7 +71,7 @@ The diagram above visualizes a repository with multiple lines of development, on
 
 #### Why is branching an important part of git?
 
-A. Branches are useful for many reasons, but some of the most common ones:
+Branches are useful for many reasons, but some of the most common ones:
 
 1. To allow experimentation. By switching to a new branch, we can experiment,
 and if the experiment fails, we can delete it and easily switch back to master
@@ -81,10 +82,7 @@ interfering. When a feature is complete, it can be merged back into master.
 3. To allow easy bug fixes on a stable version while features are being developed.
 4. "Branch Early, Branch Often": Branches are lightweight, there is no additional overhead associated with branches, so it can be a great way to organize our workflow
 
-***
-
-<a name="guided-practice"></a>
-## Guided Practice: Merging (40 mins)
+#### Merging
 If our feature branch and work is complete, we need to merge our changes back into our master branch.
 
 ***Locally***, all we need to do is check out the master branch and then run the git merge command to integrate our feature branch:
@@ -101,10 +99,13 @@ $ git branch -d <feature_branch_name>
 ```
 ***Remotely***, we could easily merge our branch back into master through a PR and delete the branch on Github.
 
-### Branching Exercise
 
-We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitBranching/).  This is an introduction to branching.
+***
 
+<a name="ind-practice"></a>
+## Independent Practice: Branching and Merging (40 mins)
+
+- Open this [brief tutorial](http://pcottle.github.io/learnGitBranching/), an introduction to branching.
 - Do Levels 1-3.  Stop at 4: "Rebase Introduction".
 - Take your time:
   - Read all the dialogs.  They are part of the tutorial.
@@ -127,12 +128,18 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
 
 [Cheat Sheet](http://ndpsoftware.com/git-cheatsheet.html)
 
-### Overview of a GitHub Workflow
+***
+<a name="intro-new-material"></a>
+## Intro to New Material: Overview of a GitHub Workflow
 > From [Github Guides](https://guides.github.com/introduction/flow/)
+
+<!--Can you clarify what this section is?  Is this a new section of the lecture that instructors should be walking through? Or is it a Guided Practice? I changed the title of the section to "Intro to New Material" but I want to confirm.  -->
 
 To Recap, in Software Development, Github is very useful in managing and tracking updates and changes to our code.
 
 ![Github Workflows](assets/github_workflows.jpg)
+
+<!--broken image- please replace  -->
 
 #### Discuss
 
@@ -211,16 +218,15 @@ The HEAD is a reference to the last commit in your current checked out branch. A
 
 ***
 
-<a name="ind-practice"></a>
+<a name="ind-practice2"></a>
 ## Independent Practice: Merge Conflicts (30 minutes)
-Merge Conflicts (25 min)
 
 1. Pair up with someone.
 - Pick someone as the 'primary', and the 'secondary'.
 
 2. Create a New Repo
 
-  Primary Student Instructions:
+  **Primary Student Instructions:**
   - In your ~wdi/sandbox directory, create a new directory named merge-conflicts.
   - Initialize merge-conflicts as a git repository and create an index.html file
   - Work with the Secondary student to fill out the basic structure for the index.html file.
@@ -229,7 +235,7 @@ Merge Conflicts (25 min)
   - Make sure to save and commit local changes and push up to the Remote Repo
   - Add the Secondary student as a Collaborator (search github for how to do this)
 
-  Secondary Students Instructions:
+  **Secondary Students Instructions:**
   - After they are added as a Collaborator, they should clone the same repo. Do not fork the Repo.
 
 3. Both the Primary and Secondary should make changes locally on the same "master" branch
@@ -250,7 +256,7 @@ Merge Conflicts (25 min)
 ***
 
 <a name="conclusion"></a>
-## Conclusion (# mins)
+## Conclusion (5 mins)
 - Review independent practice deliverable(s)
 - Recap topic(s) covered in today's lesson
 - Cover homework and/or upcoming tasks
@@ -265,6 +271,7 @@ Merge Conflicts (25 min)
 
 ### ADDITIONAL RESOURCES
 - Exercises
+<!-- We should try to find some additional Git branching exercises -->
 - Videos
 
 #### Readings
@@ -277,5 +284,3 @@ Merge Conflicts (25 min)
 - [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches)
 - [Interactive Git Branching Tutorial](http://pcottle.github.io/learnGitBranching/)
 - [Git Cheat Sheet](http://ndpsoftware.com/git-cheatsheet.html)
-
-- Decks
