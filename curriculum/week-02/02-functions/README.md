@@ -1,4 +1,4 @@
----
+- ---
 title: Title of the Lesson
 duration: "1:25"
 creator:
@@ -55,18 +55,12 @@ creator:
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-Describe why functions are created
-Use functions to break programs into smaller sub-programs
-Describe how parameters relate to functions
-Explain what scope is
-Compare global and local scope
-Describe the this keyword and how it is affected by scope
-Describe what a JavaScript function is.
-Recognize the parts of a function.
-Write a function in JavaScript using a declaration and an expression.
-State the difference between a function's output and side effects.
-Differentiate between referencing and invoking a function.
-Define hoisting.
+- Describe why functions are useful
+- Write a function in JavaScript using a declaration and an expression.
+- Describe how parameters relate to functions
+- Explain how return statements are used in JavaScript
+- Compare global and local scope
+
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
@@ -77,18 +71,17 @@ Define hoisting.
 - Use loops to iterate through the elements in an Array
 
 
-<!-- @sarahholden Update opening -->
-<!-- @sarahholden Add in videos -->
-
+<!-- @sarahholden update timing for each portion -->
 
 <!-- @sarahholden add in examples
-
+  Remote: https://github.com/ga-students/wdi-remote/blob/master/unit_01/w01d05/instructor_notes/functions_and_scope.md
   Lots of examples here: https://github.com/ATL-WDI-Curriculum/js-functions
   Lesson on Scope: https://github.com/ATL-WDI-Curriculum/scope-and-context/blob/master/scope.md
   Lesson on Closures: https://github.com/ATL-WDI-Curriculum/scope-and-context/blob/master/closures.md
   Timing Functions: https://github.com/ga-wdi-lessons/js-timing-functions
   Scope and Hoisting: https://github.com/ga-wdi-lessons/js-scope/blob/master/scope.md
   Functions advanced lesson: https://github.com/ga-wdi-boston/wdi_1_js_functions_are_first_class
+  Hoisting/Scope: https://github.com/ga-students/WDI_LA_Lesson_Resources/blob/master/lesson_topics/javascript/js_scope/Grant/js-variable-scope.md
 -->
 
 
@@ -96,6 +89,8 @@ Define hoisting.
 <!-- @sarahholden add in Exercises
 
 Scope/Hoisting Exercises: https://github.com/ga-wdi-lessons/js-scope/blob/master/scope.md
+
+Scope exercises: https://github.com/ga-students/wdi-remote/blob/master/unit_01/w01d05/instructor_notes/functions_and_scope.md
 
 Functions Problem Set: https://github.com/WDI-SEA/js-functions
 Google Shopping Functions Lab: https://github.com/WDI-SEA/google-shopping-functions
@@ -169,10 +164,7 @@ alert(foo());
 ---
 <a name="opening"></a>
 ## Opening (# mins)
-- Review pre-work, projects, or exit ticket, if applicable
 - Review current lesson objectives
-- Reference general course content or topics (e.g. code or concepts that have been used across multiple lessons)
-- Include Hook / Real-world Relevance (why the content from this lesson is useful or important)
 
 In the last couple of lessons we looked at how we can control the flow of a program by using conditional statements and loops, and after that, you probably noticed how quickly a program can grow in length and complexity.
 
