@@ -41,6 +41,13 @@ creator:
 > NOTE: the lesson you create does not have to follow a progression of Introduction > Demo > Guided Practice > Independent Practice - a combination of these is often ideal - but a lesson must always begin with an Opening and end wth a Conclusion.
 
 
+<!-- @sarahholden
+
+Examples on context here: https://github.com/ga-wdi-lessons/js-scope/blob/master/context.md
+
+
+-->
+
 
 ---
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Lesson Title (# mins)
@@ -205,4 +212,3 @@ Briefly describe the Independent Practice exercise here.  What is the end delive
 - Decks
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
-

@@ -55,9 +55,18 @@ creator:
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
+Describe why functions are created
+Use functions to break programs into smaller sub-programs
+Describe how parameters relate to functions
+Explain what scope is
+Compare global and local scope
+Describe the this keyword and how it is affected by scope
+Describe what a JavaScript function is.
+Recognize the parts of a function.
+Write a function in JavaScript using a declaration and an expression.
+State the difference between a function's output and side effects.
+Differentiate between referencing and invoking a function.
+Define hoisting.
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
@@ -72,6 +81,90 @@ creator:
 <!-- @sarahholden Add in videos -->
 
 
+<!-- @sarahholden add in examples
+
+  Lots of examples here: https://github.com/ATL-WDI-Curriculum/js-functions
+  Lesson on Scope: https://github.com/ATL-WDI-Curriculum/scope-and-context/blob/master/scope.md
+  Lesson on Closures: https://github.com/ATL-WDI-Curriculum/scope-and-context/blob/master/closures.md
+  Timing Functions: https://github.com/ga-wdi-lessons/js-timing-functions
+  Scope and Hoisting: https://github.com/ga-wdi-lessons/js-scope/blob/master/scope.md
+  Functions advanced lesson: https://github.com/ga-wdi-boston/wdi_1_js_functions_are_first_class
+-->
+
+
+
+<!-- @sarahholden add in Exercises
+
+Scope/Hoisting Exercises: https://github.com/ga-wdi-lessons/js-scope/blob/master/scope.md
+
+Functions Problem Set: https://github.com/WDI-SEA/js-functions
+Google Shopping Functions Lab: https://github.com/WDI-SEA/google-shopping-functions
+Functions quiz: https://github.com/ga-wdi-boston/wdi_2_js_for_functions_quiz
+
+You do - Create a function!
+
+It would be really nice if there was a function that did exponents for us. Create a square function, it should:
+
+Take an argument that is a number
+the function's output should return the number squared
+It should look something like this:
+
+square(4)
+=> 16
+Bonus- Create an exponents function
+
+it should take 2 arguments
+the first should be the base number
+the second should be the power you'd like to raise the base number to.
+It should look something like this:
+
+raisePower(4, 3)
+=> 64
+
+Exercise: Fun with Functions Quiz (5 / 45)
+
+What is alerted in each case? Write down your answer before running the code.
+
+1.
+
+function foo(){
+  function bar() {
+      return 3;
+  }
+  return bar();
+  function bar() {
+      return 8;
+  }
+}
+alert(foo());
+2.
+
+function foo(){
+  var bar = function() {
+      return 3;
+  };
+  return bar();
+  var bar = function() {
+      return 8;
+  };
+}
+alert(foo());
+3.
+
+function foo(){
+  return bar();
+  var bar = function() {
+      return 3;
+  };
+  var bar = function() {
+      return 8;
+  };
+}
+alert(foo());
+
+-->
+
+
 
 ---
 <a name="opening"></a>
@@ -84,6 +177,8 @@ creator:
 In the last couple of lessons we looked at how we can control the flow of a program by using conditional statements and loops, and after that, you probably noticed how quickly a program can grow in length and complexity.
 
 In this lesson we’ll be taking a look at how we can use functions to group together statements that perform a specific task and reduce repetition in our programs.
+
+Take a look at this short [video](https://generalassembly.wistia.com/medias/qmhj5hv27i) that provides an overview of how functions are useful in our programs.
 
 
 
@@ -114,6 +209,9 @@ In JavaScript, a function can:
 Functions are especially useful because they enable a developer to segment large, unwieldy applications into smaller, more manageable pieces.
 
 #### Example of using a function
+
+Watch this short [video](https://generalassembly.wistia.com/medias/nz5zkq96je) for a use case for when a function could be used.
+
 Here's an example of what a function can do:
 
 If you’ve watched enough Matt Damon movies, you may have noticed that the government often spends a lot of time and money to go save his characters.
@@ -176,6 +274,7 @@ Our goal is to craft our programs in as few lines of code as possible, while sti
 Let's review the three main reasons that functions are created:
 
 ![](http://circuits-assets.generalassemb.ly/prod/asset/5016/Slide-17-Chart.svg)
+
 
 
 
@@ -273,6 +372,8 @@ Great job!
 ## Arguments and Parameters (# mins)
 
 Now that we know how to call functions, let’s see how we can add more details to our functions through parameters and arguments.
+
+For an overview of why parameters and arguments are useful, watch this short [video](https://generalassembly.wistia.com/medias/pmpczdo8eo).
 
 #### Why are arguments and parameters useful?
 In the last lesson, we created a function that calculated the area for a space with a width of 5 and length of 3.
@@ -462,6 +563,8 @@ console.log("Now playing: " + song + " by " + artist);
 ## Function Declarations (# mins)
 Now we'll take a look at another way to define functions (**function declarations**) and how these differ from the function expressions we've been using.
 
+Watch this short [video](https://generalassembly.wistia.com/medias/g1w03wkvth) for an overview of Function Declarations and Function Expressions.
+
 
 #### Function Declarations vs. Function Expressions
 Remember the `mattDamon()` function?
@@ -496,7 +599,6 @@ Let's look at an example of hoisting:
 ![](http://circuits-assets.generalassemb.ly/prod/asset/5022/Slide-13-Hoisting-Chart.svg)
 
 
-
 #### Named vs. Anonymous Functions
 
 Function declarations are often referred to as **named functions** because, in order to be able to call a function declaration, we must give it a name after the keyword `function()`.
@@ -511,9 +613,7 @@ Take a look at this chart to get a better understanding of the differences betwe
 #### Real-world Developers
 Now that you're familiar with both ways of declaring and assigning functions, you can choose which one works best for you.
 
-Let’s watch a video on how programmers choose their favorite method.
-
-
+Let’s watch a [video](https://generalassembly.wistia.com/medias/exsv54zfg9) on how programmers choose their favorite method.
 
 
 ---
@@ -526,9 +626,13 @@ Now, we’re going to take a look at one of the complexities that comes with usi
 We’ll also dig deeper into how we can use our newfound knowledge of scope to make our scripts run faster and avoid variable naming conflicts.
 
 #### Global vs. Local Scope
+Watch this short [video](https://generalassembly.wistia.com/medias/bffc1s0pkf) for an overview of local vs. global variables and a helpful analogy to remember the difference between the two.
+
 In JavaScript, where you declare a variable affects where that variable can be used within your code.
 
 When we declare variables inside a function, those variables will only be accessible from within that function. This is known as **scope**.
+
+You can think of the **scope** as the lifetime of the variable (where in the program the variable is born and where it dies or is discarded).
 
 Let’s look at the two different types of scope: **global** and **local**.
 
@@ -569,6 +673,8 @@ As a result, global variables can be inefficient, because they will continue to 
 
 
 ![](http://circuits-assets.generalassemb.ly/prod/asset/4457/Slide-13-Global-vs-Local.svg)
+
+> For JavaScript (before JavaScript 2015), local variables are scoped by their enclosing function. JavaScript 2015 is introducing lexical scope for variables declared with the let keyword.
 
 
 #### Naming Conflicts
@@ -625,6 +731,8 @@ In this lesson we discussed a key concept of programming  —  **Don't Repea
 
 By using functions we can group steps, create code that is reusable, and easily store steps.
 
+Watch this short [video](https://generalassembly.wistia.com/medias/iv72hmwzam) with a case study from a real-life developer on when he would use functions.
+
 In the next lesson, you’ll learn more about objects, a key to making JS much more efficient. Objects will take your JS programming skills to a whole new level.
 
 
@@ -639,6 +747,9 @@ In the next lesson, you’ll learn more about objects, a key to making JS much m
 ### ADDITIONAL RESOURCES
 - Exercises
 - Videos
+  - GA JS Circuit - [Case study: Using Functions](https://generalassembly.wistia.com/medias/iv72hmwzam)
+  - GA JS Circuit - [Functions Analogy - Game Plays](https://generalassembly.wistia.com/medias/qmhj5hv27i)
+  - GA JS Circuit - [Functions Use Case - Site Sale](https://generalassembly.wistia.com/medias/nz5zkq96je)
 - Readings
 - Decks
 
