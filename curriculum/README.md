@@ -33,26 +33,146 @@ This baseline scope and sequence of the curriculum is based on the following:
 | 90| PM Session II | OS Navigation Using the Terminal (Optional: Sublime/ Atom Review) |
 
 #### Day 2
+| Time | Session | Topic |
+|----|---------|---------------|
+| 60| Morning Excercise | Icebreaker|
+| 90| AM Session 1 | Welcome to WDI: Learning experience + classroom culture|
+| 90| AM Session II | Classroom Culture|
+| 90| PM Session I | OS Navigation Using the Terminal (Optional: Internet Fundamentals) |
+| 90| PM Session II | OS Navigation Using the Terminal (Optional: Sublime/ Atom Review) |
 
+#### Day 3
+| Time | Session | Topic |
+|----|---------|---------------|
+| 60| Morning Excercise | Icebreaker|
+| 90| AM Session 1 | Welcome to WDI: Learning experience + classroom culture|
+| 90| AM Session II | Classroom Culture|
+| 90| PM Session I | OS Navigation Using the Terminal (Optional: Internet Fundamentals) |
+| 90| PM Session II | OS Navigation Using the Terminal (Optional: Sublime/ Atom Review) |
+
+#### Day 4
+| Time | Session | Topic |
+|----|---------|---------------|
+| 60| Morning Excercise | Icebreaker|
+| 90| AM Session 1 | Welcome to WDI: Learning experience + classroom culture|
+| 90| AM Session II | Classroom Culture|
+| 90| PM Session I | OS Navigation Using the Terminal (Optional: Internet Fundamentals) |
+| 90| PM Session II | OS Navigation Using the Terminal (Optional: Sublime/ Atom Review) |
+
+#### Day 5
+| Time | Session | Topic |
+|----|---------|---------------|
+| 60| Morning Excercise | Icebreaker|
+| 90| AM Session 1 | Welcome to WDI: Learning experience + classroom culture|
+| 90| AM Session II | Classroom Culture|
+| 90| PM Session I | OS Navigation Using the Terminal (Optional: Internet Fundamentals) |
+| 90| PM Session II | OS Navigation Using the Terminal (Optional: Sublime/ Atom Review) |
 ---
+
 
 ### Week 2
 
+#### Day 1
+| Time | Session | Topic |
+|----|---------|---------------|
+| 60| Morning Excercise | Icebreaker|
+| 90| AM Session 1 | Welcome to WDI: Learning experience + classroom culture|
+| 90| AM Session II | Classroom Culture|
+| 90| PM Session I | OS Navigation Using the Terminal (Optional: Internet Fundamentals) |
+| 90| PM Session II | OS Navigation Using the Terminal (Optional: Sublime/ Atom Review) |
+
+#### Day 2
+| Time | Session | Topic |
+|----|---------|---------------|
+| 60| Morning Excercise | Icebreaker|
+| 90| AM Session 1 | Welcome to WDI: Learning experience + classroom culture|
+| 90| AM Session II | Classroom Culture|
+| 90| PM Session I | OS Navigation Using the Terminal (Optional: Internet Fundamentals) |
+| 90| PM Session II | OS Navigation Using the Terminal (Optional: Sublime/ Atom Review) |
+
+#### Day 3
+| Time | Session | Topic |
+|----|---------|---------------|
+| 60| Morning Excercise | Icebreaker|
+| 90| AM Session 1 | Welcome to WDI: Learning experience + classroom culture|
+| 90| AM Session II | Classroom Culture|
+| 90| PM Session I | OS Navigation Using the Terminal (Optional: Internet Fundamentals) |
+| 90| PM Session II | OS Navigation Using the Terminal (Optional: Sublime/ Atom Review) |
+
+#### Day 4
+| Time | Session | Topic |
+|----|---------|---------------|
+| 60| Morning Excercise | Icebreaker|
+| 90| AM Session 1 | Welcome to WDI: Learning experience + classroom culture|
+| 90| AM Session II | Classroom Culture|
+| 90| PM Session I | OS Navigation Using the Terminal (Optional: Internet Fundamentals) |
+| 90| PM Session II | OS Navigation Using the Terminal (Optional: Sublime/ Atom Review) |
+
+#### Day 5
+| Time | Session | Topic |
+|----|---------|---------------|
+| 60| Morning Excercise | Icebreaker|
+| 90| AM Session 1 | Welcome to WDI: Learning experience + classroom culture|
+| 90| AM Session II | Classroom Culture|
+| 90| PM Session I | OS Navigation Using the Terminal (Optional: Internet Fundamentals) |
+| 90| PM Session II | OS Navigation Using the Terminal (Optional: Sublime/ Atom Review) |
 
 ---
 
 ### Week 3
 
 
+#### Day 1
+| Time | Session | Topic |
+|----|---------|---------------|
+| 60| Morning Excercise | Icebreaker|
+| 90| AM Session 1 | Welcome to WDI: Learning experience + classroom culture|
+| 90| AM Session II | Classroom Culture|
+| 90| PM Session I | OS Navigation Using the Terminal (Optional: Internet Fundamentals) |
+| 90| PM Session II | OS Navigation Using the Terminal (Optional: Sublime/ Atom Review) |
 
-##### Project 
+#### Day 2
+| Time | Session | Topic |
+|----|---------|---------------|
+| 60| Morning Excercise | Icebreaker|
+| 90| AM Session 1 | Welcome to WDI: Learning experience + classroom culture|
+| 90| AM Session II | Classroom Culture|
+| 90| PM Session I | OS Navigation Using the Terminal (Optional: Internet Fundamentals) |
+| 90| PM Session II | OS Navigation Using the Terminal (Optional: Sublime/ Atom Review) |
 
-Student will be building their very first interactive web page.
+#### Day 3
+| Time | Session | Topic |
+|----|---------|---------------|
+| 60| Morning Excercise | Icebreaker|
+| 90| AM Session 1 | Welcome to WDI: Learning experience + classroom culture|
+| 90| AM Session II | Classroom Culture|
+| 90| PM Session I | OS Navigation Using the Terminal (Optional: Internet Fundamentals) |
+| 90| PM Session II | OS Navigation Using the Terminal (Optional: Sublime/ Atom Review) |
 
-This project will be split into two phases. First, students will be creating _____________________________________. Then, they will be ________________________________________ as well as describing what happens when ___________________________________. Students will receive instructor feedback after each iteration.  Second, you will be coding the app itself. Students will implement the design they created in the first step using all of the knowledge gained during weeks one and two.
+#### Day 4
+| Time | Session | Topic |
+|----|---------|---------------|
+| 60| Morning Excercise | Icebreaker|
+| 90| AM Session 1 | Welcome to WDI: Learning experience + classroom culture|
+| 90| AM Session II | Classroom Culture|
+| 90| PM Session I | OS Navigation Using the Terminal (Optional: Internet Fundamentals) |
+| 90| PM Session II | OS Navigation Using the Terminal (Optional: Sublime/ Atom Review) |
 
-- **Goal**: _______________________________
-- **Project Time**: ___ days
+#### Day 5
+| Time | Session | Topic |
+|----|---------|---------------|
+| 60| Morning Excercise | Icebreaker|
+| 90| AM Session 1 | Welcome to WDI: Learning experience + classroom culture|
+| 90| AM Session II | Classroom Culture|
+| 90| PM Session I | OS Navigation Using the Terminal (Optional: Internet Fundamentals) |
+| 90| PM Session II | OS Navigation Using the Terminal (Optional: Sublime/ Atom Review) |
+
+##### Final Unit Project 
+
+Option 1
+- **[Detailed Spec File](../projects/project-01/readme.md)**
+
+Option 2
 - **[Detailed Spec File](../projects/project-01/readme.md)**
 
 
