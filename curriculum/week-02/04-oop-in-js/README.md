@@ -71,6 +71,7 @@ creator:
 - Complete Prep work required
 - Prepare any specific instructions
 
+
 ---
 <a name="opening"></a>
 ## Opening (# mins)
@@ -201,8 +202,11 @@ Briefly describe the Independent Practice exercise here.  What is the end delive
 ### ADDITIONAL RESOURCES
 - Exercises
 - Videos
+  - [OOP Intro](https://generalassembly.wistia.com/medias/lahxav6p4z)
+  - [OOP Case Study](https://generalassembly.wistia.com/medias/0bgiqqwd68)
+  - [OOP Case Study #2](https://generalassembly.wistia.com/medias/lwjshtw79q)
 - Readings
+	- MDN - [Intro to OOP](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
 - Decks
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
-

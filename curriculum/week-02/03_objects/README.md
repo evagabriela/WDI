@@ -1,57 +1,83 @@
----
-title: Title of the Lesson
-duration: "1:25"
-creator:
-    name: John Doe
-    city: NYC
----
-
-> #### *Guiding Questions When Using This Template*
->
-> - [ ] Are the learning objectives measurable?
->   - [ ] Are there at least two objectives? ( All learning objectives should be pulled from the [Front End Standards](https://docs.google.com/spreadsheets/d/11SzdbIIa9PLJ6kknGXXoBYOtL5ycwMK2N8lkI5THFak/edit#gid=1968474545) doc.  If you would like to add or remove any Learning Objectives, please contact amy.almeida@ga.co)
->   - [ ] Does the lesson address all the learning objectives?
->
-> - [ ] Are activities spaced out with enough time for each?
->   - [ ] Did you include knowledge "Checks" or activities at the end of every component to test comprehension?
->   - [ ] Is there an even distribution of intructor-led and active learning portions?
->
->
-> - [ ] Did you provide guidance for both students & instructors?
->   - [ ] What will instructors have to do to prepare for this lesson?
->   - [ ] What will students have to do to prepare for this lesson?
->   - [ ] What additional resources do you provide for students who are "hungry for more," or need additional practice?
->
-> #### *How to Use This Template*
-> * Static Components: Reserve roughly 5 min for Opening, 5 unscheduled "buffer" mins for overrun, & at least 5 min for Conclusion (end of lesson review).
->
->
-> * Modular Components: The units of instruction are: Intro, Demo, Guided-Practice, & Independent-Practice. These can be cycled or intermixed in various orders, depending on the topic / content.
-
-> #### *Components of the lesson plan*
-
-> - Opening: this only happens once; used to introduce the agenda, review material, and provide a motivating example / the problem we're trying to solve with this skill/content
-> - Introduction: this is a section dedicated to introducing and contextualizing new vocabulary, ideas, and code syntax that will be practiced in later sections
-> - Demo: an instructor-led session demonstrating proper techniques or syntax examples
-> - Guided Practice: interactive instructor by which the instructor engages with and probes students for answers to guide the discussion or activity
-> - Independent Practice: a block of time where students are able to practice what they've learned; the instructor provides directions and the students use the directions to complete an exercise
-> - Conclusion: a time to sum up the lesson, review the answers to a final independent practice, and/or pose discussion questions
-> - Check: a moment to check to understand students are following; it can be done with a question about content, a general "How comfortable are you with this?", or the instructor can check the output of students code to ensure they've completed the assignment properly.
-
-> NOTE: the lesson you create does not have to follow a progression of Introduction > Demo > Guided Practice > Independent Practice - a combination of these is often ideal - but a lesson must always begin with an Opening and end wth a Conclusion.
-
 
 <!-- @sarahholden
 
 Examples on context here: https://github.com/ga-wdi-lessons/js-scope/blob/master/context.md
 
 
+
+EXTRA CONTENT:
+
+#### Iterating through an Object
+
+Like arrays, you can use a loop to iterate through an object. Say we want to print out all of an object's keys...
+
+```js
+// Iterate through object keys
+for (attribute in car) {
+  console.log( attribute );
+}
+```
+> Knowing this, how could we go about getting all the values in an object?
+
+Javascript objects also have native methods that take care of this for us...
+```js
+// .keys()
+Object.keys( car );
+```
+
+### Exercise
+
+Create a variable named `wdiStudent` and assign it to an object literal.
+
+1. Give your student at least three properties.
+2. One must have a key that contains a hyphen.
+3. One must contain an array or object.
+4. Update two properties, one of which is the hyphenated.
+5. Give your student a new property using dot or bracket notation.
+6. Delete one attribute.
+7. Iterate through and print out all of the student's key-value pairs.
+
+**Bonus:** Write a function that returns your `wdiStudent` object
+
+> [Solution](https://gist.github.com/nolds9/efdb0a320e7143f42e96)
+
+### Nested Collections (5 / 100)
+
+Object properties aren't limited to simple data types. We can also nest collections inside of collections.
+
+```js
+var car = {
+  make: "Honda",
+  model: "Civic",
+  year: 1997,
+
+  // An array within an object.
+  gears: ["Reverse", "Neutral", "1", "2", "3", "4"],
+
+  // An object within an object.
+  engine: {
+    horsepower: "6 horses",
+    pistons: 12,
+    fast: true,
+    furious: false
+  }
+}
+```
+
+**Q** In the above examples, how do we access...
+* "Neutral" (i.e., array value within an object)?
+* "6 horses" (i.e., object value within an object)?
+
+
+
 -->
 
 
 ---
-# <img src="https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Lesson Title (# mins" width="300px">
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Objects (90 mins)
 
+
+<!-- ID NEEDED Can you add the below sections here? -->
 | Timing | Type | Topic |
 | --- | --- | --- |
 | x min | [Introduction](#introduction) | Topic |
@@ -62,21 +88,25 @@ Examples on context here: https://github.com/ga-wdi-lessons/js-scope/blob/master
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
+
+- Compare objects and key-value stores to arrays as data structures
+- Explain the difference between object properties and methods
+- Create empty objects and objects with multiple properties and methods using object literal syntax
+- Compare adding and retrieving properties to an existing object using the dot and bracket notations
+- Create objects using constructor notation and instances of those objects using the new keyword.
+- Compare and contrast creating objects using literal notation vs. constructor functions.
+- - From within a method, reference properties of the same object using this.
+
+
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
 
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
-- Gather materials needed for class
-- Complete Prep work required
-- Prepare any specific instructions
+- Create variables in JavaScript
+- Differentiate between data types (strings, numbers, booleans)
+- Use if/else if/else conditionals to control program flow based on boolean conditions
+- Create arrays and access/manipulate elements in arrays
+
 
 ---
 <a name="opening"></a>
@@ -99,6 +129,7 @@ In this unit, our focus is objects, an exciting aspect of JavaScript that ties i
 
 Once you get to know objects, you’ll realize how much easier your coding life can be.
 
+
 #### The limitations of Arrays
 So far, we’ve learned about fairly simple data types: strings, numbers, booleans, and arrays.
 
@@ -109,6 +140,10 @@ All of the arrays we've seen so far store and manage their elements by their ind
 This is a convenient way of managing elements, but it also has some disadvantages.
 
 #### Easier access to data
+Objects are a type of data structure that is nearly universal across programming languages, although they may have different names in different languages (in Python they're called a dictionary, in Ruby they're called Hashes).
+
+Watch this short [video](https://generalassembly.wistia.com/medias/wk0zfyxxsc) for an example of the limitations of arrays and how storing data in objects using key/value pairs can help us structure and manage complex data more efficiently.
+
 Objects are often called **associative arrays**, as they associate keys with values.
 
 As you start building applications, you'll encounter many situations where you'll want to associate keys to values.
@@ -200,6 +235,18 @@ We can use methods to retrieve the values of an object's properties (such as the
 
 <img src="http://circuits-assets.generalassemb.ly/prod/asset/4518/Slide-23-Chart.svg" width="300px">
 
+
+<!--
+@sarahholden Sample lab:
+
+Turn and Jot: Model WDI Student (5 / 65)
+
+You're goal is to pseudo-code an object literal:
+
+In pairs, spend 2 minutes thinking about what attributes a WDI student should have (think of at least 5!).
+Take 3 minutes to construct your object literal with appropriate key value pairs by drawing it on the table
+Bonus - One key value pair contains an array
+-->
 
 ---
 <a name="creating-objects"></a>
@@ -476,6 +523,13 @@ Although dot notation is often a popular method, as it’s slightly easier to wr
 
 
 
+<!--@sarahholden possible Check for understanding/Mini-lab:
+Lab: Model a Hero
+
+What features do batman and wonderWoman share? Remember to think about attributes and methods when you're modeling. Also take note of what differs between them.
+
+Make a diagram of our Hero entity based on the above objects.-->
+
 ## Constructor Notation
 There might be instances where we want to create multiple objects to represent similar things.
 
@@ -662,6 +716,8 @@ Let's break this down, line-by-line.
 4. Within the function, `firstName` refers to the parameter name we passed to the function. Same with `lastName` and `superheroName`.
 5. We then add a method for our object, similar to how we've done it in the past. To add a method, we use the method name `revealIdentity`, followed by an equal sign, followed by an anonymous function (a function without a name).
 6. Within the function, we use this to access the properties of the instance of the individual object we are creating.
+
+> Note: We defined a method inside the the Superhero constructor here. JavaScript allows it, but don't do it. We'll see the right way to achieve a near identical and preferred result shortly.
 
 
 #### Creating and Instance
@@ -922,6 +978,155 @@ What does `this` refer to within the `drawShape` method? What will be logged to 
 
 
 
+<!--
+@sarahholden Lab example (Create using object literal notation and then rewrite using Constructor notation.
+
+## Lab: Self-Referential Objects
+
+In groups, you're going to work on a similar program to our previous one, this
+time for meal tracking. In particular, you're going to create an example 'User'
+object, complete with several 'Meals'.
+
+A 'User' needs to have:
+
+-   a name (`name`)
+-   a date-of-birth (`bornOn`)
+-   a target daily calorie intake (`calorieTarget`)
+-   a list of 'Meals' that they've eaten (`meals`)
+
+Every 'Meal' must have:
+
+-   a title (`title`), e.g. 'breakfast', 'lunch', 'dinner'
+-   a date (`date`), represented as a string e.g. "2016-06-25"
+-   a description (`description`)
+-   a number of estimated calories (`calories`)
+
+Then, create the following methods for your instance of a 'User':
+
+-   `caloriesEatenOn`, which accepts a date (in the format above) and calculates
+    the total number of calories consumed on that date.
+-   `avgDailyCalories`, which (as indicated), calculates the average number of
+    calories consumed per day, rounded down to the nearest whole calorie.
+-   `onTrack`, which compares averageDailyCalories to the User's target daily
+    calorie intake, and returns `true` if average caloric intake is at or below
+    the target (or `false` if the reverse is true).
+
+
+
+SECOND EXAMPLE:
+
+## `this`
+
+One way to break up the complexity of a problem is by using multiple kinds of
+objects together, and having each object be responsible for representing a small
+part of the problem. But these objects don't need to exist in isolation -
+objects can have other objects (or even collections of other objects) as
+properties.
+
+Suppose that we wanted to create a simple program ('RunTracker') that helps
+people prepare for running a 5k. Each day that a person runs, they create a
+record of their run which contains:
+
+-   the date and time of the run
+-   the distance covered, in meters
+-   the time taken, in seconds
+
+The program also stores information about the user (the user's name and email
+address) and can perform some calculations (total distance run, longest run
+so far, and average speed).
+
+## Lab: Diagram and Model
+
+Using the description of the program above, create an entity diagram.
+
+1.  Identify the entities (kinds of objects) needed in the program.
+1.  Draw a box for each entity and label it with the singular, capitalized
+    entity name.
+1.  Connect any entities that are related using a line.
+1.  List attributes and methods of each entity separately within each entity's
+    box.
+
+## Demo: Write Methods With `this`
+
+```js
+let user = {
+  name: "Person McFace",
+  email: "wdi@personmcface.com",
+  runs : [
+    {
+      date: "2016-05-25 15:00",
+      distance: 1200,
+      timeTaken: 600
+    },
+    {
+      date: "2016-05-25 15:00",
+      distance: 1400,
+      timeTaken: 800
+    }
+  ],
+
+  totalDistance : function() {},
+  longestRun : function() {},
+  averageSpeed : function() {}
+}
+```
+
+When we start thinking about how the methods for 'User' will work, we run into a
+difficulty. A method for calculating the longest run so far needs to be able to
+see, and refer to, all of the runs associated with that particular user. How do
+we do that?
+
+Follow along as I demonstrate how to complete writing each method.
+
+## Lab: Self-Referential Objects
+
+In groups, you're going to work on a similar program to our previous one, this
+time for meal tracking. In particular, you're going to create an example 'User'
+object, complete with several 'Meals'.
+
+A 'User' needs to have:
+
+-   a name (`name`)
+-   a date-of-birth (`bornOn`)
+-   a target daily calorie intake (`calorieTarget`)
+-   a list of 'Meals' that they've eaten (`meals`)
+
+Every 'Meal' must have:
+
+-   a title (`title`), e.g. 'breakfast', 'lunch', 'dinner'
+-   a date (`date`), represented as a string e.g. "2016-06-25"
+-   a description (`description`)
+-   a number of estimated calories (`calories`)
+
+Then, create the following methods for your instance of a 'User':
+
+-   `caloriesEatenOn`, which accepts a date (in the format above) and calculates
+    the total number of calories consumed on that date.
+-   `avgDailyCalories`, which (as indicated), calculates the average number of
+    calories consumed per day, rounded down to the nearest whole calorie.
+-   `onTrack`, which compares averageDailyCalories to the User's target daily
+    calorie intake, and returns `true` if average caloric intake is at or below
+    the target (or `false` if the reverse is true).
+
+Add your code to [`lib/meals.js`](lib/meals.js), structured similarly to
+[`lib/runs.js`](lib/runs.js).
+
+
+THIRD OPTION:
+
+### Bonus
+### You Do: Big Ol' Twitter Object (15 / 125)
+
+As this course continues you will encounter plenty of Javascript objects in the wild. Spend **10 minutes** on the following...
+* Follow the link below and answer the questions in bold.
+* Along with each answer, write down how we would access the property in question.
+* Let's do the first one together...
+
+[Twitter JSON Exercise](https://github.com/ga-dc/big_ole_twitter_object)
+
+
+
+-->
 ***
 
 <a name="conclusion"></a>
@@ -932,16 +1137,21 @@ What does `this` refer to within the `drawShape` method? What will be logged to 
 
 ***
 
-### BEFORE NEXT CLASS
-|   |   |
-|---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
 
 ### ADDITIONAL RESOURCES
 - Exercises
+	- [JS Calculator](exercises/js_calculator.MD) (30 Mins - Int / Adv)
+	- [Pets and Owner](exercises/pet_owner.MD) (30 mins - Beg)
 - Videos
+  - JS Circuits - [Intro to Objects](https://generalassembly.wistia.com/medias/m8d1oq04br)
+  - JS Circuits - Why use objects? [Sports analogy](https://generalassembly.wistia.com/medias/wk0zfyxxsc)
+  - JS Circuits - Constructor Notation - [Student Directory](https://generalassembly.wistia.com/medias/cjdt6hhkfz)
+  - JS Circuits - Objects Past, Present & Future - [Date Object](https://generalassembly.wistia.com/medias/ga9vu35oz6)
+  - JS Circuits - [Constructor vs. Literal Notation](https://generalassembly.wistia.com/medias/86ik38eakk)
 - Readings
+	- Eloquent JavaScript Chapter 6 - [The Secret Life of JS Objects](http://eloquentjavascript.net/06_object.html) (Great resource!)
+	- MDN - [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+	- MDN - [Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
 - Decks
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
