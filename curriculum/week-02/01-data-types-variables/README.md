@@ -1,22 +1,20 @@
----
-title: Title of the Lesson
-duration: "1:25"
-contributor:
-    name: Matt H
-    city: NYC
----
-
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Types, Variables, Arrays (120 mins)
 
 
 <!-- ID NEEDED: Can you add these in based on topics below? -->
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction) | Topic |
-| x min | [Demo/Codealong](#demo) | Topic |
-| x min | [Guided Practice](#guided-practice) | Topic |
-| x min | [Independent Practice](#ind-practice) | Topic |
-| x min | [Conclusion](#conclusion) |Topic |
+| 5 min | [Introduction](#introduction) | Opening |
+| 10 min | [Intro to New Material](#intro) | Variables |
+| 5 min | [Intro to New Material](#intro-data) | Data Types |
+| 15 min | [Guided Practice](#guided-practice) | Data Types |
+| 5 min| [Intro to New Material](#intro-strings ) | Strings and Numbers |
+|15 min| [Guided Practice](#arithmetic-operators) | Arithmetic Operators |
+| 15 min| [Guided Practice](#guided-string) | String Concatentation and Coercion |
+| 10 min | [Guided Practice](#guided-assignment)| Assignment Operators |
+| 10 min | [Guided Practice](#guided-special-arithmetic) | Special Arithmetic Methods |
+|15 min | [Guided Practice](#helper-methods) | Helper Methods |
+| 5 min | [Conclusion](#conclusion) |Wrap-Up |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -40,10 +38,13 @@ contributor:
 
 ---
 <a name="opening"></a>
-## Opening (10 mins)
+## Opening (5 mins)
 - Review pre-work, projects, or exit ticket, if applicable
 - Review current lesson objectives
 
+***
+
+## Intro to New Material: Variables (10 mins)
 Variables are used to store data types into the memory of the computer so that they can be referenced later.
 
 Think of them as special containers that can hold information for you.
@@ -94,7 +95,7 @@ JS is a programming language, and like any language it has its own grammar and r
 
 1. When creating/declaring a variable for the first time, use the var keyword.
 2. Variable names should be written in camelCase
-2. Add a space before and after the equal sign =.
+2. Add a space before and after the equal sign = .
 3. Statements need to end with a semicolon ;
 
 
@@ -120,7 +121,7 @@ Here's a brief [video](https://generalassembly.wistia.com/medias/66kaqbwoc1) sum
 
 ***
 
-## Data Types Intro (5 mins)
+## Intro to New Material: Data Types (5 mins)
 
 We briefly mentioned earlier that you can add different types of values to JS variables. JS knows when you are using letters and when you are using numbers.
 
@@ -144,9 +145,9 @@ We'll elaborate on all of these - except Booleans, for now. We'll talk about how
 
 For the exercises in this lesson, we suggest you use the Google Chrome Developer Tool Console by following these steps:
 
-Open up Google Chrome in a separate window (and place it next to the window with this slideshow).
-Right click anywhere on the browser and click on "Inspect."
-In the new "Elements" window that appeared, click on "Console" on the top menu.
+- Open up Google Chrome in a separate window (and place it next to the window with this slideshow).
+- Right click anywhere on the browser and click on "Inspect."
+- In the new "Elements" window that appeared, click on "Console" on the top menu.
 
 >Perform the following steps in the console:
 1. Declare a variable called legs with the value 4.
@@ -206,7 +207,9 @@ For consistency’s sake, it’s a good idea to pick one way and stick with it.
 Make sure to remember the typeof() command in case you ever need to find out the type of data with which you are working.
 
 
->Exercise: Perform the following steps in the console:
+>Check for Understanding:
+
+>Perform the following steps in the console:
 1. typeof 'hello';
   The console returns 'string'.
 2. typeof 24;
@@ -237,13 +240,13 @@ Strings are collections of letters and symbols known as *characters*, and we use
 
 In JavaScript, numbers can always be divided into two groups:
 
-Integers (whole numbers)
+**Integers (whole numbers)**
 
 ```
    ..., -1,0, 2, 3, 4, 5, ...
 ```
 
-Floats (decimals)
+**Floats (decimals)**
 ```
 2.718, 3.14, .5, .25, etc
 ```
@@ -358,7 +361,7 @@ Another good habit to help you avoid coding headaches: mind your syntax.
 
 Here are some syntax rules that are crucial to keep in mind:
 
-1. JS is case sensitive
+1. **JS is case sensitive**
 
   For example: numberofstudents is not the same as numberOfStudents, which is not the same as NuMbErOfStUdEnTs.
 
@@ -367,13 +370,13 @@ Here are some syntax rules that are crucial to keep in mind:
   Here's another example:
   var camelsAreAwesome = true;
 
-2. End statements with a semicolon ;
+2. **End statements with a semicolon ;**
 
   x = x + 1;
 
   After each line of instruction, be sure to use a semicolon. Although you may be able to get away without using semicolons in some browsers, JavaScript often does nasty things when it guesses where to put semicolons itself. It’s better to be explicit and tell the interpreter exactly where a statement should end.
 
-3. Use // for comments
+3. **Use // for comments**
 
   Developers often use comments to make notes for themselves and other developers. You can use a comment to add in content that will be ignored by the interpreter but can be read by anyone looking through the code.
 
@@ -386,7 +389,7 @@ Here are some syntax rules that are crucial to keep in mind:
   x + y //add the two variables
   ```
 
-4. Surround strings with quotations " "
+4. **Surround strings with quotations " "**
 
   Any time you have textual information, surround strings with single or double quotation marks ( 'JS is fun', "O’Doyle rules!" ). Also, use single or double quotation marks when you want numbers to function as strings (as we did in the "4" + "3" = "43" example).
 
@@ -438,7 +441,7 @@ Note: the console returns 6 since the new value was 14 and we subtracted 8 from 
 
 ***
 ## Guided Practice: Special arithmetic methods (10 mins)
-
+<!--Seems like this section might take more than 10 minutes with the whole activity outlined below.  Should we change to 15 minutes?  -->
 Apart from simply adding and subtracting numbers from variables, JavaScript also allows you to use special code to perform other arithmetic operations on numbers, such as finding the square root.
 
 Some of this code will contain a dot `.`. We will cover the dot notation in more depth in a later lesson, but, for now, let’s practice with some of the simpler arithmetic methods.
@@ -618,7 +621,6 @@ Feel free to read more from [Mozilla](https://developer.mozilla.org/en-US/docs/W
 
 
 ### ADDITIONAL RESOURCES
-- Exercises
 - Videos
   - GA JS Circuit - [Assigning and Reassigning Variables](https://generalassembly.wistia.com/medias/66kaqbwoc1)
   - GA JS Circuit - [Expressions](https://generalassembly.wistia.com/medias/e1c21pib0n)
