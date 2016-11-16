@@ -2,102 +2,99 @@
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction) | Topic |
-| x min | [Demo/Codealong](#demo) | Topic |
+| 10 mins | [Introduction](#introduction) | HTML Forms |
+| 15 min | [Demo/Codealong](#demo) | Your First Form |
 | x min | [Guided Practice](#guided-practice) | Topic |
 | x min | [Independent Practice](#ind-practice) | Topic |
 | x min | [Conclusion](#conclusion) |Topic |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
-
-### STUDENT PRE-WORK
-*Before this lesson, you should already be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
-
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
-- Gather materials needed for class
-- Complete Prep work required
-- Prepare any specific instructions
-
----
-<a name="opening"></a>
-## Opening (# mins)
-- Review pre-work, projects, or exit ticket, if applicable
-- Review current lesson objectives
-- Reference general course content or topics (e.g. code or concepts that have been used across multiple lessons)
-- Include Hook / Real-world Relevance (why the content from this lesson is useful or important)
-
-> Instructor Note: Use instructor notes to talk directly to instructors. Otherwise, write out lesson directions and materials in a student-facing voice.
-
-Check: Ask students to define, explain, or recall any **general** prior concepts or tools.
+- Create and style the following HTML elements: checkbox, radio buttons, text area/box, submit button, fieldset, label, and form
+- Evaluate the proper usage of HTML form and input options
 
 ***
 
 <a name="introduction"></a>
-## Introduction: Topic (# mins)
+## Introduction: HTML Forms (10 mins)
 
-> Instructor Note: Discuss topic and explain by dividing parts into sections. Ask students to define, explain, or recall any **specific** elements relating to the current topic, when applicable.
+## Why is this important?
+*This workshop is important because:*
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
+Forms are an important way a web application receive user input. The proper use of forms makes it easier to develop accessible websites with a good user experience.
+
+### An Example `<form>` Element (Tag)
 
 ```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>
-      Example
-    </title>
-  </head>
-  <body>
-    <h1>
-      Example Page
-    </h1>
-    <p>
-      This is an example page.
-    </p>
-  </body>
-</html>
+<form method="POST" action="/page">
+  <input type="text" name="pageName" />
+  <input type="submit" value="Create" />
+</form>
 ```
-![DOM Tree](http://www.computerhope.com/jargon/d/dom1.jpg)
 
-#### Use non-section headings to divide content
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam pariatur ab cum temporibus, velit expedita? Pariatur illum, iusto animi iste consectetur quam voluptatem provident! Velit molestias doloremque error harum.
+### Attributes
 
-> Check: Insert 1-2 guiding questions to ensure students are comprehending the material.
+In the opening of the `<form>` tag you can see two attributes: `method` & `action`
 
+- **method**: the HTTP verb (method) that the browser uses to submit the form.
+- **action**: the path of the HTTP request page that processes the information submitted via the form.
+
+>A `route` is simply a combination of a method & action. For example `GET '/page'` or `POST '/users'` are both valid routes.
+
+### POST vs GET
+#### [POST](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.5)
+- Data is not shown in URL
+- Can contain sensitive data
+- No size limitations
+- Adds information to, or deletes info from a database
+
+ #### [GET](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.3)
+- Short forms (such as search fields)
+- Appended to URL in name/value pairs
+- Never use for sensitive info!!!
+- Useful for form submissions when user wants to bookmark results
 ***
 
 <a name="demo"></a>
-## Demo / Codealong: Topic (# mins)
-Walk through a codealong or demonstration of something.
+## Codealong: Your First Form (# mins)
+### Challenge: Doomed?
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
+Create an html `form` that, on submit, sends the user to "hasthelargehadroncolliderdestroyedtheworldyet.com". Hint: what's the form action? Bonus: Can you change the submit button to say "Are we doomed?".
 
-```ruby
-def lorem
-  return 'some stuff'
-end
+#### Solution
+
+```html
+<form action="http://hasthelargehadroncolliderdestroyedtheworldyet.com" method="GET">
+  <input type="submit" value="Are we doomed!?">
+</form>
 ```
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nemo eius quo, soluta maxime provident temporibus aperiam eveniet eum. Non, soluta error veritatis pariatur praesentium beatae reprehenderit, numquam quaerat. Lorem ipsum dolor sit amet.
+**Client / Server Model**
 
-Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
+![client/server](assets/clientserver.png)
 
-```ruby
-def another_lorem
-  this = some_method(0+2)
-  return this.to_json
-end
-```
+## Common Inputs
 
-> Check: By this point, students should be able to write out or code their own methods / functions / arguments / etc.
+| Field Type | HTML Code | Widget (Control) | Notes |
+|:-- |:-- |:-- |:-- |
+| plain text | `<input type="text">` | ![<input type="text">][text] | the type attribute can be omitted |
+| password field | `<input type="password">` | ![<input type="password">][text] | echoes dots instead of characters |
+| text area | `<textarea></textarea>` | ![<textarea></textarea>][area] | a more customizable plain text area |
+| checkbox | `<input type="checkbox">` | ![<input type="checkbox">][check] | can be toggled on or off |
+| radio button | `<input type="radio">` | ![<input type="radio" name="group"> <input type="radio" name="group">][radio] | can be grouped with other inputs |
+| drop-down lists | `<select><option>` | ![<select><option>Option 1</option><option>Option 2</option></select>][select] | [check here for more info](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) |
+| file picker | `<input type="file">` | ![<input type="file">][file] | pops up an “open file” dialog |
+| hidden field | `<input type="hidden">` |  | nothing there!
+| submit button | `<input type="submit">` | ![<input type="submit">][submit] | activates the form's submission <br/>(a `POST` request or <br/>Javascript action) |
+
+<!-- Images -->
+[text]:   assets/text.png
+[area]:   assets/textarea.png
+[check]:  assets/checkbox.png
+[radio]:  assets/radio.png
+[select]: assets/option.png
+[file]:   assets/file.png
+[submit]: assets/submit.png
 
 ***
 
@@ -155,8 +152,11 @@ Briefly describe the Independent Practice exercise here.  What is the end delive
 
 ### ADDITIONAL RESOURCES
 - Exercises
-- Videos
+#### Videos
+- [HTML Forms](https://www.youtube.com/watch?v=-5tH2qnTnH0&index=16&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
 - Readings
-- Decks
+
+#### Decks
+- [HTML Forms Slideshow](assets/forms.pdf)
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
