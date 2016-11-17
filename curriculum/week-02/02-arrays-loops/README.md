@@ -1,7 +1,7 @@
 
 
 ---
-# <img src="https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Lesson Title (# mins)
+# <img src="https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png"> Lesson Title (# mins)
 
 | Timing | Type | Topic |
 | --- | --- | --- |
@@ -66,7 +66,7 @@ Take a look at this [video](https://generalassembly.wistia.com/medias/uey023vfx6
 
 Said another way, an array is an ordered list of items — also known as elements — separated by commas and situated between brackets [ ].
 
-<img src="assets/array_syntax.svg" width="350px">
+<img src="assets/array_syntax.png" width="350px">
 
 Arrays are data structures, similar in concept to lists. For example:
 
@@ -103,7 +103,7 @@ Indexes allow you to access and update array values.
 Take a look at this grocery list. Do you notice anything interesting about how these items are numbered?
 
 
-<img src="assets/grocery_list.svg" width="200">
+<img src="assets/grocery_list.png" width="200">
 
 You may have noted that the numbers start at 0 instead of 1.
 
@@ -111,7 +111,7 @@ JavaScript, like many programming languages, is zero-based, meaning that its num
 
 So, when we start assigning index values to an array, the first position in the array will be [0], the second will be [1], and so on.
 
-<img src="assets/students.png)
+<img src="assets/students.png">
 
 
 #### Recap
@@ -119,21 +119,21 @@ Let’s review everything we know about arrays so far:
 
 We typically create an array using a list with the same type of values. Here, we are using strings only.
 
-<img src="assets/heroes.png)
+<img src="assets/heroes.png">
 
 We declare arrays the same way we declare variables.
 
-<img src="assets/declare.png)
+<img src="assets/declare.png">
 
 Each item is called an element. They are separated by commas and situated between square brackets.
 
-<img src="assets/elements.png)
+<img src="assets/elements.png">
 
 The index is the number that tells us the position of an element in an array. It always starts with the number 0.
 
 Our friend Batman from Lesson 2 can be found at index 1
 
-<img src="assets/indexes.png)
+<img src="assets/indexes.png">
 
 > Exercise: Open the console in Chrome and do the following:
 1. Declare a variable called villains and assign it an array with the following strings: Cruella, Ursula, Jafar, Captain Hook.
@@ -142,11 +142,11 @@ Our friend Batman from Lesson 2 can be found at index 1
 
 Does your array look like this?
 
-<img src="assets/answer1.png)
+<img src="assets/answer1.png">
 
 Now, which villain is in index 3?
 
-<img src="assets/q2.png)
+<img src="assets/q2.png">
 
 Because the index starts at 0, index 3 is Captain
 
@@ -167,7 +167,7 @@ To access, or retrieve, a value from an array, we will use the array name, follo
 
 Let’s take a look at some examples.
 
-<img src="assets/villains.png)
+<img src="assets/villains.png">
 
 The first code is accessing index 0, so it should return “Cruella.”
 
@@ -180,11 +180,11 @@ Bonus: Can you come up with a way of asking for a random index (whole number) be
 
 To add a new value to the array, specify the index number of the position where the new value should be added.
 
-<img src="assets/JSC_U1L4_villian_array3.png)
+<img src="assets/JSC_U1L4_villian_array3.png">
 
 We should now have a new list (Cruella is replaced with Scar):
 
-<img src="assets/JSC_U1L4_villian_array4.png)
+<img src="assets/JSC_U1L4_villian_array4.png">
 
 
 
@@ -198,7 +198,7 @@ Note: the console returns the newest value that was added.
 
 Now, type villains and press enter. Does your console look like this?
 
-<img src="assets/a3.png)
+<img src="assets/a3.png">
 
 -->
 
