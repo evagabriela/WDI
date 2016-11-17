@@ -42,7 +42,7 @@ Variables are used to store data types into the memory of the computer so that t
 
 Think of them as special containers that can hold information for you.
 
-<img src="assets/variable_container.svg" width="150">
+<img src="assets/variable_container.png" width="150">
 
 #### Always use var!
 
@@ -50,7 +50,7 @@ In order to use a variable in JS, you must announce that you want to use it.
 
 You make this announcement by using the keyword `var` and declaring a variable name next to it.
 
-![](assets/var.svg)
+![](assets/var.png)
 
 Note: There must be a space after the keyword var.
 
@@ -82,7 +82,7 @@ Notice the space before and after the = sign and the semicolon after the string.
 
 Making sure these are in place is a good habit to develop and will be important for when your code gets more complicated later on.
 
-![](assets/Slide-16-Space-Semicolon.svg)
+![](assets/Slide-16-Space-Semicolon.png)
 
 JS is a programming language, and like any language it has its own grammar and rules of operation. Let’s look at four rules of thumb:
 
@@ -102,11 +102,11 @@ So the values we give our variables furthest down will become our new values at 
 
 Let's take a look at a brief example. Say that we want to create variables for a character's name, age and location.
 
-![](assets/Slide-34-Santa.svg)
+![](assets/Slide-34-Santa.png)
 
 We can later replace, or reassign, the values of these variables like so:
 
-![](assets/Slide-36-Batman.svg)
+![](assets/Slide-36-Batman.png)
 
 Here's a brief [video](https://generalassembly.wistia.com/medias/66kaqbwoc1) summarizing how to assign and reassign variables.
 
@@ -127,7 +127,7 @@ Data types are really similar across different languages.
 
 What this means is that being confident in working with these concepts critically will enable you to walk into any programming language with some base knowledge that is translatable.
 
-![Data Types Chart](assets/data-types-chart.svg)
+![Data Types Chart](assets/data-types-chart.png)
 
 We'll elaborate on all of these - except Booleans, for now. We'll talk about how they behave in JavaScript, show you some helper methods to work with each type, and then practice these helper methods to manipulate data using JavaScript.
 
@@ -265,19 +265,19 @@ How do we combine numbers and operators to come up with more complex expressions
 
 It’s simple — we use arithmetic operators.
 
-![Arithmetic Operators](assets/arithmetic_operators.svg)
+![Arithmetic Operators](assets/arithmetic_operators.png)
 
 All of the standard arithmetic operators learned in grade school (addition, subtraction, division, and multiplication) are supported in JS. These should look familiar.
 
 But if you don’t have a background in programming, that last operator — the modulus operator — might be new.
 
-![Arithmetic Operators](assets/arithmetic_operators_modulus.svg)
+![Arithmetic Operators](assets/arithmetic_operators_modulus.png)
 
 The modulus operator shows the remainder of a division problem.
 
 For example, 9 divided by 4 equals 2 with a remainder of 1. The modulus operator takes two numbers as inputs and returns what's leftover from the division.
 
-![Modulus](assets/modulus_operator.svg)
+![Modulus](assets/modulus_operator.png)
 
 The modulus operator % is particularly useful in programming if we want to find out if a number is even or odd.
 
@@ -328,7 +328,7 @@ As you can see, putting single or double quotation marks around a value turns it
 
 So, even though both “4” and “3” look like numbers to us humans, JS sees that they’re in quotation marks and therefore treats them as strings.
 
-![](assets/quotes_around_numbers.svg)
+![](assets/quotes_around_numbers.png)
 
 
 Using the + operator to put the two strings together literally puts them next to each other, instead of evaluating their total.
@@ -339,7 +339,7 @@ Here's another example of concatenation.
 
 JS glued the two strings together, but do you notice anything wrong?
 
-![](assets/missing_space.svg)
+![](assets/missing_space.png)
 
 There is no space between the two words!
 
@@ -350,7 +350,7 @@ We can either insert it after the string "Almost"or before the string "Done".
 
 Here, we added a space after "Almost ".
 
-![](assets/added_space.svg)
+![](assets/added_space.png)
 
 Developing good habits like adding spaces before and after the equal sign and putting quotation marks around strings will help you minimize mistakes.
 
@@ -416,17 +416,17 @@ Now, let’s get back to some math and look at assignment operators.
 
 You're already familiar with the = assignment operator, but there are also ones we can use to add or subtract value from a variable. Take a look:
 
-![](assets/assignment_operators.svg)
+![](assets/assignment_operators.png)
 
 The += operator adds value to an existing variable.
 
 The -= operator subtracts value from an existing variable.
 
-![](assets/assignment_operators_ann.svg)
+![](assets/assignment_operators_ann.png)
 
 There are also a couple arithmetic operators we can use to add or subtract one from the value of a variable:
 
-![](assets/increment.svg)
+![](assets/increment.png)
 
 <!-- ID NEEDED: Can you format this exercise?
 Type var num = 10;
