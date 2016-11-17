@@ -248,9 +248,13 @@ In JavaScript, numbers can always be divided into two groups:
 
 This means that JS numbers can be positive, negative, or have a decimal point.
 
-<!-- @sarahholden Exercise: Ask node for the typeof() a whole number and then a decimal -->
+#### Guided Exercise:
 
+Try typing the following into your console:
+1. `typeof 13`
+2. `typeof 13.5`
 
+What do you notice?
 
 ***
 ## Guided Practice: Arithmetic Operators (15 mins)
