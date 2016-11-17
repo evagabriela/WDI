@@ -1,34 +1,18 @@
----
-title: Title of the Lab/Exercise
-type: lab
-duration: "1:25"
-creator:
-    name: Micah Rich
-    city: LA
----
-
-> #### *Guiding Questions When Using This Template*
->
-> - [ ] Do the technical requirements clearly outline each of the lab expectations?
-> - [ ] What will students have to do to prepare for this lab/exercise?
-> - [ ] Is this intended to be a group activity? Codealong? Pair programming?
-> - [ ] Is there a clear deliverable? Have you provided a screenshot for students to reference?
-> - [ ] What additional tasks or challenges can you provide for students who are "hungry for more" or "need review"?
-
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Title of the Lab/Exercise
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Responsive Forms
 
 ##Learning Objectives
-> ***Note:*** _All learning objectives should be pulled from the [Front End Standards](https://docs.google.com/spreadsheets/d/11SzdbIIa9PLJ6kknGXXoBYOtL5ycwMK2N8lkI5THFak/edit#gid=1968474545) doc.  If you would like to add or remove any Learning Objectives, please contact amy.almeida@ga.co)._
-
--Learning Objective 1
--Learning Objective 2
--Learning Objective 3
+- Style a form with inputs and buttons using CSS
+- Understand and apply attribute selectors
 
 ## Introduction
 
-> ***Note:*** _This can be a pair programming activity or done independently._
+<!-- SME NEEDED: Create a 90-minute lab.
+Option 1) Have the student work from a mockup to create a new form
+Option 2) Give the student starter-code with errors and have them work to correct those errors. You may also include a form that's not responsive so they can add media queries.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis placeat distinctio nemo vitae natus quisquam atque nihil quis consequuntur harum officia, dolorem iusto soluta quae voluptas incidunt, similique, saepe sequi?
+Their current exercise is outdated design-wise: https://github.com/ga-wdi-exercises/cat_fancy
+
+Keep in mind the students haven't learned JavaScript yet, so while this exercise can introduce some JS concepts, it should not require them to use JS. It might be interesting to add a bonus question that challenges them to look up JS and experiment. -->
 
 ## Exercise
 
@@ -47,15 +31,3 @@ Here's a few sentences explaining any starter code that's included in the `start
 Here's a few sentences & a screenshot of what we expect you to make or do.
 
 ![Example Image](https://cloud.githubusercontent.com/assets/25366/8370438/dd651c2c-1b7c-11e5-8638-c99e2f6c7c61.png)
-
-## Hungry for More?
-- Some extra ideas for medium/advanced students
-- Another thing that would be good for you to practice
-- Brownie points for doing X, Y, Z
-
-## Need More Review?
-- Some extra ideas for struggling students
-- Tasks that would be good practice
-- How can students independently practice key concepts?
-
-
