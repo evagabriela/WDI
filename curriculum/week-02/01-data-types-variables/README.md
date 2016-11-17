@@ -29,13 +29,6 @@
 - Have basic understanding of Javascript
 - Be comfortable with a text editor
 
-<!--
-@sarahholden add extra exercises:
-
-  Data Type Exercises: https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md
-
--->
-
 ---
 <a name="opening"></a>
 ## Opening (5 mins)
@@ -150,6 +143,7 @@ For the exercises in this lesson, we suggest you use the Google Chrome Developer
 - In the new "Elements" window that appeared, click on "Console" on the top menu.
 
 >Perform the following steps in the console:
+
 1. Declare a variable called legs with the value 4.
   Note: the console returns undefined when declaring a variable using var because the var statement returns no value. This will be the case for every var declaration.
 2. Declare variables for the traits color and sound (using quotations for string values).
@@ -207,9 +201,10 @@ For consistency’s sake, it’s a good idea to pick one way and stick with it.
 Make sure to remember the typeof() command in case you ever need to find out the type of data with which you are working.
 
 
->Check for Understanding:
+#### Independent Practice
 
->Perform the following steps in the console:
+Perform the following steps in the console:
+
 1. typeof 'hello';
   The console returns 'string'.
 2. typeof 24;
@@ -621,6 +616,9 @@ Feel free to read more from [Mozilla](https://developer.mozilla.org/en-US/docs/W
 
 
 ### ADDITIONAL RESOURCES
+- Exercises
+	- [Data Types Exercise](exercises/data_types_exercise.md) (Beginner)
+	- [Temperature Converter](exercises/temperature_converter.md) (Beginner with Advanced Bonus Exercises)
 - Videos
   - GA JS Circuit - [Assigning and Reassigning Variables](https://generalassembly.wistia.com/medias/66kaqbwoc1)
   - GA JS Circuit - [Expressions](https://generalassembly.wistia.com/medias/e1c21pib0n)
