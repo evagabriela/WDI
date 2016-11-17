@@ -1,63 +1,21 @@
 ---
-title: Title of the Lesson
-duration: "1:25"
-creator:
-    name: John Doe
-    city: NYC
----
-
-> #### *Guiding Questions When Using This Template*
->
-> - [ ] Are the learning objectives measurable?
->   - [ ] Are there at least two objectives? ( All learning objectives should be pulled from the [Front End Standards](https://docs.google.com/spreadsheets/d/11SzdbIIa9PLJ6kknGXXoBYOtL5ycwMK2N8lkI5THFak/edit#gid=1968474545) doc.  If you would like to add or remove any Learning Objectives, please contact amy.almeida@ga.co)
->   - [ ] Does the lesson address all the learning objectives?
->
-> - [ ] Are activities spaced out with enough time for each?
->   - [ ] Did you include knowledge "Checks" or activities at the end of every component to test comprehension?
->   - [ ] Is there an even distribution of intructor-led and active learning portions?
->
->
-> - [ ] Did you provide guidance for both students & instructors?
->   - [ ] What will instructors have to do to prepare for this lesson?
->   - [ ] What will students have to do to prepare for this lesson?
->   - [ ] What additional resources do you provide for students who are "hungry for more," or need additional practice?
->
-> #### *How to Use This Template*
-> * Static Components: Reserve roughly 5 min for Opening, 5 unscheduled "buffer" mins for overrun, & at least 5 min for Conclusion (end of lesson review).
->
->
-> * Modular Components: The units of instruction are: Intro, Demo, Guided-Practice, & Independent-Practice. These can be cycled or intermixed in various orders, depending on the topic / content.
-
-> #### *Components of the lesson plan*
-
-> - Opening: this only happens once; used to introduce the agenda, review material, and provide a motivating example / the problem we're trying to solve with this skill/content
-> - Introduction: this is a section dedicated to introducing and contextualizing new vocabulary, ideas, and code syntax that will be practiced in later sections
-> - Demo: an instructor-led session demonstrating proper techniques or syntax examples
-> - Guided Practice: interactive instructor by which the instructor engages with and probes students for answers to guide the discussion or activity
-> - Independent Practice: a block of time where students are able to practice what they've learned; the instructor provides directions and the students use the directions to complete an exercise
-> - Conclusion: a time to sum up the lesson, review the answers to a final independent practice, and/or pose discussion questions
-> - Check: a moment to check to understand students are following; it can be done with a question about content, a general "How comfortable are you with this?", or the instructor can check the output of students code to ensure they've completed the assignment properly.
-
-> NOTE: the lesson you create does not have to follow a progression of Introduction > Demo > Guided Practice > Independent Practice - a combination of these is often ideal - but a lesson must always begin with an Opening and end wth a Conclusion.
-
-
-
----
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Lesson Title (# mins)
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Chrome Dev Tools and Debugging JS (# mins)
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction) | Topic |
-| x min | [Demo/Codealong](#demo) | Topic |
-| x min | [Guided Practice](#guided-practice) | Topic |
-| x min | [Independent Practice](#ind-practice) | Topic |
-| x min | [Conclusion](#conclusion) |Topic |
+| x min | [Introduction](assets/#introduction) | Topic |
+| x min | [Demo/Codealong](assets/#demo) | Topic |
+| x min | [Guided Practice](assets/#guided-practice) | Topic |
+| x min | [Independent Practice](assets/#ind-practice) | Topic |
+| x min | [Conclusion](assets/#conclusion) |Topic |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
+
+- Identify and resolve common and uncommon "logical errors" that affect the results of your program.
+-  Use logs to troubleshoot errors in an application.
+- Conduct real-time debugging in the browser.
+- Differentiate between syntax, reference, and type errors.
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
@@ -84,103 +42,254 @@ creator:
 Check: Ask students to define, explain, or recall any **general** prior concepts or tools.
 
 ***
+# JS Debugging
 
-<a name="introduction"></a>
-## Introduction: Topic (# mins)
+## Learning Objectives
 
-> Instructor Note: Discuss topic and explain by dividing parts into sections. Ask students to define, explain, or recall any **specific** elements relating to the current topic, when applicable.
+* Identify and resolve common and uncommon "logical errors" that affect the results of your program.
+* Use logs to troubleshoot errors in an application.
+* Conduct real-time debugging in the browser.
+* Differentiate between Syntax, Reference, and Type errors.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
+## Framing
+
+This class is about Javascript errors and what to do when you get one.
+
+<details>
+ <summary>What does it mean to have an error in JS?</summary>
+  <br>
+
+  Errors don't just happen. Chrome doesn't just "break". In fact, it's not Chrome that's throwing the error at all: it's Javascript.
+
+  Whenever you run into an error, it's because somewhere in the code you're running or in Javascript's source code there's a line that says, "When this happens, throw an error."
+
+</details>
+
+## What's an Error?
+
+Let's see how to throw an error.
+
+Here's a piece of HTML/JS that "throws" an error...
 
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <title>
-      Example
-    </title>
+    <title>JS Errors</title>
+    <script>
+    throw(new Error("Oh, noes."));
+    console.log("Such is life.");
+    </script>
   </head>
-  <body>
-    <h1>
-      Example Page
-    </h1>
-    <p>
-      This is an example page.
-    </p>
-  </body>
+  <body></body>
 </html>
 ```
-![DOM Tree](http://www.computerhope.com/jargon/d/dom1.jpg)
 
-#### Use non-section headings to divide content
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam pariatur ab cum temporibus, velit expedita? Pariatur illum, iusto animi iste consectetur quam voluptatem provident! Velit molestias doloremque error harum.
+The result:
 
-> Check: Insert 1-2 guiding questions to ensure students are comprehending the material.
-
-***
-
-<a name="demo"></a>
-## Demo / Codealong: Topic (# mins)
-Walk through a codealong or demonstration of something.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
-
-```ruby
-def lorem
-  return 'some stuff'
-end
+```
+Uncaught Error: Oh, noes.       index.html:6
 ```
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nemo eius quo, soluta maxime provident temporibus aperiam eveniet eum. Non, soluta error veritatis pariatur praesentium beatae reprehenderit, numquam quaerat. Lorem ipsum dolor sit amet.
+The `console.log` doesn't happen.
 
-Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
+> **Note**: Don't worry too much about the syntax of how to throw an error, you won't be creating your own custom Errors very often in this class, we're just showing this to you so you know what "magic" is going on under the surface.
 
-```ruby
-def another_lorem
-  this = some_method(0+2)
-  return this.to_json
-end
+## Common Errors
+
+Now that we know a little bit about what an Error is and when it is thrown, let's look at some of the most common errors that you will run into in JS.
+
+### You-Do: Encountering Common Errors in JS
+
+Take 5 minutes to independently work through this exercise by fixing the following JS snippets:
+
+1.
+
+```js
+var myString = "awesome";
+
+function printString (str) {
+  console.log(str);
+}
+
+printString(str);
 ```
 
-> Check: By this point, students should be able to write out or code their own methods / functions / arguments / etc.
+2.
 
-***
+```js
+var total = 0;
 
-<a name="guided-practice"></a>
-## Guided Practice: Topic (# mins)
-Solve a problem or apply this topic to a real world scenario. Solving or understanding this scenario should require the use of the current topic (in addition to any prior topics).
+var cashRegister = {
+  addToTotal: function (amount) {
+    return total + amount;
+  }
+}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
-
-```ruby
-def lorem
-  return 'some stuff'
-end
+total = cashRegister.add(4);
 ```
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nemo eius quo, soluta maxime provident temporibus aperiam eveniet eum. Non, soluta error veritatis pariatur praesentium beatae reprehenderit, numquam quaerat. Lorem ipsum dolor sit amet.
+3.
 
-Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
-
-```ruby
-def another_lorem
-  this = some_method(0+2)
-  return this.to_json
-end
+```js
+function shoutLongWords (word) {
+  if (word.length > 5)
+    console.log(word.toUpperCase());
+  } else {
+    console.log(word)
+  }
+}
 ```
-> Check: Were students able to successfully solve the problem or complete the task?
 
-***
+## Reading Error Messages
 
-<a name="ind-practice"></a>
-## Independent Practice: Topic (# minutes)
-Use the lesson topic/skill to create a deliverable that meets certain criteria.
+Javascript has [7 error types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#Error_types). 3 of them will account for 99% of the errors you encounter in this class, so we're going to focus on those.
 
-> Instructor Note: This can be a pair programming activity or done independently.
+<details>
 
-Briefly describe the Independent Practice exercise here.  What is the end deliverable?  What skills will it help students practice?  Include a link to the Github folder, which will include a more exhaustive description of the exercise, as well as any code, files or assets for students to download.
+  <summary><strong>Q. What might these 3 words mean in the context of Javascript? <i>Syntax</i>, <i>reference</i>, and <i>type</i>.</strong></summary>
 
-> Check: Were students able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?
+  > Syntax: The way the code is actually written.
+
+  > Reference: The process of calling variables and functions.
+
+  > Type: The different kinds of data Javascript can handle, like strings and numbers.
+
+</details>
+<br/>
+
+## Tools for Debugging
+
+> **Note**: If the `"Preserve log"` checkbox is checked in your Chrome console, uncheck it. When it's checked it doesn't clear error messages when you refresh your page. This can make your console get *really* ugly *really* quickly.
+
+### Reading Error Messages
+
+Let's say I get this error message:
+
+```
+Uncaught SyntaxError: Unexpected token {      controller.js:8
+```
+
+<details>
+
+  <summary><strong>Q. In what file and on what line is the error?</strong></summary>
+
+  > Line 8 of `controller.js`
+
+</details>
+</br>
+
+Click on `controller.js:8` and it'll show you that specific line of code.
+
+### `console.log`-ing
+
+More often than not, Errors are usually caused by some variable not having the value you expect. The easiest way to debug code is to see how the value of a variable changes over time. The easiest way to do *this* is with `console.log`.
+
+A quick and widely used way to debug errors is to put `console.log` statements everywhere. From there, we look for the place a variable stops having the value we expect it to have. That's where the error is.
+
+Lets see this in action, by taking a quick look at a code example.
+
+#### I Do: Debug [TTMAR](https://github.com/ga-wdi-exercises/ttmar/tree/wdi12-inclass)
+
+> **Note**: No need to clone, just follow along with the instructor on the board.
+
+Currently, we have a lot of code written in `app.js`, but our solution is still not functioning correctly.
+Let's put some `console.log` statements in our code to make sure that our values are what we think they are.
+
+---
+
+## Debugger
+
+An alternative to using `console.log` is to use the debugger capabilities of your browser. Modern browsers come with the ability to set a breakpoint on a specific line of your code. This will cause the execution of the program to pause every time the line with the breakpoint is reached and allow you to inspect the values of variables at that point.
+
+`debugger` stops a script at its line of code and lets you "look around". You can see what variables are available at the line of code where `debugger;` is run.
+
+To make your code continue, press the little eject-looking button.
+
+![Resume execution](assets/resume_execution.jpg)
+
+You can have as many `debugger;` lines as you want. The script will stop at each one and wait for you to tell it to continue.
+
+# How To Find Answers (15 minutes / 2:15)
+
+If you can't fix an error within a reasonable amount of time &mdash; for instance, if the console says the error's on a line like this...
+
+![Ugly error](assets/ugly_error.jpg)
+
+...turn to Google. Definitely do NOT try to slog through minified code.
+
+## Google Fu
+
+Let's say we get the following error in the console...
+
+```bash
+Uncaught ReferenceError: robins_spatula is not defined
+```
+
+<details>
+  <summary><strong>Q. How should we go about Googling a solution to this error?</strong></summary>
+  <br/>
+
+  * Copy and paste the exact text of your error into Google, and then remove any words that are specific to your script.
+    * For example, instead of:
+    ```
+    Uncaught ReferenceError: robins_spatula is not defined
+    ```
+    ...search for:
+    ```
+    Uncaught ReferenceError: is not defined
+    ```
+
+  * If you're looking for a specific phrase, put it in quotes.
+    * `is not defined` will return any page with the words `is`, `not`, and `defined`.
+    * `"is not defined"` will return any page with the exact phrase `is not defined`.
+
+
+  * Use `-` to exclude stuff.
+    * `ReferenceError -jquery` will return any page with `ReferenceError` and **without** `jquery`
+
+
+  * Use `site:sitename.com` to search within a site
+    * `site:stackoverflow.com ReferenceError` will search for pages with `ReferenceError` inside Stack Overflow only
+
+</details>
+
+## Stack Overflow
+
+When the instructors look at things on Stack Overflow, we tend not to read the actual content of the question; we skip straight to the answers.
+
+If the answer doesn't look promising, go to the next one. Repeat until the answers have very few upvotes.
+
+If none of the answers are promising, go on to the next thing that turned up on Google.
+
+You can get [badges](assets/stackoverflow.com/help/badges) and [special privileges](assets/stackoverflow.com/help/privileges) on Stack Overflow by asking good questions and giving good answers!
+
+
+## Independent Practice
+
+<!--
+
+SME NEEDED (30 - 45 min estimated to build out lab)
+
+- The current lab for this lesson has students practicing debugging using the Divided Times, incorporating the DOM which students haven't practiced yet. 
+
+It would be great to have an exercise here that has students practice debugging the following that students have learned:
+
+- Variables / Data Types
+- Arrays 
+- Loops *** Could be super helpful!
+- Objects
+
+One idea is to have a js project with some errors and students need to open it in Chrome and debug it using only dev tools. I would emphasize - no scanning through the JS file for errors! You need to use the Dev Tools to figure out what's wrong.
+
+For further context, the objectives for this lesson are: 
+
+- Identify and resolve common and uncommon "logical errors" that affect the results of your program.
+-  Use logs to troubleshoot errors in an application.
+- Conduct real-time debugging in the browser.
+- Differentiate between syntax, reference, and type errors.
+
+-->
 
 ***
 
@@ -192,16 +301,15 @@ Briefly describe the Independent Practice exercise here.  What is the end delive
 
 ***
 
-### BEFORE NEXT CLASS
-|   |   |
-|---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
 
 ### ADDITIONAL RESOURCES
 - Exercises
 - Videos
+  * WDI8 Screencasts
+    * [Part 1](https://youtu.be/dCukspxmNDs)
+    * [Part 2](https://youtu.be/VbfB1qB20Yk)
 - Readings
+	- [Debugging in JS](http://eloquentjavascript.net/08_error.html)
 - Decks
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  

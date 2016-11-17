@@ -1,3 +1,6 @@
+<!--@sarahholden - Add Checks for understanding throughout, pull from Circuits code challenges if needed.-->
+
+
 
 <!-- @sarahholden
 
