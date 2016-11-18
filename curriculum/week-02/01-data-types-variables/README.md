@@ -1,7 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Data Types, Variables, Arrays (120 mins)
 
 
-<!-- ID NEEDED: Can you add these in based on topics below? -->
 | Timing | Type | Topic |
 | --- | --- | --- |
 | 5 min | [Introduction](#introduction) | Opening |

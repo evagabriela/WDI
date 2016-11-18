@@ -4,8 +4,9 @@
 | --- | --- | --- |
 | 10 mins | [Introduction](#introduction) | HTML Forms |
 | 15 min | [Demo/Codealong](#demo) | Your First Form |
+| 40 min | [Intro to New Material](#intro-common-inputs)
 | 45 min | [Independent Practice](#ind-practice) | Application Form |
-| x min | [Conclusion](#conclusion) |Topic |
+| 10 min | [Conclusion](#conclusion) |Q & A |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -20,7 +21,7 @@
 ## Why is this important?
 *This workshop is important because:*
 
-Forms are an important way a web application receive user input. The proper use of forms makes it easier to develop accessible websites with a good user experience.
+Forms are an important way a web application receives user input. The proper use of forms makes it easier to develop accessible websites with a good user experience.
 
 ### An Example `<form>` Element
 
@@ -56,7 +57,8 @@ In the opening of the `<form>` tag you can see two attributes: `method` & `actio
 ***
 
 <a name="demo"></a>
-## Codealong: Your First Form (# mins)
+## Codealong: Your First Form (15 mins)
+<!--Is this something that the instructor is leading the student through?  -->
 ### Challenge: Doomed?
 
 Create an html `form` that, on submit, sends the user to "hasthelargehadroncolliderdestroyedtheworldyet.com". Hint: what's the form action? Bonus: Can you change the submit button to say "Are we doomed?".
@@ -73,7 +75,9 @@ Create an html `form` that, on submit, sends the user to "hasthelargehadroncolli
 
 ![client/server](assets/clientserver.png)
 
-## Common Inputs
+<a name="intro-common-inputs"></a>
+## Intro to New Material: Common Inputs (40 minutes)
+<!-- Is this a new section?  Intro to New Material? How long would this take? -->
 
 | Field Type | HTML Code | Widget (Control) | Notes |
 |:-- |:-- |:-- |:-- |
@@ -136,7 +140,7 @@ On your own:
 <!-- SME Needed: Conclusion topics -->
 
 <a name="conclusion"></a>
-## Conclusion (# mins)
+## Conclusion (10 mins)
 - Review independent practice deliverable(s)
 - Recap topic(s) covered in today's lesson
 - Cover homework and/or upcoming tasks
