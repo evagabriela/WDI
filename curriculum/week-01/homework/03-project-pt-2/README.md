@@ -1,12 +1,3 @@
----
-title: Title of the homework
-type: Homework
-duration: "2:00"
-creator:
-    name: Kermit the Frog
-    city: LA
----
-
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Monument - Part 2
 
 ## Exercise
