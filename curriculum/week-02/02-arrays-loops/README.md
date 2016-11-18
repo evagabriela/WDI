@@ -1,7 +1,5 @@
 
-
----
-# <img src="https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png"> Lesson Title (# mins)
+# <img src="https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png"> Arrays and Loops (90 mins)
 
 | Timing | Type | Topic |
 | --- | --- | --- |
@@ -26,43 +24,24 @@
 - Use if/else if/else conditionals to control program flow based on boolean conditions
 - Use a text editor
 
----
-<!-- @sarahholden Add checks for understanding throughout -->
-<!-- @sarahholden Add opening framing-->
-<!-- @sarahholden Add additional resources -->
 
-<!-- @sarahholden Add additional labs/exercises:
-
-  Three labs here: https://github.com/ATL-WDI-Curriculum/js-arrays-and-loops
-  Google Shopping Conditionals/Loops exercise: https://github.com/WDI-SEA/google-shopping-conditionals-loops
-  Booking system lab: https://github.com/jeremiahalex/wdi-sg-3/tree/master/day-6-variablesLoopsConditionals-lab
-  Arrays and Loops Exercises: https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md
-  Arrays Exercise: https://github.com/ATL-WDI-Exercises/js-control-flows
-
-
--->
 <a name="opening"></a>
-## Opening (# mins)
-- Review pre-work, projects, or exit ticket, if applicable
-- Review current lesson objectives
-- Reference general course content or topics (e.g. code or concepts that have been used across multiple lessons)
-- Include Hook / Real-world Relevance (why the content from this lesson is useful or important)
+## Opening (5 mins)
 
+So far we've learned about three types of data - strings, booleans, and conditionals.
+
+In this lesson we'll take a look at how we can utilize arrays to start to create more complex data structures in JS.
+
+What are arrays? Watch this [intro video](https://generalassembly.wistia.com/medias/upd8qxyabg) for an overview.
 
 ---
 <a name="arrays-intro"></a>
-## Intro to Arrays (15 mins)
-
-Arrays — what are they, and what are they good for?
-
-Watch this [intro video](https://generalassembly.wistia.com/medias/upd8qxyabg) to find out!
+## Intro to Arrays (10 mins)
 
 As you learned in the intro video, variables cannot hold multiple values, so we use arrays when we want to use more than one value at once.
 
 Unfortunately, strings and numbers are not enough for most programming purposes.
 What is needed are collections of data that we can use efficiently -- Arrays.
-
-Take a look at this [video](https://generalassembly.wistia.com/medias/uey023vfx6) that provides an overview of how we can work with arrays.
 
 Said another way, an array is an ordered list of items — also known as elements — separated by commas and situated between brackets [ ].
 
@@ -94,6 +73,8 @@ Arrays help us make the most out of our elements, allowing us to:
 
 #### Working with Arrays
 
+Take a look at this [video](https://generalassembly.wistia.com/medias/uey023vfx6) that provides an overview of how we can work with arrays.
+
 Before we dive deeper into arrays, let’s learn a little about indexes.
 
 Items in an array are stored in sequential order. Each element has an index, a number that tells us the position in the array where the element can be found.
@@ -114,28 +95,8 @@ So, when we start assigning index values to an array, the first position in the 
 <img src="assets/students.png">
 
 
-#### Recap
-Let’s review everything we know about arrays so far:
-
-We typically create an array using a list with the same type of values. Here, we are using strings only.
-
-<img src="assets/heroes.png">
-
-We declare arrays the same way we declare variables.
-
-<img src="assets/declare.png">
-
-Each item is called an element. They are separated by commas and situated between square brackets.
-
-<img src="assets/elements.png">
-
-The index is the number that tells us the position of an element in an array. It always starts with the number 0.
-
-Our friend Batman from Lesson 2 can be found at index 1
-
-<img src="assets/indexes.png">
-
 > Exercise: Open the console in Chrome and do the following:
+> 
 1. Declare a variable called villains and assign it an array with the following strings: Cruella, Ursula, Jafar, Captain Hook.
 2. Don't forget single or double quotation marks around your strings and a semicolon at the end of your array.
 3. Now type villains and press enter.
@@ -160,7 +121,7 @@ var a = new Array();
 
 ---
 <a name="updating-arrays"></a>
-## Accessing and updating elements in an array (15 mins)
+## Accessing and updating elements in an array (10 mins)
 #### Getting data from an array
 
 To access, or retrieve, a value from an array, we will use the array name, followed by an index number, wrapped in square brackets.
@@ -204,7 +165,7 @@ Now, type villains and press enter. Does your console look like this?
 
 ---
 <a name="arrays-deep-dive"></a>
-## Array Deep Dive (20 mins)
+## Array Deep Dive (15 mins)
 
 #### Length method
 
@@ -323,15 +284,15 @@ Let's do a quick mini-lab! Break up into groups of 2 or 3. Each group will have 
 
 > Instructor note: Divide methods between groups so each method is covered.
 
-array.unshift();
-array.shift();
-array.splice();
-array.slice();
-array.concat();
-array.sort();
-array.toString();
-array.reduce();
-array.map();
+- array.unshift();
+- array.shift();
+- array.splice();
+- array.slice();
+- array.concat();
+- array.sort();
+- array.toString();
+- array.reduce();
+- array.map();
 
 Explore the the [full documentation for array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) for other helper methods.
 
@@ -381,7 +342,7 @@ All we have to do is make one small (but very important) change: instead of adva
 
 ---
 <a name="while-loop"></a>
-## While Loop (# mins)
+## While Loop (10 mins)
 Now, we have a loop — so long as our condition remains true (or at least truthy), we will continue to run that block of code over and over again. This type of loop is called a **while loop**, and it can be found in nearly every programming language.
 
 
@@ -447,7 +408,7 @@ Basically, we’ve changed the `while` loop so that it always runs for a fixed, 
 
 ---
 <a name="for-loop"></a>
-## For Loop (# mins)
+## For Loop (15 mins)
 This kind of setup is so useful, and gets used so frequently, that most languages include a special kind of loop used for just this kind of behavior, called a `for` loop.
 
 For loops are very useful when we want to use a loop to do something with each item in an array. Watch this short [video](https://generalassembly.wistia.com/medias/gguspr8ong) to find out what that would look like.
@@ -478,9 +439,8 @@ for (initialization; condition; finalExpression) {
 
 ```
 
-<!-- @sarahholden update exercise -->
 
-#### Let’s practice!
+#### Independent Practice:
 
 Look at the code below:
 
@@ -492,7 +452,7 @@ for (var i = 0; i < x; i += 1) {
 }
 ```
 
-Use the console below to answer the questions.
+Turn and discuss the following questions with a partner:
 
 1. How many times will `HELLO` be printed out in the console?
   * `Hello` will be printed out 10 times.
@@ -617,8 +577,8 @@ for (i = 1; i < 101; i++) {
 ```
 
 <a name="conclusion"></a>
-## Conclusion (# mins)
-- Review FizzBuss solution
+## Conclusion (5 mins)
+- Review FizzBuzz solution
 - Review Learning Objectives
 
 In this lesson we’ve seen how loops can be used to easily repeat a certain set of actions numerous times. You will learn throughout this course how you can utilize loops in order to make your work more efficient and simpler.
@@ -627,17 +587,19 @@ For an example of when loops would be useful in a real-life program, watch this 
 
 ***
 
-### BEFORE NEXT CLASS
-|   |   |
-|---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
 
 ### ADDITIONAL RESOURCES
 - Exercises
+	- [Robot Booking](exercises/robot_booking.md) (Beginning)
+	- [Loops Exercises](exercises/loops_exercises.md) (Beginning to Medium)
+	- [Loops Labs](exercises/loops_labs.md) (Beginning to Advanced)
+
 - Videos
+	- [Loops Case Study](https://generalassembly.wistia.com/medias/6feruq1w7b)
 - Readings
-  [For vs. While Loop](http://programmers.stackexchange.com/questions/244393/what-are-the-differences-between-a-while-loop-and-a-for-loop)
-- Decks
+	- [For vs. While Loop](http://programmers.stackexchange.com/questions/244393/what-are-the-differences-between-a-while-loop-and-a-for-loop)
+	- Eloquent JavaScript - [Program Structure - Loops](http://eloquentjavascript.net/02_program_structure.html)
+	- Eloquent JavaScript - [Data Structures - Arrays](http://eloquentjavascript.net/04_data.html)
+
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
