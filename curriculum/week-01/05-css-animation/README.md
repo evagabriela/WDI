@@ -58,14 +58,15 @@ Breakout into groups of four. Each group will have 20 minutes to prepare a short
 Implement as many of the following exercises as you can in the time allotted. Feel free to work with a partner!
 
 - [CSS Accordion](https://github.com/ga-wdi-exercises/css-accordion)
-<!-- INSTRUCTOR NEEDED: it'd be great if we could find a more real-world example to replace DolphinCat. -->
+
+<!-- SME NEEDED: it'd be great if we could find a more real-world example to replace DolphinCat. -->
 - [DolphinCat!](https://github.com/ga-wdi-exercises/dolphin-cat-css-animations)
 - [Clock](https://github.com/ga-wdi-exercises/clock-bro)
 
 ### Bonus
 Look at the following transitions and animations examples, try to re-create them from scratch using as little starter code as possible.
 
-<!-- INSTRUCTOR NEEDED: it might be valuable to create code similar to these examples, so we're not just linking the students out to so many options. I think that overwhelms them. Then, we could move these links to Additional Resources.  -->
+<!-- SME NEEDED: it might be valuable to create code similar to these examples, so we're not just linking the students out to so many options. I think that overwhelms them. Then, we could move these links to Additional Resources.  -->
 - [Animated Buttons](http://tympanus.net/Tutorials/AnimatedButtons/index4.html)
 - [Image Hover Effects](http://tympanus.net/Tutorials/OriginalHoverEffects/)
 - [Solar System in CSS](http://neography.com/experiment/circles/solarsystem/)
@@ -80,7 +81,7 @@ CSS Animations are easy and mostly compatible, so they're often a good choice fo
 
 ***
 
-### ADDITIONAL RESOURCES
+### Hungry for More?
 #### Videos
 - [CSS Animation](https://www.youtube.com/watch?v=9RfHG3K8U_Q&index=31&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
 - [CSS Transitions](https://www.youtube.com/watch?v=Xu3SrQhtBqw&index=30&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
