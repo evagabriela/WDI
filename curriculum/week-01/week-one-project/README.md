@@ -5,8 +5,6 @@ The designer you've been working with has completed the mockups for the landing 
 
 #### Requirements
 
-#### Requirements
-
 - Add media queries to make the site responsive, updating padding, margins, fonts, and the layout as needed.
 - Use rems or ems for padding, margin, and font-sizes.
 - Links and buttons should include hover effects with a CSS transition to make the hover effects smooth.
