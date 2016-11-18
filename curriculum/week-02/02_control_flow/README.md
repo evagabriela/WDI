@@ -1,12 +1,3 @@
----
-title: Mastering Control Flow
-duration: "1:25"
-creator:
-    name: John Doe
-    city: NYC
-
-
----
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Mastering Control Flow (90 mins)
 
 | Timing | Type | Topic |
@@ -19,43 +10,32 @@ creator:
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
+
 - Differentiate between true, false, 'truth-y', and 'false-y'
 - Use if/else if/else conditionals to control program flow based on boolean conditions
-- Use switch conditionals to control program flow based on explicit conditions
 - Use comparison operators to evaluate and compare statements
 - Use boolean logic (!, &&, ||) to combine and manipulate conditionals
+- Use switch conditionals to control program flow based on explicit conditions
+
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
+
 - Create variables in JavaScript
 - Differentiate between data types (strings, numbers, booleans)
 - Use a text editor
-
-<!--
-@sarahholden add extra exercises:
-
-  Boolean Exercises: https://github.com/ga-wdi-exercises/js-data-types/blob/master/exercise.md
-  Temperature Converter Lab: https://github.com/ga-wdi-exercises/temperature_converter
-  (Bonus exercises are more advanced including loops and arrays)
-
-  Night Club Bouncer: https://github.com/ATL-WDI-Exercises/js-control-flows
-
-  Choose your own adventure: https://github.com/ga-wdi-exercises/choose_your_own_adventure_js
-
--->
 
 
 ---
 <a name="opening"></a>
 ## Opening (5 mins)
-- Review pre-work, projects, or exit ticket, if applicable
 - Review current lesson objectives
-- Reference general course content or topics (e.g. code or concepts that have been used across multiple lessons)
-- Include Hook / Real-world Relevance (why the content from this lesson is useful or important)
 
 What is control flow? Watch this [video](https://generalassembly.wistia.com/medias/zhahjd0c7t) to discover more about the role control flow plays in development.
 
 JavaScript supports a compact set of statements, specifically control flow statements, that you can use to incorporate a great deal of interactivity in your application.
+
+We can make decisions based on the choices the user makes. This will make our applications seem responsive and "smart".
 
 <a name="comparison-logical"></a>
 ## Introduction: Comparison and Logical Operators (10 mins)
@@ -103,7 +83,7 @@ Did you notice how we used the term "less than or equal to" to check, or compare
 
 
 
-## Guided Exercise: Comparison Operators (15 mins)
+## Guided Exercise: Comparison Operators (10 mins)
 
 Comparison operators are binary in that they compare two values against one another and return a boolean value — either true or false.
 
@@ -262,7 +242,7 @@ Yes. 5 is less than 10 AND 5 is less than 8.
 
 Once we check multiple conditions to see if they’re true, we can do something with the results.
 
-## Truthy and Falsey (15 mins)
+## Truthy and Falsey (10 mins)
 Like most computer languages, JavaScript supports Boolean values, or True/False values.
 
 Everything in JavaScript — from the strings we learned about in Unit 1 to the null and undefined values we just covered — has an inherent Boolean value, generally known as either _truthy_ or _falsey_.
@@ -351,14 +331,13 @@ The console returns false.
 true && !0
 The console returns true. -->
 
-
-
-<!-- @sarahholden Insert video: Truthy and falsey -->
+#### Review
 
 Let's review the concept of truthy and falsey by watching this short [video](https://generalassembly.wistia.com/medias/jdz1fp4ys8)
 
 
-## Conditional Statements (25 mins)
+
+## Conditional Statements (30 mins)
 
 Now we’re going to learn a bit more about conditional statements and how we can use them to control the flow of a program.
 
@@ -527,93 +506,58 @@ if (x === 3) {
 ```
 
 #### Switch Statement
-Video: https://generalassembly.wistia.com/medias/sew8suaz5l
+Before we dig into switch statements, watch this short [video](https://generalassembly.wistia.com/medias/sew8suaz5l) providing an overview of how they can help us keep our programs simple and readable.
 
+Now that you’re feeling more comfortable with if...else statements, let's go back to the other type of conditional statement we mentioned earlier in this lesson: **switch statements**. We've seen how a person can check numerous conditions by simply tacking on **else if statements**.
 
-The switch statement can be used for multiple branches based on a number or string:
-
-```javascript
-var food = "apple";
-
-switch(food) {
-  case 'pear':
-    console.log("I like pears");
-    break;
-  case 'apple':
-    console.log("I like apples");
-    break;
-  default:
-    console.log("No favorite");
-}
-//=> I like apples
-```
-
-Now that you’re feeling more comfortable with if...else statements, let's go back to the other type of conditional statement we mentioned earlier in this unit: **switch statements**. We've seen how a person can check numerous conditions by simply tacking on **else if statements**.
-
+```js
 if (x > 10) {
-x += 10;
-y += 10;
+	x += 10;
+	y += 10;
 } else if (x > 5) {
-x += 5;
+	x += 5;
 } else if (x > 3) {
-x += 3;
+	x += 3;
 }
+```
 
 Here’s a refresher of what the flowchart for this action would look like: ![](http://circuits-assets.generalassemb.ly/prod/asset/4408/Slide-4-Flow-Chart.svg)
 
-However, if we have a lot of conditions, the code becomes repetitive and hard to read. For example:
+However, if we have a lot of conditions, the code becomes repetitive and hard to read. 
 
+For example:
 
-
+```js
 // day of the week in a number, sunday is 0, saturday is 6
 var dayNumber = 1;
+
 if(dayNumber === 0){
-day = 'Sunday';
+	day = 'Sunday';
 } else if(dayNumber === 1) {
-day = 'Monday';
+	day = 'Monday';
 } else if(dayNumber === 2) {
-day = 'Tuesday';
+	day = 'Tuesday';
 } else if(dayNumber === 3) {
-day = 'Wednesday';
+	day = 'Wednesday';
 } else if(dayNumber === 4) {
-day = 'Thursday';
+	day = 'Thursday';
 } else if(dayNumber === 5) {
-day = 'Friday';
+	day = 'Friday';
 } else if(dayNumber === 6) {
-day = 'Saturday';
+	day = 'Saturday';
 } else {
-day = null;
-alert('wrong value for day');
+	day = null;
+	alert('wrong value for day');
 }
-
-// day of the week in a number, sunday is 0, saturday is 6
-var dayNumber = 1;
-if(dayNumber === 0){
-day = 'Sunday';
-} else if(dayNumber === 1) {
-day = 'Monday';
-} else if(dayNumber === 2) {
-day = 'Tuesday';
-} else if(dayNumber === 3) {
-day = 'Wednesday';
-} else if(dayNumber === 4) {
-day = 'Thursday';
-} else if(dayNumber === 5) {
-day = 'Friday';
-} else if(dayNumber === 6) {
-day = 'Saturday';
-} else {
-day = null;
-alert('wrong value for day');
-}
+```
 
 
-What the code to the left does, fundamentally, is pretty simple — it takes in a number (representing a particular day of the week) and spits out a string containing the name of that day. However, this code is not easy to read, and a lot of it is repeated. For one, `} else if(dayNumber === __ ) {` is repeated seven times. What's more, if we ever want to change the name of our `dayNumber` variable, we'll need to swap it out every place it appears.
+This code is not easy to read, and a lot of it is repeated. For one, `} else if(dayNumber === __ ) {` is repeated seven times. What's more, if we ever want to change the name of our `dayNumber` variable, we'll need to swap it out every place it appears.
 
 Enter the `switch statement`. A **switch statement** is used to perform different actions based on different conditions. It is a replacement for if/else statements when our code gets long and nested. Take a look at how the previous example would be written as a switch statement:
 
 
-
+```js
 var dayNumber = 1;
 switch (dayNumber) {
 case 0:
@@ -641,30 +585,33 @@ default:
   day = null;
   alert('wrong value for day');
 }
+```
 
-This code works exactly the same as our `if/else` statement, and, even though it contains more lines, it's significantly easier to read. In a switch statement, the variable in parentheses (in this case, `dayNumber`) is evaluated; if there is a `case` listed for the value it evaluates to, the code between `case __:` and `break` will be executed. If there is no `case` that matches the value of the variable, the `default` will be executed (if it is specified, that is — if not, the program will do nothing).
+This code works exactly the same as our `if/else` statement, and, even though it contains more lines, it's significantly easier to read.
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/4409/Slide-9-Code.svg)
+In a switch statement, 
 
-
-
-If there is no `break;` at the end of a case, the computer will not skip to the end. Instead, it will start executing the next case's code (even if the case's value is different than the variable’s), and will continue doing so until it eventually hits a `break;` statement.
-
-![](http://circuits-assets.generalassemb.ly/prod/asset/5014/Slide-10-Break.svg)
-
-
-
-For this reason, default never needs a `break;` statement, as it's the last case in the switch. Include breaks on all other statements to makes sure the program breaks out of switch once it executes the matched statement.  
+1. The variable in parentheses (in this case, `dayNumber`) is evaluated
+2. If there is a `case` listed for the value it evaluates to, the code between `case __:` and `break` will be executed. 
+3. If there is no `case` that matches the value of the variable, the `default` will be executed (if it is specified, that is — if not, the program will do nothing).
+4. If there is no `break;` at the end of a case, the computer will not skip to the end. Instead, it will start executing the next case's code (even if the case's value is different than the variable’s), and will continue doing so until it eventually hits a `break;` statement.
+5. For this reason, default never needs a `break;` statement, as it's the last case in the switch. Include breaks on all other statements to makes sure the program breaks out of switch once it executes the matched statement.  
 
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/5014/Slide-10-Break.svg) The main advantages of switch statements is the increase in readability and the decrease in repetition, both of which make your code more maintainable. Although the switch statement has some advantages over `if...else`, it also has some major disadvantages. For instance, a switch statement will only work if you are testing the same variable (or expression) in every condition; if not, the `if...else` is your only option. Also, depending on the circumstances, using `if...else` might scan more naturally. As a rule, use switch statements when you are working with only one variable, or if you have three or more conditions to check.
+#### Advantages and Disadvantages of Switch Statements
+The main advantages of switch statements is the **increase in readability** and the **decrease in repetition**, both of which make your code more maintainable. 
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/4411/Slide-12-Chart.svg) Use `if...else` when you have multiple variables (or expressions) or only need one `else...if` statement.
+Although the switch statement has some advantages over `if...else`, it also has some major disadvantages. For instance, a switch statement will only work if you are testing the same variable (or expression) in every condition; if not, the `if...else` is your only option. 
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/4411/Slide-12-Chart.svg)  
+Also, depending on the circumstances, using `if...else` might scan more naturally. As a rule, use switch statements when you are working with only one variable, or if you have three or more conditions to check.
 
-Now it’s time to test yourself. Take a look at the following `switch` statement:
+![](http://circuits-assets.generalassemb.ly/prod/asset/4411/Slide-12-Chart.svg) 
 
+#### Turn and Talk
+
+Take a look at the following `switch` statement:
+
+```js
 switch (2 * x) {
 case 2:
   y = 49;
@@ -681,8 +628,11 @@ case 8:
 default:
   y = 1;
 }
+```
 
 
+
+Turn to a partner and spend a few minutes discussing the following:
 
 What value will `y` be assigned when `x` is ...
 
@@ -691,30 +641,8 @@ What value will `y` be assigned when `x` is ...
 *   0?
 *   "Hello"?
 
-You can do mental math first, or use the console below to check your answers:
-
-Pause and come up with your answers before clicking forward. Let’s take a look at the answers.
-
-switch (2 * x) {
-case 2:
-  y = 49;
-  break;
-case 4:
-  y = 37;
-  break;
-case 6:
-  y = 25;
-  break;
-case 8:
-  y = 13;
-  break;
-default:
-  y = 1;
-}
-
-
-
-What value will `y` be assigned when `x` is ...
+<!--ID NEEDED: Help formatting the following. Q & A seems like it could use better formatting, I'm just not -->
+> Answers
 
 *   1 ?
 *   Answer: 49
@@ -725,246 +653,121 @@ What value will `y` be assigned when `x` is ...
 *   "Hello"?
 *   Answer: 1
 
-Great job! Now that we’ve had a chance to gain some experience with switch statements, let’s move on. Another shortcut for a simple JavaScript if...else statement is the **ternary statement**. A ternary statement is a one-line shorthand for an if...else statement. Similar to an `if...else` statement, it evaluates a condition and then returns one of two results based on whether the condition is true or false. Take a look at the following `if...else` statement:
 
+## Ternary Statements (15 mins) If time permits
+
+Great job! Now that we’ve had a chance to gain some experience with switch statements, let’s move on. Another shortcut for a simple JavaScript if...else statement is the **ternary statement**. A ternary statement is a one-line shorthand for an `if...else` statement. Similar to an `if...else` statement, it evaluates a condition and then returns one of two results based on whether the condition is true or false. Take a look at the following `if...else` statement:
+
+```js
 var studentPasses;
 if (score > 80) {
 studentPasses = true;
 } else {
 studentPasses = false;
 }
+```
 
+This code could be shortened to a single line using a ternary statement.  
 
-
-![](http://circuits-assets.generalassemb.ly/prod/asset/4407/Slide-16-Exam.svg) The code from the last slide could be shortened to a single line using a ternary statement.  
-
-Let's take a look on the next slide.
-
-
-
+```js
 var score = 90;
 var studentPasses = score > 80 ? true : false;
 studentPasses;
 //=> true
+```
 
 `condition ? result1 : result2;`
 
-Whatever the `if` condition is will be used as the condition here. Again, a condition is a statement that evaluates to true or false.  
+Let's break it down:
 
-
-var score = 90;
-var studentPasses = score > 80 ? true : false;
-studentPasses;
-//=> true
-
-`condition ? result1 : result2;`
-
-So, in the example, the condition would be `score > 80`. The condition is then followed by a question mark (`?`).  
-
-
-var score = 90;
-var studentPasses = score > 80 ? true : false;
-studentPasses;
-//=> true
-
-`condition ? result1 : result2;`
-
-`result1` and `result2` are our possible outcomes. If the condition is true, the operator will return the value of `result1`, otherwise it will return the value of `result2`.
-
-
-
-Let’s look at the difference between the two code blocks below. Do you notice the difference in syntax between the `if...else` statement and ternary operators?
-
-
-
-var score = 90;
-var studentPasses;
-if (score > 80) {
-studentPasses = true;
-} else {
-studentPasses = false;
-}
-//studentPasses would evaluate to true
-
-
-var score = 90;
-var studentPasses = score > 80 ? true : false;
-//studentPasses would evalute to true
-
+1. Whatever the `if` condition is will be used as the condition here. Again, a condition is a statement that evaluates to true or false.  
+	- So, in the example, the condition would be `score > 80`. The condition is then followed by a question mark (`?`).  
+2. `result1` and `result2` are our possible outcomes. If the condition is true, the operator will return the value of `result1`, otherwise it will return the value of `result2`.
 
 Here's a second example:
 
+```js
 var weather;
 if (temperature > 60) {
 weather = "fair";
 } else {
 weather = "poor";
 }
-
-
+```
 
 This could be shortened to the following:
 
-var weather = temperature > 60 ? "fair" : "poor";
-
-
-
-![](http://circuits-assets.generalassemb.ly/prod/asset/4412/Slide-18-Weather.svg)
+`var weather = temperature > 60 ? "fair" : "poor";`
 
 
 
 Although having clean and succinct code is useful, readability is also important. Sometimes ternary statements can be harder to scan and understand than a simple `if...else` statement. So, if you’re ever in doubt, remember to choose readability over less code. Let’s give it a try! Take this `if...else` statement, and turn it into a ternary statement:
 
+```js
 var day = "Monday";
 var goToWork;
 if (day === "Saturday" || day === "Sunday") {
-goToWork = false;
+	goToWork = false;
 } else {
-goToWork = true;
+	goToWork = true;
 }
+```
+
+Try practicing writing this code out as a ternary statement.
+
+Answer:
+
+`var goToWork = day === "Saturday" || day === "Sunday" ? false : true;`
 
 
+#### Independent Practice - Turn and Talk
 
-Try practicing in the console below. Pause and come up with your answer before clicking forward.Does your answer look something like this?
+Let's Practice!
 
-var goToWork = day === "Saturday" || day === "Sunday" ? false : true;
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/4414/Slide-21-Lazy-Sunday.svg)![](http://circuits-assets.generalassemb.ly/prod/asset/4413/Slide-20-Calendar.svg)
+```js
+var goToWork;
+if (day === "Saturday" || day === "Sunday") {
+	goToWork = false;
+} else {
+	goToWork = true;
+}
+```
 
-# Let's Practice!
-
-What will the value of `goToWork` be under the following circumstances? (Try figuring it out in your head or type the code out in the console.
+What will the value of `goToWork` be under the following circumstances? Discuss with a partner.
 
 1.  `var day = "Wednesday"`
 
-*   The console returns `true`
+	*   `true`
 
 3.  `var day = "Saturday"`
 
-*   The console returns `false`
+	*   `false`
 
 5.  `var day = "Friday"`
 
-*   The console returns `true`
-
-Great job!
+	*   `true`
 
 
 
-var goToWork;
-if (day === "Saturday" || day === "Sunday") {
-goToWork = false;
-} else {
-goToWork = true;
-}
+<!-- 
+SME Needed (Estimated 20 minutes): 
 
-Now that you have some experience with ternary statements, let’s talk a bit more about the use of switch statements. First you'll write out the following scenario as a long if...else statement, and then you'll refactor the if...else statement to be a switch statement in the next step.
+Would be helpful to have someone build out an interesting 15 minute exercise with a bonus or two for more advanced students that uses only conditionals and variables, the current exercise also uses loops (FizzBuzz)
 
-# Let's Practice!
+Possibility: Clean up and double check this, remove anything loop related, add starter code:
 
-First, declare a variable grade and set it equal to "B". Then, create an `if...else` statement that checks to see if the student got an A, B, C, D, or F.
-
-*   If the student received an A, log "Awesome Job" to the console.
-*   If student received a B, log "Pretty Great" to the console.
-*   If student received a C, log "Pretty Average" to the console.
-*   If student received a D, log "Need to Study" to the console.
-*   If the student received an F, log "Bad Job" to the console.
-
-Here's what the scenario would look like as an if...else statement:
+https://github.com/ga-wdi-exercises/choose_your_own_adventure_js
 
 
 
-var grade = "B";
-
-if (grade === "A") {
-console.log("Awesome Job");
-} else if (grade === "B") {
-console.log("Pretty Great");
-} else if (grade === "C") {
-console.log("Pretty Average");
-} else if (grade === "D") {
-console.log("Need to Study");
-} else if (grade === "F") {
-console.log("Bad Job");
-}
-
-
-Now, rewrite the if...else statement as a switch statement.  
-
-Here's what this if...else statement will look like when refactored into a switch statement:
-
-var grade = "B";
-
-switch (grade) {
-case "A":
-  console.log("Awesome Job");
-  break;
-case "B":
-  console.log("Pretty Great");
-  break;
-case "C":
-  console.log("Pretty Average");
-  break;
-case "D":
-  console.log("Need to Study");
-  break;
-case "F":
-  console.log("Bad Job");
-  break;
-default:
-  console.log("Nonexistent");
-}
-
-Which is faster—the if...else statement or the switch statement?
+-->
+## Independent Practice (15 mins)
 
 
 
-var grade = "B";
+## Conclusion (5 mins)
 
-if (grade === "A") {
-console.log("Awesome Job");
-} else if (grade === "B") {
-console.log("Pretty Great");
-} else if (grade === "C") {
-console.log("Pretty Average");
-} else if (grade === "D") {
-console.log("Need to Study");
-} else if (grade === "F") {
-console.log("Bad Job");
-}
-
-
-
-
-
-var grade = "B";
-
-switch (grade) {
-case "A":
-  console.log("Awesome Job");
-  break;
-case "B":
-  console.log("Pretty Great");
-  break;
-case "C":
-  console.log("Pretty Average");
-  break;
-case "D":
-  console.log("Need to Study");
-  break;
-case "F":
-  console.log("Bad Job");
-  break;
-default:
-  console.log("Nonexistent");
-}
-
-Consider how many computations run in each approach. When evaluating for grade `D` using the `if...else` approach, the condition `grade === 'x'` is evaluated four times. What if the `if...else` statement had 10 conditions? 100? How would this impact the speed of the program? In contrast, when using a switch statement, the condition is only evaluated one time. ![](http://circuits-assets.generalassemb.ly/prod/asset/4415/Slide-24-Awesome-Job.svg) As our scripts grow in size and complexity, we want to make sure that each time we work on a piece of code, we think about how we can make that code perform as effectively as possible. Throughout this course, we’ll be covering small ways to improve performance that will have a big impact, especially on projects with much more code. We saw earlier how `break;` plays a major role in switch statements. Again, if there is no `break;` at the end of a case, the computer will not skip to the end. Instead, it will start executing the next case's code (even if the case's value is different from the variable’s) and do so until it hits a `break;` statement. Can you guess what would happen if you removed the breaks from the switch statement you created? Run the code to find out! In this lesson, we looked at how we can keep our code readable and concise by using ternary and switch statements. We saw how these statements can make our code more concise, more readable, and more effective. Often, developers will write code to get things up and running first and then look back over the code to see how it could be streamlined. Switch and ternary statements are excellent tools for doing just that!
-
-
-
-
-## Conditionals Summary (5 min)
 Let’s turn to a summary of conditionals and test ourselves with a short quiz.
 
 Using `if...else` statements allows us to write code that can behave very differently in different circumstances.
@@ -988,28 +791,29 @@ if (x > 5) {
 - Under what circumstances will y be assigned a value of 100?
   <!-- Answer: x=5 -->
 
-<!-- SME Needed: Would be helpful to have someone build out a 15 minute exercise that uses only conditionals and variables, the current exercise also uses loops (FizzBuzz)
-
-Another option: pull from circuits
--->
-## Independent Practice
-
-
-#### Solution
-
-## Conclusion (5 mins)
-These are just some of the foundational tools you'll use while building your applications with JavaScript.
 
 You'll probably need to refresh yourself on the exact syntax a few times before you memorize it, but it's important to be able to remember these core "control flow" concepts in general, as they'll come up in pretty much every programming language you'll ever encounter.
+
+We also looked at how we can keep our code readable and concise by using switch statements. 
+
+Often, developers will write code to get things up and running first and then look back over the code to see how it could be streamlined. Switch statements are excellent tools for doing just that!
 
 ***
 
 
 ### ADDITIONAL RESOURCES
 - Exercises
-- Videos
+	- [Switch Statement Exercise](exercises/switch_statement_practice.md) (Beginner with Medium Difficulty questions)
+	- [Booleans and Comparison Operators](exercises/booleans_comparison_operators.md) (Beginner)
+	- [Control Flow Exercises](exercises/control_flow.md) (Beg - Adv)
+	- [Temperature Converter](exercises/temperature_converter.md) (Medium with Advanced bonuses)
+	- [Choose your Own Adventure](exercises/choose_adventure.md) (Medium)
 - Readings
-  [Control Flow MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
-- Decks
+	- [Eloquent JavaScript - Program Structure](http://eloquentjavascript.net/02_program_structure.html)
+	- [Control Flow MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+- Videos
+	- [Switch Statements](https://generalassembly.wistia.com/medias/sew8suaz5l)
+	- [Control Flow Case Study](https://generalassembly.wistia.com/medias/zhahjd0c7t)
+
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
