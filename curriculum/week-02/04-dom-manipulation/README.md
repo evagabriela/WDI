@@ -1,6 +1,8 @@
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) DOM Manipulation (90 mins)
 
+<!--ID NEEDED: Updating topics/jumplinks-->
+
 | Timing | Type | Topic |
 | --- | --- | --- |
 | x min | [Introduction](#introduction) | Topic |
@@ -11,21 +13,19 @@
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
+- Describe the Document Object Model
+- Understand the difference between markup and the DOM
+- List several Vanilla JS methods
+- Access elements in the DOM using Vanilla JS
+- Add and remove elements to the DOM using Vanilla JS
+- Edit existing elements in the DOM using Vanilla JS
+
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
-
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
-- Gather materials needed for class
-- Complete Prep work required
-- Prepare any specific instructions
+- Create variables in JavaScript
+- Create arrays and access/manipulate elements in arrays
+- Create objects with multiple properties and methods and add and retrieve properties
 
 ---
 <a name="opening"></a>
@@ -259,10 +259,18 @@ We can then use any methods we would normally use on an element on that variable
 #### Independent Practice
 It’s your turn to give things a try.
 
-Try writing the following out on a piece of paper or your desk.
+Try writing the following out on a piece of paper or whiteboarding on your desk.
+
+```html
+<ul>
+	<li id="red">Red</li>
+	<li id="blue">Blue</li>
+	<li id="yellow">Yellow</li>
+</ul>
+```
 
 How could we use the `getElementById` method to select the list item with an id of:
-
+<!--ID NEEDED: Help formatting questions/answers-->
 *   Red? `document.getElementById('red')`
 *   Blue? `document.getElementById('blue')`
 *   Yellow? `document.getElementById('yellow')`
@@ -304,23 +312,33 @@ This will return the first <li> that is a descendant of the <ul>.
 #### Independent Practice
 It’s your turn to give things a try.
 
+```html
+<ul>
+	<li id="red">Red</li>
+	<li id="blue">Blue</li>
+	<li id="yellow">Yellow</li>
+</ul>
+```
+
+
+<!--ID NEEDED: Help formatting questions/answers-->
 How could we use the `querySelector` method to do the following:
 
-*   Select the first list item on the page?<span class="fragment">  
-    `document.querySelector('li')`</span>
-*   Select the element that has the id yellow?<span class="fragment">  
-    `document.querySelector('#yellow')`</span>
-*   Select the ul ?<span class="fragment">  
-    `document.querySelector('ul')`</span>
+*   Select the first list item on the page? 
+    `document.querySelector('li')`
+*   Select the element that has the id yellow? 
+    `document.querySelector('#yellow')`
+*   Select the ul ? 
+    `document.querySelector('ul')`
 
+
+## Selecting Multiple Elements (10 mins)
 
 So far, the methods we’ve used to search through the `document` object have only been returning a single element.
 
 But sometimes we'll want to find and work with several elements at once.
 
 There are several methods we can use to return a **NodeList**, or _list of node objects_, to manipulate.
-
-## Selecting Multiple Elements (10 mins)
 
 Let's take a look at some of the methods we can use to search through documents and find multiple elements.
 
@@ -388,6 +406,32 @@ document.querySelectorAll('.special')
 ```
 
 This will return any elements with the class `special`. In the example above, this will return a NodeList containing the second and third list items, as they both have the class `special`.
+
+#### Independent Practice
+<!--ID NEEDED: Help formatting questions/answers-->
+
+Spend a few minutes writing out the following on paper or whiteboarding:
+
+```html
+<div class="alert special">
+	<p>Here's a special message</p>
+</div>
+
+<div class="alert warning">
+	<p>Here's a warning message</p>
+</div>
+```
+
+1. How could we use the `getElementsByClassName` method to select all elements with the class special?
+- `document.getElementsByClassName('special')`
+2. How could we use the `getElementsByTagName` method to do the following:
+select all `p` elements?
+- `document.getElementsByTagName('p')`
+2. How could we use the `querySelectorAll` method to do the following:
+select all elements with a class of alert?
+- `document.querySelectorAll('.alert')`
+
+
 
 
 ## NodeLists (10 mins)
@@ -516,7 +560,7 @@ Result:
 ![](http://circuits-assets.generalassemb.ly/prod/asset/5149/textContent.png)
 
 
-In contrast, when setting content with the innerHTML method, any HTML tags will be inserted into the page as actual HTML content, not just text:
+In contrast, when setting content by updating the innerHTML property, any HTML tags will be inserted into the page as actual HTML content, not just text:
 
 ```js
 document.querySelector('p').innerHTML = "Visit my Site";
@@ -526,9 +570,8 @@ Result:
 
 ![](http://circuits-assets.generalassemb.ly/prod/asset/5150/innerHTML.png)
 
-<!--
-@sarahholden insert independent practice-->
-
+> Check: Turn and Talk - 
+> Summarize the difference between the textContent and innerHTML properties.
 
 
 #### Manipulating the DOM - Adding Elements
@@ -558,7 +601,13 @@ document.getElementsByTagName('ul')[0].appendChild(newListItem);
 ![](http://circuits-assets.generalassemb.ly/prod/asset/4614/Slide-69.png)
 
 
-<!--@sarahholden add cfu
+<!--
+
+SME Needed: Check for understanding 1/2
+
+A brief exercise for adding elements to the page (with starter code).
+
+Students have learned how to select elements, innerHTML, and textContent. 
 -->
 
 #### Manipulating the DOM - Getting & Setting Attributes (# mins)
@@ -603,18 +652,14 @@ Or, if we wanted to remove the id from an element, we could execute the update l
 document.getElementsByTagName('a')[0].removeAttribute('id');
 ```
 
-***
-
-<a name="independent-practice"></a>
-## Independent Practice (15 mins)
 
 <!--
-SME Needed (20 - 30 mins)
-Need help creating a lab for simple DOM manipulation (Vanilla JS).
 
-Students have learned how to access and manipulate elements.
+SME Needed: Check for understanding 2/2
 
-Lab should take students 15 minutes to complete.
+A brief exercise for getting and setting attributes (with starter code).
+
+Students have learned how to select elements, innerHTML, and textContent, adding content, and now these methods to get and set attributes. 
 -->
 
 ## How do Browsers Work? (10 mins) - If Time Permits
@@ -706,6 +751,18 @@ This is where the magic happens — now, our page can finally be seen by our
 
 
 
+
+***
+
+<a name="independent-practice"></a>
+## Vanilla JS exercise! (15 mins)
+
+Now that you've seen all of these methods and have a since of what the Vanilla JS can do!
+
+Open up the `starter_code` directory. 
+
+Follow the prompt.md to write the vanilla JS methods necessary to complete each `alert` step in js/script.js
+
 ***
 
 <a name="conclusion"></a>
@@ -722,12 +779,16 @@ In this lesson, we learned some basic methods that will add interactivity to our
 
 ### ADDITIONAL RESOURCES
 - Exercises
+	- [GA DOM Mod](exercises/google_dom_mod/ga_dom.md) (90 mins - Beginner)
+	- [Jedi DOM](exercises/jedi_dom/README.md) (15 mins - Beginner)
+	- [JS DOM Quotes - Selector Exercise](exercises/js_dom_quotes.md) (15 mins - Beginner)
 - Videos
 	- [DOM Manipulation Case Study](https://generalassembly.wistia.com/medias/dl6ar8jj8z)
 	- [DOM Manipulation](https://generalassembly.wistia.com/medias/z8rbhaywbt)
 	- [3 Ways to use the DOM](https://generalassembly.wistia.com/medias/pg282hmlha)
 	- [Intro to the DOM](https://generalassembly.wistia.com/medias/kbrc8w8c13)
 - Readings
-- Decks
+	- Eloquent JavaScipt - [Chapter 13: The DOM](http://eloquentjavascript.net/13_dom.html)
+
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
