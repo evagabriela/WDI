@@ -17,8 +17,6 @@
 - Explain the difference between object properties and methods
 - Create empty objects and objects with multiple properties and methods using object literal syntax
 - Compare adding and retrieving properties to an existing object using the dot and bracket notations
-- Create objects using constructor notation and instances of those objects using the new keyword.
-- Compare and contrast creating objects using literal notation vs. constructor functions.
 - From within a method, reference properties of the same object using this.
 
 

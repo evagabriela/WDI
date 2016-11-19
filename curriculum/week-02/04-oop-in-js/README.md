@@ -3,31 +3,7 @@
 <!--
 ID NEEDED: Help with jumplinks / Transferring lesson sections & times up here-->
 
-<!--
-@sarahholden move exercises to folder, reformat, add links in resources
 
-
-https://github.com/ga-wdi-boston/js-objects-stack-challenge (adv)
-
-
-Car OOP (Need to remove TDD Material)
-https://github.com/WDI-SEA/oop-prototype-car - Part 1 (Med)
-https://github.com/WDI-SEA/oop-inheritance-car - Part 2 (Med)
-
-
-Beginner:
-
-Create your own - Independent Practice (15 mins)
-
-You are going to take over the Javascript world with a new army of Soldier objects.
-
-Create a new soldier constructor function that allows you to create soldiers
-A soldier should be able to have a name and number
-The default type of a solder should be foot-soldier
-The soldier's number should sequentially increase
-Each soldier in the army should have the same battleCry, an alert of "FREEDOM!"
-Your army should have a general who's type is general
-Your general's number should be incremented inline with your foot-solders-->
 
 
 
@@ -42,33 +18,21 @@ Your general's number should be incremented inline with your foot-solders-->
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
 
-<!--@sarahholden update-->
-Define methods on custom objects by attaching them to the prototype
-Refactor code with OOP concepts such as
-encapsulation
-abstraction
-Recognize when objects can help in creating simpler tasks
-Recognize, understand and write prototype functions
-Build practical and useful objects using Javascript constructors
-Demonstrate a working knowledge of object properties and methods
-Convert previous projects to utilize Object Oriented Programming techniques
-Understand Object Inheritance
-Understand SOLID
-Understand private, protected, and public scopes
-
-- **Build** practical and useful objects using Javascript constructors
-- **Demonstrate** a working knowledge of  object properties and methods
-- **Convert** previous projects to utilize Object Oriented Programming 
+- Demonstrate a working knowledge of object properties and methods
+- Create objects using constructor notation and instances of those objects using the new keyword.
+- Compare and contrast creating objects using literal notation vs. constructor notation.
+- Define methods on custom objects by attaching them to the prototype
+- Understand object inheritance
 
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
 
-<!--@sarahholden update-->
-- Describe some concept
-- Explain how to do something
-- Do or build something
-
+- Create variables in JavaScript
+- Differentiate between data types (strings, numbers, booleans)
+- Use if/else if/else conditionals to control program flow based on boolean conditions
+- Create arrays and access/manipulate elements in arrays
+- Create objects with multiple properties and methods and add and retrieve properties
 
 
 ### INSTRUCTOR PREP
@@ -610,7 +574,7 @@ Methods can also access properties within the object with the `this` identifier 
 ***
 
 <a name="modeling-flowers"></a>
-## Independent Practice: Modeling Flowers (10 mins)
+## Independent Practice: Modeling Flowers (15 mins)
 
 Take a look at the flower in front of you.
 
@@ -627,7 +591,7 @@ tablemates the type of flower, the flower's main color, number of petals, and wh
 ***
 
 <a name="static-methods"></a>
-## Guided Practice: Cross-Pollination (10 mins)
+## Guided Practice: Cross-Pollination (10 mins) (If time permits)
 Now that we are awesome Flower experts, let's try our hand at cross pollinating two flower objects. Cross pollinating is beyond the realm of an individual flower and could therefore live on the Flower constructor itself. Another examples of this would be `create`, `new`, or `destroy`. These are all *meta* actions of a flower; a flower cannot create itself! They are called **static methods**.
 
 Check: Think-pair-share - How might we declare this method?
@@ -707,14 +671,17 @@ That's how most Javascript developers think, to one degree or another. I want to
 
 ***
 
-### BEFORE NEXT CLASS
-|   |   |
-|---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
-
 ### ADDITIONAL RESOURCES
 - Exercises
+<!--
+SME NEEDED (Estimated 30 - 45 Mins)
+Would be helpful to have someone go through these exercises, add starter code where needed, and potentially update the Body Shop exercises so that they no longer require a knowledge of TDD.
+I think having quality resources here for instructors/students to pull from would be super useful!
+ -->
+	- [Create your Own Army](exercises/army.md) (Beginner)
+	- [Stack Challenge](exercises/stack_challenge/README.md) (Advanced)
+	- [Body Shop - Part 1](exercises/oop-prototype-car/README.md) (Advanced, includes TDD)
+	- [Body Shop - Part 2](exercises/oop-inheritance-car/README.md) (Advanced, includes TDD)
 - Videos
 	- JS Circuits - Constructor Notation - [Student Directory](https://generalassembly.wistia.com/medias/cjdt6hhkfz)
 	- JS Circuits - Objects Past, Present & Future - [Date Object](https://generalassembly.wistia.com/medias/ga9vu35oz6)
@@ -732,7 +699,3 @@ That's how most Javascript developers think, to one degree or another. I want to
 - Decks
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
-> 
-
-
-
