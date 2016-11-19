@@ -751,7 +751,7 @@ What will the value of `goToWork` be under the following circumstances? Discuss 
 
 
 <!-- 
-SME Needed (Estimated 20 minutes): 
+SME Needed (Estimated 30 minutes): 
 
 Would be helpful to have someone build out an interesting 15 minute exercise with a bonus or two for more advanced students that uses only conditionals and variables, the current exercise also uses loops (FizzBuzz)
 
