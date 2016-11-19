@@ -4,9 +4,6 @@
 ID NEEDED: Help with jumplinks / Transferring lesson sections & times up here-->
 
 
-
-
-
 | Timing | Type | Topic |
 | --- | --- | --- |
 | x min | [Introduction](#introduction) | Topic |

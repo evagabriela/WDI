@@ -1,4 +1,34 @@
+<!--
 
+SME NEEDED (1 - 1.5 hour estimated)
+
+Currently there is one lesson for debugging JS (under WDI Curriculum), but we are building out 2 90 minute lessons.
+
+Current resources:
+
+- WDI Lessons: https://github.com/ga-wdi-lessons/js-debugging
+- WDI Curriculum: https://github.com/GA-WDI/curriculum/tree/master/resources/00-programming/js-debugging-lesson
+
+
+Right now I've placed a lot of the content from WDI lessons here as a "Debugging JS Part 1" and the other content (WDI Curriculum) as a "Debugging JS Part 2" for day.
+
+For Debugging part I here's what students have learned: 
+- Variables / Data Types
+- Arrays 
+- Loops *** Could be super helpful!
+- Objects
+
+For Debugging Part II students will also have learned:
+- Objects
+- Basic Vanilla JS DOM Manipulation
+- Vanilla JS Events
+
+WHAT'S NEEDED:
+1. Check flow of two lessons, make sure it makes sense, modify/rearrange if needed, add content if needed (shouldn't be too much that needs to be added, maybe screenshots)
+2. A 20-minute lab for Debugging Part I (See below)
+3. Starter code/solution for Part II (Week 2 Day 5) needs to be reviewed and modified if needed and instructions should be fleshed out a bit.
+
+-->
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Chrome Dev Tools and Debugging JS (90 mins)
 
 
@@ -320,15 +350,7 @@ regarding HTML, CSS, and JavaScript.
 
 
 ## Independent Practice (20 mins)
-
-<!--
-
-SME NEEDED (30 min estimated to build out lab)
-
-Should take students 20 mins
-
-- The current lab for this lesson has students practicing debugging using the Divided Times, incorporating the DOM which students haven't practiced yet. 
-
+<!--SME NEEDED: Lab here
 It would be great to have an exercise here that has students practice debugging the following that students have learned:
 
 - Variables / Data Types
@@ -339,17 +361,6 @@ It would be great to have an exercise here that has students practice debugging 
 One idea is to have a js project with some errors and students need to open it in Chrome and debug it using only dev tools. I would emphasize - no scanning through the JS file for errors! You need to use the Dev Tools to figure out what's wrong.
 
 Again, no need to build an entirely new lab from scratch, could be an existing lab with errors thrown in that students need to debug.
-
-For further context, the objectives for this lesson are: 
-
-- Identify and resolve common and uncommon "logical errors" that affect the results of your program.
--  Use logs to troubleshoot errors in an application.
-- Conduct real-time debugging in the browser.
-- Differentiate between syntax, reference, and type errors.
-
-
-And the lesson can be found here: https://github.com/microsarah/WDI/tree/master/curriculum/week-02/03_dev_tools_debugging
-
 -->
 
 ***
@@ -384,3 +395,4 @@ Developer tools are the first place developers look for clues when something is 
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
 
+``
