@@ -53,8 +53,6 @@ All of the arrays we've seen so far store and manage their elements by their ind
 This is a convenient way of managing elements, but it also has some disadvantages.
 
 #### Easier access to data
-Objects are a type of data structure that is nearly universal across programming languages, although they may have different names in different languages (in Python they're called a dictionary, in Ruby they're called Hashes).
-
 Watch this short [video](https://generalassembly.wistia.com/medias/wk0zfyxxsc) for an example of the limitations of arrays and how storing data in objects using key/value pairs can help us structure and manage complex data more efficiently.
 
 Objects are often called **associative arrays**, as they associate keys with values.
@@ -592,9 +590,14 @@ Bonus Tasks -- create the following methods for your instance of a 'User':
 
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
-- Review independent practice deliverable(s)
+- Review Meal Tracker solution
 - Recap topic(s) covered in today's lesson
-- Cover homework and/or upcoming tasks
+
+In this lesson we took a look at how we can store data in a way that models real-life using objects. 
+
+Objects are a type of data structure that is nearly universal across programming languages, although they may have different names in different languages (in Python they're called a dictionary, in Ruby they're called Hashes).
+
+Understanding and being able to manipulate and access values in objects is a skill that will not only come in handy when writing JavaScript - but can be applied to many other programming lanugages.
 
 ***
 
