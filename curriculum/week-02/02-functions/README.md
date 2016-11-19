@@ -12,7 +12,7 @@
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
 - Describe why functions are useful
-- Write a function in JavaScript using a declaration and an expression.
+- Differentiate between function declarations and function expressions.
 - Describe how parameters relate to functions
 - Explain how return statements are used in JavaScript
 - Compare global and local scope
@@ -119,7 +119,7 @@ alert(foo());
 
 ---
 <a name="opening"></a>
-## Opening (# mins)
+## Opening (5 mins)
 - Review current lesson objectives
 
 In the last couple of lessons we looked at how we can control the flow of a program by using conditional statements and loops, and after that, you probably noticed how quickly a program can grow in length and complexity.
@@ -132,7 +132,7 @@ Take a look at this short [video](https://generalassembly.wistia.com/medias/qmhj
 
 ---
 <a name="intro-to-functions"></a>
-## Introduction to Functions (# mins)
+## Introduction to Functions (10 mins)
 **Function** is a term that comes out of mathematics. You may remember hearing it in your high school algebra class.
 
 The basic idea of a function is simple — it’s a relationship between a set of inputs and a set of outputs.
@@ -228,7 +228,7 @@ Let's review the three main reasons that functions are created:
 
 ---
 <a name="function-expressions"></a>
-## Function Expressions (# mins)
+## Function Expressions (10 mins)
 Now we know what functions are and why we use them. But how do we create them?
 
 As you saw in our Matt Damon Rescue example, just as we do with a variable, we must define a function before we call or “use” it.
@@ -317,7 +317,7 @@ Great job!
 
 ---
 <a name="arguments-and-parameters"></a>
-## Arguments and Parameters (# mins)
+## Arguments and Parameters (20 mins)
 
 Now that we know how to call functions, let’s see how we can add more details to our functions through parameters and arguments.
 
@@ -422,7 +422,7 @@ Great job!
 
 ---
 <a name="return-values"></a>
-## Return Statements (# mins)
+## Return Statements (15 mins)
 We now know how to communicate with functions in one direction, by passing values to functions using parameters and arguments.
 
 But, functions can also communicate back to you and return values.
@@ -508,7 +508,7 @@ console.log("Now playing: " + song + " by " + artist);
 
 ---
 <a name="function-declarations"></a>
-## Function Declarations (# mins)
+## Function Declarations (10 mins)
 Now we'll take a look at another way to define functions (**function declarations**) and how these differ from the function expressions we've been using.
 
 Watch this short [video](https://generalassembly.wistia.com/medias/g1w03wkvth) for an overview of Function Declarations and Function Expressions.
@@ -566,7 +566,7 @@ Let’s watch a [video](https://generalassembly.wistia.com/medias/exsv54zfg9) on
 
 ---
 <a name="scope"></a>
-## Variable Scope (# mins)
+## Variable Scope (15 mins)
 You already have some experience using both function expressions and function declarations with parameters and arguments.
 
 Now, we’re going to take a look at one of the complexities that comes with using functions — **variable scope**.
@@ -624,6 +624,12 @@ As a result, global variables can be inefficient, because they will continue to 
 
 > For JavaScript (before JavaScript 2015), local variables are scoped by their enclosing function. JavaScript 2015 is introducing lexical scope for variables declared with the let keyword.
 
+#### Check: Turn and Talk
+Turn to a partner and discuss the following:
+
+1. Summarize the difference between global and local variables (bonus: think of an analogy!)
+2. When would you want to use a global variable? A local variable?
+
 
 #### Naming Conflicts
 As you begin coding, you’ll find that a typical project can contain thousands of lines of code.
@@ -670,11 +676,7 @@ var sayGoodbye = function() {
 
 
 <a name="conclusion"></a>
-## Conclusion (# mins)
-- Review independent practice deliverable(s)
-- Recap topic(s) covered in today's lesson
-- Cover homework and/or upcoming tasks
-
+## Conclusion (5 mins)
 In this lesson we discussed a key concept of programming  —  **Don't Repeat Yourself**. Our goal is to craft our programs in as few lines of code as possible, while still being clear.
 
 By using functions we can group steps, create code that is reusable, and easily store steps.
@@ -685,12 +687,6 @@ In the next lesson, you’ll learn more about objects, a key to making JS much m
 
 
 ***
-
-### BEFORE NEXT CLASS
-|   |   |
-|---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
 
 ### ADDITIONAL RESOURCES
 - Exercises
