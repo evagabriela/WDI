@@ -603,7 +603,9 @@ document.getElementsByTagName('ul')[0].appendChild(newListItem);
 
 <!--
 
-SME Needed: Check for understanding 1/2
+SME Needed: (15-20 minutes for both tasks)
+
+Check for understanding 1/2
 
 A brief exercise for adding elements to the page (with starter code).
 
