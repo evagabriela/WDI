@@ -27,96 +27,6 @@
 - Use loops to iterate through the elements in an Array
 
 
-<!-- @sarahholden update timing for each portion -->
-
-<!-- @sarahholden add in examples
-  Remote: https://github.com/ga-students/wdi-remote/blob/master/unit_01/w01d05/instructor_notes/functions_and_scope.md
-  Lots of examples here: https://github.com/ATL-WDI-Curriculum/js-functions
-  Lesson on Scope: https://github.com/ATL-WDI-Curriculum/scope-and-context/blob/master/scope.md
-  Lesson on Closures: https://github.com/ATL-WDI-Curriculum/scope-and-context/blob/master/closures.md
-  Timing Functions: https://github.com/ga-wdi-lessons/js-timing-functions
-  Scope and Hoisting: https://github.com/ga-wdi-lessons/js-scope/blob/master/scope.md
-  Functions advanced lesson: https://github.com/ga-wdi-boston/wdi_1_js_functions_are_first_class
-  Hoisting/Scope: https://github.com/ga-students/WDI_LA_Lesson_Resources/blob/master/lesson_topics/javascript/js_scope/Grant/js-variable-scope.md
--->
-
-
-
-<!-- @sarahholden add in Exercises
-
-Scope/Hoisting Exercises: https://github.com/ga-wdi-lessons/js-scope/blob/master/scope.md
-
-Scope exercises: https://github.com/ga-students/wdi-remote/blob/master/unit_01/w01d05/instructor_notes/functions_and_scope.md
-
-Functions Problem Set: https://github.com/WDI-SEA/js-functions
-Google Shopping Functions Lab: https://github.com/WDI-SEA/google-shopping-functions
-Functions quiz: https://github.com/ga-wdi-boston/wdi_2_js_for_functions_quiz
-
-You do - Create a function!
-
-It would be really nice if there was a function that did exponents for us. Create a square function, it should:
-
-Take an argument that is a number
-the function's output should return the number squared
-It should look something like this:
-
-square(4)
-=> 16
-Bonus- Create an exponents function
-
-it should take 2 arguments
-the first should be the base number
-the second should be the power you'd like to raise the base number to.
-It should look something like this:
-
-raisePower(4, 3)
-=> 64
-
-Exercise: Fun with Functions Quiz (5 / 45)
-
-What is alerted in each case? Write down your answer before running the code.
-
-1.
-
-function foo(){
-  function bar() {
-      return 3;
-  }
-  return bar();
-  function bar() {
-      return 8;
-  }
-}
-alert(foo());
-2.
-
-function foo(){
-  var bar = function() {
-      return 3;
-  };
-  return bar();
-  var bar = function() {
-      return 8;
-  };
-}
-alert(foo());
-3.
-
-function foo(){
-  return bar();
-  var bar = function() {
-      return 3;
-  };
-  var bar = function() {
-      return 8;
-  };
-}
-alert(foo());
-
--->
-
-
-
 ---
 <a name="opening"></a>
 ## Opening (5 mins)
@@ -317,7 +227,7 @@ Great job!
 
 ---
 <a name="arguments-and-parameters"></a>
-## Arguments and Parameters (20 mins)
+## Arguments and Parameters (15 mins)
 
 Now that we know how to call functions, let’s see how we can add more details to our functions through parameters and arguments.
 
@@ -422,7 +332,7 @@ Great job!
 
 ---
 <a name="return-values"></a>
-## Return Statements (15 mins)
+## Return Statements (10 mins)
 We now know how to communicate with functions in one direction, by passing values to functions using parameters and arguments.
 
 But, functions can also communicate back to you and return values.
@@ -674,6 +584,41 @@ var sayGoodbye = function() {
 }
 ```
 
+## Independent Practice - Write some functions (10 mins)
+
+Work through as many as these exercises as you can within the next 10 mins - use the [starter-code](starter-code) provided!
+
+1. Write a function `lengths` that accepts a single parameter as an argument, namely an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.
+
+	```javascript
+	var words = ["hello", "what", "is", "up", "dude"]
+	lengths(words)  # => [5, 4, 2, 2, 4]
+	```
+
+2. Write a Javascript function called `transmogrifier`. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
+
+	The transmogrified result of three numbers is the product of the first two numbers, raised to the power of the third number.
+
+	For example, the transmogrified result of 5, 3, and 2 is `(5 times 3) to the power of 2` is 225. Use your function to find the following answers.
+
+	```javascript
+	
+	transmogrifier(5, 4, 3)
+	transmogrifier(13, 12, 5)
+	transmogrifier(42, 13, 7)
+	
+	```
+
+3.  Write a function `wordReverse` that accepts a single argument, a string. The method should return a string with the order of the words reversed. Don't worry about punctuation.
+
+	```javascript
+	wordReverse("Now I know what a TV dinner feels like")
+	# => "like feels dinner TV a what know I Now"
+	wordReverse("Put Hans back on the line")
+	# => "line the on back Hans Put"
+	```
+
+
 
 <a name="conclusion"></a>
 ## Conclusion (5 mins)
@@ -685,16 +630,26 @@ Watch this short [video](https://generalassembly.wistia.com/medias/iv72hmwzam) w
 
 In the next lesson, you’ll learn more about objects, a key to making JS much more efficient. Objects will take your JS programming skills to a whole new level.
 
-
 ***
 
 ### ADDITIONAL RESOURCES
+
+- Examples
+	- More [examples](examples/functions_examples.md) of functions, return statements, and scope. (Great for review or instructor use)
 - Exercises
+	- [Functions Problem Set](exercises/functions_problem_set.md) (Beg - Advanced)
+	- [Google Shopping Functions Lab](exercises/google-shopping-functions/readme.md) (Advanced)
+	- [Functions Quiz](exercises/functions_quiz/README.md)
 - Videos
   - GA JS Circuit - [Case study: Using Functions](https://generalassembly.wistia.com/medias/iv72hmwzam)
   - GA JS Circuit - [Functions Analogy - Game Plays](https://generalassembly.wistia.com/medias/qmhj5hv27i)
   - GA JS Circuit - [Functions Use Case - Site Sale](https://generalassembly.wistia.com/medias/nz5zkq96je)
 - Readings
 - Decks
+	- [Scope Lesson](lessons/scope_beg.md) with examples and quiz questions (For beg/med groups)
+	- [Scope Lesson](lessons/scope_med.md) with many examples (For intermediate groups)
+	- [Scope Lesson](lessons/scope.md) (For more advanced groups)
+	- [Closures/Encapsulation](lessons/closure.md) (For more advanced groups)
+	- [Timing Functions / Callbacks Lesson](lessons/functions_advanced.md) (For more advanced groups)
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
