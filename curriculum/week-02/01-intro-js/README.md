@@ -85,102 +85,91 @@ Check: Ask students to define, explain, or recall any **general** prior concepts
 
 ***
 
-<a name="introduction"></a>
-## Introduction: Topic (# mins)
 
-> Instructor Note: Discuss topic and explain by dividing parts into sections. Ask students to define, explain, or recall any **specific** elements relating to the current topic, when applicable.
+Let’s see what it takes to add JavaScript to your HTML.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
+HTML renders line by line, so it’s important to think about where we’ll place our JS.
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>
-      Example
-    </title>
-  </head>
-  <body>
-    <h1>
-      Example Page
-    </h1>
-    <p>
-      This is an example page.
-    </p>
-  </body>
-</html>
-```
-![DOM Tree](http://www.computerhope.com/jargon/d/dom1.jpg)
 
-#### Use non-section headings to divide content
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam pariatur ab cum temporibus, velit expedita? Pariatur illum, iusto animi iste consectetur quam voluptatem provident! Velit molestias doloremque error harum.
 
-> Check: Insert 1-2 guiding questions to ensure students are comprehending the material.
 
-***
 
-<a name="demo"></a>
-## Demo / Codealong: Topic (# mins)
-Walk through a codealong or demonstration of something.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
 
-```ruby
-def lorem
-  return 'some stuff'
-end
-```
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nemo eius quo, soluta maxime provident temporibus aperiam eveniet eum. Non, soluta error veritatis pariatur praesentium beatae reprehenderit, numquam quaerat. Lorem ipsum dolor sit amet.
 
-Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
+First, we'll need to create a JavaScript file. The process is similar to creating any other file, we just want to use a .js extension for JS. Common names for JavaScript files are main.js and script.js.
 
-```ruby
-def another_lorem
-  this = some_method(0+2)
-  return this.to_json
-end
-```
 
-> Check: By this point, students should be able to write out or code their own methods / functions / arguments / etc.
 
-***
 
-<a name="guided-practice"></a>
-## Guided Practice: Topic (# mins)
-Solve a problem or apply this topic to a real world scenario. Solving or understanding this scenario should require the use of the current topic (in addition to any prior topics).
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
 
-```ruby
-def lorem
-  return 'some stuff'
-end
-```
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nemo eius quo, soluta maxime provident temporibus aperiam eveniet eum. Non, soluta error veritatis pariatur praesentium beatae reprehenderit, numquam quaerat. Lorem ipsum dolor sit amet.
 
-Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
 
-```ruby
-def another_lorem
-  this = some_method(0+2)
-  return this.to_json
-end
-```
-> Check: Were students able to successfully solve the problem or complete the task?
+On larger sites, we'll want to house all of our JavaScript files in a folder to them organized. It's common to call this folder “js” or “scripts.”
 
-***
 
-<a name="ind-practice"></a>
-## Independent Practice: Topic (# minutes)
-Use the lesson topic/skill to create a deliverable that meets certain criteria.
 
-> Instructor Note: This can be a pair programming activity or done independently.
 
-Briefly describe the Independent Practice exercise here.  What is the end deliverable?  What skills will it help students practice?  Include a link to the Github folder, which will include a more exhaustive description of the exercise, as well as any code, files or assets for students to download.
 
-> Check: Were students able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?
+
+
+
+
+Just like we need to add a `<link>` tag when we want to tell our browser where it can find the CSS files associated with our HTML page, we need to add a `<script>` tag to let the browser know where it can find the page’s associated JS files.
+
+We recommend you include your JS files right before the closing `</body>` tag in your HTML code.
+
+
+
+
+
+![](http://circuits-assets.generalassemb.ly/prod/asset/5058/Slide-67-Order.svg)
+
+
+
+
+
+
+
+
+
+If you have multiple JS files that depend on one another, it matters what order you place them in your HTML.
+
+Because HTML is parsed by the browser from the top down, any **libraries** (define on the next slide) we add to our project must appear above any other JS files using these libraries.
+
+If not, the JS script will crash when it tries to use any methods defined in that library, because it won’t know those methods exist.
+
+
+
+
+
+
+
+
+
+A **library** is a file that contains pre-written code you can download and include in your project.
+
+It allows you to take code that other developers have written and use its functionality code so you don't always have to write everything from scratch.
+
+We'll be working closely with the jQuery library later in this course.
+
+
+
+
+
+
+
+
+
+Now, make sure your JS file is hooked up to your HTML correctly:
+
+
+
+![](http://circuits-assets.generalassemb.ly/prod/asset/5059/Slide-54.png)
+
 
 ***
 
