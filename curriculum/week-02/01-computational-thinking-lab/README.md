@@ -1,208 +1,138 @@
----
-title: Title of the Lesson
+
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Computational Thinking Lab (90 mins)
+
+<!---
+title: "Logic Lab"
+type: Lab
 duration: "1:25"
 creator:
-    name: John Doe
-    city: NYC
----
+    name: Wellington Moreno
+    city: Santa Monica
+--->
 
-> #### *Guiding Questions When Using This Template*
->
-> - [ ] Are the learning objectives measurable?
->   - [ ] Are there at least two objectives? ( All learning objectives should be pulled from the [Front End Standards](https://docs.google.com/spreadsheets/d/11SzdbIIa9PLJ6kknGXXoBYOtL5ycwMK2N8lkI5THFak/edit#gid=1968474545) doc.  If you would like to add or remove any Learning Objectives, please contact amy.almeida@ga.co)
->   - [ ] Does the lesson address all the learning objectives?
->
-> - [ ] Are activities spaced out with enough time for each?
->   - [ ] Did you include knowledge "Checks" or activities at the end of every component to test comprehension?
->   - [ ] Is there an even distribution of intructor-led and active learning portions?
->
->
-> - [ ] Did you provide guidance for both students & instructors?
->   - [ ] What will instructors have to do to prepare for this lesson?
->   - [ ] What will students have to do to prepare for this lesson?
->   - [ ] What additional resources do you provide for students who are "hungry for more," or need additional practice?
->
-> #### *How to Use This Template*
-> * Static Components: Reserve roughly 5 min for Opening, 5 unscheduled "buffer" mins for overrun, & at least 5 min for Conclusion (end of lesson review).
->
->
-> * Modular Components: The units of instruction are: Intro, Demo, Guided-Practice, & Independent-Practice. These can be cycled or intermixed in various orders, depending on the topic / content.
+<!--People FLY through this-- an hour is enough, maybe even less -->
 
-> #### *Components of the lesson plan*
+## Opening
 
-> - Opening: this only happens once; used to introduce the agenda, review material, and provide a motivating example / the problem we're trying to solve with this skill/content
-> - Introduction: this is a section dedicated to introducing and contextualizing new vocabulary, ideas, and code syntax that will be practiced in later sections
-> - Demo: an instructor-led session demonstrating proper techniques or syntax examples
-> - Guided Practice: interactive instructor by which the instructor engages with and probes students for answers to guide the discussion or activity
-> - Independent Practice: a block of time where students are able to practice what they've learned; the instructor provides directions and the students use the directions to complete an exercise
-> - Conclusion: a time to sum up the lesson, review the answers to a final independent practice, and/or pose discussion questions
-> - Check: a moment to check to understand students are following; it can be done with a question about content, a general "How comfortable are you with this?", or the instructor can check the output of students code to ensure they've completed the assignment properly.
+#### What we are doing
 
-> NOTE: the lesson you create does not have to follow a progression of Introduction > Demo > Guided Practice > Independent Practice - a combination of these is often ideal - but a lesson must always begin with an Opening and end wth a Conclusion.
+In this lab, we will practice Computational Thinking by breaking down everyday activities into specific steps.
 
+> ***Note:*** _This Lab is designed to be done independently._
 
+#### Why we are doing it
 
----
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Lesson Title (# mins)
+Computational Thinking (CT) is a problem solving process that includes a number of characteristics and dispositions. CT is essential to the development of computer applications, but it can also be used to support problem solving across all disciplines, including the humanities, math, and science. Students who learn CT across the curriculum can begin to see a relationship between academic subjects, as well as between life inside and outside of the classroom.
 
-| Timing | Type | Topic |
-| --- | --- | --- |
-| x min | [Introduction](#introduction) | Topic |
-| x min | [Demo/Codealong](#demo) | Topic |
-| x min | [Guided Practice](#guided-practice) | Topic |
-| x min | [Independent Practice](#ind-practice) | Topic |
-| x min | [Conclusion](#conclusion) |Topic |
+Computational Thinking is what allows you to "Think in Code".
 
-### LEARNING OBJECTIVES
-*After this lesson, you will be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
+## Exercise
 
-### STUDENT PRE-WORK
-*Before this lesson, you should already be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
+In these exercises, we will be decomposing activities into a simple language called `pseudo-english`.
 
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
-- Gather materials needed for class
-- Complete Prep work required
-- Prepare any specific instructions
+For each exercise, explain in three different level of details, **Low**, **Medium**, **High**.
 
----
-<a name="opening"></a>
-## Opening (# mins)
-- Review pre-work, projects, or exit ticket, if applicable
-- Review current lesson objectives
-- Reference general course content or topics (e.g. code or concepts that have been used across multiple lessons)
-- Include Hook / Real-world Relevance (why the content from this lesson is useful or important)
+**For example**
 
-> Instructor Note: Use instructor notes to talk directly to instructors. Otherwise, write out lesson directions and materials in a student-facing voice.
+This is how to describe **"How to drive a car out of a garage"** in a series of steps:
 
-Check: Ask students to define, explain, or recall any **general** prior concepts or tools.
+<!-- Get this in sublime text as car_drive.txt -->
 
-***
+**High Level**
 
-<a name="introduction"></a>
-## Introduction: Topic (# mins)
-
-> Instructor Note: Discuss topic and explain by dividing parts into sections. Ask students to define, explain, or recall any **specific** elements relating to the current topic, when applicable.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>
-      Example
-    </title>
-  </head>
-  <body>
-    <h1>
-      Example Page
-    </h1>
-    <p>
-      This is an example page.
-    </p>
-  </body>
-</html>
 ```
-![DOM Tree](http://www.computerhope.com/jargon/d/dom1.jpg)
-
-#### Use non-section headings to divide content
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam pariatur ab cum temporibus, velit expedita? Pariatur illum, iusto animi iste consectetur quam voluptatem provident! Velit molestias doloremque error harum.
-
-> Check: Insert 1-2 guiding questions to ensure students are comprehending the material.
-
-***
-
-<a name="demo"></a>
-## Demo / Codealong: Topic (# mins)
-Walk through a codealong or demonstration of something.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
-
-```ruby
-def lorem
-  return 'some stuff'
-end
+#1 > Drive the car out of the garage
 ```
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nemo eius quo, soluta maxime provident temporibus aperiam eveniet eum. Non, soluta error veritatis pariatur praesentium beatae reprehenderit, numquam quaerat. Lorem ipsum dolor sit amet.
+**Medium Level**
 
-Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
-
-```ruby
-def another_lorem
-  this = some_method(0+2)
-  return this.to_json
-end
+```
+#1 > Find my car
+#2 > Get in the car
+#3 > Turn the car on
+#4 > Drive the car away
 ```
 
-> Check: By this point, students should be able to write out or code their own methods / functions / arguments / etc.
+**Low Level**
 
-***
-
-<a name="guided-practice"></a>
-## Guided Practice: Topic (# mins)
-Solve a problem or apply this topic to a real world scenario. Solving or understanding this scenario should require the use of the current topic (in addition to any prior topics).
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
-
-```ruby
-def lorem
-  return 'some stuff'
-end
+```
+#1 > For every car in the garage
+    #2 > If car is my car, go to #4
+#3 > Can't find my car. Panic!😱
+#4 > Walk to the car
+#5 > If the car is unlocked, go to #7
+#6 > Unlock the car
+#7 > Open the Door
+#8 > Sit in the driver's seat
+#9 > Close the Door
+#10 > If Tesla, smile, go to #13
+#11 > Put the key in the ignition
+#12 > Turn the key
+#13 > Buckle up
+#14 > If today is Friday, Honk two times.
+(etc)
+...
 ```
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nemo eius quo, soluta maxime provident temporibus aperiam eveniet eum. Non, soluta error veritatis pariatur praesentium beatae reprehenderit, numquam quaerat. Lorem ipsum dolor sit amet.
+> ***Note:*** Use your judgement to determine how "Low" you want to go.
 
-Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
+#### Requirements
 
-```ruby
-def another_lorem
-  this = some_method(0+2)
-  return this.to_json
-end
-```
-> Check: Were students able to successfully solve the problem or complete the task?
+Explain the steps involved in the following
 
-***
+<!-- Get devs to fill in high, medium, and low for typing name together -->
 
-<a name="ind-practice"></a>
-## Independent Practice: Topic (# minutes)
-Use the lesson topic/skill to create a deliverable that meets certain criteria.
+#### Basics
++ How do you type your name? `[High, Medium, Low]`
++ How do you turn on and unlock your iPhone `[High, Medium, Low]`
++ How do you make Coffee (or a cup of tea) `[High, Medium, Low]`
 
-> Instructor Note: This can be a pair programming activity or done independently.
+<!-- Come back after 10 minutes to check on unlock iPhone and make Coffee -->
 
-Briefly describe the Independent Practice exercise here.  What is the end deliverable?  What skills will it help students practice?  Include a link to the Github folder, which will include a more exhaustive description of the exercise, as well as any code, files or assets for students to download.
+<!-- Let them free -->
 
-> Check: Were students able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?
+#### Traveling
++ How do you get to the Airport `[High, Medium]`
++ How do you get to Class `[High, Medium, Low]`
 
-***
+#### Activities
++ How do you get dressed `[Medium]`
++ How do you buy groceries `[High, Medium, Low]`
++ How do you make a sandwich? `[High, Medium, Low]`
++ How do you exercise `[High, Medium]`
 
-<a name="conclusion"></a>
-## Conclusion (# mins)
-- Review independent practice deliverable(s)
-- Recap topic(s) covered in today's lesson
-- Cover homework and/or upcoming tasks
+#### Decisions
++ How do you decide what shoes to buy `[High, Medium]`
++ How do you decide what movie to watch `[High, Medium, Low]`
++ How do you decide what to eat `[High, Medium]`
++ How do you decide what to wear `[High, Medium, Low]`
 
-***
+<!-- CFU: Think-pair-share... What was the most eye-opening part of this exercise?  What was the biggest lesson you'll carry through the course?  -->
 
-### BEFORE NEXT CLASS
-|   |   |
-|---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
+### Starter code
+
+There is no starter code.
+
+### Solution Code
+
+There is no solution code.
+
+### Deliverables
+
+You can write your assignment in a plaintext (`.txt`) file, or a Word document - it should look like the example above.
+
+### Bonus Activities
+
+#### Math
++ How do you add two numbers `[High, Medium, Low]`
++ How do you determine if a number is Prime `[Medium, Low]`
++ How do you compute Fibonacci until 14 `[Medium, Low]`
 
 ### ADDITIONAL RESOURCES
 - Exercises
-- Videos
-- Readings
-- Decks
+	- [Computational Thinking by Google](https://computationalthinkingcourse.withgoogle.com/unit?lesson=8&unit=1)
+	- [Everyday Algorithms](https://www.cs.duke.edu/courses/summer04/cps001/labs/plab2.html)
+
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
 
