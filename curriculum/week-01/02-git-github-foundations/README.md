@@ -149,7 +149,6 @@ $ git log
 - git repository (.git)  
 
 <!-- SME Needed: Insert File Status Lifecycle Image -->
-![Github lifecycle](assets/picture.jpg)
 
 <!-- SME Needed: Insert Basic Git Workflow Image -->
 
