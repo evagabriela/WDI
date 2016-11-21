@@ -6,7 +6,7 @@
 | 5 mins | [Introduction](#introduction) | Why Branch? |
 | 10 mins | [Demo](#demo-branch) | How Git Branching Works |
 | 20 mins | [Independent Practice](#ind-practice) | Merging |
-| 20 mins | [Intro to New Material](#intro-new-material) | Github Team Workflow |
+| 20 mins | [Introduction (#intro-workflow) | Github Team Workflow |
 | 30 min | [Independent Practice](#ind-practice2) | Merge Conflicts |
 
 
@@ -19,16 +19,12 @@
 
 
 <a name="review"></a>
-## Review: Topic (5 mins)
+## Review: Git (5 mins)
 
 Quickly review the basics of git:
-
 1. What is the purpose of git? How does it differ from github?
-
 2. What command is used to start tracking a directory? What commands record the changes that occurred in the tracked directory?
-
 3. Explain what a fork and a clone are.
-
 4. What commands are used to share changes (commits) between local and remote repos?
 
 
@@ -129,31 +125,24 @@ $ git branch -d <feature_branch_name>
 [Cheat Sheet](http://ndpsoftware.com/git-cheatsheet.html)
 
 ***
-<a name="intro-new-material"></a>
-## Intro to New Material: Overview of a GitHub Workflow
-> From [Github Guides](https://guides.github.com/introduction/flow/)
+<a name="intro-workflow"></a>
+## Introduction: Overview of a GitHub Workflow
+To recap, in Software Development, Github is very useful in managing and tracking updates and changes to our code.
 
-<!--Can you clarify what this section is?  Is this a new section of the lecture that instructors should be walking through? Or is it a Guided Practice? I changed the title of the section to "Intro to New Material" but I want to confirm.  -->
+> Instructor Note: Take time to walk through the following diagram and describe why each step is important.
 
-To Recap, in Software Development, Github is very useful in managing and tracking updates and changes to our code.
-
-![Github Workflows](assets/github_workflows.jpg)
-
-<!--broken image- please replace  -->
+![Github Workflows](assets/github_workflows.png)
+[from Github Guides](https://guides.github.com/introduction/flow/)
 
 #### Discuss
-
 Discuss an idea for a new feature or any question about our project/application with our team and agree on what needs to be done.
 
 #### Create an Issue
-
 An Issue is a note on a repo regarding some matter that needs attention. It could be a bug, a suggestion for a new feature, a question about the repo or code, etc! On GitHub you can also label, search and assign issues, which help with managing projects.
 
 It can be useful to write the issue as short functional spec, documenting the requirements as user stories.
 
-
 #### Create a Branch
-
 Create a feature branch off the master to work on this issue. Our branch name should have meaning to the issue we are working on.
 
 ```
@@ -161,21 +150,17 @@ $ git checkout -b [name of branch that solves issue]
 
 ```
 #### Work on your Branch and Commit Locally
-
 Make changes/commits commits locally, then push your branch up to our remote repository
 
 #### Open a Pull-Request or PR
-
 By making a PR, you’re requesting that someone pull in your changes and merge them into their branch. A PR allows you to compare the content on two branches, and all the changes or diffs (differences) are highlighted in green and red.
 
 As soon as you make a change, you can open a Pull Request. People use Pull Requests to start a discussion about commits (code review) even before the code is finished. This way you can get feedback as you go or help from other developers/team members!
 
 #### Merge Branch into Master
-
 It's good practice to even make a Pull Request for branches in your own repository and merge it yourself to get more comfortable with PRs!
 
 ### Branching, Merging, and PRs
-
 Many OSS projects request that you create pull requests from a non-master branch.
 
 1. Fork and Clone https://github.com/ga-wdi-exercises/git-tricks.
@@ -187,7 +172,6 @@ Many OSS projects request that you create pull requests from a non-master branch
 7. Create a pull request from your master to the upstream (ga-wdi) master branch
 
 ### Merge Conflicts
-
 PLEASE NOTE: Merging does not always go smoothly, but don't be scared!
 
 ```
@@ -270,9 +254,9 @@ The HEAD is a reference to the last commit in your current checked out branch. A
 | **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
 
 ### ADDITIONAL RESOURCES
-- Exercises
-<!-- We should try to find some additional Git branching exercises -->
-- Videos
+####Exercises
+- [Learn Git Branching](http://learngitbranching.js.org/)
+
 
 #### Readings
 - [Understand Git: Branching](http://www.sbf5.com/~cduan/technical/git/git-2.shtml)

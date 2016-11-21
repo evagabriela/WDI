@@ -149,7 +149,6 @@ $ git log
 - git repository (.git)  
 
 <!-- SME Needed: Insert File Status Lifecycle Image -->
-
 <!-- SME Needed: Insert Basic Git Workflow Image -->
 
 ### Part 4: More Commits, and Viewing the History
