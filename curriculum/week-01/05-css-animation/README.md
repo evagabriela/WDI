@@ -2,9 +2,9 @@
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| 10 mins | [Introduction](#introduction) | CSS Animations |
-| 30 mins | [Independent Practice](#ind-practice-research) | Research Transforms, Transitions, and Animations |
-| 45 min | [Independent Practice](#ind-practice) | Research Transforms, Transitions, and Animations |
+| 15 mins | [Introduction](#introduction) | CSS Animations |
+| 20 mins | [Independent Practice](#ind-practice-research) | Research Transforms, Transitions, and Animations |
+| 50 min | [Independent Practice](#ind-practice) | Animate it! |
 | 5 min | [Conclusion](#conclusion) | Animate it! |
 
 ### LEARNING OBJECTIVES
@@ -19,14 +19,14 @@
 ***
 
 <a name="introduction"></a>
-## Introduction: CSS Animations (10 mins)
+## Introduction: CSS Animations (15 mins)
 
 Today we'll be covering 3 major topics, each somewhat related:
 - CSS Transforms (2D)
 - CSS Transitions
 - CSS Animations
 
-###Vocabulary
+### Vocabulary
 **Transforms** are a set of CSS properties that take a an element and transform it's shape, e.g. rotating it, scaling it, skewing it, etc.
 
 **Transitions** let us tell the browser how to change a property over time. For example, if the height of an element changes (due to a :hover selector, for example), we can tell the browser to change the height gradually over 1 second.
@@ -37,40 +37,112 @@ Today we'll be covering 3 major topics, each somewhat related:
 
 The easiest way to do this is with [prefix free](http://leaverou.github.io/prefixfree/).
 
+### Transition Demo
+Let's look at an example of what's possible with Transitions!
+
+Look over the following HTML and CSS, which renders as shown in the mockup below. That is one crazy cat.
+
+```html
+<body>
+  <div class="party">
+    <p>Party div!!!</p>
+    <img src="images/giphy.gif">
+  </div>
+</body>
+```
+
+```css
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+div {
+  border: none;
+  outline: none;
+  background-color: #F78FA7;
+  padding: 50px 20px;
+  border-radius: 4px;
+  margin-left: 0;
+}
+```
+
+# ![transition-mockup-1](assets/transition-mockup-1.png)
+
+We know what we want the page to look like when the user hovers, so we can code that accordingly using the `hover` psuedo-class.
+
+```css
+div:hover {
+  background-color: yellow;
+  margin-left: 100px;
+}
+```
+
+# ![transition-mockup-2](assets/transition-mockup-2.png)
+
+#### So where do we apply the `transition` CSS?
+The key is to add it to `div` and not `div:hover`. That might seem counter-intuitive– don't we want the animation to happen when the user hovers? We do, but let's break down the order of events.
+
+1. Our `<div>` is styled with the `div{ }` rule
+2. The user hovers on `<div>`
+3. `div:hover{}` styles are applied
+
+  We can't put `transition` on `div:hover` because when those styles are applied, the hover has *already happened*. We put the animation styles in the non-hover state of the object to *prepare* for a hover. Here's the complete CSS for the `div`:
+
+  ```css
+  div {
+    border: none;
+    outline: none;
+    background-color: #F78FA7;
+    padding: 50px 20px;
+    border-radius: 4px;
+    margin-left: 0;
+    transition: all 2s ease-in-out;
+  }
+
+  div:hover {
+    background-color: yellow;
+    margin-left: 100px;
+  }
+  ```
+
+In the declaration `transition: all 2s ease-in-out;` we have the following values:
+- `all` means we want a transition applied to all shared properties of `div{ }` and `div:hover{ }`
+- `2s` is the total time, in seconds, it takes for the animation to occur (this can be a decimal)
+- `ease-in-out` is the animation style– this means the transition will happen when the user hovers on the `div` and hovers away from the `div`
+
+Feel free to explore the code on your own [here](transition-example).
+
 ***
 
 <a name="ind-practice-research"></a>
-## Independent Practice: Research Transforms, Transitions, and Animations (40 mins)
+## Independent Practice: Research Transforms, Transitions, and Animations (20 mins)
 Breakout into groups of four. Each group will have 20 minutes to prepare a short explanation / demo of their assigned topic. Your demos should take no longer than 5 minutes.
 
 | Group | Topic
 | --- | --- |
-| 1 | CSS Transforms (No animation) |
-| 2 | CSS Transitions |
-| 3 | CSS Animations (basic keyframes and syntax) |
-| 4 | CSS Animations (timing functions) |
-| 5 | CSS Animations (iterations / repeats / direction ) |
+| 1 | [CSS Transforms (No animation)](https://developer.mozilla.org/en-US/docs/Web/CSS/transform) |
+| 2 | [CSS Transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) |
+| 3 | [CSS Animations (basic keyframes and syntax)](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes) |
+| 4 | [CSS Animations (timing functions)](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function) |
+| 5 | [CSS Animations (iterations / repeats / direction )](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-iteration-count) |
 
 ***
-<!--Do you think there is a need to have an instructor demo any of these skills before sending the students to do independent practice?  -->
+
 <a name="ind-practice"></a>
-## Independent Practice: Animate it! (45 minutes)
+## Independent Practice: Animate it! (50 minutes)
 Implement as many of the following exercises as you can in the time allotted. Feel free to work with a partner!
+- [Loader Animation](loader-animation/starter-code)
+- [Spinning Wheel Animation](spinning-wheel-animation/starter-code)
+- [Transition Button Animation](transition-button-animation/starter-code)
 
-- [CSS Accordion](https://github.com/ga-wdi-exercises/css-accordion)
-
-<!-- SME NEEDED: it'd be great if we could find a more real-world example to replace DolphinCat. -->
-- [DolphinCat!](https://github.com/ga-wdi-exercises/dolphin-cat-css-animations)
-- [Clock](https://github.com/ga-wdi-exercises/clock-bro)
 
 ### Bonus
-Look at the following transitions and animations examples, try to re-create them from scratch using as little starter code as possible.
+- [CSS Accordion](accordian-animation)
+- [Clock](clock-animation)
 
-<!-- SME NEEDED: it might be valuable to create code similar to these examples, so we're not just linking the students out to so many options. I think that overwhelms them. Then, we could move these links to Additional Resources.  -->
-- [Animated Buttons](http://tympanus.net/Tutorials/AnimatedButtons/index4.html)
-- [Image Hover Effects](http://tympanus.net/Tutorials/OriginalHoverEffects/)
-- [Solar System in CSS](http://neography.com/experiment/circles/solarsystem/)
-  - [*solution*](http://neography.com/journal/our-solar-system-in-css3/)
 
 ***
 
@@ -86,3 +158,7 @@ CSS Animations are easy and mostly compatible, so they're often a good choice fo
 - [CSS Animation](https://www.youtube.com/watch?v=9RfHG3K8U_Q&index=31&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
 - [CSS Transitions](https://www.youtube.com/watch?v=Xu3SrQhtBqw&index=30&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
 - [CSS Transform](https://www.youtube.com/watch?v=Gu-HBBZLyjg&index=29&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
+
+#### Exercises
+- [Solar System in CSS](http://neography.com/experiment/circles/solarsystem/)
+  - [*solution*](http://neography.com/journal/our-solar-system-in-css3/)
