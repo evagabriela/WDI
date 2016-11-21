@@ -3,10 +3,10 @@
 | Timing | Type | Topic |
 | --- | --- | --- |
 | 10 mins | [Introduction](#introduction) | HTML Forms |
-| 15 min | [Demo/Codealong](#demo) | Your First Form |
-| 40 min | [Intro to New Material](#intro-common-inputs)
-| 45 min | [Independent Practice](#ind-practice) | Application Form |
-| 10 min | [Conclusion](#conclusion) |Q & A |
+| 15 mins | [Demo/Codealong](#demo) | Your First Form |
+| 20 mins | [Introduction](#intro-common-inputs) | Commmon Inputs |
+| 40 mins | [Independent Practice](#ind-practice) | Contact Form |
+| 5 mins | [Conclusion](#conclusion) | Conclusion|
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -76,8 +76,7 @@ Create an html `form` that, on submit, sends the user to "hasthelargehadroncolli
 ![client/server](assets/clientserver.png)
 
 <a name="intro-common-inputs"></a>
-## Intro to New Material: Common Inputs (40 minutes)
-<!-- Is this a new section?  Intro to New Material? How long would this take? -->
+## Introduction: Common Inputs (20 minutes)
 
 | Field Type | HTML Code | Widget (Control) | Notes |
 |:-- |:-- |:-- |:-- |
@@ -123,27 +122,20 @@ Create an html `form` that, on submit, sends the user to "hasthelargehadroncolli
 ***
 
 <a name="ind-practice"></a>
-## Independent Practice: Application Form (45 minutes)
-Review the following mockup and discuss your approach for building the form with a partner. Be sure to consider CSS during your discussion.
+## Independent Practice: Contact Form (40 minutes)
+Using the [provided starter code](contact_form/starter-code), build and style a simple form following the mockup below.
 
-![html-form-mockup](assets/application_form.png)
+# ![contact form mockup](assets/contact_form.png)
 
-On your own:
-- Write HTML for the form
-  - You will need to look up the `textarea` element
-  - Optional: Look up `fieldset` element
-- Style the form with CSS. Focus on getting the form centered and getting the information on the right rows, and then add other styles if you have time.
-
-> Instructor note: Solution code [here](solution-code).
+**BONUS**
+If you finish early, make the form responsive like so:
+# ![responsive contact form mockup](assets/contact_form_responsive.png)
 
 ***
-<!-- SME Needed: Conclusion topics -->
 
 <a name="conclusion"></a>
-## Conclusion (10 mins)
-- Review independent practice deliverable(s)
-- Recap topic(s) covered in today's lesson
-- Cover homework and/or upcoming tasks
+## Conclusion (5 mins)
+As of now, we understand how to build and style forms– but not save any of the data a user types in. Forms take on a whole new level of interactivity when we introduce JavaScript in upcoming lessons.
 
 ***
 
