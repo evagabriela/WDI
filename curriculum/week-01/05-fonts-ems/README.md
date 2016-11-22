@@ -2,10 +2,10 @@
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction-fonts) | Fonts |
-| x min | [Demo/Codealong](#demo-fonts) | Styling Copy with Ems |
-| x min | [Guided Practice](#guided-practice) | Web Fonts |
-| x min | [Demo/Codealong](#demo-icons) | Icons, SVGs and Sprite Sheets |
+| 15 min | [Intro to New Material](#introduction-fonts) | Fonts |
+| 15 min | [Demo](#demo-fonts) | Styling Copy with Ems |
+| 15 min | [Guided Practice](#guided-practice) | Web Fonts |
+| x min | [Intro to New Material](#intro-icons) | Icons, SVGs and Sprite Sheets |
 
 ### LEARNING OBJECTIVES
 - Describe the differences between webfonts & desktop fonts
@@ -17,8 +17,8 @@
 ***
 
 <a name="introduction-fonts"></a>
-## Introduction: Fonts (# mins)
-Adding and styling fonts is an important part of ensuring the content your site is as readable and legible as possible. First, let's get familiar with the types of fonts available on the web.
+## Intro to New Material: Fonts and Ems (15 mins)
+Adding and styling fonts is an important part of ensuring the content on your site is as readable and legible as possible. First, let's get familiar with the types of fonts available on the web.
 
 ### System Fonts
 Fonts that render based on what the user has on their computer. Common examples include Arial, Courier, Times New Roman, etc. Use [CSS Font Stack](http://www.cssfontstack.com/) to see which fonts are available on different operating systems.
@@ -28,10 +28,7 @@ Generic fonts include `serif`, `sans-serif`, `cursive`, `fantasy`, and `monospac
 
 This is not ideal, because Futura is a sans-serif font and Times New Roman is a serif font. This will drastically change the design of the site, and could even cause some readability issues. A better approach would be to declare `font-family: Futura, sans-serif;` so the browser loads a sans-serif font in the event that Futura cannot render. You can even go further to declare `font-family: Futura, Helvetica, sans-serif;` which will attempt to render Futura first, then Helvetica, then the fallback sans-serif font.
 
-***
-
-<a name="demo-fonts"></a>
-## Demo / Codealong: Styling Copy with Ems (# mins)
+### Styling Copy with Ems
 There are a few good rules of thumb to start styling the copy on your page.
 
 ### Headings vs Paragraphs
@@ -61,8 +58,11 @@ There are a few good rules of thumb to start styling the copy on your page.
 - a proportion of the **parent element's** font size
 - e.g. if the parent element's font-size is `16px`, `50%` is `8px`
 
+***
 
-### How do we use ems?
+<a name="demo-fonts"></a>
+
+## Demo:  How do we use ems? (15 min)
 Ems are a great way to create consistency in scale and spacing in the layout of all copy on your page. Let's take a look at an example.
 
 Consider the following HTML:
@@ -200,11 +200,11 @@ You can add Google Fonts (and other hosted web fonts) through HTML:
 or CSS:
 `@import url('https://fonts.googleapis.com/css?family=Font+Name');`
 
-Adding though CSS may be more efficient because multiple pages can access the style with one line of code; versus adding through HTML where each page will need the `link`. You might also argue adding through HTML is better because the font can load even if the CSS does not. Talk to your instructor to see what they prefer for best practices.
+Adding though CSS may be more efficient because multiple pages can access the style with one line of code; versus adding through HTML where each page will need the `link`. You might also argue adding through HTML is better because the font can load even if the CSS does not. Talk to your instructor to see what they prefer as a best practice.
 
 
 ### How else can we add Web Fonts?
-Yes! You can use the `@font-face` property to add a relative or absolute font path:
+You can use the `@font-face` property to add a relative or absolute font path:
 
 ```css
 @font-face {
@@ -218,8 +218,8 @@ html {
 
 ***
 
-<a name="demo-icons"></a>
-## Demo/Codealong: Icons, SVGs & Sprite Sheets (# mins)
+<a name="intro-icons"></a>
+## Intro to New Material: Icons, SVGs & Sprite Sheets (20 mins)
 In addition to written copy, icons are an important part of communicating the basic concepts and functionality of a site. There are a few way to add icons to your page– let's explore!
 
 ### What is a Sprite Sheet?
