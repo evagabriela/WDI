@@ -7,10 +7,10 @@
 | 10 min | [Intro to New Material](#arrays-intro) | Intro to Arrays |
 | 10 min | [Guided Practice](#updating-arrays) | Updating Arrays |
 | 15 min | [Guided Practice](#arrays-deep-dive) | Arrays Deep Dive |
-| 30 min | [Independent Practice](#other-arrays-helpers) | Other Arrays Helpers |
-| 40 min | [Intro to New Material](#Loops) | Loops |
-| x min | [Independent Practice](#fizz-buzz) | Fizz Buzz |
-| x min | [Conclusion](#conclusion) |Review and Q&A |
+| 25 min | [Independent Practice](#other-arrays-helpers) | Other Arrays Helpers |
+| 35 min | [Intro to New Material](#Loops) | Loops |
+| 15 min | [Independent Practice](#fizz-buzz) | Fizz Buzz |
+| 5 min | [Conclusion](#conclusion) |Review and Q&A |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
