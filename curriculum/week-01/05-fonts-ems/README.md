@@ -5,7 +5,8 @@
 | 15 min | [Intro to New Material](#introduction-fonts) | Fonts |
 | 15 min | [Demo](#demo-fonts) | Styling Copy with Ems |
 | 15 min | [Guided Practice](#guided-practice) | Web Fonts |
-| x min | [Intro to New Material](#intro-icons) | Icons, SVGs and Sprite Sheets |
+| 25 min | [Independent Practice](#ind-practice) | Local Web Fonts |
+| 20 mins | [Intro to New Material](#intro-icons) | Icons, SVGs and Sprite Sheets |
 
 ### LEARNING OBJECTIVES
 - Describe the differences between webfonts & desktop fonts
@@ -203,23 +204,24 @@ or CSS:
 Adding though CSS may be more efficient because multiple pages can access the style with one line of code; versus adding through HTML where each page will need the `link`. You might also argue adding through HTML is better because the font can load even if the CSS does not. Talk to your instructor to see what they prefer as a best practice.
 
 
-### How else can we add Web Fonts?
-You can use the `@font-face` property to add a relative or absolute font path:
 
-```css
-@font-face {
-    font-family: 'MyWebFont'; /* specify how you want the font to be referenced in the font-family property */
-    src: url('fonts/Architects_Daughter/ArchitectsDaughter.ttf'); /* location of the font file */
-}
-html {
-    font-family: 'MyWebFont'; /* call the web font */
-}
-```
+***
+
+<a name="ind-practice"></a>
+## Independent Practice: Local Web Fonts (25 mins)
+You can use the `@font-face` property to add relative or absolute fonts. Let's practice adding fonts locally.
+
+First, [read about how to use `@font-face`](https://css-tricks.com/snippets/css/using-font-face/). For this exercise, you don't need to add different file types– but it's important that you understand the importance of browser compatibility and font rendering.
+
+Next, visit [Font Squirrel](https://www.fontsquirrel.com/) and choose a web-compatible font that you can download and add locally. Feel free to add the font to a page you've already created, or simply create a page with an `h1` and `p` to test your font.
+
+**BONUS**
+If you finish early, try adding a second font!
 
 ***
 
 <a name="intro-icons"></a>
-## Intro to New Material: Icons, SVGs & Sprite Sheets (20 mins)
+## Demo/Codealong: Icons, SVGs & Sprite Sheets (20 mins)
 In addition to written copy, icons are an important part of communicating the basic concepts and functionality of a site. There are a few way to add icons to your page– let's explore!
 
 ### What is a Sprite Sheet?
@@ -369,14 +371,20 @@ SVG stand for Scalable Vector Graphic. Instead of using pixels to make up a seri
 
 ***
 
-<!-- SME NEEDED: build out more resources  -->
 ### Hungry for more?
-- Exercises
+#### Resources
+- [CSS Font Stack](http://www.cssfontstack.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Font Squirrel](https://www.fontsquirrel.com/)
+- [fontello.com](http://fontello.com/)
+- [Font Awesome](http://fontawesome.io/)
+
+#### Readings
+- [Typography in 10 Minutes](http://practicaltypography.com/typography-in-ten-minutes.html)
+- [What is Good Typography?](http://practicaltypography.com/what-is-good-typography.html)
+- [8 Simple Ways to Improve Typography in Your Design](https://www.smashingmagazine.com/2009/04/8-simple-ways-to-improve-typography-in-your-designs/)
 
 #### Videos
 - [CSS Fonts](https://www.youtube.com/watch?v=LpcWfqXviB0&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=24)
 - [Icon Fonts II](https://www.youtube.com/watch?v=4wz2a_ZVGcU&index=26&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
 - [Icon Fonts I](https://www.youtube.com/watch?v=JpIAc5ko-lM&index=27&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
-
-- Readings
-- Decks
