@@ -1,14 +1,18 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Objects (90 mins)
 
 
-<!-- ID NEEDED: Can you add the below sections here? -->
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction) | Topic |
-| x min | [Demo/Codealong](#demo) | Topic |
-| x min | [Guided Practice](#guided-practice) | Topic |
-| x min | [Independent Practice](#ind-practice) | Topic |
-| x min | [Conclusion](#conclusion) |Topic |
+| 15 min | [Intro to New Material](#intro-objects) | Intro to Objects |
+| 15 min | [Intro to New Material](#properties-methods) | Properties and Methods |
+| 15 min | [Guided Practice](#creating-objects) | Creating Objects |
+| 10 min | [Guided Practice](#dot-notation) | Dot Notation |
+| 10 min | [Guided Practice](#square-bracket-notation) | Square Bracket Notation |
+| 5 min | [Guided Practice](#removing-properties) | Removing Properties |
+| 10 min | [Independent Practice](#iterating-through-objects) |  Iterating Through Objects |
+| 5 min | [Guided Practice](#nested-collections) |  Nested Collections |
+| 5 min | [Independent Practice](#lab-session) |  Objects |
+| 5 min | [Conclusion](#conclusion) |Q&A |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -31,10 +35,10 @@
 
 ***
 
-<a name="opening"></a>
-## Opening (10 mins)
+<a name="intro-objects"></a>
+## Intro to Objects (15 mins)
 
-In this unit, our focus is objects, an exciting aspect of JavaScript that ties into many of the concepts you’ve already learned.
+In this lesson, our focus is objects, an exciting aspect of JavaScript that ties into many of the concepts you’ve already learned.
 
 Once you get to know objects, you’ll realize how much easier your coding life can be.
 
@@ -108,7 +112,7 @@ On the airline site, we can also represent the customers booking those seats as 
 ***
 
 <a name="properties-methods"></a>
-## Properties and Methods - An Overview (10 mins)
+## Properties and Methods - An Overview (15 mins)
 
 Each object can also have its own **properties** and **methods**.
 
@@ -147,7 +151,7 @@ We can use methods to retrieve the values of an object's properties (such as the
 <img src="http://circuits-assets.generalassemb.ly/prod/asset/4518/Slide-23-Chart.svg" width="300px">
 
 
-#### Independent/Paired Practice
+#### Paired Practice:
 
 1. In pairs, spend 2 minutes thinking about what attributes (properties) a WDI student should have (think of at least 5!) and write them out.
 2. Take 2 minutes to write out the methods the student should have.
@@ -262,7 +266,7 @@ var paintbrush = {
 
 > Answer: `this` refers to `‘paintbrush’`. The console will log: `‘zig zag’`.
 
-#### Independent Practice
+#### Exercise:
 
 Let's practice!
 
@@ -348,7 +352,7 @@ We've now added a new favorite food for Superman!
 <img src="http://circuits-assets.generalassemb.ly/prod/asset/4529/Slide-15-Superman-Beef.svg" width="300px">
 
 
-#### Independent Practice
+#### Exercise:
 
 Let's practice!
 
@@ -366,12 +370,10 @@ var pet = {
 <img src="http://circuits-assets.generalassemb.ly/prod/asset/4530/Slide-16-Lizard.svg" width="150px">
 
 1. What code could we write to retrieve the value for `name` from the object and store this value in a variable `petName`?
-  - Answer: `var petName = pet.name;`
 2. Now, how would you assign `13` as the value for `age`?
-  - Answer: `pet.age= 13;`
 3. How would you add a new property, `'favoriteFood'` using the value `'crickets'`?
-  - Answer: `pet.favoriteFood = 'crickets';`
 
+> _(Answers: 1.`var petName = pet.name;`  2.`pet.age= 13;`  3.`pet.favoriteFood = 'crickets';` )_
 
 ---
 <a name="square-bracket-notation"></a>
@@ -409,7 +411,8 @@ As with dot notation, we use the name of the object, followed by the property na
 
 Although dot notation is often a popular method, as it’s slightly easier to write out, we'll need to use square bracket syntax anytime we are generating our property names dynamically, i.e. when we want to use a variable for a property name.
 
-#### Independent Practice
+#### Exercise:
+
 Now you try! Let's return to our pet, Godzilla.
 
 Consider the following object:
@@ -424,12 +427,10 @@ var pet = {
 ```
 
 1. How would you retrieve the value for `'name'` from the object, and store this value in a variable name using square bracket syntax `[ ]`?
-  - Answer: `var name = pet['name'];`
 2. How would you assign `13` as the value for `'age'` using square bracket syntax `[ ]`?
-  - Answer: `pet['age'] = 13;`
 3. How would you add a new key, `'favoriteFood'`, with value `'crickets'` using square bracket syntax `[ ]`?
-  - Answer: `pet['favoriteFood'] = 'crickets';`
 
+> _(Answers: 1.`var name = pet['name'];`  2.`pet['age'] = 13;` 3.`pet['favoriteFood'] = 'crickets';`)
 
 ---
 <a name="removing-properties"></a>
@@ -503,7 +504,7 @@ Javascript objects also have native methods that take care of this for us...
 Object.keys( car );
 ```
 
-### Exercise
+### Exercise:
 
 Create a variable named `wdiStudent` and assign it to an object literal.
 
