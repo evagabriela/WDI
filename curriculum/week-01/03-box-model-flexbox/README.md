@@ -7,7 +7,7 @@
 | 5 mins | [Refresher](#display) | Display |
 | 5 mins | [Refresher](#floats) | Floats |
 | 20 mins | [Demo/Codealong](#demo-flexbox) | Flexbox Demo |
-| 30 mins | [Independent Practice](#ind-practice) | Hyrule Potion Shop |
+| 30 mins | [Independent Practice](#ind-practice) | Flex Your Code Muscles |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -285,30 +285,126 @@ You've likely used floats in the past to build column layouts, but Flexbox is no
 A basic example you'll encounter in most tutorials is the "text wrap", or surrounding an image with text:
 ![Floats](assets/floats.png)
 
-> Instructor needed: example code for image above
+```html
+<section>
+    <p>
+      <img src="picnic.jpg">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero rerum quaerat ut voluptatibus repudiandae ad animi rem quas. Eius temporibus explicabo error labore adipisci. Voluptatem iure enim aspernatur dolor, placeat.
+      <img src="ants.png">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero rerum quaerat ut voluptatibus repudiandae ad animi rem quas. Eius temporibus explicabo error labore adipisci. Voluptatem iure enim aspernatur dolor, placeat.
+    </p>
+</section>
+```
+
+```css
+section{
+    width: 30em;
+    margin: auto;
+}
+
+img{
+    padding: 1em;
+}
+
+p img:first-of-type{
+    float: left;
+}
+
+p img:last-of-type{
+    float: right;
+}
+```
 
 * Images are, by default, `inline` elements.
 * To remove them from that flow and re-position them, we set `float` to either `left` or `right`.
 * We can also do this with multiple images with similar or varying `float` values.
 
 ### Clear
-Floating, without the use of `clear`, can cause some serious layout issues. Let's see what happens if we remove the text from the previous example.
+Floating, without the use of `clear`, can cause some serious layout issues. Let's look at an example using a page header.
 
-> Instructor needed: example code for description above
+Here's how we want the site to look:
+![header](assets/header-correct.png)
 
-* What happens to the container when we set our image to `float: left;`?
-* What about if we substitute our image with a block element (e.g., `<div>`)?
-* When all the elements inside a container are floated, it shrinks to the smallest size possible.
-  * Inline element dimensions are ignored.
-  * Block elements are condensed to the smallest size possible.
+So we go about coding:
 
-We can fix these issues by adding an empty `<div>` with a property of `clear: both;`. This allows the container to resize to fit its children elements. This empty `<div>` is bad practice, though. There's a better way!
+```html
+<header>
+    <nav>
+        <a href="#">Sign Up!</a>
+        <a href="#">Log in</a>
+        <a href="#">About & Contact</a>
+    </nav>
+</header>
+<main>
+    <h1>The World's Coolest Product</h1>
+```
+
+```css
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    background: #BEE5BF;
+    padding: 1em;
+}
+
+nav{
+    float: right;
+}
+
+nav a{
+    color: #444;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: .75em;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 1em;
+}
+
+h1{
+    color: #222;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+```
+
+So, why do we see this?
+![header](assets/header-incorrect.png)
+
+The floated `nav` has collapsed its parent `header` element, and shifted the `h1`. This is the nature of floats– they cause their parent element to collapse, which causes 'gaps' in the layout. Other elements, like our `h1` in this example, will attempt to move into those gaps. This is a small example that can cause large layout issues!
 
 ### Enter: The Clearfix
 [Nicolas Gallagher](http://nicolasgallagher.com/micro-clearfix-hack/) created a technique that eliminates the bad practice issues `clear: both;` causes, simply by adding a class to the parent container. And because it's a class, it's reusable!
 
-> Instructor needed: example code for clearfix class, along with explanations for the purpose of each declaration in the class. 
+Applying it to our code would simply mean adding the class to our `header`:
 
+```html
+<header class="cf">
+    <nav>
+        <a href="#">Sign Up!</a>
+        <a href="#">Log in</a>
+        <a href="#">About & Contact</a>
+    </nav>
+</header>
+<main>
+    <h1>The World's Coolest Product</h1>
+```
+
+Ta-da!
 
 ***
 
@@ -494,11 +590,10 @@ body {
 ***
 
 <a name="ind-practice"></a>
-## Independent Practice: Potion Shop (30 mins)
-Imagine you've been hired to update a layout from floats to flexbox. Review and edit the CSS in order to keep the design intact and the code up-to-date. Be sure to remove any unused code! The content on the site will stay the same, but you may need to edit the HTML.
+## Independent Practice: Flex Your Code Muscles (30 mins)
+Using the [provided HTML](ind-practice/starter-code), code the CSS for the mockup below using flex. Pro Tip: always work 'big to small'. Get the layout and position of elements finished first, then move on to details like fonts and colors.
 
-> Instructor needed: Please update the source code below so the students are working with well-designed and coded starter site. The goal for this practice is listed above. If the 'potion' idea is too silly, feel free to replace.
-https://github.com/ga-dc/hyrule_potion_shop
+![mockup](assets/ind-practice-mockup.png)
 
 ***
 
@@ -508,6 +603,7 @@ https://github.com/ga-dc/hyrule_potion_shop
 - [Flexbox Froggy](http://flexboxfroggy.com)
 - [Flexbox Defense](http://www.flexboxdefense.com)
 - [Flexplorer](http://bennettfeely.com/flexplorer/)
+- [Hyrule Potion Shop](hyrule-potion-shop)
 
 ### Videos
 - [CSS Box Model](https://www.youtube.com/watch?v=HNgdhp1_kEE&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=6)

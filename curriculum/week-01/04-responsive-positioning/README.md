@@ -11,7 +11,6 @@
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
 - Use layout techniques with width, min-width, max-width, vh and vw
-- Use special selectors (descendant, adjacent sibling, direct child, universal)
 - Understand and apply Image Optimization techniques like min-width, max-width, retina display, etc
 - Identify breakpoints and apply media queries to adjust layout
 - Understand the difference between mobile-up and desktop-down CSS
@@ -19,7 +18,6 @@
 - Understand how media queries work in the cascade
 - Understand that Responsive Design is dictated by visual break points and not device sizes
 - Explain the difference between and use cases of static, relative, fixed and absolute positioning
-<!--Can we double check that all these learning objectives are met in this lesson?  I didn't see anything about special selectors or mobile-up/ desktop-down in this lesson.  -->
 
 <a name="introduction-positioning"></a>
 ## Introduction: Positioning (5 mins)
