@@ -2,11 +2,14 @@
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction) | Topic |
-| x min | [Demo/Codealong](#demo) | Topic |
-| x min | [Guided Practice](#guided-practice) | Topic |
-| x min | [Independent Practice](#ind-practice) | Topic |
-| x min | [Conclusion](#conclusion) |Topic |
+| 5 min | [Opening](#opening) | Intro |
+| 20 min | [Intro to New Material](#comparison-logical) | Comparison and Logical Operators |
+| 10 min | [Independent Practice](#true-false) | True or False? |
+| 25 min | [Intro to New Material](#intro-operators) | Logical Operators, Truthy and Falsey |
+| 30 min | [Intro to New Material](#conditional-statements) | Conditional Statements |
+| 10 min | [Independent Practice](#switch-statements) | Switch Statements |
+| 15 min | [Guided Practice](#ternary-statements) | Ternary Statements |
+| 5 min | [Conclusion](#conclusion) |Q & A |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -37,8 +40,10 @@ JavaScript supports a compact set of statements, specifically control flow state
 
 We can make decisions based on the choices the user makes. This will make our applications seem responsive and "smart".
 
+***
+
 <a name="comparison-logical"></a>
-## Introduction: Comparison and Logical Operators (10 mins)
+## Introduction: Comparison and Logical Operators (20 mins)
 
 
 #### Intro to Conditions
@@ -81,9 +86,7 @@ Is the year less than or equal to 2016 and more than or equal to 1900? If the an
 
 Did you notice how we used the term "less than or equal to" to check, or compare, two things? This is how our comparison operators help us make decisions.
 
-
-
-## Guided Exercise: Comparison Operators (10 mins)
+***
 
 Comparison operators are binary in that they compare two values against one another and return a boolean value — either true or false.
 
@@ -91,21 +94,22 @@ Comparisons in JavaScript can be made using <, >, <=, and >=, and work for both 
 
 <img src="assets/comparison_operators.png" width="350">
 
-<!--
-ID NEEDED: Help formatting the following exercise
+#### Exercise:
 
 Type each command given in the console below. Before you press enter, take a moment to think about what value the console will return.
 
-7 > 7
+1.  7 > 7
 The console returns false.
-7 >=7
+2.  7 >=7
 The console returns true.
-7 < 7
+3.  7 < 7
 The console returns false.
-7 < 13
+4.  7 < 13
 The console returns true.
-7 <= 13
-The console returns true. -->
+5.  7 <= 13
+The console returns true. 
+
+>_(Answers: 1.The console returns false. 2.The console returns true. 3.The console returns false. 4.The console returns true. 5.The console returns true.)_
 
 
 #### Equality Operators
@@ -127,18 +131,14 @@ First let's take a look at the `==` operator.
 While verifying equality using the double equal (`==`), JavaScript performs something called "type coercion".
 
 Type coercion means that, if the values on both sides of the equality operator have a different type (e.g., the number 1 and the string "1"), JavaScript will try to change the type of both operands to check whether or not they are equal.
-<!--
-ID NEEDED: Help formatting the following exercise
-Type each command in the console. Before you press enter, take a moment to think about what value the console will return.
 
-7==7
-The console returns true
-7=="7"
-The console returns true
--->
+>_Type each command in the console. Before you press enter, take a moment to think about what value the console will return._
+
+> 7==7 <br>
+> 7=="7"
 
 
-Note that the second statement evaluates to true, even though we are comparing a number and a string.
+>Note that the second statement evaluates to true, even though we are comparing a number and a string.
 
 #### Type coercion
 
@@ -181,30 +181,26 @@ The `!=` operator checks to see if two values are not equal to one another. Simi
 
 The `!==` compares two values to one another without performing type coercion, so both the values and the types are compared.
 
-<!--
-ID NEEDED: Help formatting the following exercise
-Type each command in the console. Before you press enter, take a moment to think about what value the console will return.
-7 === 7
-The console returns true.
-7 === "7"
-The console returns false.
-0 === false
-The console returns false.
-false === "false".
-The console returns false.
-7 !== 7
-The console returns false.
-7 !== “7”
-The console returns true.
-0 !== false
-The console returns true.
-false !== “false”
-The console returns true.
- -->
+<a name="true-false"></a>
+## Independent Practice: True or False? (5 min)
 
+Type each command in the console. Before you press enter, take a moment to think about what value the console will return.  Answers are found below.
 
+1.  7 === 7
+2.  7 === "7"
+3.  0 === false
+4.  false === "false".
+5.  7 !== 7
+6.  7 !== “7”
+7.  0 !== false
+8.  false !== “false”
 
-## Logical Operators (5 mins)
+_(1.The console returns true. 2.The console returns false.  3.The console returns false. 4.The console returns false. 5.The console returns false. 6.The console returns true. 6.The console returns true. 7.The console returns true. 8.The console returns true.
+)_
+
+***
+<a name="intro-operators"</a>
+## Logical Operators, Truthy and Falsey (25 mins)
 Finally, let’s have a look at *logical operators*. The logical operators are NOT, OR, and AND.
 
 We can use these to combine several boolean statements into a single statement.
@@ -242,7 +238,7 @@ Yes. 5 is less than 10 AND 5 is less than 8.
 
 Once we check multiple conditions to see if they’re true, we can do something with the results.
 
-## Truthy and Falsey (10 mins)
+## Intro to New Material: Logical Operators and truthy/falsey values (20 minutes)
 Like most computer languages, JavaScript supports Boolean values, or True/False values.
 
 Everything in JavaScript — from the strings we learned about in Unit 1 to the null and undefined values we just covered — has an inherent Boolean value, generally known as either _truthy_ or _falsey_.
@@ -277,7 +273,8 @@ As you saw in the table, there are six Falsey values in JS:
 `undefined`, `null`, `NaN`, `0`, `""` (empty string), and `False`, of course.
 <br>
 <br>
-#### Logical Operators and truthy/falsey values
+
+### Logical Operators and truthy/falsey values
 Earlier, we looked at the logical operators NOT(`!`), OR (`||`), and AND (`&&`).
 
 These operators accept inputs with data types such as strings and numbers.
@@ -319,25 +316,23 @@ See how the values were converted to truthy/falsey and then compared? “Hello D
 
 Can you predict how the following expressions will be evaluated?
 
-Try typing each expression into your console in Chrome.
+Try typing each expression into your console in Chrome. Answers are found below.
 
 
-<!--
-ID NEEDED: Help formatting the following exercise
-!('')
-The console returns true.
-false && undefined
-The console returns false.
-true && !0
-The console returns true. -->
+1.  !('')
+2.  false && undefined
+3.  true && !0
+
+_(Answers:  1.The console returns true. 2.The console returns false. 3.  The console returns true._
+)
 
 #### Review
 
 Let's review the concept of truthy and falsey by watching this short [video](https://generalassembly.wistia.com/medias/jdz1fp4ys8)
 
-
-
-## Conditional Statements (30 mins)
+***
+<a name="conditional-statements"></a>
+## Intro to New Material: Conditional Statements (30 mins)
 
 Now we’re going to learn a bit more about conditional statements and how we can use them to control the flow of a program.
 
@@ -523,7 +518,7 @@ if (x > 10) {
 
 Here’s a refresher of what the flowchart for this action would look like: ![](http://circuits-assets.generalassemb.ly/prod/asset/4408/Slide-4-Flow-Chart.svg)
 
-However, if we have a lot of conditions, the code becomes repetitive and hard to read. 
+However, if we have a lot of conditions, the code becomes repetitive and hard to read.
 
 For example:
 
@@ -589,27 +584,28 @@ default:
 
 This code works exactly the same as our `if/else` statement, and, even though it contains more lines, it's significantly easier to read.
 
-In a switch statement, 
+In a switch statement,
 
 1. The variable in parentheses (in this case, `dayNumber`) is evaluated
-2. If there is a `case` listed for the value it evaluates to, the code between `case __:` and `break` will be executed. 
+2. If there is a `case` listed for the value it evaluates to, the code between `case __:` and `break` will be executed.
 3. If there is no `case` that matches the value of the variable, the `default` will be executed (if it is specified, that is — if not, the program will do nothing).
 4. If there is no `break;` at the end of a case, the computer will not skip to the end. Instead, it will start executing the next case's code (even if the case's value is different than the variable’s), and will continue doing so until it eventually hits a `break;` statement.
 5. For this reason, default never needs a `break;` statement, as it's the last case in the switch. Include breaks on all other statements to makes sure the program breaks out of switch once it executes the matched statement.  
 
 
 #### Advantages and Disadvantages of Switch Statements
-The main advantages of switch statements is the **increase in readability** and the **decrease in repetition**, both of which make your code more maintainable. 
+The main advantages of switch statements is the **increase in readability** and the **decrease in repetition**, both of which make your code more maintainable.
 
-Although the switch statement has some advantages over `if...else`, it also has some major disadvantages. For instance, a switch statement will only work if you are testing the same variable (or expression) in every condition; if not, the `if...else` is your only option. 
+Although the switch statement has some advantages over `if...else`, it also has some major disadvantages. For instance, a switch statement will only work if you are testing the same variable (or expression) in every condition; if not, the `if...else` is your only option.
 
 Also, depending on the circumstances, using `if...else` might scan more naturally. As a rule, use switch statements when you are working with only one variable, or if you have three or more conditions to check.
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/4411/Slide-12-Chart.svg) 
+![](http://circuits-assets.generalassemb.ly/prod/asset/4411/Slide-12-Chart.svg)
 
-#### Turn and Talk
+<a name="switch-statements"></a>
+## Independent Practice: Switch Statements (10 min)
 
-Take a look at the following `switch` statement:
+1. Take a look at the following `switch` statement:
 
 ```js
 switch (2 * x) {
@@ -631,30 +627,22 @@ default:
 ```
 
 
-
-Turn to a partner and spend a few minutes discussing the following:
+2. Turn to a partner and spend a few minutes discussing the following:
 
 What value will `y` be assigned when `x` is ...
 
-*   1?
-*   4?
-*   0?
-*   "Hello"?
-
-<!--ID NEEDED: Help formatting the following. Q & A seems like it could use better formatting, I'm just not -->
-> Answers
-
-*   1 ?
-*   Answer: 49
-*   4?
-*   Answer: 13
-*   0 ?
-*   Answer: 1
-*   "Hello"?
-*   Answer: 1
+1.   1?
+2.  4?
+3.   0?
+4.  "Hello"?
 
 
-## Ternary Statements (15 mins) If time permits
+
+>_(Answers: 1. 49, 2. 13, 3.1, 4.1)_
+
+***
+<a name="ternary-statements"></a>
+## Guided Practice: Ternary Statements (15 mins)
 
 Great job! Now that we’ve had a chance to gain some experience with switch statements, let’s move on. Another shortcut for a simple JavaScript if...else statement is the **ternary statement**. A ternary statement is a one-line shorthand for an `if...else` statement. Similar to an `if...else` statement, it evaluates a condition and then returns one of two results based on whether the condition is true or false. Take a look at the following `if...else` statement:
 
@@ -750,8 +738,8 @@ What will the value of `goToWork` be under the following circumstances? Discuss 
 
 
 
-<!-- 
-SME Needed (Estimated 30 minutes): 
+<!--
+SME Needed (Estimated 30 minutes):
 
 Would be helpful to have someone build out an interesting 15 minute exercise with a bonus or two for more advanced students that uses only conditionals and variables, the current exercise also uses loops (FizzBuzz)
 
@@ -765,7 +753,9 @@ https://github.com/ga-wdi-exercises/choose_your_own_adventure_js
 ## Independent Practice (15 mins)
 
 
+***
 
+<a name="conclusion"></a>
 ## Conclusion (5 mins)
 
 Let’s turn to a summary of conditionals and test ourselves with a short quiz.
@@ -794,7 +784,7 @@ if (x > 5) {
 
 You'll probably need to refresh yourself on the exact syntax a few times before you memorize it, but it's important to be able to remember these core "control flow" concepts in general, as they'll come up in pretty much every programming language you'll ever encounter.
 
-We also looked at how we can keep our code readable and concise by using switch statements. 
+We also looked at how we can keep our code readable and concise by using switch statements.
 
 Often, developers will write code to get things up and running first and then look back over the code to see how it could be streamlined. Switch statements are excellent tools for doing just that!
 
