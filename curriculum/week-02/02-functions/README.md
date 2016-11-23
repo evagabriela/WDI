@@ -3,11 +3,14 @@
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction) | Topic |
-| x min | [Demo/Codealong](#demo) | Topic |
-| x min | [Guided Practice](#guided-practice) | Topic |
-| x min | [Independent Practice](#ind-practice) | Topic |
-| x min | [Conclusion](#conclusion) |Topic |
+| 5 min | [Opening](#opening) | Intro Video |
+| 10 min | [Intro to New Material](#intro-to-functions) | Functions |
+| 10 min | [Guided Practice](#function-expressions) | Function Expressions |
+| 15 min | [Guided Practice](#arguments-and-parameters) | Arguments and Parameters |
+| 10 min | [Guided Practice](#return-values) | Return Values |
+| 15 min | [Intro to New Material](#scope) | Variable Scope |
+| 15 min | [Independent Practice](#write-functions) | Write Some Functions |
+| x min | [Conclusion](#conclusion) |Q&A |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -94,7 +97,7 @@ This then repeats for every additional movie.
 
 
 
-This is all easy enough to write out, but because Matt Damon has been in so many movies where he needs to be rescued this code is going to get pretty lengthy!
+This is all easy enough to write out, but because Matt Damon has been in so many movies where he needs to be rescued, this code is going to get pretty lengthy!
 
 Let’s try to keep our code from getting out of hand by using a function.
 
@@ -203,7 +206,7 @@ To run the code in a function, we **call**, or invoke, the function by using the
 
 The code in a function will not run when the function is defined. The code will only run when the function is called.
 
-#### Independent Practice - Cat Talk
+#### Exercise: - Cat Talk
 1.  Write a function `catTalk`.
 2.  Inside the function, log `"Meow"` to the console. [Hint: add `console.log()`]
 3.  Call the `catTalk` function. [Hint: make sure you use parenthesis]
@@ -211,7 +214,7 @@ The code in a function will not run when the function is defined. The code will 
 
 Great job!
 
-#### Independent Practice - Area
+#### Exercise - Area
 
 1.  Write a function `area`.
 2.  Within the function:
@@ -222,7 +225,6 @@ Great job!
 5.  Check your console to make sure 15 is displayed.
 
 Great job!
-
 
 
 ---
@@ -316,7 +318,7 @@ greetUser("Bruce", "Wayne", 1939, "Gotham");
     => "Hello Bruce Wayne born in 1939 from Gotham!"
 ```
 
-#### Independent Practice - Disney
+#### Exercise: - Disney
 Let’s review parameters and arguments:
 
 ![](http://circuits-assets.generalassemb.ly/prod/asset/5017/Slide-16-Chart.svg)
@@ -583,7 +585,7 @@ var sayGoodbye = function() {
     console.log("Goodbye " + sister);
 }
 ```
-
+<a name="write-functions"></a>
 ## Independent Practice - Write some functions (10 mins)
 
 Work through as many as these exercises as you can within the next 10 mins - use the [starter-code](starter-code) provided!
