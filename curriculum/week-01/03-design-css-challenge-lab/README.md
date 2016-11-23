@@ -1,28 +1,21 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) CSS Design Challenge Lab (90 mins)
 
-##Learning Objectives
+## Learning Objectives
 - Use flexbox to set up a grid system
 
 ## Exercise
-<!-- SME NEEDED: This exercise should be to create a simple, responsive site.
-Provide them with the HTML and CSS (where the layout is built with floats) and have them convert to flexbox & add media queries. -->
-
 Pretend you've been hired as a junior developer to update a site with an old layout built with floats. The HTML can stay exactly the same, but the CSS must be changed to meet the requirements below. Be sure to reference the mockups in the Deliverables section for guidance.
 
 #### Requirements
-
 - Change the layout from float to flex
 - Remove any unnecessary CSS without jeopardizing the layout
 - Add media queries to adjust the layout for smaller screens as per images below
-- Fix any errors (formatting or otherwise) in the CSS
+- Fix any errors (formatting or otherwise) in the HTML and CSS
 
 #### Starter code
-<!-- SME NEEDED: We should provide HTML (ideally that they will not change) and CSS where the layout is built with floats– and maybe contains additional errors? -->
+There are two sets of starter code provided: [one with errors](starter-code/with-errors) and [one without errors](starter-code/without-errors). If the students are more advanced and can handle debugging, provide them with the error-based starter code. Students who are more novice may be better off with the code that does not contain errors. If the students do use the code with errors, you can provide them with the 'correct' starter-code midway through the lab so they can self-check their progress.
 
 #### Deliverables
-Here are the mockups you should reference while building your site.
-<!-- SME NEEDED: add mockups of 3 different screen sizes / layouts -->
-![Wireframe]()
+Here are the mockups you should reference while building your site. If you're using the code with errors, this will be a helpful reference for you! The design and layout of the site should not change once you've corrected all code errors and converted from float to flex.
 
-## Hungry for More?
-<!-- SME NEEDED: we should 2 levels of 'bonus' here for advanced students -->
+![mockup](assets/mockup.png)
