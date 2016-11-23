@@ -1,16 +1,17 @@
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Object Oriented Programming (90 mins)
-<!--
-ID NEEDED: Help with jumplinks / Transferring lesson sections & times up here-->
 
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction) | Topic |
-| x min | [Demo/Codealong](#demo) | Topic |
-| x min | [Guided Practice](#guided-practice) | Topic |
-| x min | [Independent Practice](#ind-practice) | Topic |
-| x min | [Conclusion](#conclusion) |Topic |
+| 10 min | [Opening](#opening) | Review |
+| 15 min | [Guided Practice](#constructor-notation) | Constructor Notation |
+| 15 min | [Guided Practice](#multiple-objects) | Creating Multiple Objects Using Constructor Notation |
+| 5 min | [Guided Practice](#methods) | Object Methods |
+| 15 min | [Intro to New Material](#prototypes) | Prototypes |
+| 15 min | [Independent Practice](#modeling-flowers) |Modeling Flowers  |
+| 10 min | [Guided Practice](#cross-pollination) | Cross Pollination |
+| 5 min | [Conclusion](#conclusion) | Q&A |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -39,7 +40,7 @@ ID NEEDED: Help with jumplinks / Transferring lesson sections & times up here-->
 
 ---
 <a name="opening"></a>
-## Opening (5 mins)
+## Opening (10 mins)
 - Review current lesson objectives
 
 Before we get started, watch this short [case study](https://generalassembly.wistia.com/medias/0bgiqqwd68) where a developer describes the role Object Oriented Programming (OOP) plays in his personal workflow and in programming in general.
@@ -55,8 +56,7 @@ Object oriented programming is a common pattern throughout many languages. Its p
 
 ***
 
-<a name="review"></a>
-## Review: What is an Object? (5 mins)
+### Review: What is an Object?
 So far in this course, we have been writing our Javascript code using mainly functions, Strings, numbers, and Arrays.
 
 Last lesson we introduced objects as a way to store and work with more complex data. 
@@ -83,8 +83,8 @@ var superman = {
 
 ***
 
-<a name="constructor notation"></a>
-## Constructor Notation (15 mins)
+<a name="constructor-notation"></a>
+## Guided Practice: Constructor Notation (15 mins)
 There might be instances where we want to create multiple objects to represent similar things.
 
 For example, if we built a superhero fan site, we’d want to store similar information for a range of superheroes: first name, last name, superhero name, etc.
@@ -94,7 +94,7 @@ To do this, we can create a "template" object that contains any properties and m
 <img src="http://circuits-assets.generalassemb.ly/prod/asset/4536/Slide-3-Superhero-Fan-Site.svg" width="300px">
 
 
-#### Independent Practice: Model a Hero
+#### Model a Hero
 
 Now let's imagine that we want to create a new superhero object for Batman.
 
@@ -114,7 +114,7 @@ var batman = {
 };
 ```
 
-Check - Think/Pair/Share:
+#### Check - Think/Pair/Share:
 
 > What features do superman and batman share? Remember to think about attributes and methods when you're modeling. Also take note of what differs between them. What other properties might they share?
 
@@ -176,7 +176,7 @@ superman.firstName = 'Bill';
 superman['superheroName'] = 'Super Duper Man';
 ```
 
-#### Independent Practice
+#### Exercise:
 
 1.  Create an object `currentlyListening`
 2.  Add the following properties to your object:
@@ -213,6 +213,7 @@ currentlyListening["label"] = "Capitol Records";
 
 <a name="multiple-objects"></a>
 ## Creating Multiple Objects using Constructor Notation (25 mins)
+
 Whew! With that under our belt, it’s now time to turn to creating many objects using **constructor notation**.
 
 The real power of constructor notation comes into play when we create multiple objects to represent similar things.
@@ -588,7 +589,7 @@ tablemates the type of flower, the flower's main color, number of petals, and wh
 ***
 
 <a name="static-methods"></a>
-## Guided Practice: Cross-Pollination (10 mins) (If time permits)
+## Guided Practice: Cross-Pollination (10 mins) 
 Now that we are awesome Flower experts, let's try our hand at cross pollinating two flower objects. Cross pollinating is beyond the realm of an individual flower and could therefore live on the Flower constructor itself. Another examples of this would be `create`, `new`, or `destroy`. These are all *meta* actions of a flower; a flower cannot create itself! They are called **static methods**.
 
 Check: Think-pair-share - How might we declare this method?
