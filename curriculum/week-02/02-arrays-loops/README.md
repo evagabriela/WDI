@@ -3,11 +3,14 @@
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction) | Topic |
-| x min | [Demo/Codealong](#demo) | Topic |
-| x min | [Guided Practice](#guided-practice) | Topic |
-| x min | [Independent Practice](#ind-practice) | Topic |
-| x min | [Conclusion](#conclusion) |Topic |
+| 5 min | [Opening](#opening) | Intro Video |
+| 10 min | [Intro to New Material](#arrays-intro) | Intro to Arrays |
+| 10 min | [Guided Practice](#updating-arrays) | Updating Arrays |
+| 15 min | [Guided Practice](#arrays-deep-dive) | Arrays Deep Dive |
+| 30 min | [Independent Practice](#other-arrays-helpers) | Other Arrays Helpers |
+| 40 min | [Intro to New Material](#Loops) | Loops |
+| x min | [Independent Practice](#fizz-buzz) | Fizz Buzz |
+| x min | [Conclusion](#conclusion) |Review and Q&A |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -75,7 +78,7 @@ Arrays help us make the most out of our elements, allowing us to:
 
 Take a look at this [video](https://generalassembly.wistia.com/medias/uey023vfx6) that provides an overview of how we can work with arrays.
 
-Before we dive deeper into arrays, let’s learn a little about indexes.
+Before we dive deeper into arrays, let’s learn a little about **indexes**.
 
 Items in an array are stored in sequential order. Each element has an index, a number that tells us the position in the array where the element can be found.
 
@@ -121,7 +124,7 @@ var a = new Array();
 
 ---
 <a name="updating-arrays"></a>
-## Accessing and updating elements in an array (10 mins)
+## Guided Practice: Accessing and updating elements in an array (10 mins)
 #### Getting data from an array
 
 To access, or retrieve, a value from an array, we will use the array name, followed by an index number, wrapped in square brackets.
@@ -147,21 +150,17 @@ We should now have a new list (Cruella is replaced with Scar):
 
 <img src="assets/JSC_U1L4_villian_array4.png">
 
+#### Exercise:
 
-
-<!--
-ID NEEDED: Can you format the following exercise?
-Create an array of villains again, with the same list of villains (Cruella, Ursula, Jafar, Captain Hook).
-Now replace Cruella with Scar, using the correct index number (remember indexes start at 0 in JS).
-Note: the console returns 'Scar' because that is the newest value that was added to the array.
-Add an additional villain 'Maleficent' at the end of the array using the correct index number.
-Note: the console returns the newest value that was added.
-
-Now, type villains and press enter. Does your console look like this?
+1.  Create an array of villains again, with the same list of villains (Cruella, Ursula, Jafar, Captain Hook).
+2.  Now replace Cruella with Scar, using the correct index number (remember indexes start at 0 in JS).
+_Note: the console returns 'Scar' because that is the newest value that was added to the array._
+3.  Add an additional villain 'Maleficent' at the end of the array using the correct index number.
+_Note: the console returns the newest value that was added._
+4.  Now, type villains and press enter. Does your console look like this?
 
 <img src="assets/a3.png">
 
--->
 
 ---
 <a name="arrays-deep-dive"></a>
@@ -191,14 +190,13 @@ team[team.length - 1];   // Evaluates to 'veronica'.
 team[team.length - 2];   // Evaluates to 'linda'.
 ```
 
-<!--
-ID NEEDED: Can you format the following exercise?
+#### Exercise:
 
-Declare a variable called `villains` again and assign it an array with the same list of strings as before (Cruella, Ursula, Jafar, Captain Hook)
-Now use the length property to find out how many items are in your `villains` array.
-Note: We use `villains.length`;
-Did your console return the value 4? (We listed four villains in total, therefore our array length is 4).
--->
+1.  Declare a variable called `villains` again and assign it an array with the same list of strings as before (Cruella, Ursula, Jafar, Captain Hook).
+2.  Now use the length property to find out how many items are in your `villains` array.
+_Note: We use `villains.length`;_
+3.  Did your console return the value 4? (We listed four villains in total, therefore our array length is 4).
+
 
 #### Array helper methods
 In addition to containing multiple elements, arrays also have a number of other built-in properties and functions that give them useful abilities. These are called array helper methods.
@@ -217,24 +215,20 @@ The .push() method allows you to add one or more items to the end of an array.
 Note that this means the length of that array will also change.
 
 
-<!--
+#### Exercise:
 
-ID NEEDED: Can you format the following exercise?
-
-Create an empty array of foods: var favoriteFoods = [];.
-Use the .push() method to add the item "cheese": favoriteFoods.push('cheese');.
-Note: the console returns 1 because that's the number of items you added to the array.
-Now add multiple new items at once: favoriteFoods.push('pizza', 'rice', 'taco');.
-Type favoriteFoods and enter to see your final array. Does your array look like this?
+1.  Create an empty array of foods: var favoriteFoods = [];.
+2.  Use the .push() method to add the item "cheese": favoriteFoods.push('cheese');.
+_Note: the console returns 1 because that's the number of items you added to the array._
+3.  Now add multiple new items at once: favoriteFoods.push('pizza', 'rice', 'taco');.
+4.  Type favoriteFoods and enter to see your final array. Does your array look like this?
 
 ```js
 
 [ 'cheese', 'pizza', 'rice', 'taco’ ]
 ```
 
--->
-
-***.pop()***
+#### ***.pop()***
 
 The .pop() method is useful when you want to remove the last item in an array.
 favoriteFoods.pop();
@@ -276,8 +270,8 @@ favoriteFoods.join()
 => 'rice,pizza,cheese'
 ```
 
-
-#### Independent Practice: Other Array Helper methods
+<a name="other-arrays-helpers"></a>
+## Independent Practice: Other Array Helper methods (30 min)
 These are just a handful of the methods available to us.
 
 Let's do a quick mini-lab! Break up into groups of 2 or 3. Each group will have FIVE MINUTES to research one of these methods and then share with the class what that method does and how to use it.
@@ -313,9 +307,10 @@ array.map();          // Map each value in the array to a new value using the pr
 Remember, though, you'll never remember _every_ method. The important thing is to know what methods are available to you and where you can find information on each one when you need.
 
 ---
-<a name="loops-intro"></a>
-## Loops intro (5 mins)
+<a name="loops"></a>
+## Loops (5 mins)
 
+#### Loops Intro
 What are loops and why are they useful? Take a look at this short [video](https://generalassembly.wistia.com/medias/p2hvzbq53x) to find out!
 
 In the past few lessons we’ve only been able to operate on one value at a time. For example:
@@ -341,8 +336,7 @@ All we have to do is make one small (but very important) change: instead of adva
 
 
 ---
-<a name="while-loop"></a>
-## While Loop (10 mins)
+#### While Loop (10 mins)
 Now, we have a loop — so long as our condition remains true (or at least truthy), we will continue to run that block of code over and over again. This type of loop is called a **while loop**, and it can be found in nearly every programming language.
 
 
@@ -407,8 +401,7 @@ Basically, we’ve changed the `while` loop so that it always runs for a fixed, 
 
 
 ---
-<a name="for-loop"></a>
-## For Loop (15 mins)
+#### For Loop (15 mins)
 This kind of setup is so useful, and gets used so frequently, that most languages include a special kind of loop used for just this kind of behavior, called a `for` loop.
 
 For loops are very useful when we want to use a loop to do something with each item in an array. Watch this short [video](https://generalassembly.wistia.com/medias/gguspr8ong) to find out what that would look like.
@@ -439,8 +432,8 @@ for (initialization; condition; finalExpression) {
 
 ```
 
-
-#### Independent Practice:
+---
+#### Exercise:
 
 Look at the code below:
 
@@ -463,7 +456,8 @@ Turn and discuss the following questions with a partner:
 7. What would happen if we changed the final condition from `i += 1` to `i += 2`?
   * `Hello` will be printed out 5 times. Great job!
 
-#### For Loop vs. While Loop (# mins)
+---
+#### For Loop vs. While Loop 
 Let’s take a step back and recap what we have learned. What is the difference between `for` loops and `while` loops
 
 The `while` loop is usually used when you need to repeat something until a given condition is true:
@@ -530,7 +524,8 @@ for (var i = 0; i < tempsInF.length; i += 1) {
 }
 ```
 
-## forEach
+---
+#### forEach
 
 Another way of iterating over an array that was added with ECMAScript 5 is forEach():
 
@@ -545,7 +540,7 @@ Another way of iterating over an array that was added with ECMAScript 5 is forEa
 
 ---
 <a name="fizz-buzz"></a>
-## Fizz Buzz (15 mins)
+## Independent Practice: Fizz Buzz (15 mins)
 
 Fizz buzz is a game about division. Create a program that will iterate through numbers from 1 to 101 and log each number in the console.
 
