@@ -601,6 +601,16 @@ document.getElementsByTagName('ul')[0].appendChild(newListItem);
 ![](http://circuits-assets.generalassemb.ly/prod/asset/4614/Slide-69.png)
 
 
+#### Check for understanding
+Check out this [Codepen](http://codepen.io/newyork-anthonyng/pen/ObjpwW) for starter code.
+
+We have a shopping list that we need to update.
+1. It looks like we forgot to add "eggs" and "bacon" to the list. Use the methods we've learned to add these 2 new list items to our page.
+
+2. We also want to update the text of our "juice" item. Instead of saying "juice", let's be more specific and update the text to say "Apple juice."
+
+3. Let's add a link to Google Maps to the bottom of our list so we don't get lost on our way to the grocery. We'll create another new list item and use `innerHTML` to add a link to our page.
+
 <!--
 
 SME Needed: (15-20 minutes for both tasks)
@@ -654,6 +664,16 @@ Or, if we wanted to remove the id from an element, we could execute the update l
 document.getElementsByTagName('a')[0].removeAttribute('id');
 ```
 
+#### Check for understanding
+Check out this [Codepen](http://codepen.io/newyork-anthonyng/pen/XNaMPy) for starter code.
+
+We are almost done with our shopping list. Let's use what we've learned to update the styling of some of the items.
+
+1. We definitely need the "milk" on this shopping trip. Let's use `className` to add the class `important` to the "milk" item.
+
+2. The "bacon" is also important. This time, let's use `setAttribute()` to add the class `important` to the "bacon" item.
+
+3. We also don't need the link to the map anymore. Let's use `removeAttribute()` to remove the `href` attribute from the `<a>` element.
 
 <!--
 
