@@ -1,6 +1,4 @@
-'use strict';
-
-const Stack = function Stack() {
+var Stack = function Stack() {
   this._size = 0;
   this._storage = {};
 };
@@ -11,9 +9,9 @@ Stack.prototype.push = function push(value) {
 };
 
 Stack.prototype.pop = function pop() {
-  let size = this._size;
-  let target = size - 1;
-  let deleted;
+  var size = this._size;
+  var target = size - 1;
+  var deleted;
 
   // remove newest value from storage and decrement size counter, only if data
   // exists
@@ -26,5 +24,3 @@ Stack.prototype.pop = function pop() {
 
   return deleted;
 };
-
-module.exports = Stack;
