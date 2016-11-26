@@ -133,7 +133,7 @@ So, the DOM is a (potentially) large object that describes the structure of our 
 In the browser, the DOM is represented by the `document` object. Luckily, JS specifies some built-in methods that make the DOM easier to us.
 
 
-#### DOM vs. HTML 
+#### DOM vs. HTML
 #### Inspecting the DOM
 It’s common for front-end developers to work with the DOM while developing. But, how do they do it?
 
@@ -142,7 +142,7 @@ Two words: Developer tools.
 Most browsers offer a developer tools feature which allows users to inspect and play with the DOM.
 
 
-For example, if you are using a Chrome browser, you can click anywhere within the site you're viewing and select "Inspect" to open Developer Tools.
+For example, if you are using a Chrome browser, you can right-click anywhere within the site you're viewing and select "Inspect" to open Developer Tools.
 
 ![](http://circuits-assets.generalassemb.ly/prod/asset/5143/inspect_element.png)
 
@@ -206,19 +206,19 @@ Let's break this syntax down.
 1. `document` — Refers to the document object. Any time we want to find an element, we'll need to access it through the document object. This will allow us to search throughout the entire page.
 2. `.` The dot ties the method on the right-hand side (`getElementById`) with the object on the left-hand side (`document`).
 3. `getElementById()` — Is the method we want to use to find an element. This particular method allows us to locate an element by the value of its `id` attribute. We'll take a look at the other methods available to us later in the lesson.
-4. `'main'` — Just like with the functions we learned about earlier in this unit, we can pass in parameters for these methods to use. In this case, we want to find an element that has an `id` of `main`.
+4. `'main'` — Just like with the functions we learned about earlier in this unit, we can pass in arguments for these methods to use. In this case, we want to find an element that has an `id` of `main`.
 
 
 > Important Note: As with all methods, using proper syntax here is important. These methods are case sensitive.
 
-> Typing in `document.getElementByID` with a capital D will _not_ work and throw an error.
+> Typing in `document.getElementByID` with a capital D will _not_ work and throws an error.
 
 
 
 ## Selecting an Individual Element (10 mins)
 Now, let’s explore how to select an individual element.
 
-There are a two methods we can use: `getElementById()` and `querySelector()`
+There are two methods we can use: `getElementById()` and `querySelector()`
 
 Here’s a closer look at both.
 
@@ -237,7 +237,7 @@ First, we will add an `id` attribute to the element that we want to update. In t
 
 ```html
 <!-- HTML -->
-<aside id="sidebar">...</aside>
+<div id="sidebar">...</div>
 ```
 
 We can then use JavaScript to search through the document object and find the element with an `id` of `sidebar`.
@@ -249,7 +249,7 @@ var sidebar = document.getElementById('sidebar');
 ##### Caching the Selection
 Here, we are storing the results of the `document.getElementById('sidebar')` query in the variable `sidebar`.
 
-If we'd like to work with that element multiple times, a variable should be used to store, or **cache**, the results of our query.One of the benefits of caching is peformance. By saving the result of the query to a variable, you don't have to execute the query multiple times (which can be costly for complex queries or large web pages).
+If we'd like to work with that element multiple times, a variable should be used to store, or **cache**, the results of our query. One of the benefits of caching is peformance. By saving the result of the query to a variable, you don't have to execute the query multiple times (which can be costly for complex queries or large web pages).
 
 When we store an element in a variable, we are storing a reference to the location of that element in the DOM tree.
 
@@ -306,7 +306,7 @@ This will return the first element that has an ID of sidebar.
 document.querySelector('ul li')
 ```
 
-This will return the first <li> that is a descendant of the <ul>.
+This will return the first `<li>` that is a descendant of the `<ul>`.
 
 
 #### Independent Practice
@@ -324,11 +324,11 @@ It’s your turn to give things a try.
 <!--ID NEEDED: Help formatting questions/answers-->
 How could we use the `querySelector` method to do the following:
 
-*   Select the first list item on the page? 
+*   Select the first list item on the page?
     `document.querySelector('li')`
-*   Select the element that has the id yellow? 
+*   Select the element that has the id yellow?
     `document.querySelector('#yellow')`
-*   Select the ul ? 
+*   Select the ul ?
     `document.querySelector('ul')`
 
 
@@ -383,7 +383,7 @@ Here, this query will return all `<li>` elements. In this case, the NodeList wil
 #### `document.querySelectorAll()`
 Now, let’s try out `document.querySelectorAll()`
 
-While this command may look similar to our `querySelector()` method, the `.querySelectorAll()` method allows us to use our CSS selector syntax to select one or more elements.
+While this command may look similar to our `querySelector()` method, the `querySelectorAll()` method allows us to use our CSS selector syntax to select one or more elements.
 
 
 ```html
@@ -439,7 +439,7 @@ Now that you’ve got that down, let’s work more with `NodeLists`.
 
 Any time there is the potential for a method to return more than one element, such as with `getElementsByClassName()`, `getElementsByTagName()`, and `querySelectorAll()`, a NodeList will be returned, even if only one element is found that matches that query.
 
-These NodeLists are **collections**, are numbered similar to the arrays we explorered in an ealier lesson.
+These NodeLists are **collections** and are numbered similar to the arrays we explored in an earlier lesson.
 
 Once we get our collection, we can select a single node using array syntax (a set of square brackets).
 
@@ -448,11 +448,11 @@ For example, we saw that `document.getElementsByTagName('li')` returned seven li
 
 0\. Monday
 1\. Tuesday
-3\. Wednesday
-4\. Thursday
-5\. Friday
-6\. Saturday
-7\. Sunday
+2\. Wednesday
+3\. Thursday
+4\. Friday
+5\. Saturday
+6\. Sunday
 
 
 To locate the fourth item in our NodeList, `<li>Thursday</li>`, we could use the following syntax:
@@ -522,10 +522,10 @@ For example, if we want to change the HTML content for the first `<li>`, we coul
 
 
 ```js
-document.getElementsByTagName('li')[0].innerHTML = 'Email Mom.';
+document.getElementsByTagName('li')[0].innerHTML = '<a href="mom@gmail.com">Email Mom</a>';
 ```
 
-`innerHTML` would find the first `<li>` and change the HTML content to "Email **<a href="mom@gmail.com">**Mom**</a>**."
+`innerHTML` would change the HTML content of the first `<li>` to "Email **<a href="mom@gmail.com">**Mom**</a>**."
 
 ![](http://circuits-assets.generalassemb.ly/prod/asset/4613/Slide-59-Things-To-Do.svg)
 
@@ -552,7 +552,7 @@ This code would change the text content of the `<li>` that has the ID `important
 So how do innerHTML and textContent differ? When we are setting content with textContent any HTML will be displayed as text:
 
 ```js
-document.querySelector('p').textContent = "Visit my Site";
+document.querySelector('p').textContent = "Visit my <a href='http://www.example.com'>Site</a>";
 ```
 
 Result:
@@ -563,14 +563,14 @@ Result:
 In contrast, when setting content by updating the innerHTML property, any HTML tags will be inserted into the page as actual HTML content, not just text:
 
 ```js
-document.querySelector('p').innerHTML = "Visit my Site";
+document.querySelector('p').innerHTML = "Visit my <a href='http://www.example.com'>Site</a>";
 ```
 
 Result:
 
 ![](http://circuits-assets.generalassemb.ly/prod/asset/5150/innerHTML.png)
 
-> Check: Turn and Talk - 
+> Check: Turn and Talk -
 > Summarize the difference between the textContent and innerHTML properties.
 
 
@@ -590,11 +590,11 @@ To add a fourth item to our list we can execute the following code:
 var newListItem = document.createElement('li');
 
 // Alright, now let's update the
-//text content of that list item.
+// text content of that list item.
 newListItem.textContent = 'Feed the cat';
 
 // And finally, let's add that list
-//item as a child of the ul.
+// item as a child of the ul.
 document.getElementsByTagName('ul')[0].appendChild(newListItem);
 ```
 
@@ -609,7 +609,7 @@ Check for understanding 1/2
 
 A brief exercise for adding elements to the page (with starter code).
 
-Students have learned how to select elements, innerHTML, and textContent. 
+Students have learned how to select elements, innerHTML, and textContent.
 -->
 
 #### Manipulating the DOM - Getting & Setting Attributes (# mins)
@@ -661,7 +661,7 @@ SME Needed: Check for understanding 2/2
 
 A brief exercise for getting and setting attributes (with starter code).
 
-Students have learned how to select elements, innerHTML, and textContent, adding content, and now these methods to get and set attributes. 
+Students have learned how to select elements, innerHTML, and textContent, adding content, and now these methods to get and set attributes.
 -->
 
 ## How do Browsers Work? (10 mins) - If Time Permits
@@ -685,7 +685,7 @@ A web browser’s engine is a program that renders marked-up content (such as HT
 ![](http://circuits-assets.generalassemb.ly/prod/asset/4596/Slide-29-Process-Step-1.svg)
 
 
-The rendering engine starts by parsing an HTML document and converting its elements into DOM nodes, ordering them in **content tree** (also referred to as the DOM Tree).
+The rendering engine starts by parsing an HTML document and converting its elements into DOM nodes, ordering them in a **content tree** (also referred to as the DOM Tree).
 
 To **parse** means to analyze a set of characters or data (HTML, for example).
 
@@ -759,9 +759,9 @@ This is where the magic happens — now, our page can finally be seen by our
 <a name="independent-practice"></a>
 ## Vanilla JS exercise! (15 mins)
 
-Now that you've seen all of these methods and have a since of what the Vanilla JS can do!
+Now that you've seen all of these methods and have a sense of what Vanilla JS can do, let's work on this exercise!
 
-Open up the `starter_code` directory. 
+Open up the `starter_code` directory.
 
 Follow the prompt.md to write the vanilla JS methods necessary to complete each `alert` step in js/script.js
 
