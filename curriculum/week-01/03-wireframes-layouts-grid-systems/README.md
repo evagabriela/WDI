@@ -172,8 +172,29 @@ We want to be able to explicitly define our column widths so that they also incl
 
 
 ### Define Column Behavior
+So our rows are actually good to go!
+* They're just horizontal containers.
+* Thanks to clearfix we don't need to worry about content overflow.
+* Our columns will handle page width. Let's work on that now...
 
-<!-- SME NEEDED: convert this lesson to flexbox -->
+```css
+.column {
+  float: left;
+}
+```
+
+Let's give our rows and columns a spin.
+
+
+What does this look like?
+* What functionality do we currently have? What do we need to add?
+
+!["just rows"](assets/just-rows-columns.png)
+
+Right now, we can...
+* **Separate content into rows and columns.**
+  * What does it look like when we turn `float` off?
+  * How about without clearfix?
 
 We need to...
 * **Set column widths.** We don't necessarily want our column widths to be defined by their content.
@@ -198,12 +219,13 @@ How are we going to define the widths for each of these classes?
 * What unit should we use?
 * How are we going to calculate these values?
 
-
-<!-- SME NEEDED: convert to flexbox -->
-<!--Can you please indicate where the SME should start adjusting the lesson and then indicate where to end? I'm not sure where to re-format and edit, since some of this will be changed I assume. -->
-
 ```css
-/*.column-1 { width: 8.33%; }
+/*
+  How do we get these percentages?
+  percentage = (n / 12) * 100
+*/
+
+.column-1 { width: 8.33%; }
 .column-2 { width: 16.66%; }
 .column-3 { width: 25%; }
 .column-4 { width: 33.33%; }
@@ -214,7 +236,7 @@ How are we going to define the widths for each of these classes?
 .column-9 { width: 75%; }
 .column-10 { width: 83.33%; }
 .column-11 { width: 91.66%; }
-.column-12 { width: 100%; }*/
+.column-12 { width: 100%; }
 ```
 
 You don't have to use the same class selector syntax as the above example.
@@ -226,8 +248,6 @@ Let's apply these selectors to `index.html` in a way that resembles an actual we
 * We'll also add some actual content to our columns.
 
 ```html
-<!-- index.html -->
-
 <body>
   <header class="row">
     <div class="column column-2">Logo</div>
@@ -256,7 +276,6 @@ Let's also add some styling that will help us visualize this better.
 * Note we give our `header` `.middle` and `footer` selectors some explicit padding and heights.
 
 ```css
-
 .column {
   float: left;
   position: relative;
@@ -286,6 +305,9 @@ nav a {
 ```
 
 Let's take another look at our `index.html` in the browser.
+
+!["before adding gutters"](assets/pre-adding-gutters.png)
+
 * You can see our website has some form now.
 * Our sections could use some space though...
 
@@ -300,14 +322,11 @@ We could try padding?
 What about margin? Maybe.
 * Let's give each of our columns a little bit of margin. That should put just enough space between them.
 
-<!-- SME NEEDED: convert to flexbox -->
 
 ```css
-
 .column {
   /* We don't want to add too much space, so 1% should be enough */
   margin: 1%;
-  /*need flexbox code*/
   border: 1px solid #ff0000;
 }
 
@@ -315,14 +334,12 @@ What about margin? Maybe.
 
 Let's see what our webpage looks like now...
 
-<!-- SME NEEDED: screenshot -->
+!["gutters pre width adjustment"](assets/gutters-pre-width-adjustment.png)
 
 Ahh, what happened?
 * Our width calculations are messed up since we added a 1% margin to each column.
 
 How could we fix this? How about adjusting our widths?
-<!-- SME NEEDED: convert to flexbox -->
-
 
 ```css
 /* Since we added 1% margin to each column, we need to adjust our widths by -2% (1% on the left, 1% on the right). */
@@ -341,13 +358,100 @@ How could we fix this? How about adjusting our widths?
 .column-12 { width: 98%; }
 ```
 
+That does work...
+
+!["gutters post width adjustment"](assets/gutters-post-width-adjustment.png)
+
+...but it can get pretty tedious.  
+
+And what if we want some parts of our page to have larger/smaller gutters than others. How do we account for that?
+
+#### Modules
+
+The best way to go about adding gutters is using "modules".
+* These are `<div>`'s that we place inside of our columns.
+* We can then give these modules margins without displacing our columns.
+* These margins count towards the content width of our column, meaning that they are included as width under `border-box`.
+
+Let's add some modules to `index.html`...
+
+```html
+<body>
+  ...
+  <div class="row middle">
+    <div class="column column-2">
+      <div class="module">-</div>
+    </div>
+    <div class="column column-8">
+      <!-- Place column content inside module -->
+      <div class="module">So much content.</div>
+    </div>
+    <div class="column column-2">-</div>
+  </div>
+  ...
+</body>
+```
+
+Now let's create a `.module` selector in `style.css`
+
+```css
+.module {
+  /* Let's add a background color to our modules so they're clearly visible.*/
+  background: lightblue;
+
+  /* Now let's give our modules a left and right margin of 10px */
+  margin: 0 10px 0 10px;
+}
+```
 
 The result...
 
-<!-- SME NEEDED: add mockup here -->
+!["spacers added"](assets/spacers-added.png)
 
 Now we have some space between our columns' content.
+* The whitespace is the margins generated by our module elements.
+* If we wanted, we could go in and give each of our modules custom margins. Potential for customization is high here.
 
+### Nested Columns (10 / 110)
+
+Last thing about grids I want to talk about are nested columns...
+
+We can "incept" our grid and plant columns within columns.
+* For example, say we want the middle column in the center of our site to be divided into three content sections.
+* We can treat that middle column as being 12 columns wide and create the following `<div>` tags in our HTML...
+
+```html
+<div class="row middle">
+    <div class="column column-2">-</div>
+
+    <!-- Here is that middle column. -->
+    <div class="column column-8">
+        <!-- We can divide it into thirds the same way we would any row. -->
+        <div class="column column-4">1/3</div>
+        <div class="column column-4">2/3</div>
+        <div class="column column-4">3/3</div>
+    </div>
+
+    <div class="column column-2">-</div>
+  </div>
+```
+
+And while we're at it, let's change the border color of our nested columns so we can see them better.
+
+```css
+.column .column {
+  border: 2px solid springgreen;
+}
+```
+
+Let's see how that changed our page...
+
+!["nested columns"](img/nested-columns.png)
+
+**Be Warned:** Making nested columns (and rows) work might require a fair amount of tweaking depending on how your grid and gutters are set up.
+
+### Final Version
+Here's a [the final version of our grid system](codealong).
 
 ***
 
@@ -355,7 +459,6 @@ Now we have some space between our columns' content.
 ## Guided Practice: Match That Grid (40 mins)
 
 Use what we have learned in class to recreate the grid structure for [Craigslist](http://newyork.craigslist.org/).
-<!-- SME NEEDED: starter code using flexbox -->
 
 **Notes:**
 * Don't worry about content. Just outline the main portions of the site.
@@ -403,6 +506,8 @@ Another approach instead of removing all of the default properties is to try to 
 ***
 
 ### Hungry for More?
+####
+
 #### Resources
 - [Flexbox Grid](http://flexboxgrid.com/)
 - [Flexbox in Bootstrap](http://v4-alpha.getbootstrap.com/getting-started/flexbox/)
