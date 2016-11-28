@@ -5,8 +5,8 @@
 | 5 mins | [Introduction](#introduction-positioning) | Positioning |
 | 15 mins | [Demo/Codealong](#demo-positioning) | Positioning |
 | 10 mins | [Introduction](#introduction-rd) | Responsive Design |
-| 20 mins | [Demo/Codealong](#demo-rd) | Responsive Design |
-| 40 mins | [Independent Practice](#ind-practice) | Topic |
+| 30 mins | [Demo/Codealong](#demo-rd) | Responsive Design |
+| 30 mins | [Independent Practice](#ind-practice) | Dream Team |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -256,23 +256,60 @@ Here's an example of a site that hasn't overridden the viewport: [http://www.tcg
 ***
 
 <a name="demo-rd"></a>
-## Demo / Codealong: Responsive Design (20 mins)
+## Demo / Codealong: Responsive Design (30 mins)
 
-So how can we make more impactful changes in our site using media queries? Let's look at a multi-column layout using `flexbox`.
+So how can we make more impactful changes in our site using media queries? The `flexbox` approach to layout eliminated the need to use media queries to adjust the grid on your page. But what if you're working on a project with existing code using `float`? And what about adjusting other elements on the page using media queries? It's important to understand all methods when approaching responsive design.
 
-<!-- SME NEEDED: demo with flexbox layout going from 3 columns to 2 to 1  -->
+Consider this [HTML](codealong/albums/index.html) and [CSS](codealong/albums/main-1.css), which renders like this on a large screen:
+![albums-1](assets/albums-1.png)
 
+And this on a small screen:
+![albums-1-400](assets/albums-1-400.png)
+
+The issues with the layout in the smaller screen rendering are evident, from the top of the page to the bottom:
+- The `nav` takes up too much vertical space
+- The title and description are too large
+- The 6-column layout is too narrow for the content
+
+It's important that we work "big to small"– meaning address the large layout concerns first, then work through the details of adjusting sizing. We also have to keep in mind that there may be some breakpoints in between a common desktop size and a common mobile size. For now, let's work on adding styles for a small screen size at `400px`.
+
+One way to approach media queries is to start by adding in styles you want for the smaller size *at the end of your CSS document*. These styles will overwrite the rules above! Compare this [new CSS](codealong/albums/main-2.css) to the [previous CSS](codealong/albums/main-1.css) and see how it renders on a large screen:
+![albums-2](assets/albums-2.png)
+
+All content on the page is aligned in a single column, whether viewed on a small or large screen width. Now we need to specify **at which width** we want these styles to be applied. We can do this by adding in media queries to our [updated CSS](codealong/albums/main-3.css).
+
+Here are the 4 different layouts as we reduce the screen size:
+![albums-1](assets/albums-1.png)
+![albums-3-med](assets/albums-3-med.png)
+![albums-3-sm](assets/albums-3-sm.png)
+![albums-3-xs](assets/albums-3-xs.png)
+
+Now our layout looks great on all screen sizes! The final touch is to adjust the copy on the page. Here's the [final CSS](codealong/albums/main-4.css) and how it renders on a small screen:
+![albums-4](assets/albums-4.png)
+
+You can access all of the code [here](codealong/albums).
 
 ***
 
 <a name="ind-practice"></a>
-## Independent Practice: Topic (60 minutes)
-<!-- SME NEEDED: repurpose this code for an independent practice exercise https://github.com/ga-wdi-exercises/learning-responsive-web-design  -->
+## Independent Practice: Dream Team (30 minutes)
+Following the mockup below, choose a Dream Team of 3-4 fellow students and work together to wireframe out what the site should look like when it's responsive. Have each group present their wireframes and describe why they made the choices they did.
+
+Dream Team Basic
+![Dream Team Basic](assets/dream-team-basic.png)
+
+Dream Team Challenge
+![Dream Team Challenge](assets/dream-team-challenge.png)
+
+Finish early? Start [adding media queries to the code](independent-practice/starter-code) to realize your wireframe. You can check your work later with the [solution code](independent-practice/solution-code).
+
 ***
 
 ## Hungry for more?
 ### Exercises
-- [Build a Web  Comic](https://googlecreativelab.github.io/coder-projects/projects/comic_creator/)
+- [Build a Web Comic](https://googlecreativelab.github.io/coder-projects/projects/comic_creator/)
+- [Make the Dream Team Responsive!](independent-practice/starter-code)
+  - [Check Your Work](independent-practice/solution-code)
 
 ### Videos
 - [CSS Position](https://www.youtube.com/watch?v=zH8kjJdvmOs&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=8)
