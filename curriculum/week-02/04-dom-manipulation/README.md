@@ -5,11 +5,16 @@
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction) | Topic |
-| x min | [Demo/Codealong](#demo) | Topic |
-| x min | [Guided Practice](#guided-practice) | Topic |
-| x min | [Independent Practice](#ind-practice) | Topic |
-| x min | [Conclusion](#conclusion) |Topic |
+| 5 min | [Opening](#opening) | DOM Intro Video |
+| 10 min | [Intro to New Material](#intro-dom) | Intro to the DOM |
+| 5 min | [Intro to New Material](#accessing-elements) | Accessing Elements |
+| 10 min | [Guided Practice](#selecting-elements) | Selecting Individual Elements |
+| 10 min | [Guided Practice](#selecting-multiple-elements) |Selecting Multiple Elements |
+| 10 min | [Intro to New Material](#node-lists) |NodeLists |
+| 25 min | [Guided Practice](#manipulating-the-dom) |Manipulating the DOM |
+| 10 min | [Intro to New Material](#browsers) |How Do Browsers Work? |
+| 15 min | [Independent Practice](#independent-practice) | Vanilla JS |
+| 5 min | [Conclusion](#conclusion) |Q&A |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -66,7 +71,6 @@ Let's walk through some of the primary aspects of the DOM.
 - The DOM also allows us to dynamically update the content of the HTML elements on our page.
 
 - Maybe we want to change the text of the h1 to read "JavaScript Ninja's Website", or maybe we want to update the src attribute of an image when the user clicks a "next" button. We can dynamically update any of the HTML, text content, or attributes for the elements on our page.
-
 
 4) The DOM allows you to add animations and effects.
 
@@ -133,7 +137,7 @@ So, the DOM is a (potentially) large object that describes the structure of our 
 In the browser, the DOM is represented by the `document` object. Luckily, JS specifies some built-in methods that make the DOM easier to us.
 
 
-#### DOM vs. HTML 
+#### DOM vs. HTML
 #### Inspecting the DOM
 It’s common for front-end developers to work with the DOM while developing. But, how do they do it?
 
@@ -185,8 +189,8 @@ The DOM has changed quite a bit from our original HTML file.
 *   We also updated the third list item to read "Return library books - DONE!"
 
 
-
-## Introductions: Accessing Elements (5 mins)
+<a name="accessing-elements"></a>
+## Intro to New Material: Accessing Elements (5 mins)
 
 Before we can update a page, we need to find, or select, the element(s) that we want to update.
 
@@ -214,7 +218,7 @@ Let's break this syntax down.
 > Typing in `document.getElementByID` with a capital D will _not_ work and throw an error.
 
 
-
+<a name="selecting-elements"></a>
 ## Selecting an Individual Element (10 mins)
 Now, let’s explore how to select an individual element.
 
@@ -256,7 +260,7 @@ When we store an element in a variable, we are storing a reference to the locati
 We can then use any methods we would normally use on an element on that variable.
 
 
-#### Independent Practice
+#### Activity:
 It’s your turn to give things a try.
 
 Try writing the following out on a piece of paper or whiteboarding on your desk.
@@ -270,10 +274,12 @@ Try writing the following out on a piece of paper or whiteboarding on your desk.
 ```
 
 How could we use the `getElementById` method to select the list item with an id of:
-<!--ID NEEDED: Help formatting questions/answers-->
-*   Red? `document.getElementById('red')`
-*   Blue? `document.getElementById('blue')`
-*   Yellow? `document.getElementById('yellow')`
+
+1.   Red? 
+2.   Blue? 
+3.   Yellow? 
+
+> (  Answers: 1.`document.getElementById('red')` 2. `document.getElementById('blue')` 3. `document.getElementById('yellow')`  )
 
 #### `querySelector()`
 
@@ -309,7 +315,7 @@ document.querySelector('ul li')
 This will return the first <li> that is a descendant of the <ul>.
 
 
-#### Independent Practice
+#### Activity:
 It’s your turn to give things a try.
 
 ```html
@@ -324,14 +330,17 @@ It’s your turn to give things a try.
 <!--ID NEEDED: Help formatting questions/answers-->
 How could we use the `querySelector` method to do the following:
 
-*   Select the first list item on the page? 
-    `document.querySelector('li')`
-*   Select the element that has the id yellow? 
-    `document.querySelector('#yellow')`
-*   Select the ul ? 
-    `document.querySelector('ul')`
+1.   Select the first list item on the page?
+    
+2.   Select the element that has the id yellow?
+    
+3.   Select the ul ?
+    
+
+> (  Answers: 1.`document.querySelector('li')` 2. `document.querySelector('#yellow')` 3. `document.querySelector('ul')`  )
 
 
+<a name="selecting-multiple-elements"></a>
 ## Selecting Multiple Elements (10 mins)
 
 So far, the methods we’ve used to search through the `document` object have only been returning a single element.
@@ -407,8 +416,7 @@ document.querySelectorAll('.special')
 
 This will return any elements with the class `special`. In the example above, this will return a NodeList containing the second and third list items, as they both have the class `special`.
 
-#### Independent Practice
-<!--ID NEEDED: Help formatting questions/answers-->
+#### Activity
 
 Spend a few minutes writing out the following on paper or whiteboarding:
 
@@ -423,17 +431,17 @@ Spend a few minutes writing out the following on paper or whiteboarding:
 ```
 
 1. How could we use the `getElementsByClassName` method to select all elements with the class special?
-- `document.getElementsByClassName('special')`
+
 2. How could we use the `getElementsByTagName` method to do the following:
 select all `p` elements?
-- `document.getElementsByTagName('p')`
-2. How could we use the `querySelectorAll` method to do the following:
+ 
+3. How could we use the `querySelectorAll` method to do the following:
 select all elements with a class of alert?
-- `document.querySelectorAll('.alert')`
+ 
 
+> (Answers: 1. `document.getElementsByClassName('special')` 2. `document.getElementsByTagName('p')` 3. `document.querySelectorAll('.alert')` )
 
-
-
+<a name="node-lists"></a>
 ## NodeLists (10 mins)
 Now that you’ve got that down, let’s work more with `NodeLists`.
 
@@ -478,9 +486,10 @@ for (var i = 0; i < listItems.length; i++) {
 
 This would loop through the NodeList and change the class name for each item to 'day.'
 
+<a name="manipulating-the-dom"></a>
+## Manipulating the DOM (20 mins)
 
-
-## Manipulating the DOM - Updating Content (20 mins)
+### Updating Content 
 Now that we've done all that hard work finding elements, we can actually do something with them!
 
 
@@ -570,11 +579,11 @@ Result:
 
 ![](http://circuits-assets.generalassemb.ly/prod/asset/5150/innerHTML.png)
 
-> Check: Turn and Talk - 
+> Check: Turn and Talk -
 > Summarize the difference between the textContent and innerHTML properties.
 
 
-#### Manipulating the DOM - Adding Elements
+### Manipulating the DOM - Adding Elements
 To add new elements to the page, we'll need to use a three step process:
 
 1.  We will use the `createElement()` method to create a new element, which can then be added to the page. When this node is created, it will be _empty_. This element will be stored in a variable.
@@ -609,10 +618,10 @@ Check for understanding 1/2
 
 A brief exercise for adding elements to the page (with starter code).
 
-Students have learned how to select elements, innerHTML, and textContent. 
+Students have learned how to select elements, innerHTML, and textContent.
 -->
 
-#### Manipulating the DOM - Getting & Setting Attributes (# mins)
+### Manipulating the DOM - Getting & Setting Attributes 
 Let’s talk some more about getting and setting attributes.
 
 We can change the value of a class attribute for an element using the `className` property. This will apply the styles in our CSS associated with that particular class.
@@ -661,9 +670,10 @@ SME Needed: Check for understanding 2/2
 
 A brief exercise for getting and setting attributes (with starter code).
 
-Students have learned how to select elements, innerHTML, and textContent, adding content, and now these methods to get and set attributes. 
+Students have learned how to select elements, innerHTML, and textContent, adding content, and now these methods to get and set attributes.
 -->
 
+<a name="browsers"</a>
 ## How do Browsers Work? (10 mins) - If Time Permits
 
 We often view webpages on browsers. The most commonly used browsers are Chrome, Firefox, Safari, and Internet Explorer.
@@ -761,7 +771,7 @@ This is where the magic happens — now, our page can finally be seen by our
 
 Now that you've seen all of these methods and have a since of what the Vanilla JS can do!
 
-Open up the `starter_code` directory. 
+Open up the `starter_code` directory.
 
 Follow the prompt.md to write the vanilla JS methods necessary to complete each `alert` step in js/script.js
 
