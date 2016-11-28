@@ -1,4 +1,6 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) JS Events (90 mins)
+<!--
+ID NEEDED: Hooking up jump links / filling out timing chart-->
 
 | Timing | Type | Topic |
 | --- | --- | --- |
@@ -10,27 +12,31 @@
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
+
 - Explain the concept of a 'callback' and how we can pass functions as arguments to other functions.
 - Explain why callbacks are important to asynchronous program flow.
-
+- Write event handlers for common events. 
 - Define what `this` represents in the context of an event listener.
+- Utilize the event object to find out about events that have occurred and prevent the default action on anchors and submit buttons.
 
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
+
+- Access elements in the DOM using Vanilla JS
+- Add and remove elements to the DOM using Vanilla JS
+- Edit existing elements in the DOM using Vanilla JS
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
-- Tip: Have students open _entire_ starter_code folder in Sublime/Atom so that all folders/files for independent practice exercises will be easy to access during the lesson.
+
+- Have students open _entire_ starter_code folder in Sublime/Atom so that all folders/files for independent practice exercises will be easy to access during the lesson.
 
 ---
 <a name="opening"></a>
 ## Opening (5 mins)
 
-In order to create interactive and responsive sites, we'll often want to update the DOM based on our user's actions.
+In order to create interactive and responsive sites, we'll often want to update the DOM based on our user's actions. 
 
 For example, when a user _clicks_ on our site’s menu icon, a sidebar menu should slide out from the side of the page. Or, if a user _types_ an incorrect format into a form field, that field should become outlined in red.
 
@@ -38,6 +44,8 @@ These actions are called **events**.
 
 
 ![](http://circuits-assets.generalassemb.ly/prod/asset/4723/click_1.gif)
+
+Take a look at this short [video](https://generalassembly.wistia.com/medias/yf3g289u45) providing an overview of the usefulness of events in JavaScript.
 
 
 #### What is Asynchronicity?
@@ -420,6 +428,8 @@ For example, which element did the user interact with that caused the event? Wha
 
 Luckily, we can use the **event object** to obtain this kind of information.
 
+Watch this short [video](https://generalassembly.wistia.com/medias/j2rme61inj) for an overview of the event object.
+
 #### Accessing the Event Object
 So how do we gain access to the event object?
 
@@ -558,7 +568,7 @@ function viewComments (e) {
 And here's what we see in the console: `click`
 
 
-## Timing Functions (15 mins)
+## Timing Functions (10 mins)
 
 Let's look at timing functions -- that is, Javascript's way of making something happen every `x` seconds.
 
@@ -664,41 +674,20 @@ This risk is greatest when Javascript is making requests to other webpages. Ther
 
 In this small app we made, anything we want to be sure happens **after** those 5 seconds of computing should go inside the callback of the `setTimeout`. This way, we can be certain that it will run only when the 5 seconds are up.
 
-## You Do: [TimerJS](https://github.com/ga-wdi-exercises/timer_js) (40 minutes / 2:20)
 
 -------
 
 # Additional Topics
 
-## The Event Object (5 minutes) (Bonus)
+<a name="timer-js"></a>
+## You Do: TimerJS (30 mins) (If time permits)
+Get some practice with timing functions!
 
-Now, you're going to make a small change by adding an argument to the anonymous function and printing it to the console...
-
-```js
-var button = $("button");
-var handleClickEvent = function(evt){
-  console.log("I was clicked!")
-  console.log(evt)
-}
-button.on("click", handleClickEvent);
-```
-
-The `evt` stands for `event`.
-
-> The reason we're not actually using `event` is that it's a "reserved word" in Javascript, like "if" and "return".
-
-## Independent Practice: Explore The Event Object (5 minutes) (Bonus)
-
-With your partner, spend three minutes clicking the button and exploring what properties the event (or `evt`) object contains. Look for...
-
-* A way to figure out what element was clicked on.
-* A way to tell the position of the mouse when it clicked.
-* One other piece of useful or interesting information.
+Take a look at the instructions in [starter\_code/timer\_js](starter_code/timer_js/readme.md). 
 
 
----
 <a name="event-flow"></a>
-## Event Flow (15 mins) - If time permits
+## Event Flow (15 mins)  (If time permits)
 Now that we have a good feel for what the event object is, let's go ahead and look at a concept that is central to event handling in JavaScript: event flow.
 
 We've seen in the past that HTML elements can be nested inside other HTML elements. When we say "nested", we mean that one element can wrap another element.
@@ -791,62 +780,30 @@ Having a grasp on this flow will be immensely helpful in the future when you’r
 
 ---
 <a name="key-events"></a>
-## Key Events (15 minutes) (If time permits)
+## Key Events (10 mins) (If time permits)
 
-Let's explore some other events. Add a text input field into `index.html`...
+Let's explore some other events. 
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Events and Callbacks Practice</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  </head>
-  <body>
-    <button>Click me!</button>
-    <input placeholder="Type here!" />
-    <script src="script.js"></script>
-  </body>
-</html>
-```
+Open [starter\_code/key\_events](starter_code/key_events) in your text editor.
 
-#### You Do
+#### Independent practice
 
-With a partner, add an event listener for the `keyup` event to the input. Explore the `event` object again. **Can you find a way to tell which key was pressed?**
+With a partner, take a look at the code that has been provided in `main.js`. Explore the `event` object again. **Can you find a way to tell which key was pressed?**
 
-#### We Do
+#### Guided Practice - Key Events
 
-<details>
+> A cross-browser way of telling which key is pressed is using the `keyCode` property. For `d`, `evt.keyCode` is `68`. For Shift, it's `16`.
 
-  <summary>Your code in `script.js` should look something like this...</summary>
 
-  ```js
-  var button = $("button");
-  var input = $("input");
-  var handleClickEvent = function(evt){
-    console.log("I was clicked!")
-    console.log(evt)
-  }
-  var handleKeyboardEvent = function(evt){
-    console.log("You used the keyboard!")
-    console.log(evt)
-  }
-  button.on("click", handleClickEvent);
-  input.on("keyup", handleKeyboardEvent);
-  ```
 
-  > A cross-browser way of telling which key is pressed is using the `keyCode` property. For `d`, `evt.keyCode` is `68`. For Shift, it's `16`.
-
-</details>
-
-#### You Do
+#### Independent Practice
 
 Find the keyCodes for...
 * Enter
 * Tab
 * Delete
 
-#### You Do
+#### Independent Practice
 
 There are several other events that come up with the `input` tag. See if you can figure out the difference between...
 
@@ -861,7 +818,7 @@ There are several other events that come up with the `input` tag. See if you can
 
 ---
 <a name="multiple-events"></a>
-## Multiple Events (10 mins) - If time permits
+## Multiple Events (10 mins)  (If time permits)
 There may be instances where we want to trigger multiple functions when an event occurs.
 
 For example, maybe when our user clicks the "submit" button we want to run a function that will check to see if the form is valid and call another function that will display a "loading" icon.
@@ -943,32 +900,16 @@ Lets recap the steps before we move on:
 ***
 
 <a name="conclusion"></a>
-## Conclusion (# mins)
-- Review independent practice deliverable(s)
-- Recap topic(s) covered in today's lesson
-- Cover homework and/or upcoming tasks
+## Conclusion (5 mins)
+As we wrap things up, watch this short [video](https://generalassembly.wistia.com/medias/p89saznrue) where a developer talks about the role events played in a recent project she worked on.
 
 In this lesson, we learned how we can react to our users' actions when they visit our site.
 
 We saw how we can harness JavaScript's event handling to wait until the user takes an action — like clicking on a button or scrolling down the page — and then run a block of code, or a function, when this event occurs.
 
-We’ve covered quite a bit in this lesson.
-
-We took a look at how we can trigger multiple functions on one event by calling each function from within a callback function.
-
 We also saw how we can use the keyword this to access the individual element that caused an event to fire.
 
-
-
-
-
 We learned that we can gain access to the event object by passing it in as a parameter to a callback function. This gives us access to the properties and methods tied to the event object from within that callback function.
-
-And finally, we saw how events flow from the most specific element to the least specific element.
-
-
-
-
 
 Up until this point we've been writing things out in "plain vanilla" JavaScript.
 
@@ -978,11 +919,18 @@ In the next lesson we'll take a look at how we can harness the power of jQuery t
 
 ### ADDITIONAL RESOURCES
 - Exercises
+	- WDI Remote - [Trivia Game](exercises/trivia_game/readme.md) (90 mins - Intermediate) 
 - Videos
+	- JS Circuits - [Event Driven Programming](https://generalassembly.wistia.com/medias/mr8fqbknuq)
+	- JS Circuits - [Callback Functions](https://generalassembly.wistia.com/medias/9lo8qk7l5c)
+	- JS Circuits - [Event Object](https://generalassembly.wistia.com/medias/j2rme61inj)
+	- JS Circuits - [Case Study: Event Listeners](https://generalassembly.wistia.com/medias/p89saznrue)
+	- JS Circuits - [Responsive States](https://generalassembly.wistia.com/medias/yf3g289u45)
   - [Robin's Screencast](https://youtu.be/S4Xvo_m6P04)
   - [Andy's Screencast (Part I)](https://www.youtube.com/watch?v=xogI6prB-PI)
   - [Andy's Screencast (Part II)](https://www.youtube.com/watch?v=Srd2Tx1Z7v8)
 - Readings
-- Decks
+	- Eloquent JavaScript [Events](http://eloquentjavascript.net/14_event.html)
+
 
 > Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
