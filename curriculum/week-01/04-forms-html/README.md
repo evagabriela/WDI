@@ -4,7 +4,7 @@
 | --- | --- | --- |
 | 10 mins | [Introduction](#introduction) | HTML Forms |
 | 15 mins | [Demo/Codealong](#demo) | Your First Form |
-| 20 mins | [Introduction](#intro-common-inputs) | Commmon Inputs |
+| 20 mins | [Introduction](#intro-common-inputs) | Common Inputs |
 | 40 mins | [Independent Practice](#ind-practice) | Contact Form |
 | 5 mins | [Conclusion](#conclusion) | Conclusion|
 
