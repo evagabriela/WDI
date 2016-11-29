@@ -316,6 +316,7 @@ This will return the first <li> that is a descendant of the <ul>.
 
 
 #### Activity:
+
 It’s your turn to give things a try.
 
 ```html
@@ -332,9 +333,9 @@ How could we use the `querySelector` method to do the following:
 
 1.   Select the first list item on the page?
     
-2.   Select the element that has the id yellow?
+2.   Select the element that has the id `yellow`?
     
-3.   Select the ul ?
+3.   Select the `ul` ?
     
 
 > (  Answers: 1.`document.querySelector('li')` 2. `document.querySelector('#yellow')` 3. `document.querySelector('ul')`  )
@@ -352,6 +353,8 @@ There are several methods we can use to return a **NodeList**, or _list of node 
 Let's take a look at some of the methods we can use to search through documents and find multiple elements.
 
 ![](http://circuits-assets.generalassemb.ly/prod/asset/5145/Slide-34-Method-Circle2.svg)
+
+> Instructor note: Example can be found in [examples/days\_of\_the\_week](examples/days_of_the_week)
 
 
 We’ll be referencing this HTML snippet for each of our methods:
@@ -494,6 +497,10 @@ Now that we've done all that hard work finding elements, we can actually do some
 
 
 We'll be using this HTML page as a reference in the following examples:
+
+<!--
+@sarahholden find example code and add to examples folder
+-->
 
 ```html
 <!DOCTYPE html>
