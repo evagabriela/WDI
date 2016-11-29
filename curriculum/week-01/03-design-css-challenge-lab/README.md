@@ -13,7 +13,7 @@ Pretend you've been hired as a junior developer to update a site with an old lay
 - Fix any errors (formatting or otherwise) in the HTML and CSS
 
 #### Starter code
-There are two sets of starter code provided: [one with errors](starter-code/with-errors) and [one without errors](starter-code/without-errors). If the students are more advanced and can handle debugging, provide them with the error-based starter code. Students who are more novice may be better off with the code that does not contain errors. If the students do use the code with errors, you can provide them with the 'correct' starter-code midway through the lab so they can self-check their progress.
+There are two sets of starter code provided: [one with errors](starter-code/with-errors) and [one without errors](starter-code/without-errors). If you're up for a debugging challenge, use the error-based starter code; if you want to focus on the differences between float and flex, choose the starter code without errors. You can always experiment with the error-based code if you finish early!
 
 #### Deliverables
 Here are the mockups you should reference while building your site. If you're using the code with errors, this will be a helpful reference for you! The design and layout of the site should not change once you've corrected all code errors and converted from float to flex.
