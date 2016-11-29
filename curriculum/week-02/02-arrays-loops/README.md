@@ -95,6 +95,7 @@ JavaScript, like many programming languages, is zero-based, meaning that its num
 
 So, when we start assigning index values to an array, the first position in the array will be [0], the second will be [1], and so on.
 
+
 <img src="assets/students.png">
 
 
@@ -106,13 +107,19 @@ So, when we start assigning index values to an array, the first position in the 
 
 Does your array look like this?
 
-<img src="assets/answer1.png">
 
-Now, which villain is in index 3?
+```js
+var villains = ["Cruella", "Ursula", "Jafar", "Captain Hook"];
+```
 
-<img src="assets/q2.png">
 
-Because the index starts at 0, index 3 is Captain
+> Check: Now, which villain is in index 3?
+
+<br>
+
+Answer: Because the index starts at 0, index 3 is Captain
+
+<br>
 
 
 > Note: an alternate way to declare arrays is by using the JS keyword `new`
@@ -131,14 +138,19 @@ To access, or retrieve, a value from an array, we will use the array name, follo
 
 Let’s take a look at some examples.
 
-<img src="assets/villains.png">
+```js
+var villains = ["Cruella", "Ursula", "Jafar", "Captain Hook"];
+villains[0];
+villains[3];
+
+```
 
 The first code is accessing index 0, so it should return “Cruella.”
 
 The second code is accessing index 3, so it should return “Captain Hook.”
 
 
-Bonus: Can you come up with a way of asking for a random index (whole number) between zero and the length of your array? HINT: Math.random and Math.floor
+> Bonus: Can you come up with a way of asking for a random index (whole number) between zero and the length of your array? HINT: Math.random and Math.floor
 
 #### Adding a new value to an array
 
@@ -148,23 +160,32 @@ To add a new value to the array, specify the index number of the position where 
 
 We should now have a new list (Cruella is replaced with Scar):
 
-<img src="assets/JSC_U1L4_villian_array4.png">
+```js
+var villains = ["Scar", "Ursula", "Jafar", "Captain Hook"];
+
+```
 
 #### Exercise:
 
+Complete the following exercise in your console:
+
 1.  Create an array of villains again, with the same list of villains (Cruella, Ursula, Jafar, Captain Hook).
-2.  Now replace Cruella with Scar, using the correct index number (remember indexes start at 0 in JS).
+2.  Now replace Ursula with Scar, using the correct index number (remember indexes start at 0 in JS).
 _Note: the console returns 'Scar' because that is the newest value that was added to the array._
 3.  Add an additional villain 'Maleficent' at the end of the array using the correct index number.
 _Note: the console returns the newest value that was added._
 4.  Now, type villains and press enter. Does your console look like this?
 
-<img src="assets/a3.png">
+
+```js
+var villains = ["Scar", "Ursula", "Jafar", "Captain Hook", "Maleficent"];
+
+```
 
 
 ---
 <a name="arrays-deep-dive"></a>
-## Array Deep Dive (15 mins)
+## Array Deep Dive (10 mins)
 
 #### Length method
 
@@ -217,6 +238,8 @@ Note that this means the length of that array will also change.
 
 #### Exercise:
 
+In your console:
+
 1.  Create an empty array of foods: var favoriteFoods = [];.
 2.  Use the .push() method to add the item "cheese": favoriteFoods.push('cheese');.
 _Note: the console returns 1 because that's the number of items you added to the array._
@@ -224,14 +247,18 @@ _Note: the console returns 1 because that's the number of items you added to the
 4.  Type favoriteFoods and enter to see your final array. Does your array look like this?
 
 ```js
-
 [ 'cheese', 'pizza', 'rice', 'taco’ ]
 ```
 
 #### ***.pop()***
 
 The .pop() method is useful when you want to remove the last item in an array.
+
+Try typing the following into your console:
+
+```js
 favoriteFoods.pop();
+```
 
 Using this method the array will now contain this:
 
@@ -244,6 +271,8 @@ What do you think will happen when you call .pop() on an empty array?
 ***.reverse()***
 
 You can reverse the order of elements in an array with the .reverse() method.
+
+Try typing the following into your console:
 
 ```js
 favoriteFoods.reverse()
@@ -271,7 +300,7 @@ favoriteFoods.join()
 ```
 
 <a name="other-arrays-helpers"></a>
-## Independent Practice: Other Array Helper methods (30 min)
+## Independent Practice: Other Array Helper methods (10 min)
 These are just a handful of the methods available to us.
 
 Let's do a quick mini-lab! Break up into groups of 2 or 3. Each group will have FIVE MINUTES to research one of these methods and then share with the class what that method does and how to use it.
@@ -401,7 +430,7 @@ Basically, we’ve changed the `while` loop so that it always runs for a fixed, 
 
 
 ---
-#### For Loop (15 mins)
+#### For Loop (10 mins)
 This kind of setup is so useful, and gets used so frequently, that most languages include a special kind of loop used for just this kind of behavior, called a `for` loop.
 
 For loops are very useful when we want to use a loop to do something with each item in an array. Watch this short [video](https://generalassembly.wistia.com/medias/gguspr8ong) to find out what that would look like.
@@ -434,6 +463,11 @@ for (initialization; condition; finalExpression) {
 
 ---
 #### Exercise:
+<!--
+SME NEEDED: 15 minutes estimate
+
+Would be great to have some starter code (probably just needs an index.html and main.js file) and instructions for students to practice for loops in a more hands-on way than just discussing with a partner. Just a check for understanding, nothing too fancy needed! Maybe log something to the console.
+-->
 
 Look at the code below:
 
