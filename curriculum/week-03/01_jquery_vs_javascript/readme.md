@@ -14,26 +14,21 @@ Today, you’ll learn about one of the most powerful tools in JavaScript: jQuery
 
 We'll see how jQuery simplifies common web development tasks and ensures that our code works in different browsers.
 
-
-![](http://circuits-assets.generalassemb.ly/prod/asset/4738/Slide-3-jQuery.svg)
+<img src="http://circuits-assets.generalassemb.ly/prod/asset/4738/Slide-3-jQuery.svg" width="250px">
 
 We’ll also take a look at how we can leverage jQuery to improve our workflow and write code that is clear and concise.
 
 Plus, we’ll see how jQuery helps us manipulate the DOM, allowing us to perform complex manipulations while using less code.
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/4738/Slide-3-jQuery.svg)
-
-
 
 Let's start by diving into a few of the benefits of jQuery.
-
-![](http://circuits-assets.generalassemb.ly/prod/asset/4739/Slide-4-Benefits.svg)
 
 
 ## First Benefit: Cross-Browser Compatibility (10 mins)
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/4740/Slide-5-Benefit-1.svg)
+<br>
 
+<img src="http://circuits-assets.generalassemb.ly/prod/asset/4740/Slide-5-Benefit-1.svg" width="300px">
 
 jQuery solves many cross-browser compatibility issues.
 
@@ -75,7 +70,7 @@ This allows us to write code without having to worry how it's handled from brows
 
 ## Second Benefit: Familiar Syntax (5 mins)
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/4744/Slide-13-Benefit-2.svg)
+<img src="http://circuits-assets.generalassemb.ly/prod/asset/4744/Slide-13-Benefit-2.svg" width="300px">
 
 By this point, you might have noticed that JavaScript’s syntax can be a bit tricky to read, write, and remember.
 
@@ -119,7 +114,7 @@ _Note: In the previous examples we used single quotations, but you can use doubl
 
 ## Third Benefit: More Concise Code (10 mins)
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/4746/Slide-16-Benefit-3.svg)
+<img src="http://circuits-assets.generalassemb.ly/prod/asset/4746/Slide-16-Benefit-3.svg" width="300px">
 
 
 You probably already noticed this as we were walking through browser compatibility and familiar syntax, but one of the biggest benefits of jQuery is that it allows us to make our code much more concise.
