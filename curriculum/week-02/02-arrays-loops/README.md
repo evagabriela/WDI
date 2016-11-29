@@ -240,14 +240,15 @@ Note that this means the length of that array will also change.
 
 In your console:
 
-1.  Create an empty array of foods: var favoriteFoods = [];.
+1.  Create an empty array of foods: var favoriteFoods 
+2. = [];.
 2.  Use the .push() method to add the item "cheese": favoriteFoods.push('cheese');.
 _Note: the console returns 1 because that's the number of items you added to the array._
 3.  Now add multiple new items at once: favoriteFoods.push('pizza', 'rice', 'taco');.
 4.  Type favoriteFoods and enter to see your final array. Does your array look like this?
 
 ```js
-[ 'cheese', 'pizza', 'rice', 'taco’ ]
+[ 'cheese', 'pizza', 'rice', 'taco']
 ```
 
 #### ***.pop()***
