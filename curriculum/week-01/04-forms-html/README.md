@@ -39,6 +39,10 @@ In the opening of the `<form>` tag you can see two attributes: `method` & `actio
 - **method**: the HTTP verb (method) that the browser uses to submit the form.
 - **action**: the path of the HTTP request page that processes the information submitted via the form.
 
+**Client / Server Model**
+
+![client/server](assets/clientserver.png)
+
 >A `route` is simply a combination of a method & action. For example `GET '/page'` or `POST '/users'` are both valid routes.
 
 ### POST vs GET
@@ -70,10 +74,6 @@ Create an html `form` that, on submit, sends the user to "hasthelargehadroncolli
   <input type="submit" value="Are we doomed!?">
 </form>
 ```
-
-**Client / Server Model**
-
-![client/server](assets/clientserver.png)
 
 <a name="intro-common-inputs"></a>
 ## Introduction: Common Inputs (20 minutes)
