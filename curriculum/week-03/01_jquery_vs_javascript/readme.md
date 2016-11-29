@@ -28,7 +28,7 @@ Let's start by diving into a few of the benefits of jQuery.
 
 <br>
 
-<img src="http://circuits-assets.generalassemb.ly/prod/asset/4740/Slide-5-Benefit-1.svg" width="450px">
+<img src="http://circuits-assets.generalassemb.ly/prod/asset/4740/Slide-5-Benefit-1.svg" width="550px">
 
 jQuery solves many cross-browser compatibility issues.
 
@@ -50,7 +50,7 @@ To get around this discrepancy, we would need to provide an extra check and some
 
 Here, you can see how our "fallback" code still allows us to access the event object in IE 5-8.
 
-<img src="http://circuits-assets.generalassemb.ly/prod/asset/4743/Slide-10-Code-Block-Annotated.svg" width="450px">
+<img src="http://circuits-assets.generalassemb.ly/prod/asset/4743/Slide-10-Code-Block-Annotated.svg" width="550px">
 
 
 Obviously, it’s a bit of a hassle to constantly consider all of the different ways various browsers will handle your JavaScript.
@@ -67,7 +67,7 @@ This allows us to write code without having to worry how it's handled from brows
 
 ## Second Benefit: Familiar Syntax (5 mins)
 
-<img src="http://circuits-assets.generalassemb.ly/prod/asset/4744/Slide-13-Benefit-2.svg" width="450px">
+<img src="http://circuits-assets.generalassemb.ly/prod/asset/4744/Slide-13-Benefit-2.svg" width="550px">
 
 By this point, you might have noticed that JavaScript’s syntax can be a bit tricky to read, write, and remember.
 
@@ -111,7 +111,7 @@ _Note: In the previous examples we used single quotations, but you can use doubl
 
 ## Third Benefit: More Concise Code (10 mins)
 
-<img src="http://circuits-assets.generalassemb.ly/prod/asset/4746/Slide-16-Benefit-3.svg" width="450px">
+<img src="http://circuits-assets.generalassemb.ly/prod/asset/4746/Slide-16-Benefit-3.svg" width="550px">
 
 
 You probably already noticed this as we were walking through browser compatibility and familiar syntax, but one of the biggest benefits of jQuery is that it allows us to make our code much more concise.
