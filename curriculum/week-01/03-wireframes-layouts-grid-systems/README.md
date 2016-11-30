@@ -23,14 +23,20 @@
 
 Wireframes illustrate how the user navigates to and interfaces with information presented to them. A wireframe answers questions as general as _"How does a user access the About page?"_ and as specific as _"What will change on the screen if the user clicks 'submit'?"_ Most wireframes are free of any color or visual design elements, and simply show boxes and lines with notations to outline user interactions.
 
-![Wireframe](assets/wireframe.png)
+Wireframes will look different depending on who creates them– but they should always include details about the functionality.
+
+![Wireframe 1](assets/wireframe1.png)
+![Wireframe 2](assets/wireframe2.png)
+![Projects](assets/projects.png)
+![Testimonials](assets/testimonials.png)
+![Learn More](assets/learnmore.png)
 
 ### Wireframes in the Wild
 As a developer, you'll often build pages and sites from wireframes created by User Experience (UX) Designers. Wireframes should detail any and all functionality on the page. If building a website was like building a house, wireframes might be considered the blueprints of the site. They're an important element of communication between the design and engineering teams.
 
 ### Want to Create Your Own?
 
-#### Wireframes
+#### Thumbnail Sketches
 Wireframing before you build a page or site can be a helpful exercise to plan the functionality and basic layout– especially if your team doesn't have UX Designers. Low-fi wireframes, often called thumbnail sketches, are an easy and quick way to begin. Thumbnail sketches are meant to be drawn quickly, as a way to prototype different layouts for your content. They consist of very simple boxes and lines to represent different elements on the page.
 
 ![Thumbnail Sketches](assets/thumbnail-sketches.jpg)
