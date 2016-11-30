@@ -14,14 +14,16 @@
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
+
 - Explain the advantages of using Arrays
 - Manipulate values in an array
-- Use the for loop to iterate through the elements in an Array
+- Use for loops to iterate through elements in an Array
 - Use array helper methods to update an array
 - Differentiate between while loops, for loops, and forEach loops
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
+
 - Create variables in JavaScript
 - Differentiate between data types (strings, numbers, booleans)
 - Use if/else if/else conditionals to control program flow based on boolean conditions
@@ -44,9 +46,9 @@ What are arrays? Watch this [intro video](https://generalassembly.wistia.com/med
 As you learned in the intro video, variables cannot hold multiple values, so we use arrays when we want to use more than one value at once.
 
 Unfortunately, strings and numbers are not enough for most programming purposes.
-What is needed are collections of data that we can use efficiently -- Arrays.
+What is needed are collections of data that we can use efficiently &mdash; Arrays.
 
-Said another way, an array is an ordered list of items — also known as elements — separated by commas and situated between brackets [ ].
+Said another way, an array is an ordered list of items — known as **elements** — separated by commas and situated between brackets [ ].
 
 <img src="assets/array_syntax.png" width="350px">
 
@@ -224,14 +226,14 @@ In addition to containing multiple elements, arrays also have a number of other 
 
 Let’s take a look at some of them:
 
-- .push()
-- .pop()
-- .reverse()
-- .join()
+- `push()`
+- `pop()`
+- `reverse()`
+- `join()`
 
 
-***.push()***
-The .push() method allows you to add one or more items to the end of an array.
+***push()***
+The `push()` method allows you to add one or more items to the end of an array.
 
 Note that this means the length of that array will also change.
 
@@ -240,20 +242,19 @@ Note that this means the length of that array will also change.
 
 In your console:
 
-1.  Create an empty array of foods: var favoriteFoods 
-2. = [];.
-2.  Use the .push() method to add the item "cheese": favoriteFoods.push('cheese');.
-_Note: the console returns 1 because that's the number of items you added to the array._
-3.  Now add multiple new items at once: favoriteFoods.push('pizza', 'rice', 'taco');.
-4.  Type favoriteFoods and enter to see your final array. Does your array look like this?
+1.  Create an empty array of foods: `var favoriteFoods = [];`.
+2.  Use the `.push()` method to add the item "cheese": `favoriteFoods.push('cheese');`.
+_Note: the console returns `1` because that's the number of items you added to the array._
+3.  Now add multiple new items at once: `favoriteFoods.push('pizza', 'rice', 'taco');`.
+4.  Type `favoriteFoods` and enter to see your final array. Does your array look like this?
 
 ```js
 [ 'cheese', 'pizza', 'rice', 'taco']
 ```
 
-#### ***.pop()***
+#### ***pop()***
 
-The .pop() method is useful when you want to remove the last item in an array.
+The `pop()` method is useful when you want to remove the last item in an array.
 
 Try typing the following into your console:
 
@@ -267,11 +268,11 @@ Using this method the array will now contain this:
 [ 'cheese', 'pizza', 'rice' ]
 ```
 
-What do you think will happen when you call .pop() on an empty array?
+What do you think will happen when you call `pop()` on an empty array?
 
-***.reverse()***
+***reverse()***
 
-You can reverse the order of elements in an array with the .reverse() method.
+You can reverse the order of elements in an array with the `reverse()` method.
 
 Try typing the following into your console:
 
@@ -280,19 +281,19 @@ favoriteFoods.reverse()
 => [ 'rice', 'pizza', 'cheese']
 ```
 
-***.join()***
+***join()***
 
-The .join() method joins all elements of an array into a single string.
-The .join() method accepts an optional argument (the separator), which becomes a string that separates the array values.
+The `join()` method joins all elements of an array into a single string.
+The `join()` method accepts an optional argument (the separator), which becomes a string that separates the array values.
 
-Here is how we would add .join() in order to turn commas into spaces instead:
+Here is how we would add `join()` in order to turn commas into spaces instead:
 
 ```js
 favoriteFoods.join(' ')
 => 'rice pizza cheese'
 ```
 
-If no argument is supplied to .join(), the separator defaults to a comma.
+If no argument is supplied to `join()`, the separator defaults to a comma.
 
 ```js
 
@@ -345,7 +346,7 @@ What are loops and why are they useful? Take a look at this short [video](https:
 
 In the past few lessons we’ve only been able to operate on one value at a time. For example:
 
-`If` a bank has more than $20, allow a withdrawal. `Else` show an error message.
+_If_ a bank has more than $20, allow a withdrawal. _Else_ show an error message.
 
 Now we’re going to learn about collections and loops and why they’re useful.
 
@@ -381,7 +382,7 @@ while (someConditionIsTrue) {
 
 As you can see, it's written in almost exactly the same way as an `if` statement.
 
-Let’s look at an example. If x = 10 and we're subtracting 2 each time we go through the loop, how many times will this loop run?
+Let’s look at an example. If `x` = 10 and we're subtracting 2 each time we go through the loop, how many times will this loop run?
 
 
 ```js
@@ -391,7 +392,7 @@ while (x > 5) {
 }
 ```
 
-If you guessed 3 times, you're right! The final value of x will be 4. Remember, you can use `console.log(x)` to find this answer in the console.
+If you guessed 3 times, you're right! The final value of `x` will be 4. Remember, you can use `console.log(x)` to find this answer in the console.
 
 
 Let’s look at another example. How many times will this loop run?
@@ -404,7 +405,7 @@ while (x < 20) {
 }
 ```
 
-The loop would run **indefinitely**. Since x is defined as 10 and x is less than 20, the computer will run it forever because it is always true (_and it will most likely cause your computer to freeze!_).
+The loop would run **indefinitely**. Since `x` is defined as 10 and `x` is less than 20, the computer will run it forever because it is always true (_and it will most likely cause your computer to freeze!_).
 
 
 When using a `while` loop, it's **very important** to plan out beforehand how you will 'escape' the loop by making your condition evaluate to false.
@@ -414,7 +415,10 @@ Take a look at the following example:
 
 <img src="http://circuits-assets.generalassemb.ly/prod/asset/4933/Slide-11-myString-Example.svg" width="300px">
 
-Questions to consider: * How many times does this loop run? * What's the final value of myString?
+> Questions to consider: 
+> 
+> * How many times does this loop run?
+> * What's the final value of myString?
 
 ##### Answer
 
@@ -434,7 +438,7 @@ Basically, we’ve changed the `while` loop so that it always runs for a fixed, 
 #### For Loop (10 mins)
 This kind of setup is so useful, and gets used so frequently, that most languages include a special kind of loop used for just this kind of behavior, called a `for` loop.
 
-For loops are very useful when we want to use a loop to do something with each item in an array. Watch this short [video](https://generalassembly.wistia.com/medias/gguspr8ong) to find out what that would look like.
+`for` loops are very useful when we want to use a loop to do something with each item in an array. Watch this short [video](https://generalassembly.wistia.com/medias/gguspr8ong) to find out what that would look like.
 
 
 Despite being one of the most basic ways to iterate through an array in JavaScript (and many other languages), the `for` loop is also one of the most versatile ones!
@@ -448,9 +452,9 @@ Let's make a few modifications to our `while` loop from earlier. As you can see,
 
 Let’s break down what we’ll need:
 
-1. An 'initialization', which sets up a starting situation (e.g. var i = 0)
-2. A condition, which gets evaluated each time we're about to execute the block (e.g. i < 10)
-3. A 'finalExpression', which gets evaluated immediately after the block executes _but before the condition is evaluated again_ (e.g. i += 1;)
+1. An 'initialization', which sets up a starting situation (e.g. `var i = 0`)
+2. A condition, which gets evaluated each time we're about to execute the block (e.g. `i < 10`)
+3. A 'finalExpression', which gets evaluated immediately after the block executes _but before the condition is evaluated again_ (e.g. `i += 1`)
 
 
 The general syntax for a `for` loop is:
@@ -465,9 +469,9 @@ for (initialization; condition; finalExpression) {
 ---
 #### Exercise:
 <!--
-SME NEEDED: 15 minutes estimate
+SME NEEDED: 15 - 20 minutes estimate
 
-Would be great to have some starter code (probably just needs an index.html and main.js file) and instructions for students to practice for loops in a more hands-on way than just discussing with a partner. Just a check for understanding, nothing too fancy needed! Maybe log something to the console.
+Would be great to have some starter code (probably just needs an index.html and main.js file) and instructions for students to practice for loops in a more hands-on way than just discussing with a partner. Just a check for understanding, nothing too fancy needed! Maybe log something to the console. We can then save the below exercise for use in Fundamentals.
 -->
 
 Look at the code below:
@@ -522,7 +526,7 @@ Let’s look at a temperature converter for an example of a `for` loop.
 
 <img src="http://circuits-assets.generalassemb.ly/prod/asset/4366/Slide-34-Thermometer.svg" width="30px" style="margin: 0 auto; display: block;">
 
-Suppose that we were given an array of starting values to work with—a group of temperatures in degrees Fahrenheit. Now let’s say we want to convert them into another set of values—temperatures in degrees Celsius—which would then be stored in a separate array.
+Suppose that we were given an array of starting values to work with &mdash; a group of temperatures in degrees Fahrenheit. Now let’s say we want to convert them into another set of values &mdash; temperatures in degrees Celsius &mdash; which would then be stored in a separate array.
 
 ```js
 var tempsInF = [100, 72, 88, 15, 25, 32];
@@ -532,13 +536,13 @@ var tempsInC = [];
 The formula for converting between Fahrenheit and Celsius temperatures is **C = (F - 32) * 5/9**, where F is the temperature in degrees Fahrenheit and C is the temperature in degrees Celsius.
 
 
-So how do we go about operating on the elements in tempsInF? Well, we could just start at the beginning and work our way through, one value at a time.
+So how do we go about operating on the elements in `tempsInF`? Well, we could just start at the beginning and work our way through, one value at a time.
 
 ```js
 tempsInC.push((tempsInF[0] - 32) * (5 / 9));
 ```
 
-Then, we could run an almost identical command to operate on each element in tempsInF and push the converted value onto the tempsInC array:
+Then, we could run an almost identical command to operate on each element in `tempsInF` and push the converted value onto the `tempsInC` array:
 
 
 ```js
@@ -551,7 +555,7 @@ tempsInC.push((tempsInF[5] - 32) * (5 / 9));
 
 However, this code is extremely repetitious.
 
-Fortunately, there is a tool perfectly suited for this task—our old friend, the `for` loop.
+Fortunately, there is a tool perfectly suited for this task — our old friend, the `for` loop.
 
 ```js
 for (var i = 0; i < tempsInF.length; i += 1) {
@@ -562,7 +566,7 @@ for (var i = 0; i < tempsInF.length; i += 1) {
 ---
 #### forEach
 
-Another way of iterating over an array that was added with ECMAScript 5 is forEach():
+Another way of iterating over an array that was added with ECMAScript 5 is `forEach()`:
 
 
 ```js
