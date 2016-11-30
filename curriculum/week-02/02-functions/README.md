@@ -1,5 +1,5 @@
 
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Lesson Title (# mins)
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Functions (90 mins)
 
 | Timing | Type | Topic |
 | --- | --- | --- |
@@ -10,24 +10,26 @@
 | 10 min | [Guided Practice](#return-values) | Return Values |
 | 15 min | [Intro to New Material](#scope) | Variable Scope |
 | 15 min | [Independent Practice](#write-functions) | Write Some Functions |
-| x min | [Conclusion](#conclusion) |Q&A |
+| 5 min | [Conclusion](#conclusion) |Q&A |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Describe why functions are useful
+
+- Describe why functions are useful.
 - Differentiate between function declarations and function expressions.
-- Describe how parameters relate to functions
-- Explain how return statements are used in JavaScript
-- Compare global and local scope
+- Describe how parameters relate to functions.
+- Explain how return statements are used in JavaScript.
+- Compare global and local scope.
 
 
 ### STUDENT PRE-WORK
 *Before this lesson, you should already be able to:*
-- Create variables in JavaScript
-- Differentiate between data types (strings, numbers, booleans)
-- Use if/else if/else conditionals to control program flow based on boolean conditions
-- Create and manipulate arrays
-- Use loops to iterate through the elements in an Array
+
+- Create variables in JavaScript.
+- Differentiate between data types (strings, numbers, booleans).
+- Use if/else if/else conditionals to control program flow based on boolean conditions.
+- Create and manipulate arrays.
+- Use loops to iterate through the elements in an Array.
 
 
 ---
@@ -63,9 +65,10 @@ If you guessed "multiplies `x` by 2," you're right!
 
 #### Why are functions useful?
 
-In JavaScript, a function can:
-1. Be made up of either a single reusable statement or a group of reusable statements.
-2. Be called from anywhere in the program, which allows for the statements inside a function to not be written over and over again.
+In JavaScript, a function can be:
+
+1. Made up of either a single reusable statement or a group of reusable statements.
+2. Called from anywhere in the program, which allows for the statements inside a function to not be written over and over again.
 
 Functions are especially useful because they enable a developer to segment large, unwieldy applications into smaller, more manageable pieces.
 
@@ -92,9 +95,32 @@ As you can see from the code, a director only wants to save Matt Damon if the co
 
 This then repeats for every additional movie.
 
+```js
+var movie = "Saving Private Ryan";
+var cost = 100;
+if (cost < 1000) {
+	console.log(movie + " director says LET'S RESCUE MATT DAMON!");
+} else {
+	console.log(movie + " director says FORGET MATT DAMON!");
+}
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/4429/mattDamon.png)
+var movie = "Interstellar";
+var cost = 2000;
+if (cost < 1000) {
+	console.log(movie + " director says LET'S RESCUE MATT DAMON!");
+} else {
+	console.log(movie + " director says FORGET MATT DAMON!");
+}
 
+var movie = "The Martian";
+var cost = 700;
+if (cost < 1000) {
+	console.log(movie + " director says LET'S RESCUE MATT DAMON!");
+} else {
+	console.log(movie + " director says FORGET MATT DAMON!");
+}
+
+```
 
 
 This is all easy enough to write out, but because Matt Damon has been in so many movies where he needs to be rescued, this code is going to get pretty lengthy!
@@ -102,7 +128,21 @@ This is all easy enough to write out, but because Matt Damon has been in so many
 Let’s try to keep our code from getting out of hand by using a function.
 
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/5028/Slide-3-Matt-Damon.svg)
+```js
+var mattDamon = function (movie, cost) {
+	if (cost < 1000) {
+		console.log(movie + " director says LET'S RESCUE MATT DAMON!");
+	} else {
+		console.log(movie + " director says FORGET MATT DAMON!");
+	}
+}
+
+mattDamon("Saving Private Ryan", 100);
+mattDamon("Interstellar", 2000);
+mattDamon("The Martian", 700);
+mattDamon("Elysium", 200);
+
+```
 
 
 Notice how much cleaner and simpler this function looks than our repeated lines of code?
@@ -110,7 +150,7 @@ Notice how much cleaner and simpler this function looks than our repeated lines 
 Now if Matt Damon decides to film more movies where he needs to be rescued, all we have to do is type:
 
 ```js
-MattDamon(“MovieTitleHere”, CostHere)
+MattDamon("movieTitleHere", costHere)
 ```
 
 Using functions is a great way to save time for yourself, and simplify things for your team members.
@@ -144,7 +184,7 @@ Let's review the three main reasons that functions are created:
 ## Function Expressions (10 mins)
 Now we know what functions are and why we use them. But how do we create them?
 
-As you saw in our Matt Damon Rescue example, just as we do with a variable, we must define a function before we call or “use” it.
+As you saw in our Matt Damon Rescue example, just as we do with a variable, we must define a function before we call or "use" it.
 
 In JS, functions can be defined in several ways. Two of the more common methods of defining a function are **function declaration** and **function expression**.
 
@@ -171,7 +211,7 @@ Let's take a look at the function in more detail:
   ![](http://circuits-assets.generalassemb.ly/prod/asset/5050/code_block_2.png)
   2. This is followed by the word `function`, which is a keyword we use to let JS know that we are creating a function.
   ![](http://circuits-assets.generalassemb.ly/prod/asset/5052/code_block_3.png)
-  3. Next, you have a list of parameters surrounded by parenthesis. Even though the parameters that can go within the parentheses are optional, the parentheses themselves are _always_ required.
+  3. Next, you have a list of parameters surrounded by parentheses. Even though the parameters that can go within the parentheses are optional, the parentheses themselves are _always_ required.
   ![](http://circuits-assets.generalassemb.ly/prod/asset/5053/code_block_4.png)
   4. The statements inside the function will run every time the function is called. The function body must always be wrapped in curly braces `{ }`, even when it consists of only a single statement.
   ![](http://circuits-assets.generalassemb.ly/prod/asset/5054/code_block_5.png)
@@ -198,7 +238,7 @@ Let’s take a quick look at some good and bad examples function names, and what
     (describes what it does, short, and uses camelCase)
 
 #### Calling a function
-To run the code in a function, we **call**, or invoke, the function by using the function name followed by parenthesis.
+To run the code in a function, we **call**, or invoke, the function by using the function name followed by parentheses.
 
 ![](http://circuits-assets.generalassemb.ly/prod/asset/5055/code_block_6.png)
 
@@ -206,10 +246,10 @@ To run the code in a function, we **call**, or invoke, the function by using the
 
 The code in a function will not run when the function is defined. The code will only run when the function is called.
 
-#### Exercise: - Cat Talk
+#### Exercise - Cat Talk
 1.  Write a function `catTalk`.
 2.  Inside the function, log `"Meow"` to the console. [Hint: add `console.log()`]
-3.  Call the `catTalk` function. [Hint: make sure you use parenthesis]
+3.  Call the `catTalk` function. [Hint: make sure you use parentheses]
 4.  Check your console to make sure “Meow” is displayed.
 
 Great job!
@@ -236,7 +276,7 @@ Now that we know how to call functions, let’s see how we can add more details 
 For an overview of why parameters and arguments are useful, watch this short [video](https://generalassembly.wistia.com/medias/pmpczdo8eo).
 
 #### Why are arguments and parameters useful?
-In the last lesson, we created a function that calculated the area for a space with a width of 5 and length of 3.
+Earlier in the lesson, we created a function that calculated the area for a space with a width of 5 and length of 3.
 
 ```js
 var area = function () {
@@ -253,18 +293,18 @@ What would we do if we also wanted to find the area of our kitchen, a room that 
 We could create another function for that area:
 
 ```js
-function area() {
-  var width = 12;
-  var length = 16;
+var kitchenArea = function () {
+  var width = 5;
+  var length = 3;
   console.log(width * length);
 }
 
-area();
+kitchenArea();
 ```
 
 What if we wanted to find the area of all the rooms in our house?
 
-We don't want to have to create a separate function for each room—that’s a lot of work on our end.
+We don't want to have to create a separate function for each room — that’s a lot of work on our end.
 
 It will also burden our program with repeated code, which we want to avoid.
 
@@ -302,7 +342,7 @@ Here is an example of a function with four strings as parameters:
 
 ```js
 var greetUser = function(firstName, lastName, year, city) {
-  console.log("Hello" + firstName + lastName + "born in "+ year + "from" + city + "!" );
+  console.log("Hello" + firstName + lastName + " born in "+ year + " from " + city + "!" );
 }
 ```
 
@@ -365,7 +405,7 @@ The `return` statement _stops the execution of a function_ and returns a value f
 
 #### Storing a return value in a variable
 
-When we `return` something, it ends the function’s execution and “spits out” whatever we are returning.
+When we `return` something, it ends the function’s execution and "spits out" whatever we are returning.
 
 We can then store this returned value in another variable.
 
@@ -442,7 +482,7 @@ As you can see, a function declaration always has:
 
 *   The keyword `function`.
 *   A descriptive name that refers to the function (this can be anything you want, as long as it's in camelCase).
-*   An optional list of parameters surrounded by parenthesis.
+*   An optional list of parameters surrounded by parentheses.
 
 ![](http://circuits-assets.generalassemb.ly/prod/asset/4535/Slide-9-Function-Declaration-New.svg)
 
@@ -450,7 +490,7 @@ As you can see, a function declaration always has:
 Right now, let’s dive deeper into the differences between function declarations and function expressions. While both methods are similar, one of their main differences is the concept of **hoisting**.
 
 
-In JS, function declarations are always moved, or “hoisted,” to the top of their scope by the interpreter. (Remember, the interpreter is the console in JS — the software that runs the code).
+In JS, function declarations are always moved, or "hoisted," to the top of their scope by the interpreter. (Remember, the interpreter is the console in JS — the software that runs the code).
 
 In other words, _you can call a function declaration before defining it_.
 
