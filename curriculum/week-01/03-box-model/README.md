@@ -195,9 +195,13 @@ This width increase can cause frustration and confusion when we start to create 
 
 ***
 
-## Hungry for more?
-### Videos
+### Hungry for more?
+#### Exercises
+- [Box Model](exercises/box-model/starter-code)
+  - [Check your work!](exercises/box-model/solution-code)
+
+#### Videos
 - [CSS Box Model](https://www.youtube.com/watch?v=HNgdhp1_kEE&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J&index=6)
 
-### Readings
+#### Readings
 - [* { Box-sizing: Border-box } FTW](https://www.paulirish.com/2012/box-sizing-border-box-ftw/)
