@@ -240,9 +240,10 @@ Let’s take a quick look at some good and bad examples function names, and what
 #### Calling a function
 To run the code in a function, we **call**, or invoke, the function by using the function name followed by parentheses.
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/5055/code_block_6.png)
+```js
+pickADescriptiveName();
+```
 
-<br>
 
 The code in a function will not run when the function is defined. The code will only run when the function is called.
 
