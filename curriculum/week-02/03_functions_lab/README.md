@@ -78,6 +78,3 @@ You'll review the answers with the instructor in class.
 - Readings
 	- [MDN Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 
-
-> Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
-
