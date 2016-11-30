@@ -1,21 +1,25 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) JS Events (90 mins)
-<!--
-ID NEEDED: Hooking up jump links / filling out timing chart-->
+
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction) | Topic |
-| x min | [Demo/Codealong](#demo) | Topic |
-| x min | [Guided Practice](#guided-practice) | Topic |
-| x min | [Independent Practice](#ind-practice) | Topic |
-| x min | [Conclusion](#conclusion) |Topic |
+| 5 min | [Opening](#opening) | Intro |
+| 5 min | [Independent Practice](#independent-practice) | What is an Event? |
+| 5 min | [Demo](#setting-up-events) | Setting Up an Event Handler |
+| 10 min | [Independent Practice](#color-switcher) | Color Scheme Switcher |
+| 10 min | [Intro to New Material](#event-types) | Types of Events |
+| 10 min | [Intro to New Material](#This) | This |
+| 10 min | [Intro to New Material](#event-object) | Event Objects |
+| 10 min | [Guided Practice](#timing-functions) | Timing Functions |
+| 30 min | [Independent Practice](#timer-js) | TimerJS |
+| 5 min | [Conclusion](#conclusion) |Q&A |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
 
 - Explain the concept of a 'callback' and how we can pass functions as arguments to other functions.
 - Explain why callbacks are important to asynchronous program flow.
-- Write event handlers for common events. 
+- Write event handlers for common events.
 - Define what `this` represents in the context of an event listener.
 - Utilize the event object to find out about events that have occurred and prevent the default action on anchors and submit buttons.
 
@@ -36,7 +40,7 @@ ID NEEDED: Hooking up jump links / filling out timing chart-->
 <a name="opening"></a>
 ## Opening (5 mins)
 
-In order to create interactive and responsive sites, we'll often want to update the DOM based on our user's actions. 
+In order to create interactive and responsive sites, we'll often want to update the DOM based on our user's actions.
 
 For example, when a user _clicks_ on our site’s menu icon, a sidebar menu should slide out from the side of the page. Or, if a user _types_ an incorrect format into a form field, that field should become outlined in red.
 
@@ -71,7 +75,7 @@ This means:
 
 *   The event acts as a “trigger,” which calls, or runs, a function.
 
-
+<a name="independent-practice"></a>
 ## Independent Practice: What is an Event? (5 mins)
 But first, a question for you: **What is an event (on a webpage)?** Spend two minutes doing the following tasks. You are encouraged to discuss your findings with a partner during the exercise.
 
@@ -180,7 +184,7 @@ document.querySelector('body').className = 'yellow-theme';
 > Note: Notice how much repeated/similar code we end up with in our JS file. Later in this lesson we'll look at how we can refactor this code and make it more DRY.
 
 
-
+<a name="event-types"></a>
 ## Types of Events (10 mins)
 
 There are many events that can trigger a function. Here are a few:
@@ -197,7 +201,7 @@ There are many events that can trigger a function. Here are a few:
 |  'resize' |  When the browser window has been resized |
 |  'scroll' |  When the user scrolls up or down on a page |
 | 'mouseenter' | When the user's mouse enters an element |
-| 'mouseleave' | When the user's mouse leaves an element | 
+| 'mouseleave' | When the user's mouse leaves an element |
 
 #### Example
 
@@ -283,7 +287,7 @@ We've also added a message in the paragraph with the id _message_ alerting the u
 
 It's time to get practice creating event handlers.
 
-- Open the [starter_code/event\_listener\_practice](starter_code/event_listener_practice) folder in your text editor. We've provided you with three files: `index.html` `style.css` and `main.js`. 
+- Open the [starter_code/event\_listener\_practice](starter_code/event_listener_practice) folder in your text editor. We've provided you with three files: `index.html` `style.css` and `main.js`.
 - Your job is to add event handlers to create the following functionality...
 
 	* When the user hovers a mouse cursor over the `<div>`, the background of the page should turn blue.
@@ -403,7 +407,7 @@ It's time to get practice creating using the `this` keyword.
 
 Work through this exercise with a partner.
 
-- Open the [starter_code/color\_scheme\_switcher\_part\_2](starter_code/color_scheme_switcher_part_2) folder in your text editor. We've provided you with three files: `index.html` `style.css` and `main.js`. 
+- Open the [starter_code/color\_scheme\_switcher\_part\_2](starter_code/color_scheme_switcher_part_2) folder in your text editor. We've provided you with three files: `index.html` `style.css` and `main.js`.
 - Follow the instructions in the `main.js` file.
 - You should only need to write code within the `switchTheme` function.
 
@@ -567,8 +571,8 @@ function viewComments (e) {
 
 And here's what we see in the console: `click`
 
-
-## Timing Functions (10 mins)
+<a name="timing-functions"></a>
+## Independent Practice: Timing Functions (10 mins)
 
 Let's look at timing functions -- that is, Javascript's way of making something happen every `x` seconds.
 
@@ -674,17 +678,14 @@ This risk is greatest when Javascript is making requests to other webpages. Ther
 
 In this small app we made, anything we want to be sure happens **after** those 5 seconds of computing should go inside the callback of the `setTimeout`. This way, we can be certain that it will run only when the 5 seconds are up.
 
+<a name="timer-js"></a>
+## Independent Practice: TimerJS (30 mins) (If time permits)
+Get some practice with timing functions!
 
+Take a look at the instructions in [starter\_code/timer\_js](starter_code/timer_js/readme.md).
 -------
 
 # Additional Topics
-
-<a name="timer-js"></a>
-## You Do: TimerJS (30 mins) (If time permits)
-Get some practice with timing functions!
-
-Take a look at the instructions in [starter\_code/timer\_js](starter_code/timer_js/readme.md). 
-
 
 <a name="event-flow"></a>
 ## Event Flow (15 mins)  (If time permits)
@@ -782,7 +783,7 @@ Having a grasp on this flow will be immensely helpful in the future when you’r
 <a name="key-events"></a>
 ## Key Events (10 mins) (If time permits)
 
-Let's explore some other events. 
+Let's explore some other events.
 
 Open [starter\_code/key\_events](starter_code/key_events) in your text editor.
 
@@ -919,7 +920,7 @@ In the next lesson we'll take a look at how we can harness the power of jQuery t
 
 ### ADDITIONAL RESOURCES
 - Exercises
-	- WDI Remote - [Trivia Game](exercises/trivia_game/readme.md) (90 mins - Intermediate) 
+	- WDI Remote - [Trivia Game](exercises/trivia_game/readme.md) (90 mins - Intermediate)
 - Videos
 	- JS Circuits - [Event Driven Programming](https://generalassembly.wistia.com/medias/mr8fqbknuq)
 	- JS Circuits - [Callback Functions](https://generalassembly.wistia.com/medias/9lo8qk7l5c)
@@ -933,4 +934,3 @@ In the next lesson we'll take a look at how we can harness the power of jQuery t
 	- Eloquent JavaScript [Events](http://eloquentjavascript.net/14_event.html)
 
 
-> Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
