@@ -415,7 +415,7 @@ Work through this exercise with a partner.
 
 Want to try your hand at this exercise with a little less guidance?
 
-- Open the [starter_code/color\_scheme\_switcher\_part\_1](starter_code/color_scheme_switcher_part_1) folder in your text editor that you were working from earlier.
+- Open the [starter_code/color_scheme_switcher](starter_code/color_scheme_switcher_part_1) folder in your text editor that you were working from earlier.
 - Refactor the code using the following guidlines:
 	- Use `querySelectorAll` to select all `li`s on the page.
 	- Loop through all list items and add an event listener to each. When a `li` is clicked, call the `switchTheme` function.
