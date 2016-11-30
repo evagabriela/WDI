@@ -551,7 +551,15 @@ Conversely, if a variable is declared inside a function, it is local to that fun
 
 This also means it has **local scope**. When we have a variable with local scope, _it cannot be referenced outside of that function_, which means it cannot be called or used outside of the brackets in which it’s contained.
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/5057/jsc-u3l4-code-graphic.png)
+```js
+var sayHello = function () {
+	var brother = "Bill";
+	console.log("Hello " + brother);
+}
+
+sayHello();
+
+```
 
 Notice how the variable `brother` is now defined from _within the function_?  
 This is means it is now a local variable and can only be accessed from within that function.
