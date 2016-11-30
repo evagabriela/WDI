@@ -1,15 +1,16 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Intro to JS (60 mins)
 
 
-<!--ID NEEDED: Update below chart. Thanks! :) -->
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](#introduction) | Topic |
-| x min | [Demo/Codealong](#demo) | Topic |
-| x min | [Guided Practice](#guided-practice) | Topic |
-| x min | [Independent Practice](#ind-practice) | Topic |
-| x min | [Conclusion](#conclusion) |Topic |
+| 10 min | [Opening](#opening) | Intro |
+| 10 min | [Independent Practice](#independent-practice) | JS Exploration |
+| 10 min | [Guided Practice](#client-side-programming) | The Client-Side Programming Language |
+| 10 min | [Guided Practice](#environment) | Setting up our environment |
+| 10 min | [Guided Practice](#console) | Using the Console |
+| 10 min | [Guided Practice](#client-side-programming) | The Client-Side Programming Language |
+| 5 min | [Conclusion](#conclusion) |Q&A |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -105,7 +106,7 @@ JavaScript can tell a server that:
 
 > Instructor note: Demo - Adding a comment on Facebook or Instagram
 
-
+<a name="independent-practice"></a>
 ## Independent Practice (5 mins)
 
 > Instructor Note: Pick any site for this activity, but a site with lots of interactions would be best.
@@ -116,7 +117,7 @@ JavaScript can tell a server that:
 
 _How about things like style changes when hovering over the buttons? Are these accomplished using JS or CSS?_
 
-
+<a name="client-side-programming"></a>
 ## JS: The Client-Side Programming Language of the Web (5 mins)
 
 - Brief history: Created in 10 days by [Brendan Eich](https://en.wikipedia.org/wiki/Brendan_Eich), of Mozilla. 
@@ -135,7 +136,7 @@ _How about things like style changes when hovering over the buttons? Are these a
   - One of the biggest additions to JS was AJAX, which allows use to reload parts of a page without refreshing the entire thing (just like on Facebook). Big implications for User Experience.
 - A lot of frameworks and libraries -- like Backbone and jQuery -- have emerged that enable us to do so much more -- and do it quickly -- with Javascript.
 
-
+<a name="environment"></a>
 ## Setting up our environment (10 mins)
 
 #### First, create your HTML and JS
@@ -197,7 +198,7 @@ Now, make sure your JS file is hooked up to your HTML correctly:
 
 ![](http://circuits-assets.generalassemb.ly/prod/asset/5059/Slide-54.png)
 
-
+<a name="console"></a>
 ## Using the Console (10 mins)
 
 Next, open the site in Chrome, and open the Dev Tools
