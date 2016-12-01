@@ -1,7 +1,11 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) jQuery vs. JavaScript (60 mins)
-<!--
-ID NEEDED: Following the morning exercise template here, but think it might be useful to have a little more structure. Let me know if this should be formatted differently!
--->
+
+| Timing | Type | Topic |
+| --- | --- | --- |
+| 15 min | [Independent Practice](#independent-practice) | jQuery vs. Javascript |
+| 35 min | [Intro to New Material](#benefits) | Benefits of jQuery |
+| 10 min | [Conclusion](#conclusion) |Q&A |
+
 ## Overview
 - In this morning's session, we'll be we'll be exploring the difference between jQuery and JavaScript and the benefits to using the jQuery library, vs. "Plain Vanilla" JavaScript.
 
@@ -9,7 +13,8 @@ ID NEEDED: Following the morning exercise template here, but think it might be u
 - Research the difference between jQuery and JavaScript. 
 - See if you can find at least two benefits of using each
 
-## Introduction (5 mins)
+<a name="benefits"></a>
+## Intro to New Material: Benefits of jQuery (30 mins)
 Today, you’ll learn about one of the most powerful tools in JavaScript: jQuery.
 
 We'll see how jQuery simplifies common web development tasks and ensures that our code works in different browsers.
@@ -23,8 +28,7 @@ Plus, we’ll see how jQuery helps us manipulate the DOM, allowing us to perform
 
 Let's start by diving into a few of the benefits of jQuery.
 
-
-## First Benefit: Cross-Browser Compatibility (10 mins)
+### First Benefit: Cross-Browser Compatibility 
 
 <br>
 
@@ -65,7 +69,7 @@ To do this, jQuery uses feature detection to decipher the best way to complete a
 This allows us to write code without having to worry how it's handled from browser to browser.
 
 
-## Second Benefit: Familiar Syntax (5 mins)
+### Second Benefit: Familiar Syntax
 
 <img src="http://circuits-assets.generalassemb.ly/prod/asset/4744/Slide-13-Benefit-2.svg" width="550px">
 
@@ -109,7 +113,7 @@ And that's just the tip of the iceberg. We can use _any_ of the selectors we kno
 _Note: In the previous examples we used single quotations, but you can use double quotations if you like. It is simply a style preference, and it’s completely up to you._
 
 
-## Third Benefit: More Concise Code (10 mins)
+### Third Benefit: More Concise Code 
 
 <img src="http://circuits-assets.generalassemb.ly/prod/asset/4746/Slide-16-Benefit-3.svg" width="550px">
 

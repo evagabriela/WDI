@@ -32,19 +32,17 @@ WHAT'S NEEDED:
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Chrome Dev Tools and Debugging JS (90 mins)
 
 
-<!--ID NEEDED: Filling out this table, jump links. Thanks!-->
-
 | Timing | Type | Topic |
 | --- | --- | --- |
-| 5 min | [Opening](assets/#opening) | What is an Error? |
-| 10 min | [Independent Practice](assets/#independent-practice) | Common Errors |
-| 10 min | [Intro to New Material](assets/#reading-error-messages) | Reading Error Messages |
-| 20 min | [Intro to New Material](assets/#tools-debugging) | Tools for Debugging |
-| 10 min | [Independent Practice](assets/#debug) | Debug |
-| 10 min | [Intro to New Material](assets/#debugger) | Debugger |
-| 10 min | [Intro to New Material](assets/#find-answers) | How to Find Answers |
-| 20 min | [Independent Practice](assets/#) | Debug |
-| 5 min | [Conclusion](assets/#conclusion) |Q&A |
+| 5 min | [Opening](#opening) | What is an Error? |
+| 10 min | [Independent Practice](#independent-practice) | Common Errors |
+| 10 min | [Intro to New Material](#reading-error-messages) | Reading Error Messages |
+| 20 min | [Intro to New Material](#tools-debugging) | Tools for Debugging |
+| 10 min | [Independent Practice](#debug) | Debug |
+| 10 min | [Intro to New Material](#debugger) | Debugger |
+| 10 min | [Intro to New Material](#find-answers) | How to Find Answers |
+| 20 min | [Independent Practice](#fizz-buzz) | Fizzbuzz Errors |
+| 5 min | [Conclusion](#conclusion) |Q&A |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -339,7 +337,7 @@ You can get [badges](assets/stackoverflow.com/help/badges) and [special privileg
 Mozilla Developer Network (MDN) is another excellent resource. It contains loads of tutorials, references, and documentation for any questions you might have
 regarding HTML, CSS, and JavaScript.
 
-
+<a name="fizz-buzz"></a>
 ## Independent Practice (20 mins)
 
 Check out the starter code inside `exercises/practice_02` for a fizzbuzz program that isn't working.
