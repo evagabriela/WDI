@@ -25,6 +25,18 @@
 - Use chrome dev tools
 - Use a text editor
 
+## Debugger (10 mins)
+
+An alternative to using `console.log` is to use the debugger capabilities of your browser. Modern browsers come with the ability to set a breakpoint on a specific line of your code. This will cause the execution of the program to pause every time the line with the breakpoint is reached and allow you to inspect the values of variables at that point.
+
+`debugger` stops a script at its line of code and lets you "look around". You can see what variables are available at the line of code where `debugger;` is run.
+
+To make your code continue, press the little eject-looking button.
+
+![Resume execution](assets/resume_execution.jpg)
+
+You can have as many `debugger;` lines as you want. The script will stop at each one and wait for you to tell it to continue.
+
 ## Debugging Javascript (5 mins)
 
 At the moment, most of the JavaScript applications we've written have been fairly simple, and most have not been longer than a hundred lines. As applications and websites get more and more complex, we need increasingly powerful tools to help us detect bugs, typos, implementation errors – and fix them quickly and efficiently.

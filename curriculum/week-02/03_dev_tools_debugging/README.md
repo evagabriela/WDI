@@ -222,6 +222,9 @@ Lets see this in action, by taking a quick look at a code example.
 <a name="debug"></a>
 ## Independent Practice: Debug (10 mins)
 
+Check out the starter code inside `exercises/practice_01` for a calculator program that isn't running correctly.
+Don't scan the JS file for errors. Open up your Dev Tools and follow their errors to figure out what's wrong.
+
 > **Note**: No need to clone, just follow along with the instructor on the board.
 
 <!--
@@ -239,22 +242,6 @@ Here was the previous exercise (which involved the DOM unfortuantely)
 
 Currently, we have a lot of code written in `app.js`, but our solution is still not functioning correctly.
 Let's put some `console.log` statements in our code to make sure that our values are what we think they are.-->
-
----
-<a name="debugger"></a>
-## Debugger (10 mins)
-
-An alternative to using `console.log` is to use the debugger capabilities of your browser. Modern browsers come with the ability to set a breakpoint on a specific line of your code. This will cause the execution of the program to pause every time the line with the breakpoint is reached and allow you to inspect the values of variables at that point.
-
-`debugger` stops a script at its line of code and lets you "look around". You can see what variables are available at the line of code where `debugger;` is run.
-
-To make your code continue, press the little eject-looking button.
-
-![Resume execution](assets/resume_execution.jpg)
-
-You can have as many `debugger;` lines as you want. The script will stop at each one and wait for you to tell it to continue.
-
-We'll take a look at the debugger in more detail later in a later lesson.
 
 <!--
 
@@ -354,6 +341,9 @@ regarding HTML, CSS, and JavaScript.
 
 
 ## Independent Practice (20 mins)
+
+Check out the starter code inside `exercises/practice_02` for a fizzbuzz program that isn't working.
+Don't scan the JS file for errors. Open up your Dev Tools and follow their errors to figure out what's wrong.
 <!--SME NEEDED: Lab here
 It would be great to have an exercise here that has students practice debugging the following that students have learned:
 
