@@ -28,7 +28,7 @@
 
 - Create variables in JavaScript
 - Differentiate between data types (strings, numbers, booleans)
-- Use if/else if/else conditionals to control program flow based on boolean conditions
+- Use `if/else if/else` conditionals to control program flow based on boolean conditions
 - Create arrays and access/manipulate elements in arrays
 - Create objects with multiple properties and methods and add and retrieve properties
 
@@ -132,7 +132,7 @@ Constructor notation can be used to:
 
 #### Creating an Object using Constructor Notation
 
-First, let's first take a look at how we can create a single, empty object using constructor notation.
+First, let's take a look at how we can create a single, empty object using constructor notation.
 
 
 Take a look:
@@ -239,7 +239,7 @@ Here, we are creating a `Superhero` function. It’s just like creating any othe
 var Superhero = function () {};
 ```
 
-Note that it is convention to _capitalize the name of the function_ when creating an object using constructor notation. We'll take a look at this again in a moment.
+Note that it is convention to _capitalize the name of the function_ when creating a constructor function. We'll take a look at this again in a moment.
 
 
 #### Creating Object Instances
@@ -277,7 +277,7 @@ Up until this point, we've set property names manually, for every new object we 
 The point of our objects/constructors is to create blueprints of our data models, so that, when we create a new instance, we can change particular properties instead of resetting all of the object’s keys.
 
 
-Properties can be set in the constructor so they are set specifically for each instance. In other words, we pass them as parameters in our constructor function.
+Properties can be set in the constructor so they are set specifically for each instance. In other words, we pass them as arguments in our constructor function.
 
 Take a look at the following example:
 
@@ -304,7 +304,7 @@ Let's break this down, line-by-line.
 3. The object properties `firstName`, `lastName` and `superheroName` are then set through the `this` keyword with the value.
 4. Within the function, `firstName` refers to the parameter name we passed to the function. Same with `lastName` and `superheroName`.
 5. We then add a method for our object, similar to how we've done it in the past. To add a method, we use the method name `revealIdentity`, followed by an equal sign, followed by an anonymous function (a function without a name).
-6. Within the function, we use this to access the properties of the instance of the individual object we are creating.
+6. Within the function, we use `this` to access the properties of the instance of the individual object we are creating.
 
 > Note: We defined a method inside the the Superhero constructor here. JavaScript allows it, but don't do it. We'll see the right way to achieve a near identical and preferred result shortly.
 
@@ -345,8 +345,8 @@ Notice our `revealIdentity` method is also copied over to each individual object
 
 ```js
 // We can also access methods using our new object instances:
-superman.revealIdentity(); => 'Clark Kent is Superman'
-batman.revealIdentity(); => 'Bruce Wayne is Batman'
+superman.revealIdentity(); // 'Clark Kent is Superman'
+batman.revealIdentity(); // 'Bruce Wayne is Batman'
 ```
 
 
@@ -354,7 +354,7 @@ Creating objects is now much more scalable than if we used literal notation to c
 
 Our code will also be cleaner, as we avoid repetition when creating similar objects.
 
-#### This
+#### this
 
 In the last lesson, we covered how to use the `this` keyword to access properties and methods for our objects.
 
@@ -445,7 +445,7 @@ Methods are *"functions"* that are predefined and built into an object.
 
 We all know and love `Array` methods like `forEach()`, `map()`, `filter()`, and `reduce()`; these are all Methods of the Array object.  
 
-Let's use Constructor Notation to create flower object that uses a `bloom` method to output to the console whenever we call it.
+Let's use Constructor Notation to create a flower object that uses a `bloom` method to output to the console whenever we call it.
 
 ```javascript
 function Flower(color, petals, smells) {
@@ -461,7 +461,7 @@ function Flower(color, petals, smells) {
 
 We now have a method inside our flower object called `bloom`.
 
-There's an issue with the above code. If we create multiple flowers we don't care if the attributes `color`, `petal`, and `smells` all have different properties. It makes sense for these properties to be different and customizable for each flower. 
+There's an issue with the above code. If we create multiple flowers we don't care if the attributes `color`, `petal`, and `smells` all have different values. It makes sense for these values to be different and customizable for each flower. 
 
 However, all flowers could _share_ the `bloom` method. What we want to avoid is creating an entirely new `bloom` method every time we make a new flower.
 
@@ -488,7 +488,7 @@ All objects have internal links to other objects - we call these "other objects"
 
 We know that objects are basically key/value pairs. When you ask for a key's value from an object, JavaScript will look, first, to find the value in the instance of the object, and then, if it doesn't exist, it will look to that object's prototype 'default value'.
 
- Note that this inheritance chains can go as long as you want, but generally, it's better to keep them short and have your code easier to understand.
+ Note that this inheritance chain can go as long as you want, but generally, it's better to keep them short and have your code easier to understand.
 
 #### Prototypes as pointers
 
@@ -500,7 +500,7 @@ The easiest way to see prototypes in Javascript are as pointers other objects sa
 
 #### Adding Methods to our Flower Object
 
-Using Prototype will enable us to easily define methods to all instances of the instances while saving memory. What's great is that the method will only be applied to the prototype of the object, so it is only stored in the memory once, because objects coming from the same constructor point to one common prototype object.
+Using Prototype will enable us to easily define methods to all instances created by a constructor function while saving memory. What's great is that the method will only be applied to the prototype of the object, so it is only stored in the memory once, because objects coming from the same constructor point to one common prototype object.
 
 By adding the method `bloom` to the constructor's **prototype** we can enable all flowers to share a `bloom` method, or any other method for that matter!
 
@@ -579,7 +579,7 @@ Take a look at the flower in front of you.
 Decide amongst your
 tablemates the type of flower, the flower's main color, number of petals, and whether or not it smells pretty. Think up some other possible properties or methods. Try to think of at least three.
 
-1. Take 5 minutes to create a Flower object that includes the properties/methods you discussed as a group using instance based on the flower on your table, using a Constructor function. Then create a flower instance for your individual flower.
+1. Take 5 minutes to create a Flower object that includes the properties/methods you discussed as a group based on the flower on your table, using a Constructor function. Then create a flower instance for your individual flower.
 2. Take another couple minutes to create a flower instance based on your neighbor's flower.
 
 > Check: Now we should have a flower instance for each of our actual flowers.
@@ -590,7 +590,7 @@ tablemates the type of flower, the flower's main color, number of petals, and wh
 
 <a name="static-methods"></a>
 ## Guided Practice: Cross-Pollination (10 mins) 
-Now that we are awesome Flower experts, let's try our hand at cross pollinating two flower objects. Cross pollinating is beyond the realm of an individual flower and could therefore live on the Flower constructor itself. Another examples of this would be `create`, `new`, or `destroy`. These are all *meta* actions of a flower; a flower cannot create itself! They are called **static methods**.
+Now that we are awesome Flower experts, let's try our hand at cross pollinating two flower objects. Cross pollinating is beyond the realm of an individual flower and could therefore live on the Flower constructor itself. Other examples of this would be `create`, `new`, or `destroy`. These are all *meta* actions of a flower; a flower cannot create itself! They are called **static methods**.
 
 Check: Think-pair-share - How might we declare this method?
 
