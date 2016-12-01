@@ -11,7 +11,7 @@
 |15 min| [Guided Practice](#arithmetic-operators) | Arithmetic Operators |
 | 15 min| [Guided Practice](#guided-string) | String Concatentation and Coercion |
 | 10 min | [Guided Practice](#guided-assignment)| Assignment Operators |
-| 10 min | [Guided Practice](#guided-special-arithmetic) | Special Arithmetic Methods |
+| 15 min | [Guided Practice](#guided-special-arithmetic) | Special Arithmetic Methods |
 |15 min | [Guided Practice](#helper-methods) | Helper Methods |
 | 5 min | [Conclusion](#conclusion) |Wrap-Up |
 
@@ -297,21 +297,17 @@ Even numbers:
 
 This may seem tedious now, but it’ll come in handy later on.
 
+####Exercise:
+Look at the following five problems.  Knowing what you have learned about numbers and operators, write down what the console returns for each.
 
-<!--
-ID NEEDED: Would you be able to format the following exercise? Thanks!
+> 1.  1 + 2
+> 2.  2 - 5
+> 3.  5/2
+> 4.  6*2
+> 5.  10%4
 
-Exercise:
-1 + 2
-The console returns 3
-2 - 5
-The console returns -3
-5/2
-The console returns 2.5
-6*2
-The console returns 12
-10%4
-The console returns 2 -->
+
+>_(Answers: 1.The console returns 3.  2.The console returns -3.  3.The console returns 2.5.  4.The console returns 12.  5.The console returns 2.)_
 
 ***
 ## Guided Practice: String Concatentation and Coercion (15 mins)
@@ -408,7 +404,7 @@ var secondWord = 'world'
 
 
 ***
-## Guided Practice: Assignment Operators (10 mins)
+## Guided Practice: Assignment Operators (15 mins)
 
 Now, let’s get back to some math and look at assignment operators.
 
@@ -424,19 +420,18 @@ There are also a couple arithmetic operators we can use to add or subtract one f
 
 <img src="assets/increment.png" width="500px">
 
-<!-- ID NEEDED: Can you format this exercise?
-Type `var num = 10`;
-Note: the console returns undefined when declaring a variable using var because the var statement returns no value
-Now, type num += 4;. What do you think the value of num will become?
-Note: the console returns 14 because our value was 10 and we added 4 to it.
-Type num -= 8; the console. Before you press enter, take a moment to think about what value the console will return.
-Note: the console returns 6 since the new value was 14 and we subtracted 8 from it.
--->
+####Exercise:
+
+>1.  Type `var num = 10`;
+>2.  Now, type num += 4;. What do you think the value of num will become?
+>3.  Type num -= 8; the console. Before you press enter, take a moment to think about what value the console will return.
+
+>_(Answers: 1.the console returns undefined when declaring a variable using var because the var statement returns no value  2.the console returns 14 because our value was 10 and we added 4 to it.  3.the console returns 6 since the new value was 14 and we subtracted 8 from it.
+)_
 
 
 ***
 ## Guided Practice: Special arithmetic methods (10 mins)
-<!--Seems like this section might take more than 10 minutes with the whole activity outlined below.  Should we change to 15 minutes?  -->
 Apart from simply adding and subtracting numbers from variables, JavaScript also allows you to use special code to perform other arithmetic operations on numbers, such as finding the square root.
 
 Some of this code will contain a dot `.`. We will cover the dot notation in more depth in a later lesson, but, for now, let’s practice with some of the simpler arithmetic methods.
