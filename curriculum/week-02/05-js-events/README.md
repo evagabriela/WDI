@@ -145,20 +145,20 @@ CSS:
 ```css
 
 .red-theme {
-background: red;
+	background: red;
 }
 
 .white-theme {
-background: white;
+	background: white;
 }
 
 .blue-theme {
-background: blue;
-color: white;
+	background: blue;
+	color: white;
 }
 
 .yellow-theme {
-background: yellow;
+	background: yellow;
 }
 
 ```
@@ -167,19 +167,19 @@ background: yellow;
 
 ```js
 function turnRed () {
-document.querySelector('body').className = 'red-theme';
+	document.querySelector('body').className = 'red-theme';
 }
 function turnWhite () {
-document.querySelector('body').className = 'white-theme';
+	document.querySelector('body').className = 'white-theme';
 }
 function turnBlue () {
-document.querySelector('body').className = 'blue-theme';
+	document.querySelector('body').className = 'blue-theme';
 }
 function turnYellow () {
-document.querySelector('body').className = 'yellow-theme';
+	document.querySelector('body').className = 'yellow-theme';
 }
 ```
-3. Add event handlers to the `main.js` file such that when a user clicks on one of the colored dots the background color of the entire page changes to match that dot. You should not need to change any HTML or CSS.
+3\. Add event handlers to the `main.js` file such that when a user clicks on one of the colored dots the background color of the entire page changes to match that dot. You should not need to change any HTML or CSS.
 
 > Note: Notice how much repeated/similar code we end up with in our JS file. Later in this lesson we'll look at how we can refactor this code and make it more DRY.
 
@@ -230,7 +230,7 @@ The form contains an input field where the user can enter an email address, a bu
 
 Our stylesheet (on the right side of the image) is also very basic.
 
-Take a look at the class _error_, which will give a solid red border to any elements that have the _error_ class.
+Take a look at the class `error`, which will give a solid red border to any elements that have the `error` class.
 
 ```css
 .error {
@@ -277,7 +277,7 @@ Let's take a look at what the page looks like when the user hits tab or clicks a
 
 ![Error](assets/email_form.png)
 
-The email input now has the _error_ class, giving the input field a red border.
+The email input now has the `error` class, giving the input field a red border.
 
 We've also added a message in the paragraph with the id _message_ alerting the user they need to enter an email address.
 
@@ -381,11 +381,11 @@ var circles = document.querySelectorAll('.circle');
 
 //loop through each .circle element and add an event handler.
 for (var i = 0; i < circles.length; i++) {
-circles[i].addEventListener('click', turnRed);
+	circles[i].addEventListener('click', turnRed);
 }
 
 function turnRed () {
-this.style.backgroundColor = "red";
+	this.style.backgroundColor = "red";
 }
 ```
 
@@ -447,8 +447,7 @@ Now if we simply use whichever parameter name we chose (in our case “e”) fro
 
 Take a look at what the event object looks when you log it to the console, and notice all of the properties we have available to us as part of the event object:
 
-![](http://circuits-assets.generalassemb.ly/prod/asset/4633/Slide-27-Codeblock.svg)
-
+<img src="http://circuits-assets.generalassemb.ly/prod/asset/4633/Slide-27-Codeblock.svg" width="500px">
 
 
 We'll take a look at a few of these properties, but for now just note how much information about the event the event object holds.
@@ -683,6 +682,7 @@ In this small app we made, anything we want to be sure happens **after** those 5
 Get some practice with timing functions!
 
 Take a look at the instructions in [starter\_code/timer\_js](starter_code/timer_js/readme.md).
+
 -------
 
 # Additional Topics
