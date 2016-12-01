@@ -134,15 +134,14 @@ Breakout into groups of four. Each group will have 20 minutes to prepare a short
 <a name="ind-practice"></a>
 ## Independent Practice: Animate it! (50 minutes)
 Implement as many of the following exercises as you can in the time allotted. Feel free to work with a partner!
-- [Loader Animation](loader-animation/starter-code)
-- [Spinning Wheel Animation](spinning-wheel-animation/starter-code)
-- [Transition Button Animation](transition-button-animation/starter-code)
+- [Loader Animation](independent-practice/loader-animation/starter-code)
+- [Spinning Wheel Animation](independent-practice/spinning-wheel-animation/starter-code)
+- [Transition Button Animation](independent-practice/transition-button-animation/starter-code)
 
 
 ### Bonus
-- [CSS Accordion](accordian-animation)
-- [Clock](clock-animation)
-
+- [CSS Accordion](independent-practice/accordian-animation)
+- [Clock](independent-practice/clock-animation)
 
 ***
 
@@ -154,11 +153,13 @@ CSS Animations are easy and mostly compatible, so they're often a good choice fo
 ***
 
 ### Hungry for More?
+#### Exercises
+- [CSS Ghost](exercises/css-ghost)
+- [Solar System in CSS](http://neography.com/experiment/circles/solarsystem/)
+  - [*solution*](http://neography.com/journal/our-solar-system-in-css3/)
+
+
 #### Videos
 - [CSS Animation](https://www.youtube.com/watch?v=9RfHG3K8U_Q&index=31&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
 - [CSS Transitions](https://www.youtube.com/watch?v=Xu3SrQhtBqw&index=30&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
 - [CSS Transform](https://www.youtube.com/watch?v=Gu-HBBZLyjg&index=29&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
-
-#### Exercises
-- [Solar System in CSS](http://neography.com/experiment/circles/solarsystem/)
-  - [*solution*](http://neography.com/journal/our-solar-system-in-css3/)

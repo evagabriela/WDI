@@ -9,6 +9,7 @@
 | 10 min | [Guided Practice](#dot-notation) | Dot Notation |
 | 10 min | [Guided Practice](#square-bracket-notation) | Square Bracket Notation |
 | 5 min | [Guided Practice](#removing-properties) | Removing Properties |
+| 5 min | [Guided Practice](#accessing-methods) | Accessing Methods |
 | 10 min | [Independent Practice](#iterating-through-objects) |  Iterating Through Objects |
 | 5 min | [Guided Practice](#nested-collections) |  Nested Collections |
 | 5 min | [Independent Practice](#lab-session) |  Objects |
@@ -17,7 +18,7 @@
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
 
-- Compare objects and key-value stores to arrays as data structures
+- Compare objects to arrays as data structures
 - Explain the difference between object properties and methods
 - Create empty objects and objects with multiple properties and methods using object literal syntax
 - Compare adding and retrieving properties to an existing object using the dot and bracket notations
@@ -42,7 +43,7 @@ In this lesson, our focus is objects, an exciting aspect of JavaScript that ties
 
 Once you get to know objects, you’ll realize how much easier your coding life can be.
 
-Check: Think/Pair/Share: Ask students to define, explain, or recall anything they already know about objects. 
+> Check: Think/Pair/Share: Ask students to define, explain, or recall anything they already know about objects. 
 
 
 #### The limitations of Arrays
@@ -130,7 +131,7 @@ If you were to describe a motorcycle, you might include its color, make, model, 
 
 Each property has a name and a value, and each name/value pair tells us something about that individual object.
 
-<img src="http://circuits-assets.generalassemb.ly/prod/asset/4563/Slide-20-Chart.svg" width="300px">
+<img src="http://circuits-assets.generalassemb.ly/prod/asset/4563/Slide-20-Chart.svg" width="500px">
 
 #### Methods
 Let’s now focus on methods.
@@ -148,7 +149,7 @@ Consider our motorcycle example. The following actions are common ways that huma
 
 We can use methods to retrieve the values of an object's properties (such as the motorcycle’s model) or change its properties (such as when we start, stop, brake, or accelerate our bike).
 
-<img src="http://circuits-assets.generalassemb.ly/prod/asset/4518/Slide-23-Chart.svg" width="300px">
+<img src="http://circuits-assets.generalassemb.ly/prod/asset/4518/Slide-23-Chart.svg" width="500px">
 
 
 #### Paired Practice:
@@ -176,10 +177,6 @@ Let's say we want to create objects for several popular superheros, starting wit
 We might want to add some properties for Superman — firstName, lastName, and superheroName.
 
 We might also want to add a method to our Superman object — `revealIdentity`, which will return Superman's real first and last name (`Clark` and `Kent`), followed by his superhero name (`Superman`).
-
-
-<img src="http://circuits-assets.generalassemb.ly/prod/asset/4526/Slide-5-Superman.svg" width="300px">
-
 
 
 Here's how we would write this object using literal notation:
@@ -232,9 +229,6 @@ var animal = {
 ```
 
 
-<img src="http://circuits-assets.generalassemb.ly/prod/asset/4551/Slide-10-Rover-Bark.svg" width="300px">
-
-
 
 Because `this` refers to the animal object, using it would be the same as writing out:
 
@@ -279,18 +273,8 @@ Let's practice!
 *   Rating: 4.2
 
 
-<!--ID NEEDED: Help formatting question/solution? Or is this okay? -->
+[Solution](solutions/currently_reading.js)
 
-**Solution**
-
-```js
-var currentlyReading = {
-  title: "The Wind-Up Bird Chronicle",
-  author: "Haruki Marukami",
-  year: 1994,
-  rating: 4.2
-};
-```
 
 <br>
 
@@ -349,7 +333,6 @@ superhero.favoriteFood = 'Beef Bourguignon';
 
 We've now added a new favorite food for Superman!
 
-<img src="http://circuits-assets.generalassemb.ly/prod/asset/4529/Slide-15-Superman-Beef.svg" width="300px">
 
 
 #### Exercise:
@@ -366,8 +349,6 @@ var pet = {
   name: 'Godzilla'
 };
 ```
-
-<img src="http://circuits-assets.generalassemb.ly/prod/asset/4530/Slide-16-Lizard.svg" width="150px">
 
 1. What code could we write to retrieve the value for `name` from the object and store this value in a variable `petName`?
 2. Now, how would you assign `13` as the value for `age`?
@@ -469,8 +450,6 @@ Square Bracket Notation: `delete superman['firstName'];`
 ## Accessing Methods (5 mins)
 Next, let’s talk about accessing methods. We will use **dot notation** to access methods for our objects.
 
-<img src="http://circuits-assets.generalassemb.ly/prod/asset/4531/Slide-29-Clark-Kent.svg" width="300px">
-
 If we wanted to access — or call, our `revealIdentity` method — we could do so using the following syntax:
 
 ```js
@@ -501,7 +480,7 @@ Javascript objects also have native methods that take care of this for us...
 
 ```js
 // .keys()
-Object.keys( car );
+Object.keys(car);
 ```
 
 ### Exercise:
@@ -555,7 +534,7 @@ Check: In the above examples, how do we access...
 <a name="lab-session"></a>
 ## Independent Practice - Objects (10 mins)
 
-In pairs, work to solve the following problem:
+In pairs, work to solve the following problem in the `main.js` file in the [starter\_code](starter_code/readme.md) folder.
 
 Create an example 'User' object, complete with several 'Meals'.
 
@@ -578,7 +557,8 @@ Then, create the following methods for your instance of a 'User':
 -   `caloriesEatenOn`, which accepts a date (in the format above) and calculates
     the total number of calories consumed on that date.
     
-Bonus Tasks -- create the following methods for your instance of a 'User':
+Bonus Tasks &mdash; create the following methods for your instance of a 'User':
+
 -   `avgDailyCalories`, which (as indicated), calculates the average number of
     calories consumed per day, rounded down to the nearest whole calorie.
 -   `onTrack`, which compares averageDailyCalories to the User's target daily
@@ -596,7 +576,7 @@ In this lesson we took a look at how we can store data in a way that models real
 
 Objects are a type of data structure that is nearly universal across programming languages, although they may have different names in different languages (in Python they're called a dictionary, in Ruby they're called Hashes).
 
-Understanding and being able to manipulate and access values in objects is a skill that will not only come in handy when writing JavaScript - but can be applied to many other programming lanugages.
+Understanding and being able to manipulate and access values in objects is a skill that will not only come in handy when writing JavaScript &mdash; but can be applied to many other programming lanugages.
 
 ***
 

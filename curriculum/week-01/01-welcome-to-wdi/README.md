@@ -184,9 +184,7 @@ In egregious offenses (presenting another student’s project, an external produ
 #### Advice
 1. Constant feedback
 1. Stand up and walk around
-1. Get out of home for a little bit each day 
-
-<!-- Hi Sarah, what do you mean by "get out of home"? -->
+1. Get out a little bit each day and do something that's not related to programming.
 
 
 <a name="icebreakers"></a>

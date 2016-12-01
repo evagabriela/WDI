@@ -369,29 +369,33 @@ Navigate to [codepen](http://codepen.io/) and complete the following tasks:
 
 ***
 
-<!--Link to Week 1 Day 2 Homework Assignment-->
 
-### ADDITIONAL RESOURCES
-#### Exercises:
-* [CSS Color Box](color-box)
+### Hungry for more?
+#### Exercises
+* [CSS Animal-Style](exercises/animal-style)
+* [CSS Color Box](exercises/color-box)
 * [CSS Diner](http://flukeout.github.io/)
 
-#### Readings:   
+#### Readings  
 * [Shay Howe's HTML/CSS Guide](http://learn.shayhowe.com/)  
 * [30 CSS Selectors You Must Memorize](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)  
 * [Specifics on CSS Specificity](https://css-tricks.com/specifics-on-css-specificity/)  
 * [CSS Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)  
 * [Typography/Web Fonts](http://practicaltypography.com/typography-in-ten-minutes.html )  
 
-
-#### Tools and References:
-* [CSS Specificity Calculator](http://specificity.keegan.st/)* [Web Design in 4 Minutes](http://jgthms.com/web-design-in-4-minutes/)  
-* [LearnLayout.com](http://learnlayout.com/):  An great interactive tutorial that details CSS' many properties and quirks.  
+#### Tools and References
+* [CSS Specificity Calculator](http://specificity.keegan.st/)
+* [Web Design in 4 Minutes](http://jgthms.com/web-design-in-4-minutes/)
+* [CSS Visual Reference](http://cssreference.io/)
+* [LearnLayout.com](http://learnlayout.com/)
+    - A great interactive tutorial that details CSS' many properties and quirks.  
 * [Mozilla Developer Network CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)  
     - Like W3Schools, but in much more detail.    
     - [Universal Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors)  
-* [CanIUse.com](http://caniuse.com/): Search for a CSS property (or HTML, or JS), and it'll tell you on which web browsers it functions.  
-* [CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input): Copy and paste your CSS in here and it tells you what's wrong with it.  
+* [CanIUse.com](http://caniuse.com/)
+    - Search for a CSS property (or HTML, or JS), and it'll tell you on which web browsers it functions.  
+* [CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input)
+    - Copy and paste your CSS in here and it tells you what's wrong with it.  
 * [Codrops](http://tympanus.net/codrops/css_reference/)  
 * [Codepen](http://codepen.io/)  
 * [Mezzoblue](http://www.mezzoblue.com/zengarden/alldesigns/)  

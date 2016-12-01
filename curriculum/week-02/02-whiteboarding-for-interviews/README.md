@@ -3,11 +3,11 @@
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-|  < 5 min | [Opening](#opening)  | Discuss lesson objectives |
+| 5 min | [Opening](#opening)  | Discuss lesson objectives |
 | 10 min | [Introduction](#introduction)  | Whiteboarding Techniques |
 | 15 min | [Guided Practice](#guided-practice)  | Whiteboarding Examples |
-| 40 min | [Independent Practice](#independent-practice)  | Whiteboarding Problems |
-| < 5 min | [Conclusion](#conclusion) |Review / Recap |
+| 30 min | [Independent Practice](#independent-practice)  | Whiteboarding Problems |
+| 5 min | [Conclusion](#conclusion) |Review / Recap |
 
 ***
 <a name="opening"></a>
@@ -43,7 +43,7 @@ If you can't finish a question, that's ok! It's more important that you show the
 ***
 
 <a name="guided-practice"></a>
-## Guided Practice: Whiteboarding Examples (15 mins)
+## Guided Practice: Whiteboarding Examples (10 mins)
 
 Now that we've discussed some techniques, let's walk through a real example.
 
@@ -88,7 +88,7 @@ You can see that each step we wrote out corresponds to a certain section of the 
 ***
 
 <a name="independent-practice"></a>
-## Independent Practice: Whiteboarding Problems (40 mins)
+## Independent Practice: Whiteboarding Problems (30 mins)
 
 Now it's your turn! Get into groups of 3 people, and each person will take, at most, 10 minutes to pick a problem from the list below to solve. The remaining people will act as the interviewers. Remember to follow the techniques we discussed.
 <!--Can we clarify these directions a bit?  Each person gets 10 minutes to choose and solve the problem? -->
@@ -106,7 +106,7 @@ Now it's your turn! Get into groups of 3 people, and each person will take, at m
 ***
 
 <a name="conclusion"></a>
-## Conclusion
+## Conclusion (5 mins)
 
 Whiteboarding can be deceptively difficult and only becomes easier with practice - we're doing this in week 2, so you can immediately start practicing and get better each week.  Knowing these basic techniques will help you to relax and concentrate on the problem you are presented with during your interviews.  
 
