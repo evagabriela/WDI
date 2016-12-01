@@ -1,208 +1,211 @@
 ---
-title: Title of the Lesson
-duration: "1:25"
+title: Computational Thinking
+duration: "1:30"
 creator:
-    name: John Doe
-    city: NYC
----
-
-> #### *Guiding Questions When Using This Template*
->
-> - [ ] Are the learning objectives measurable?
->   - [ ] Are there at least two objectives? ( All learning objectives should be pulled from the [Front End Standards](https://docs.google.com/spreadsheets/d/11SzdbIIa9PLJ6kknGXXoBYOtL5ycwMK2N8lkI5THFak/edit#gid=1968474545) doc.  If you would like to add or remove any Learning Objectives, please contact amy.almeida@ga.co)
->   - [ ] Does the lesson address all the learning objectives?
->
-> - [ ] Are activities spaced out with enough time for each?
->   - [ ] Did you include knowledge "Checks" or activities at the end of every component to test comprehension?
->   - [ ] Is there an even distribution of intructor-led and active learning portions?
->
->
-> - [ ] Did you provide guidance for both students & instructors?
->   - [ ] What will instructors have to do to prepare for this lesson?
->   - [ ] What will students have to do to prepare for this lesson?
->   - [ ] What additional resources do you provide for students who are "hungry for more," or need additional practice?
->
-> #### *How to Use This Template*
-> * Static Components: Reserve roughly 5 min for Opening, 5 unscheduled "buffer" mins for overrun, & at least 5 min for Conclusion (end of lesson review).
->
->
-> * Modular Components: The units of instruction are: Intro, Demo, Guided-Practice, & Independent-Practice. These can be cycled or intermixed in various orders, depending on the topic / content.
-
-> #### *Components of the lesson plan*
-
-> - Opening: this only happens once; used to introduce the agenda, review material, and provide a motivating example / the problem we're trying to solve with this skill/content
-> - Introduction: this is a section dedicated to introducing and contextualizing new vocabulary, ideas, and code syntax that will be practiced in later sections
-> - Demo: an instructor-led session demonstrating proper techniques or syntax examples
-> - Guided Practice: interactive instructor by which the instructor engages with and probes students for answers to guide the discussion or activity
-> - Independent Practice: a block of time where students are able to practice what they've learned; the instructor provides directions and the students use the directions to complete an exercise
-> - Conclusion: a time to sum up the lesson, review the answers to a final independent practice, and/or pose discussion questions
-> - Check: a moment to check to understand students are following; it can be done with a question about content, a general "How comfortable are you with this?", or the instructor can check the output of students code to ensure they've completed the assignment properly.
-
-> NOTE: the lesson you create does not have to follow a progression of Introduction > Demo > Guided Practice > Independent Practice - a combination of these is often ideal - but a lesson must always begin with an Opening and end wth a Conclusion.
-
-
+    name: Melody Serra
 
 ---
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Lesson Title (# mins)
 
-| Timing | Type | Topic |
-| --- | --- | --- |
-| x min | [Introduction](#introduction) | Topic |
-| x min | [Demo/Codealong](#demo) | Topic |
-| x min | [Guided Practice](#guided-practice) | Topic |
-| x min | [Independent Practice](#ind-practice) | Topic |
-| x min | [Conclusion](#conclusion) |Topic |
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Computational Thinking
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
+
+- Gain an overview of what computational thinking means.
+- Explain different practices of computational thinking and how they relate to computers.
+- Explain the importance of decomposition, pattern recognition, abstraction, and algorithms. 
 
 ### STUDENT PRE-WORK
-*Before this lesson, you should already be able to:*
-- Describe some concept
-- Explain how to do something
-- Do or build something
+*Before this lesson, you should:*
+
+- Watch this short [video](https://www.youtube.com/watch?v=SVVB5RQfYxk) on how Google uses computational thinking.
+
 
 ### INSTRUCTOR PREP
 *Before this lesson, instructors will need to:*
-- Gather materials needed for class
-- Complete Prep work required
-- Prepare any specific instructions
 
----
-<a name="opening"></a>
-## Opening (# mins)
-- Review pre-work, projects, or exit ticket, if applicable
-- Review current lesson objectives
-- Reference general course content or topics (e.g. code or concepts that have been used across multiple lessons)
-- Include Hook / Real-world Relevance (why the content from this lesson is useful or important)
+- Write learning objectives on board.
 
-> Instructor Note: Use instructor notes to talk directly to instructors. Otherwise, write out lesson directions and materials in a student-facing voice.
 
-Check: Ask students to define, explain, or recall any **general** prior concepts or tools.
+### WORKSHOP AGENDA
 
-***
+| TIMING  | TYPE  | TOPIC  |
+|:-:|---|---|
+| 10 min  | [Introduction](#intro1)   | What is Computational Thinking? |
+| 15 min  | [Computers](#computers)  | How does Computational Thinking Relate to Computers? |
+| 10 min  | [Decomposition](#decomposition)  | More on Decomposition |
+| 10 min  | [Patterns](#patterns)  | More on Patterns |
+| 10 min  | [Abstraction](#abstraction)  | More on Abstraction |
+| 10 min  | [Algorithms](#algorithms)  | More on Algorithms |
+| 15 min  | [Independent Practice](#ind-practice1)  | Bringing it Together: Practice |
 
-<a name="introduction"></a>
-## Introduction: Topic (# mins)
 
-> Instructor Note: Discuss topic and explain by dividing parts into sections. Ask students to define, explain, or recall any **specific** elements relating to the current topic, when applicable.
+<a name="intro1"></a>
+## Introduction: What is Computational Thinking? (10 mins)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat autem voluptate officia voluptatum tempore repudiandae illum libero. Dolor aliquam minima sit velit, quis quisquam delectus explicabo nam id facilis.
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>
-      Example
-    </title>
-  </head>
-  <body>
-    <h1>
-      Example Page
-    </h1>
-    <p>
-      This is an example page.
-    </p>
-  </body>
-</html>
-```
-![DOM Tree](http://www.computerhope.com/jargon/d/dom1.jpg)
+Let's start off by reviewing the learning objectives. First and foremost, we'll gain an overview of computational thinking. We'll also get to understand the various approaches used in computational thinking and what it means to "think like a programmer." We'll end with an exercise that has you apply all the approaches discussed.
+ 
 
-#### Use non-section headings to divide content
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam pariatur ab cum temporibus, velit expedita? Pariatur illum, iusto animi iste consectetur quam voluptatem provident! Velit molestias doloremque error harum.
+> Instructor Note: In the following section, students will discover what computational thinking is. Discuss the topics below. When applicable,  ask students to define, explain, or recall any **specific** elements relating to the current topic.
 
-> Check: Insert 1-2 guiding questions to ensure students are comprehending the material.
+**Computational thinking** is a problem solving process that includes:
 
-***
+- **Decomposition**: Breaking down data, processes, or problems into smaller, manageable parts.
+- **Pattern Recognition**: Observing patterns, trends, and regularities in data.
+- **Abstraction**: Identifying the general principles that generate these patterns. This involves filtering out the details we do not need in order to solve a problem.
+- **Algorithm Design**: Developing the step by step instructions for solving this and similar problems.
 
-<a name="demo"></a>
-## Demo / Codealong: Topic (# mins)
-Walk through a codealong or demonstration of something.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
+**Scenario Based Application**
 
-```ruby
-def lorem
-  return 'some stuff'
-end
-```
+- Historically, a recession occurs in the United States every four to seven years. Studying the patterns that lead to this is an example of what?
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nemo eius quo, soluta maxime provident temporibus aperiam eveniet eum. Non, soluta error veritatis pariatur praesentium beatae reprehenderit, numquam quaerat. Lorem ipsum dolor sit amet.
+> Instructor Note: Answer - pattern recognition
 
-Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
+- Matt is a first grader and he is asked to describe how to draw a cat. In order to a draw a cat Matt needs to know that a cat has a tail, fur, and eyes. He does not need to know what sound a cat makes or what a cat likes to eat. What is this an example of?
 
-```ruby
-def another_lorem
-  this = some_method(0+2)
-  return this.to_json
-end
-```
+> Instructor Note: Answer - abstraction
 
-> Check: By this point, students should be able to write out or code their own methods / functions / arguments / etc.
+- If Carmen is asked to read the poem <i>Fire and Ice</i> by Robert Frost. She is then asked to analyze the meter, rhyme, imagery, structure, tone, diction, and meaning of the poem. What is this an example of?
 
-***
+> Instructor Note: Answer - decomposition
 
-<a name="guided-practice"></a>
-## Guided Practice: Topic (# mins)
-Solve a problem or apply this topic to a real world scenario. Solving or understanding this scenario should require the use of the current topic (in addition to any prior topics).
+- You have been asked to share your favorite recipe for chocolate chip cookies. You write down the step by step instructions that must be followed to ensure the perfect chewy cookie. What is this an example of?
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
+> Instructor Note: Answer - algorithm
+>
+>
+**Why is this important?**:
 
-```ruby
-def lorem
-  return 'some stuff'
-end
-```
+> "Computational thinking gives students the freedom and flexibility in finding new effective solutions supported by analysis and validation of the results. It helps students decompose the problem into manageable steps, employ abstraction to deal with complexity, recognize patterns and create scalable algorithms to solve real world problems. Another important skill associated with Computational Thinking is the ability to collect and analyze data using proper tools and techniques to derive meaningful conclusions.” (Work in Progress: Teaching Computational Thinking in Middle and High School)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eligendi nemo eius quo, soluta maxime provident temporibus aperiam eveniet eum. Non, soluta error veritatis pariatur praesentium beatae reprehenderit, numquam quaerat. Lorem ipsum dolor sit amet.
 
-Consectetur adipisicing elit. Facere dignissimos totam deleniti architecto porro, nisi. Laudantium repellat animi vero. Illo expedita deserunt officia iure quidem saepe culpa, aut, laborum consequatur.
+<a name="computers"></a>
+## How does Computational Thinking Relate to Computers? (10 mins)
 
-```ruby
-def another_lorem
-  this = some_method(0+2)
-  return this.to_json
-end
-```
-> Check: Were students able to successfully solve the problem or complete the task?
+Getting computers to help us solve a real-world problem involves first thinking about what steps need to be taken to solve the problem. We then need to use our technical skills to actually get the computer to follow a series of steps. Although it is sometimes thought that computers do much of the heavy lifting, we actually need to tell the computer exactly what steps to follow and in what order. For example, imagine that you are creating a login system for your cool new website. You need to tell the computer that if a user is visiting your site for the first time you need him or her to sign up, and that you want to securely store their username and password in a database. However, if your user is a returning client, you want to allow him or her to enter in their username and password and check whether or not those credentials match what is stored. You then need to specify what happens next - is your user redirected to their profile or some other page?
 
-***
+**Challenge 1**: Below you will find various applications of computational thinking as it is related to computer science. Fill in this table based on what you know about decomposition, pattern recognition, abstraction, and algorithms.
 
-<a name="ind-practice"></a>
-## Independent Practice: Topic (# minutes)
-Use the lesson topic/skill to create a deliverable that meets certain criteria.
-
-> Instructor Note: This can be a pair programming activity or done independently.
-
-Briefly describe the Independent Practice exercise here.  What is the end deliverable?  What skills will it help students practice?  Include a link to the Github folder, which will include a more exhaustive description of the exercise, as well as any code, files or assets for students to download.
-
-> Check: Were students able to create the desired deliverable(s)? Did it meet all necessary requirements / constraints?
-
-***
-
-<a name="conclusion"></a>
-## Conclusion (# mins)
-- Review independent practice deliverable(s)
-- Recap topic(s) covered in today's lesson
-- Cover homework and/or upcoming tasks
-
-***
-
-### BEFORE NEXT CLASS
-|   |   |
+| TYPE  | Application |
 |---|---|
-| **HOMEWORK** | Example Assignment [#](Instructions)  |
-| **UPCOMING PROJECTS**  | Project Assignment: Title [#](Instructions)  |
+| | Realize complex data structures require less code than complex programming  |
+| | Visualize data comparing microchip material and computer speed to notice a trend |
+| | Write a computer program to sort data |
+| |Break a computational graph problem into 4 sections, each one to be completed by a different computer processor |
 
-### ADDITIONAL RESOURCES
-- Exercises
-- Videos
-- Readings
-- Decks
+> Instructor Note: The answers are as follows: abstraction, pattern recognition, algorithms, decomposition.
 
-> Instructor Note: When possible, provide a brief description of Additional Resources, classifying whether it is for advanced or beginner students.  
+**Challenge 2**: Let's visit [Robby's Resume](http://www.rleonardi.com/interactive-resume/) together. With a partner I would like you to discuss how computational thinking was applied when creating this website. Here are some guiding questions that you should discuss with your partner:
+
+If tasked with the challenge of creating an interactive resume,
+
+- how would Robby break this challenge in to smaller more approachable pieces? (decomposition)
+- what patterns could Robby come up with to help him streamline his creation process? (pattern recognition)
+- what principles govern these patterns and what can we filter out when thinking about how to approach this challenge? (abstraction)
+- what are the specific steps that would need to be followed to create one aspect of the site? (algorithm)
+
+> Instructor Note: When students wrap up with their partner, have the class come together as a whole. Ask for various groups to share what they came up with.
+
+
+>**Check:** In your own words, how would you describe the different components of computational thinking? What is an example of decomposition, pattern recognition, abstraction, and algorithm design?
+
+<a name="decomposition"></a>
+## More on Decomposition (10 mins)
+Decomposition involves breaking down a complex problem in to smaller parts that are more approachable and easier to comprehend. If you do not decompose a problem, the problem can seem overwhelming and harder to solve. Breaking a problem down in to smaller pieces, in turn means that you can examine each smaller piece in detail.
+
+**Challenge**: Solve the following riddle, approach it by using decomposition.
+
+A detective who was mere days away from cracking an international oil smuggling ring has suddenly gone missing. While inspecting his last-known location, officers find a note:
+
+710 57735 34 5508 51 7718
+
+Currently there are 3 suspects: Bill, John, and Todd.
+
+Can you break the detective's code and find the criminal name?
+
+> Instructor Note: Some questions you can ask to help guide students: a) how can we break this problem in to smaller pieces? b) what are the important pieces of information in this riddle? c) What do we know? What do we need to find out?
+> 
+> P.S here is the actual solution: if you read the number upside down, you will notice that the numbers resemble letters and the whole sequence resembles a sentence that reads: Bill is boss. He sells oil.
+
+<a name="patterns"></a>
+##More on Recognizing Patterns (10 mins)
+Pattern recognition involves finding similarities among different problems or even amongst the small decomposed pieces of a more complex problem. This approach is important because problems are easier to solve when they share patterns. 
+
+**Challenge**: In the diagram below, what are some common patterns that you notice when steps are described for making each cake?
+
+![](assets/ct.png)
+
+>Instructor Note: some patterns students could point out are "preheat the oven to specific temperature," "bake for a specific time"
+
+<a name="abstraction"></a>
+##More on Abstraction (10 mins)
+Abstraction involves filtering out what we do not need to better concentrate on what we do need to solve a problem. This is an important strategy because it allows us to only focus on what really matters, which in turn will make patterns more transparent. 
+
+**Challenge**: Use abstraction to answer the following questions. 
+
+a) In all daily planners, no matter the color or design, what should you find? 
+>Instructor Note: represent a week in terms of days and hours
+
+b) In all world maps, what is needed to describe the location of a specific place?
+>Instructor Note: latitude and longitude
+
+
+<a name="algorithms"></a>
+## More on Algorithms (10 mins)
+
+To reiterate an algorithm is comprised of a series of step-by-step instructions that can be used to solve a problem or carry out a task. Algorithms are very detailed and also sequential. It is possible to develop an algorithm or test it without writing any code, but technology can be quite useful for carrying out many steps of an algorithm more quickly.
+
+**Challenge**: With a partner, write the steps that would need to be following for an application that would monitor the room temperature and adjust it so the room remains at a certain temperature.
+
+Again, the goal is to think through the problem and break it down into simple steps.
+
+>Instructor Note:
+
+>Example answer:
+
+```
+1. Determine what the target temperature will be
+2. Find the current temperature
+3. If the current temperature is less than the target temperature, the heater should be turned on
+4. If the current temperature is greater than or equal to the target temperature, the heater should be turned off
+5. Keep checking to make sure the current temperature equals the target temperature, if it does not, steps above should be followed over and over again. 
+
+```
+
+>Walk through the problem and have a couple students share what they come up with. At this point students might not have the best idea of how to name variables etc., but that's okay! Focus on the logic here.
+
+<a name="ind-practice1"></a>
+## Bringing it Together: Practice (25 mins)
+
+> Instructor Note: In the following section, students will apply computational thinking to a problem. When you ask them the questions listed under each section(decomposition, pattern recognition, abstraction, and algorithms) have them take a moment to work with a neighbor and reflect on the questions you are asking. Once the whole class seems to be done discussing with partner, bring class together and ask someone to share what they came up with.
+
+**Challenge 1**: I want you to sum up all of the numbers between 1 & 200. Let's break down this problem.
+
+- Let's start with **decomposition**. How can we break up this problem in to smaller, more approachable pieces? Hint: begin adding pairs at the ends of the range, e.g 200+1.  
+
+- Now let's move in to **pattern recognition**. As you added the pairs  at the ends of the range above, what pattern arose if any? What does this tell us? If the pairs all add up to the same number, how many of these pairs will we have?
+
+- Next, let's apply **abstraction**. What can we pull from the pattern and apply to the sum of the numbers in any range that begins with 1, say for example 1 & 5,000. Focus in only on the principles that really matter and would impact any problem like this one.
+
+- Let's now end by creating an **algorithm**. You will essentially be coming up with sequential steps that could be applied when trying to find the sum of all the numbers in any range that begins with 1.
+
+> Instructor Note: Have students refine their steps, till they get something like, in order to add all the numbers between 1 to blank, you follow this formula: ("blank"/2) * ("blank"+1). Once students have refined their algorithm, debrief and discuss "what can we draw from this exercise of using computational thinking?"
+
+**Challenge 2**:
+
+![](assets/ct2.png)
+
+This exercise will be a lot more free-form than the last. You should work on this either independently or with a partner, and you should be applying all of the tactics we learned in class today. Remember to break the problem down(decomposition), look for patterns when looking at how each x relates to its corresponding y(pattern recognition), focus in on just the information that you need to solve the problem(abstraction), and come up with a summary of steps you would need to follow to solve this problem again(algorithm).
+
+>Instructor Note: ask students to share what they came up with when it seems like most students are finished. 
+
+ 
+##Additional Resources
+- [Google Course](https://computationalthinkingcourse.withgoogle.com/unit?lesson=8&unit=1)
+- [Carnegie Mellon Article](https://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf)
+- [Video](https://www.youtube.com/watch?v=QpVqwZ2ce6g) on how Google used computational thinking when thinking about internet access from balloons
+- [Computational Thinking with Scratch Article](http://scratched.gse.harvard.edu/ct/defining.html)
+- [Algorithm Practice](https://computationalthinkingcourse.withgoogle.com/unit?unit=2&lesson=3)
 

@@ -288,12 +288,16 @@ git status
 
 ***
 
-### ADDITIONAL RESOURCES
+### Hungry for More?
+#### References
 - [Git Cheat Sheet](https://raw.githubusercontent.com/ATL-WDI-Curriculum/local-and-remote-git/master/images/Git-Cheat-Sheet.png)
-- Readings
-    - [Git Documentation](https://git-scm.com/documentation)
-    - [Forking on Github](https://help.github.com/articles/fork-a-repo/)
-    - [Syncing a fork](https://help.github.com/articles/syncing-a-fork/)
+- [Github Pages](https://pages.github.com/)
+- [Jekyll](https://jekyllrb.com/)
 
-- Videos
-    - [Lynus Travalds on Git](https://www.youtube.com/watch?v=4XpnKHJAok8)
+#### Readings
+- [Git Documentation](https://git-scm.com/documentation)
+- [Forking on Github](https://help.github.com/articles/fork-a-repo/)
+- [Syncing a fork](https://help.github.com/articles/syncing-a-fork/)
+
+#### Videos
+- [Lynus Travalds on Git](https://www.youtube.com/watch?v=4XpnKHJAok8)

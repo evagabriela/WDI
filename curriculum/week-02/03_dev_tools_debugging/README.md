@@ -12,9 +12,9 @@ Current resources:
 
 Right now I've placed a lot of the content from WDI lessons here as a "Debugging JS Part 1" and the other content (WDI Curriculum) as a "Debugging JS Part 2" for day.
 
-For Debugging part I here's what students have learned: 
+For Debugging part I here's what students have learned:
 - Variables / Data Types
-- Arrays 
+- Arrays
 - Loops *** Could be super helpful!
 - Objects
 
@@ -36,11 +36,15 @@ WHAT'S NEEDED:
 
 | Timing | Type | Topic |
 | --- | --- | --- |
-| x min | [Introduction](assets/#introduction) | Topic |
-| x min | [Demo/Codealong](assets/#demo) | Topic |
-| x min | [Guided Practice](assets/#guided-practice) | Topic |
-| x min | [Independent Practice](assets/#ind-practice) | Topic |
-| x min | [Conclusion](assets/#conclusion) |Topic |
+| 5 min | [Opening](assets/#opening) | What is an Error? |
+| 10 min | [Independent Practice](assets/#independent-practice) | Common Errors |
+| 10 min | [Intro to New Material](assets/#reading-error-messages) | Reading Error Messages |
+| 20 min | [Intro to New Material](assets/#tools-debugging) | Tools for Debugging |
+| 10 min | [Independent Practice](assets/#debug) | Debug |
+| 10 min | [Intro to New Material](assets/#debugger) | Debugger |
+| 10 min | [Intro to New Material](assets/#find-answers) | How to Find Answers |
+| 20 min | [Independent Practice](assets/#) | Debug |
+| 5 min | [Conclusion](assets/#conclusion) |Q&A |
 
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
@@ -55,7 +59,7 @@ WHAT'S NEEDED:
 
 - Create variables in JavaScript
 - Differentiate between data types (strings, numbers, booleans)
-- Use if/else if/else conditionals to control program flow based on boolean conditions
+- Use `if/else if/else` conditionals to control program flow based on boolean conditions
 - Create arrays and access/manipulate elements in arrays
 
 
@@ -105,16 +109,17 @@ Note that the line with `console.log("Such is life.")` will _never run_. This is
 
 > **Note**: Don't worry too much about the syntax of how to throw an error, you won't be creating your own custom Errors very often in this class, we're just showing this to you so you know what "magic" is going on under the surface.
 
-## Common Errors (10 mins)
+<a name="assets/#common-errors"></a>
+## Independent Practice: Common Errors (10 mins)
 
 Now that we know a little bit about what an Error is and when it is thrown, let's look at some of the most common errors that you will run into in JS.
 
-#### Independent Practice: Encountering Common Errors in JS
+#### Encountering Common Errors in JS
 
 For the following exercise:
 
 1. Open Chrome
-2. Open Dev Tools (right click, "inspect"
+2. Open Dev Tools (right click, "inspect")
 3. Open the console tab
 
 
@@ -122,7 +127,7 @@ Take 5 minutes to independently work through this exercise.
 
 You will first copy the code under each step and paste it into the console, and then hit enter.
 
-You should see an error message added to the console when you do with a description of the error. 
+You should see an error message with a description of the error added to the console when you do.
 
 For each step, fix the error and then run the code in your console again until the code for that step is error-free.
 
@@ -163,14 +168,14 @@ function shoutLongWords (word) {
   }
 }
 ```
-
+<a name= "assets/#reading-error-messages"></a>
 ## Reading Error Messages (10 mins)
 
 Javascript has [7 error types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#Error_types). 3 of them will account for 99% of the errors you encounter in this class, so we're going to focus on those.
 
 
 
-Check: What might these 3 words mean in the context of Javascript? 
+Check: What might these 3 words mean in the context of Javascript?
 
 - Syntax
 - Reference
@@ -178,16 +183,15 @@ Check: What might these 3 words mean in the context of Javascript?
 
 <br>
   > Answers:
-   
+
   > Syntax: The way the code is actually written.
 
   > Reference: The process of calling variables and functions.
 
   > Type: The different kinds of data Javascript can handle, like strings and numbers.
-  
 
 
-
+<a name="tools-debugging"></a>
 ## Tools for Debugging (20 mins)
 
 > **Note**: If the `"Preserve log"` checkbox is checked in your Chrome console, uncheck it. When it's checked it doesn't clear error messages when you refresh your page. This can make your console get *really* ugly *really* quickly.
@@ -204,7 +208,7 @@ Uncaught SyntaxError: Unexpected token {      controller.js:8
 ##### Question: In what file and on what line is the error?
 
   > Answer: Line 8 of `controller.js`
-  
+
 
 Click on `controller.js:8` and it'll show you that specific line of code.
 
@@ -215,8 +219,11 @@ More often than not, Errors are usually caused by some variable not having the v
 A quick and widely used way to debug errors is to put `console.log` statements everywhere. From there, we look for the place a variable stops having the value we expect it to have. That's where the error is.
 
 Lets see this in action, by taking a quick look at a code example.
+<a name="debug"></a>
+## Independent Practice: Debug (10 mins)
 
-#### Independent Practice: Debug 
+Check out the starter code inside `exercises/practice_01` for a calculator program that isn't running correctly.
+Don't scan the JS file for errors. Open up your Dev Tools and follow their errors to figure out what's wrong.
 
 > **Note**: No need to clone, just follow along with the instructor on the board.
 
@@ -236,28 +243,12 @@ Here was the previous exercise (which involved the DOM unfortuantely)
 Currently, we have a lot of code written in `app.js`, but our solution is still not functioning correctly.
 Let's put some `console.log` statements in our code to make sure that our values are what we think they are.-->
 
----
-
-## Debugger (10 mins)
-
-An alternative to using `console.log` is to use the debugger capabilities of your browser. Modern browsers come with the ability to set a breakpoint on a specific line of your code. This will cause the execution of the program to pause every time the line with the breakpoint is reached and allow you to inspect the values of variables at that point.
-
-`debugger` stops a script at its line of code and lets you "look around". You can see what variables are available at the line of code where `debugger;` is run.
-
-To make your code continue, press the little eject-looking button.
-
-![Resume execution](assets/resume_execution.jpg)
-
-You can have as many `debugger;` lines as you want. The script will stop at each one and wait for you to tell it to continue.
-
-We'll take a look at the debugger in more detail later in a later lesson.
-
 <!--
 
 @sarahholden or SME NEEDED (estimate 15 mins) might be useful to flesh out a bit more with screenshots / content. Only another 10 minutes worth of material most likely.
 
 -->
-
+<a name="find-answers"></a>
 ## How To Find Answers (10 mins)
 
 But let's say you've tried to problem solve and think for yourself and
@@ -350,11 +341,14 @@ regarding HTML, CSS, and JavaScript.
 
 
 ## Independent Practice (20 mins)
+
+Check out the starter code inside `exercises/practice_02` for a fizzbuzz program that isn't working.
+Don't scan the JS file for errors. Open up your Dev Tools and follow their errors to figure out what's wrong.
 <!--SME NEEDED: Lab here
 It would be great to have an exercise here that has students practice debugging the following that students have learned:
 
 - Variables / Data Types
-- Arrays 
+- Arrays
 - Loops *** Could be super helpful!
 - Objects
 
@@ -369,9 +363,9 @@ Again, no need to build an entirely new lab from scratch, could be an existing l
 ## Conclusion (5 mins)
 - Review independent practice solution
 
-In this lesson we've taken some steps toward being able to more efficiently problem solve and figure out how to find answers when we encounter errors in our code. 
+In this lesson we've taken some steps toward being able to more efficiently problem solve and figure out how to find answers when we encounter errors in our code.
 
-Debugging is a skill that takes time and practice to learn. We recommend you keep your console open at all times when working through JavaScript problems. 
+Debugging is a skill that takes time and practice to learn. We recommend you keep your console open at all times when working through JavaScript problems.
 
 Developer tools are the first place developers look for clues when something is not working as expected. It takes much less time to quickly glance and see an error message pinpointing the issue and the file/line of code than to scan through all of your JavaScript and manually try to pick out the error.
 
