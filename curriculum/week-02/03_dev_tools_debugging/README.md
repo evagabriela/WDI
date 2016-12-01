@@ -59,7 +59,7 @@ WHAT'S NEEDED:
 
 - Create variables in JavaScript
 - Differentiate between data types (strings, numbers, booleans)
-- Use if/else if/else conditionals to control program flow based on boolean conditions
+- Use `if/else if/else` conditionals to control program flow based on boolean conditions
 - Create arrays and access/manipulate elements in arrays
 
 
@@ -119,7 +119,7 @@ Now that we know a little bit about what an Error is and when it is thrown, let'
 For the following exercise:
 
 1. Open Chrome
-2. Open Dev Tools (right click, "inspect"
+2. Open Dev Tools (right click, "inspect")
 3. Open the console tab
 
 
@@ -127,7 +127,7 @@ Take 5 minutes to independently work through this exercise.
 
 You will first copy the code under each step and paste it into the console, and then hit enter.
 
-You should see an error message added to the console when you do with a description of the error.
+You should see an error message with a description of the error added to the console when you do.
 
 For each step, fix the error and then run the code in your console again until the code for that step is error-free.
 
