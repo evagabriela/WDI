@@ -18,17 +18,16 @@ complete the remaining method.
 1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 1.  Change into the new directory.
-1.  Install dependencies.
 1.  Create a working branch, `challenge`.
 1.  Follow the remaining instructions.
 
 Create a custom JavaScript object modeling a stack using a constructor function
 and a prototype.
-Starter code has been provided in [`lib/stack.js`](lib/stack.js).
+Starter code has been provided in `stack.js`.
 
 ## Requirements
 
--   You should be able to create a new stack with `let stack = new Stack();`.
+-   You should be able to create a new stack with `var stack = new Stack();`.
 -   Your stack should have two methods, `push` and `pop`.
 
     -   `push` adds a new value to the stack's storage.
@@ -37,25 +36,17 @@ Starter code has been provided in [`lib/stack.js`](lib/stack.js).
 
 -   You should not use `Array.prototype.push()` or `Array.prototype.pop()`.
 
-As you work, you may run `grunt test` to check your code against these
-requirements.
-
-## Bonuses
-
-Change `xit` to `it` in `spec/stack.spec.js` to have `grunt test` check the
-bonuses.
-
 ### Pre-fill the stack on instantiation
 
 ```js
-let stack = new Stack(1, 2, 3);
+var stack = new Stack(1, 2, 3);
 stack.pop(); //=> 3
 ```
 
 ### Allow `push` to chain
 
 ```js
-let stack = new Stack();
+var stack = new Stack();
 stack.push(1).push(2).push(3);
 stack.pop(); //=> 3
 ```

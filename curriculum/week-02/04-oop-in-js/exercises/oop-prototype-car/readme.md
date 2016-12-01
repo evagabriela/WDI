@@ -1,27 +1,13 @@
 # Prototype Body Shop
 
-The idea of this lab is to get you comfortable with Object Oriented Programming (OOP) and introduce you to Test Driven Development (TDD) in JavaScript. By the end you should be comfortable working with objects and writing prototypes.
+The idea of this lab is to get you comfortable with Object Oriented Programming (OOP) in JavaScript. By the end you should be comfortable working with objects and writing prototypes.
 
-All of the tests have been written for you, so all you'll need to do is run them. No need to create any Car objects, because the tests will do that for you.
+## Instructions
 
-If any of the tests errors are unclear, take a look at what the test is running within `test/carTest.js`
-
-## Getting Started
-
-* Fork and clone this repository
-* Run `npm install` to install dependencies
-* `npm test` - run test suite
-* `npm run lint:js` - lint JS
-
-## Submission
-
-To submit, create a pull request as before. Additionally, your submission will be checked automatically using a [continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) service called Travis CI. Travis CI will do the following to check your code:
-
-* Run `npm install` on Travis's servers
-* Run `npm run lint:js` to check your code styling
-* Run `npm test` to check if your tests pass
-
-Make sure to **run these commands locally first** to verify your correctness. You can see the progress of the Travis CI check by going to your pull request, or looking at the [Travis CI build page for this repo](https://travis-ci.org/WDI-SEA/oop-prototype-car/pull_requests)
+1. Fork and clone this repository
+1. Change into the new directory.
+1. Create a working branch, `challenge`.
+1. Follow the remaining instructions.
 
 ##Requirements
 
@@ -57,7 +43,7 @@ Your `Car` should meet the following requirements:
 
 ### Phase II
 
-Implement and test the following methods:
+Implement the following methods:
 
 * `Car.start()`
   * Should change the running value of the car to `true`.

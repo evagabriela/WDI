@@ -14,8 +14,8 @@
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
 
-- Differentiate between true, false, 'truth-y', and 'false-y'
-- Use if/else if/else conditionals to control program flow based on boolean conditions
+- Differentiate between true, false, 'truthy', and 'falsey'
+- Use `if/else if/else` conditionals to control program flow based on boolean conditions
 - Use comparison operators to evaluate and compare statements
 - Use boolean logic (!, &&, ||) to combine and manipulate conditionals
 - Use switch conditionals to control program flow based on explicit conditions
@@ -99,15 +99,10 @@ Comparisons in JavaScript can be made using <, >, <=, and >=, and work for both 
 Type each command given in the console below. Before you press enter, take a moment to think about what value the console will return.
 
 1.  7 > 7
-The console returns false.
 2.  7 >=7
-The console returns true.
 3.  7 < 7
-The console returns false.
 4.  7 < 13
-The console returns true.
 5.  7 <= 13
-The console returns true. 
 
 >_(Answers: 1.The console returns false. 2.The console returns true. 3.The console returns false. 4.The console returns true. 5.The console returns true.)_
 
@@ -175,7 +170,7 @@ By sticking to the === operator, we can ensure that we are checking both the typ
 #### The Not Equals Operator `!==` and `!=`
 Now, what do we do if we want to check and see if two values are not equal to one another?
 
-These areWe use the inequality operators (`!=` and `!==`).
+We use the inequality operators (`!=` and `!==`).
 
 The `!=` operator checks to see if two values are not equal to one another. Similar to the `==` operator, it performs type coercion before checking the two values against one another.
 
@@ -203,7 +198,7 @@ _(1.The console returns true. 2.The console returns false.  3.The console return
 ## Logical Operators, Truthy and Falsey (25 mins)
 Finally, let’s have a look at *logical operators*. The logical operators are NOT, OR, and AND.
 
-We can use these to combine several boolean statements into a single statement.
+We can use these to combine several conditional statements into a single statement.
 
 For instance, if it is raining **AND** I have an umbrella, then I will go outside with an umbrella.
 
@@ -220,9 +215,9 @@ We can also use logical operators to reverse a value or check to see whether or 
 <br>
 NOT (`!`) will reverse the value of any Boolean (i.e, `!true` `// false`).
 
-OR (`||`) takes in two boolean arguments; if at least one is true, then it will evaluate to true. But, if both are false, it will evaluate as false.
+OR (`||`) takes in two boolean arguments; if at least one is true, then it will evaluate to true. But, if both are false, it will evaluate to false.
 
-AND (`&&`) also takes in two boolean arguments; however, it will only evaluate as true if both of the arguments are true. Otherwise, it will evaluate to false.
+AND (`&&`) also takes in two boolean arguments; however, it will only evaluate to true if both of the arguments are true. Otherwise, it will evaluate to false.
 
 
 For example, let’s assume that a = 5, b = 10, and c = 8.
@@ -397,14 +392,15 @@ if (x > 10) {
 
 We might come up with something like this:
 
+<img src="assets/flow_chart_1.png" width="300px">
+
 As you can see, a person making their way through this diagram would need to make a decision.
 
 Depending on whether or not our condition is truthy, he or she would either enter the block of code or skip over it entirely.
 
-<img src="assets/flow_chart_1.png" width="300px">
 
 #### Else If Statements
-Adding an `else` to our `if` statement allows us to specify a second condition to test.
+Adding an `else if` to our `if` statement allows us to specify a second condition to test.
 
 However, this second condition will *only* be tested if the first condition fails.
 
@@ -590,7 +586,7 @@ In a switch statement,
 2. If there is a `case` listed for the value it evaluates to, the code between `case __:` and `break` will be executed.
 3. If there is no `case` that matches the value of the variable, the `default` will be executed (if it is specified, that is — if not, the program will do nothing).
 4. If there is no `break;` at the end of a case, the computer will not skip to the end. Instead, it will start executing the next case's code (even if the case's value is different than the variable’s), and will continue doing so until it eventually hits a `break;` statement.
-5. For this reason, default never needs a `break;` statement, as it's the last case in the switch. Include breaks on all other statements to makes sure the program breaks out of switch once it executes the matched statement.  
+5. For this reason, default never needs a `break;` statement, as it's the last case in the switch. Include breaks on all other statements to make sure the program breaks out of the switch statement once it executes the matched statement.  
 
 
 #### Advantages and Disadvantages of Switch Statements
@@ -725,17 +721,10 @@ if (day === "Saturday" || day === "Sunday") {
 What will the value of `goToWork` be under the following circumstances? Discuss with a partner.
 
 1.  `var day = "Wednesday"`
+2.  `var day = "Saturday"`
+3.  `var day = "Friday"`
 
-	*   `true`
-
-3.  `var day = "Saturday"`
-
-	*   `false`
-
-5.  `var day = "Friday"`
-
-	*   `true`
-
+>_(Answers: 1. true, 2. false, 3. true)_
 
 
 <!--

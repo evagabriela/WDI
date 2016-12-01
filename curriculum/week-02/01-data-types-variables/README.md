@@ -270,7 +270,6 @@ All of the standard arithmetic operators learned in grade school (addition, subt
 
 But if you don’t have a background in programming, that last operator — the modulus operator — might be new.
 
-![Arithmetic Operators](assets/arithmetic_operators_modulus.png)
 
 The modulus operator shows the remainder of a division problem.
 
@@ -415,20 +414,18 @@ Now, let’s get back to some math and look at assignment operators.
 
 You're already familiar with the = assignment operator, but there are also ones we can use to add or subtract value from a variable. Take a look:
 
-![](assets/assignment_operators.png)
+<img src="assets/assignment_operators.png" width="500px">
 
 The += operator adds value to an existing variable.
 
 The -= operator subtracts value from an existing variable.
 
-![](assets/assignment_operators_ann.png)
-
 There are also a couple arithmetic operators we can use to add or subtract one from the value of a variable:
 
-![](assets/increment.png)
+<img src="assets/increment.png" width="500px">
 
 <!-- ID NEEDED: Can you format this exercise?
-Type var num = 10;
+Type `var num = 10`;
 Note: the console returns undefined when declaring a variable using var because the var statement returns no value
 Now, type num += 4;. What do you think the value of num will become?
 Note: the console returns 14 because our value was 10 and we added 4 to it.
