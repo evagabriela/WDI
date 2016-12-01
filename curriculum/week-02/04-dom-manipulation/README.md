@@ -1,7 +1,6 @@
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) DOM Manipulation (90 mins)
 
-<!--ID NEEDED: Updating topics/jumplinks-->
 
 | Timing | Type | Topic |
 | --- | --- | --- |
@@ -626,16 +625,6 @@ We have a shopping list that we need to update.
 
 3. Let's add a link to Google Maps to the bottom of our list so we don't get lost on our way to the grocery. We'll create another new list item and use `innerHTML` to add a link to our page.
 
-<!--
-
-SME Needed: (15-20 minutes for both tasks)
-
-Check for understanding 1/2
-
-A brief exercise for adding elements to the page (with starter code).
-
-Students have learned how to select elements, innerHTML, and textContent.
--->
 
 ### Manipulating the DOM - Getting & Setting Attributes
 Let’s talk some more about getting and setting attributes.
@@ -690,14 +679,6 @@ We are almost done with our shopping list. Let's use what we've learned to updat
 
 3. We also don't need the link to the map anymore. Let's use `removeAttribute()` to remove the `href` attribute from the `<a>` element.
 
-<!--
-
-SME Needed: Check for understanding 2/2
-
-A brief exercise for getting and setting attributes (with starter code).
-
-Students have learned how to select elements, innerHTML, and textContent, adding content, and now these methods to get and set attributes.
--->
 
 <a name="browsers"</a>
 ## How do Browsers Work? (10 mins) - If Time Permits

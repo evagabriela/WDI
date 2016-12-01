@@ -1,34 +1,3 @@
-<!--
-
-SME NEEDED (1 - 1.5 hour estimated)
-
-Currently there is one lesson for debugging JS (under WDI Curriculum), but we are building out 2 90 minute lessons.
-
-Current resources:
-
-- WDI Lessons: https://github.com/ga-wdi-lessons/js-debugging
-- WDI Curriculum: https://github.com/GA-WDI/curriculum/tree/master/resources/00-programming/js-debugging-lesson
-
-
-Right now I've placed a lot of the content from WDI lessons here as a "Debugging JS Part 1" and the other content (WDI Curriculum) as a "Debugging JS Part 2" for day.
-
-For Debugging part I here's what students have learned:
-- Variables / Data Types
-- Arrays
-- Loops *** Could be super helpful!
-- Objects
-
-For Debugging Part II students will also have learned:
-- Objects
-- Basic Vanilla JS DOM Manipulation
-- Vanilla JS Events
-
-WHAT'S NEEDED:
-1. Check flow of two lessons, make sure it makes sense, modify/rearrange if needed, add content if needed (shouldn't be too much that needs to be added, maybe screenshots)
-2. A 20-minute lab for Debugging Part I (See below)
-3. Starter code/solution for Part II (Week 2 Day 5) needs to be reviewed and modified if needed and instructions should be fleshed out a bit.
-
--->
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Chrome Dev Tools and Debugging JS (90 mins)
 
 
@@ -217,6 +186,8 @@ More often than not, Errors are usually caused by some variable not having the v
 A quick and widely used way to debug errors is to put `console.log` statements everywhere. From there, we look for the place a variable stops having the value we expect it to have. That's where the error is.
 
 Lets see this in action, by taking a quick look at a code example.
+
+
 <a name="debug"></a>
 ## Independent Practice: Debug (10 mins)
 
@@ -225,27 +196,7 @@ Don't scan the JS file for errors. Open up your Dev Tools and follow their error
 
 > **Note**: No need to clone, just follow along with the instructor on the board.
 
-<!--
-SME NEEDED: (Estimated time: 15 - 20 mins)
 
-Exercise should take students 10 minutes to complete
-
-The current exercise uses the DOM. It would be great to have a quick debugging exercise that takes students 5 minutes that would require students to use console.log.
-
-You could take the solution exercise from a lesson that we've already created (loops, arrays, or objects) and use that lesson to pinpoint some places where console.log would be useful, adding some errors in that students will have to debug. No need to create a new exercise from scratch.
-
-Here was the previous exercise (which involved the DOM unfortuantely)
-
-[TTMAR](https://github.com/ga-wdi-exercises/ttmar/tree/wdi12-inclass)
-
-Currently, we have a lot of code written in `app.js`, but our solution is still not functioning correctly.
-Let's put some `console.log` statements in our code to make sure that our values are what we think they are.-->
-
-<!--
-
-@sarahholden or SME NEEDED (estimate 15 mins) might be useful to flesh out a bit more with screenshots / content. Only another 10 minutes worth of material most likely.
-
--->
 <a name="find-answers"></a>
 ## How To Find Answers (10 mins)
 
@@ -342,18 +293,6 @@ regarding HTML, CSS, and JavaScript.
 
 Check out the starter code inside `exercises/practice_02` for a fizzbuzz program that isn't working.
 Don't scan the JS file for errors. Open up your Dev Tools and follow their errors to figure out what's wrong.
-<!--SME NEEDED: Lab here
-It would be great to have an exercise here that has students practice debugging the following that students have learned:
-
-- Variables / Data Types
-- Arrays
-- Loops *** Could be super helpful!
-- Objects
-
-One idea is to have a js project with some errors and students need to open it in Chrome and debug it using only dev tools. I would emphasize - no scanning through the JS file for errors! You need to use the Dev Tools to figure out what's wrong.
-
-Again, no need to build an entirely new lab from scratch, could be an existing lab with errors thrown in that students need to debug.
--->
 
 ***
 

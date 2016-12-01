@@ -671,11 +671,6 @@ That's how most Javascript developers think, to one degree or another. I want to
 
 ### ADDITIONAL RESOURCES
 - Exercises
-<!--
-SME NEEDED (Estimated 30 - 45 Mins)
-Would be helpful to have someone go through these exercises, add starter code where needed, and potentially update the Body Shop exercises so that they no longer require a knowledge of TDD.
-I think having quality resources here for instructors/students to pull from would be super useful!
- -->
 	- [Create your Own Army](exercises/army.md) (Beginner)
 	- [Stack Challenge](exercises/stack_challenge/README.md) (Advanced)
 	- [Body Shop - Part 1](exercises/oop-prototype-car/README.md) (Advanced, includes TDD)

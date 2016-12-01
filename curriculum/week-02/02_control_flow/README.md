@@ -727,19 +727,10 @@ What will the value of `goToWork` be under the following circumstances? Discuss 
 >_(Answers: 1. true, 2. false, 3. true)_
 
 
-<!--
-SME Needed (Estimated 30 minutes):
-
-Would be helpful to have someone build out an interesting 15 minute exercise with a bonus or two for more advanced students that uses only conditionals and variables, the current exercise also uses loops (FizzBuzz)
-
-Possibility: Clean up and double check this, remove anything loop related, add starter code:
-
-https://github.com/ga-wdi-exercises/choose_your_own_adventure_js
-
-
-
--->
 ## Independent Practice (15 mins)
+
+Follow the instructions in [exercises/cash\_register.md](exercises/cash_register.md).
+
 
 
 ***
